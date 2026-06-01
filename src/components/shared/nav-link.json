@@ -1,0 +1,30 @@
+{
+  "collectionName": "components_shared_nav_links",
+  "info": {
+    "displayName": "Nav Link",
+    "icon": "link",
+    "description": "Top-level header nav entry — a plain link, or a mega-menu trigger"
+  },
+  "options": {},
+  "attributes": {
+    "label": {
+      "type": "string"
+    },
+    "href": {
+      "type": "string"
+    },
+    "external": {
+      "type": "boolean",
+      "default": false
+    },
+    "hasMegaMenu": {
+      "type": "boolean",
+      "default": false
+    },
+    "columns": {
+      "type": "component",
+      "repeatable": true,
+      "component": "shared.menu-column"
+    }
+  }
+}

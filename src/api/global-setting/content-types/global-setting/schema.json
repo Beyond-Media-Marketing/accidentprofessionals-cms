@@ -1,0 +1,98 @@
+{
+  "kind": "singleType",
+  "collectionName": "global_settings",
+  "info": {
+    "singularName": "global-setting",
+    "pluralName": "global-settings",
+    "displayName": "Global Setting",
+    "description": "Sitewide business data, SEO defaults and analytics"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "siteName": {
+      "type": "string"
+    },
+    "tagline": {
+      "type": "text"
+    },
+    "websiteUrl": {
+      "type": "string"
+    },
+    "phone": {
+      "type": "string"
+    },
+    "phoneHref": {
+      "type": "string"
+    },
+    "email": {
+      "type": "string"
+    },
+    "address": {
+      "type": "text"
+    },
+    "mapEmbedUrl": {
+      "type": "text"
+    },
+    "mapLinkUrl": {
+      "type": "text"
+    },
+    "availability": {
+      "type": "json"
+    },
+    "logo": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": ["images"]
+    },
+    "footerLogo": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": ["images"]
+    },
+    "defaultOgImage": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": ["images"]
+    },
+    "defaultSeo": {
+      "type": "component",
+      "repeatable": false,
+      "component": "shared.seo"
+    },
+    "socials": {
+      "type": "component",
+      "repeatable": true,
+      "component": "shared.social-link"
+    },
+    "businessType": {
+      "type": "enumeration",
+      "enum": ["Organization", "LocalBusiness", "LegalService", "Attorney"],
+      "default": "LegalService"
+    },
+    "businessDescription": {
+      "type": "text"
+    },
+    "geoLatitude": {
+      "type": "decimal"
+    },
+    "geoLongitude": {
+      "type": "decimal"
+    },
+    "themeColor": {
+      "type": "string",
+      "default": "#f3af00"
+    },
+    "twitterHandle": {
+      "type": "string"
+    },
+    "googleTagManagerId": {
+      "type": "string"
+    },
+    "openingHoursSpec": {
+      "type": "json"
+    }
+  }
+}

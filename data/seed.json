@@ -1,0 +1,107 @@
+{
+  "globalSetting": {
+    "siteName": "Accident Professionals",
+    "tagline": "Connecting accident victims with vetted auto accident attorneys in Georgia. No upfront fees. Available 24/7.",
+    "websiteUrl": "https://accidentprofessionals.com",
+    "phone": "(470) 407-2800",
+    "phoneHref": "tel:4704072800",
+    "email": "info@accidentprofessionals.com",
+    "address": "1 Glenlake Pkwy NE Suite 650, Sandy Springs, GA 30328, United States",
+    "mapEmbedUrl": "https://maps.google.com/maps?q=1+Glenlake+Pkwy+NE+Suite+650+Sandy+Springs+GA+30328&output=embed",
+    "mapLinkUrl": "https://maps.google.com/?q=1+Glenlake+Pkwy+NE+Suite+650,+Sandy+Springs,+GA+30328",
+    "availability": ["Available 24/7", "English & Spanish supported"],
+    "businessType": "LegalService",
+    "businessDescription": "Accident Professionals connects accident victims across Georgia with vetted personal injury attorneys. No upfront fees, English & Spanish support, available 24/7.",
+    "geoLatitude": null,
+    "geoLongitude": null,
+    "themeColor": "#f3af00",
+    "twitterHandle": "",
+    "googleTagManagerId": "GTM-TQBVGHZX",
+    "openingHoursSpec": [
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"],
+        "opens": "00:00",
+        "closes": "23:59"
+      }
+    ],
+    "socials": [
+      { "platform": "facebook", "url": "https://www.facebook.com/accidentprofessionals.es/", "label": "Facebook" },
+      { "platform": "linkedin", "url": "https://www.linkedin.com/company/accident-professionals/posts/?feedView=all", "label": "LinkedIn" },
+      { "platform": "instagram", "url": "https://www.instagram.com/accidentprofessionals/", "label": "Instagram" },
+      { "platform": "youtube", "url": "https://www.youtube.com/@accident-professionals", "label": "YouTube" },
+      { "platform": "tiktok", "url": "https://www.tiktok.com/@.accidentprofessionals", "label": "TikTok" }
+    ],
+    "defaultSeo": {
+      "metaTitle": "Accident Professionals | Georgia Accident Attorneys",
+      "metaDescription": "Connecting accident victims with vetted accident attorneys in Georgia. No upfront fees. Available 24/7. English & Spanish supported.",
+      "keywords": "Georgia accident attorney, auto accident lawyer, personal injury, Atlanta accident attorney",
+      "schemaType": "WebPage",
+      "noindex": false,
+      "nofollow": false
+    }
+  },
+  "navigation": {
+    "items": [
+      { "label": "How We Help", "href": "/how-we-help", "external": false, "hasMegaMenu": false, "columns": [] },
+      {
+        "label": "Services",
+        "href": "/services",
+        "external": false,
+        "hasMegaMenu": true,
+        "columns": [
+          {
+            "heading": "Case Types",
+            "links": [
+              { "label": "Car Accidents", "href": "/car-accidents", "external": false },
+              { "label": "Truck Accidents", "href": "/truck-accidents", "external": false },
+              { "label": "Motorcycle Accidents", "href": "/motorcycle-accidents", "external": false },
+              { "label": "Rideshare Accidents", "href": "/rideshare-accidents", "external": false }
+            ]
+          }
+        ]
+      },
+      { "label": "Why Choose Us", "href": "/why-choose-us", "external": false, "hasMegaMenu": false, "columns": [] },
+      { "label": "Our Attorneys", "href": "/our-attorneys", "external": false, "hasMegaMenu": false, "columns": [] },
+      { "label": "What To Do", "href": "/what-to-do", "external": false, "hasMegaMenu": false, "columns": [] }
+    ],
+    "cta": {
+      "label": "Get Free Consultation",
+      "href": "#contact-section",
+      "variant": "primary",
+      "external": false,
+      "scrollTo": "contact-section"
+    }
+  },
+  "footer": {
+    "tagline": "Connecting accident victims with vetted auto accident attorneys in Georgia. No upfront fees. Available 24/7.",
+    "findUsHeading": "Where to Find Us",
+    "supportHeading": "Support",
+    "linkColumns": [
+      {
+        "heading": "Case Types",
+        "links": [
+          { "label": "Car Accidents", "href": "/car-accidents", "external": false },
+          { "label": "Truck Accidents", "href": "/truck-accidents", "external": false },
+          { "label": "Motorcycle Accidents", "href": "/motorcycle-accidents", "external": false },
+          { "label": "Rideshare Accidents", "href": "/rideshare-accidents", "external": false }
+        ]
+      },
+      {
+        "heading": "Reach Out",
+        "links": [
+          { "label": "About Us", "href": "/about-us", "external": false },
+          { "label": "Contact Us", "href": "/contact-us", "external": false },
+          { "label": "Blog", "href": "/blog", "external": false }
+        ]
+      }
+    ],
+    "legalLinks": [
+      { "label": "Privacy Policy", "href": "/privacy-policy", "external": false }
+    ],
+    "copyright": "© {year} Accident Professionals. Connecting you with legal help in Georgia.",
+    "builtByLabel": "Designed & Built by",
+    "builtByName": "BMM",
+    "builtByHref": "https://beyondmediamarketing.com/"
+  }
+}

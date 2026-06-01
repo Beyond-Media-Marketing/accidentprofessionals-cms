@@ -1,0 +1,25 @@
+{
+  "collectionName": "components_shared_contact_infos",
+  "info": {
+    "displayName": "Contact Info",
+    "icon": "phone",
+    "description": "Phone / email / address / hours line"
+  },
+  "options": {},
+  "attributes": {
+    "type": {
+      "type": "enumeration",
+      "enum": ["phone", "email", "address", "hours"],
+      "default": "phone"
+    },
+    "label": {
+      "type": "string"
+    },
+    "value": {
+      "type": "string"
+    },
+    "href": {
+      "type": "string"
+    }
+  }
+}

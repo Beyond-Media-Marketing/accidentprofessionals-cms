@@ -1,0 +1,47 @@
+{
+  "kind": "singleType",
+  "collectionName": "footers",
+  "info": {
+    "singularName": "footer",
+    "pluralName": "footers",
+    "displayName": "Footer",
+    "description": "Footer-specific content (business data is pulled from Global Setting)"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "tagline": {
+      "type": "text"
+    },
+    "findUsHeading": {
+      "type": "string"
+    },
+    "supportHeading": {
+      "type": "string"
+    },
+    "linkColumns": {
+      "type": "component",
+      "repeatable": true,
+      "component": "shared.menu-column"
+    },
+    "legalLinks": {
+      "type": "component",
+      "repeatable": true,
+      "component": "shared.nav-item"
+    },
+    "copyright": {
+      "type": "string"
+    },
+    "builtByLabel": {
+      "type": "string"
+    },
+    "builtByName": {
+      "type": "string"
+    },
+    "builtByHref": {
+      "type": "string"
+    }
+  }
+}
