@@ -1,0 +1,66 @@
+{
+  "kind": "singleType",
+  "collectionName": "about_pages",
+  "info": {
+    "singularName": "about-page",
+    "pluralName": "about-pages",
+    "displayName": "About Page",
+    "description": "About page content"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "hero": {
+      "type": "component",
+      "repeatable": false,
+      "component": "shared.hero"
+    },
+    "heroStats": {
+      "type": "component",
+      "repeatable": true,
+      "component": "shared.stat"
+    },
+    "problem": {
+      "type": "component",
+      "repeatable": false,
+      "component": "shared.media-text"
+    },
+    "whatWeDo": {
+      "type": "component",
+      "repeatable": false,
+      "component": "shared.steps-row"
+    },
+    "whyMatters": {
+      "type": "component",
+      "repeatable": false,
+      "component": "shared.media-text"
+    },
+    "whoWeWork": {
+      "type": "component",
+      "repeatable": false,
+      "component": "shared.process-cards"
+    },
+    "areasServe": {
+      "type": "component",
+      "repeatable": false,
+      "component": "shared.locations"
+    },
+    "faq": {
+      "type": "component",
+      "repeatable": false,
+      "component": "shared.faq"
+    },
+    "closingCta": {
+      "type": "component",
+      "repeatable": false,
+      "component": "shared.closing-cta"
+    },
+    "seo": {
+      "type": "component",
+      "repeatable": false,
+      "component": "shared.seo"
+    }
+  }
+}

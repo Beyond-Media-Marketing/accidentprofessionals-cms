@@ -225,5 +225,111 @@
     "builtByLabel": "Designed & Built by",
     "builtByName": "BMM",
     "builtByHref": "https://beyondmediamarketing.com/"
+  },
+  "aboutPage": {
+    "hero": {
+      "eyebrow": "About Us",
+      "heading": "Your Bridge Between the Accident and the Attorney",
+      "subhead": "Accident Professionals is a Georgia-based personal injury lawyer network built on one idea: you deserve someone in your corner who actually picks up the phone.\n\nWhether you were hurt in a car accident or a slip and fall, we connect accident victims with attorneys who understand Georgia law—and we stay involved every step of the way. You're not navigating this alone.",
+      "align": "left",
+      "primaryCta": { "label": "Get Free Consultation", "href": "#contact-section", "variant": "primary", "external": false, "scrollTo": "contact-section" }
+    },
+    "heroStats": [
+      { "value": "1,200+", "label": "Clients Helped" },
+      { "value": "24/7", "label": "We're Here When Accidents Happen" },
+      { "value": "15+", "label": "Years of Personal Injury Experience in Our Network" },
+      { "value": "$2.5M+", "label": "Recovered in 2025 for Clients Through Our Network" }
+    ],
+    "problem": {
+      "eyebrow": "The Problem We Saw",
+      "heading": "The Problem We Saw After an Accident",
+      "body": "After an accident, most people's first instinct is to call their insurance company—not because it's the best option, but because they don't know what else to do. Law firms can feel intimidating. The process feels unclear. And the fear of getting taken advantage of is real.\n\n**That's exactly why Accident Professionals exists.**\n\nWe built this company because there's a gap between injured people and the **legal help after an accident** they actually need—and it usually comes down to one thing: communication. We close that gap. We're the bridge between the confusion of a claim and the clarity of having someone who explains what's happening.",
+      "cta": { "label": "Contact Us", "href": "#contact-section", "variant": "primary", "external": false, "scrollTo": "contact-section" },
+      "layout": "image-left",
+      "theme": "light",
+      "highlightTitle": "Confusing Process",
+      "highlightText": "Most people don't know where to turn or what to do after an accident."
+    },
+    "whatWeDo": {
+      "eyebrow": "What We Actually Do",
+      "heading": "What We Actually Do for Injured Clients",
+      "body": "We're a bridge—between you and the attorney, between confusion and clarity, and between an insurance lowball offer and what you actually deserve.\n\nWhen you come to Accident Professionals, you're not handed off and forgotten. You're connected with an experienced personal injury attorney in Georgia, and you get us as your communication partner. You have someone to call—someone who understands you, how a case works, and how to get you real answers.\n\nMost services send you to an attorney and move on. That's not what a real **personal injury lawyer network in Georgia** should do. We spend time telling you what to expect after intake and connect you with an attorney that best suits your injuries and accident.",
+      "cta": { "label": "Lawyer Network", "href": "/why-choose-us", "variant": "primary", "external": false },
+      "steps": [
+        { "icon": "/icons/why-choose-us/communication.svg", "number": "01", "title": "Call and tell us what happened.", "description": "You don't need to have all the details or paperwork ready—just explain your situation and we'll guide you through the next steps." },
+        { "icon": "/icons/why-choose-us/local-expertise.svg", "number": "02", "title": "Finding the right attorney.", "description": "We look at your case type, location, and injuries, and match you with a vetted personal injury attorney in Georgia who has real experience with cases like yours." },
+        { "icon": "/icons/why-choose-us/free-consultation.svg", "number": "03", "title": "We don't disappear after the match.", "description": "We don't disappear after we connect you. If you ever need help along the way, we're just a call away. To us, you'll never be just a case number—you're a real person who deserves real support." }
+      ]
+    },
+    "whyMatters": {
+      "eyebrow": "Why It Matters",
+      "heading": "Why Having a **Communication Partner** Matters",
+      "body": "We're not going to promise you a check overnight. We're not going to tell you it's fast or easy—because sometimes it isn't.\n\nWhat we will tell you is this: you'll always know where your case stands, who to call, and that someone on our team actually knows your name.\n\nNo gimmicks. No surprises. Just real support from a trusted accident attorney network that focuses on the details most people overlook—but matter the most when you're dealing with something this serious.",
+      "cta": { "label": "Contact Us", "href": "#contact-section", "variant": "primary", "external": false, "scrollTo": "contact-section" },
+      "layout": "stacked",
+      "theme": "dark"
+    },
+    "whoWeWork": {
+      "eyebrow": "Who We Work With",
+      "heading": "Who We Work With",
+      "cards": [
+        {
+          "icon": "/icons/our-process/call.png",
+          "number": "01",
+          "title": "Injured Clients",
+          "body": "You ask questions. You show up to treatment. You want to understand what's happening with your case without being brushed off.\n\nYou deserve real communication—not a voicemail and a delay. That's why we connect injury victims with legal representation that actually keeps you in the loop.\n\nThat's exactly who we're built for.\n\nWe don't disappear after we connect you. If you ever need help along the way, we're just a call away. To us, you'll never be just a case number—you're a real person who deserves real support.",
+          "cta": { "label": "Get in Contact With an Attorney Today", "href": "#contact-section", "variant": "primary", "external": false, "scrollTo": "contact-section" }
+        },
+        {
+          "icon": "/icons/our-process/injured.png",
+          "number": "02",
+          "title": "Attorney Partners",
+          "body": "You want organized cases, supported clients, and a referral partner who handles communication so you can focus on the law.\n\nAccident Professionals manages the client relationship so you can manage the case. Our network of personal injury attorneys is built on shared standards, strong communication, and real results.\n\nOur attorneys receive pre-screened, communication-ready clients. We handle intake, stay involved throughout the process, and keep clients informed—so your team can stay focused on winning cases.",
+          "cta": { "label": "Learn About Our Attorney Network", "href": "/why-choose-us", "variant": "primary", "external": false }
+        }
+      ]
+    },
+    "areasServe": {
+      "eyebrow": "Where To Find Us",
+      "heading": "Find an Accident Attorney Near You in",
+      "headingAccent": "Georgia",
+      "intro": "Our personal injury lawyer network in Georgia serves clients throughout metro Atlanta and across the state. No matter where your accident happened, we can connect you with a local attorney who understands your area.",
+      "cities": [
+        { "name": "Atlanta" }, { "name": "Marietta" }, { "name": "Lawrenceville" }, { "name": "Smyrna" },
+        { "name": "Acworth" }, { "name": "Decatur" }, { "name": "Gainesville" }, { "name": "Roswell" }
+      ],
+      "ctaHeading": "Don't see your city?",
+      "ctaBody": "No two accidents are the same, and neither are the attorneys in our network. We connect you with a personal injury attorney in Georgia who has experience with your exact type of case.",
+      "cta": { "label": "Contact our team", "href": "#contact-section", "variant": "primary", "external": false, "scrollTo": "contact-section" }
+    },
+    "faq": {
+      "heading": "Frequently Asked Questions About Accident Professionals",
+      "items": [
+        { "question": "What do Accident Professionals do?", "answer": "Accident Professionals is a personal injury referral network in Georgia that connects injured individuals with experienced attorneys and provides ongoing support throughout the entire process." },
+        { "question": "How is this different from calling an attorney directly?", "answer": "When you contact us, you get more than a phone number. You get a real person in your corner who supports you throughout your case and is ready to help with guidance, or anything else you need." },
+        { "question": "How much does it cost?", "answer": "There is no cost to you. Every personal injury attorney in our network offers a free consultation, and you pay nothing unless you win." },
+        { "question": "What types of accidents does your network handle in Georgia?", "answer": "Our network handles car accidents, truck accidents, rideshare accidents (Uber and Lyft), slip and fall injuries, catastrophic cases, motorcycle accidents, and workplace injuries across Georgia. If you're not sure whether your situation qualifies, call us—we'll give you an honest answer." },
+        { "question": "What should I do right after a car accident in Georgia?", "answer": "If you're unsure what to do after a car accident in Georgia, start by calling 911, getting medical attention, documenting the scene, and avoid speaking with insurance agents before speaking with an attorney. Then, contact Accident Professionals to get connected with the right legal support for you." },
+        { "question": "Do you serve Spanish-speaking clients?", "answer": "Yes. We provide full support in both English and Spanish so you fully understand your options every step of the process. ¿Hablas español? Llámanos—estamos aquí para ayudarte." }
+      ]
+    },
+    "closingCta": {
+      "leadHeading": "**Real** Help. **Real** Results.",
+      "heading": "Had an Accident?",
+      "headingAccent": "Let's Talk.",
+      "subtext": "No pressure. No jargon. Just an honest conversation about your options.",
+      "cta": { "label": "Get Free Consultation", "href": "/contact-us", "variant": "primary", "external": false },
+      "note": "Available 24/7 · No upfront fees · Multilingual support"
+    },
+    "seo": {
+      "metaTitle": "About | Personal Injury Lawyer Network in Georgia",
+      "metaDescription": "Accident Professionals connects injured Georgians with trusted personal injury attorneys and stays involved every step. Free consultation. Real help.",
+      "keywords": "personal injury lawyer network, accident attorney network Georgia, personal injury attorney Georgia",
+      "focusKeyword": "personal injury lawyer network",
+      "canonicalUrl": "https://accidentprofessionals.com/about/",
+      "schemaType": "AboutPage",
+      "noindex": false,
+      "nofollow": false
+    }
   }
 }
