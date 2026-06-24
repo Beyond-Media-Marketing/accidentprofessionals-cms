@@ -1,0 +1,35 @@
+{
+  "collectionName": "components_shared_feature_grids",
+  "info": {
+    "displayName": "Feature Grid",
+    "icon": "grid",
+    "description": "Centered header + grid of feature cards (e.g. Why Choose Us)"
+  },
+  "options": {},
+  "attributes": {
+    "eyebrow": {
+      "type": "string"
+    },
+    "heading": {
+      "type": "string"
+    },
+    "intro": {
+      "type": "richtext"
+    },
+    "cta": {
+      "type": "component",
+      "repeatable": false,
+      "component": "shared.cta"
+    },
+    "bgImage": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": ["images"]
+    },
+    "features": {
+      "type": "component",
+      "repeatable": true,
+      "component": "shared.feature"
+    }
+  }
+}

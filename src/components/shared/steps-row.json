@@ -1,0 +1,30 @@
+{
+  "collectionName": "components_shared_steps_rows",
+  "info": {
+    "displayName": "Steps Row",
+    "icon": "bulletList",
+    "description": "Two-column header + a row of numbered step cards (first highlighted)"
+  },
+  "options": {},
+  "attributes": {
+    "eyebrow": {
+      "type": "string"
+    },
+    "heading": {
+      "type": "string"
+    },
+    "body": {
+      "type": "richtext"
+    },
+    "cta": {
+      "type": "component",
+      "repeatable": false,
+      "component": "shared.cta"
+    },
+    "steps": {
+      "type": "component",
+      "repeatable": true,
+      "component": "shared.step"
+    }
+  }
+}

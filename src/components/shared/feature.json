@@ -1,0 +1,26 @@
+{
+  "collectionName": "components_shared_features",
+  "info": {
+    "displayName": "Feature",
+    "icon": "bulletList",
+    "description": "Icon + title + description card"
+  },
+  "options": {},
+  "attributes": {
+    "icon": {
+      "type": "string"
+    },
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    },
+    "linkLabel": {
+      "type": "string"
+    },
+    "linkHref": {
+      "type": "string"
+    }
+  }
+}

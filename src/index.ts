@@ -9,6 +9,7 @@ const SINGLE_TYPES = [
   { uid: 'api::global-setting.global-setting', seedKey: 'globalSetting' },
   { uid: 'api::navigation.navigation', seedKey: 'navigation' },
   { uid: 'api::footer.footer', seedKey: 'footer' },
+  { uid: 'api::home-page.home-page', seedKey: 'homePage' },
 ] as const;
 
 /**

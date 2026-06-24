@@ -1,0 +1,17 @@
+{
+  "collectionName": "components_shared_location",
+  "info": {
+    "displayName": "Location",
+    "icon": "pinMap",
+    "description": "City / service-area name with optional link"
+  },
+  "options": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "href": {
+      "type": "string"
+    }
+  }
+}

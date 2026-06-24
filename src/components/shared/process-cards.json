@@ -1,0 +1,25 @@
+{
+  "collectionName": "components_shared_process_cards",
+  "info": {
+    "displayName": "Process Cards",
+    "icon": "layer",
+    "description": "Header + row of big numbered process cards (e.g. Our Process)"
+  },
+  "options": {},
+  "attributes": {
+    "eyebrow": {
+      "type": "string"
+    },
+    "heading": {
+      "type": "string"
+    },
+    "intro": {
+      "type": "richtext"
+    },
+    "cards": {
+      "type": "component",
+      "repeatable": true,
+      "component": "shared.process-card"
+    }
+  }
+}

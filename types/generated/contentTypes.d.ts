@@ -521,6 +521,44 @@ export interface ApiGlobalSettingGlobalSetting extends Struct.SingleTypeSchema {
   };
 }
 
+export interface ApiHomePageHomePage extends Struct.SingleTypeSchema {
+  collectionName: 'home_pages';
+  info: {
+    description: 'Home page content';
+    displayName: 'Home Page';
+    pluralName: 'home-pages';
+    singularName: 'home-page';
+  };
+  options: {
+    draftAndPublish: false;
+  };
+  attributes: {
+    closingCta: Schema.Attribute.Component<'shared.closing-cta', false>;
+    createdAt: Schema.Attribute.DateTime;
+    createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    faq: Schema.Attribute.Component<'shared.faq', false>;
+    hero: Schema.Attribute.Component<'shared.hero', false>;
+    howWeHelp: Schema.Attribute.Component<'shared.process-block', false>;
+    locale: Schema.Attribute.String & Schema.Attribute.Private;
+    localizations: Schema.Attribute.Relation<
+      'oneToMany',
+      'api::home-page.home-page'
+    > &
+      Schema.Attribute.Private;
+    ourProcess: Schema.Attribute.Component<'shared.process-cards', false>;
+    practiceAreas: Schema.Attribute.Component<'shared.feature-grid', false>;
+    publishedAt: Schema.Attribute.DateTime;
+    seo: Schema.Attribute.Component<'shared.seo', false>;
+    stats: Schema.Attribute.Component<'shared.stat', true>;
+    updatedAt: Schema.Attribute.DateTime;
+    updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    whereToFindUs: Schema.Attribute.Component<'shared.locations', false>;
+    whyChooseUs: Schema.Attribute.Component<'shared.feature-grid', false>;
+  };
+}
+
 export interface ApiNavigationNavigation extends Struct.SingleTypeSchema {
   collectionName: 'navigations';
   info: {
@@ -1064,6 +1102,7 @@ declare module '@strapi/strapi' {
       'admin::user': AdminUser;
       'api::footer.footer': ApiFooterFooter;
       'api::global-setting.global-setting': ApiGlobalSettingGlobalSetting;
+      'api::home-page.home-page': ApiHomePageHomePage;
       'api::navigation.navigation': ApiNavigationNavigation;
       'plugin::content-releases.release': PluginContentReleasesRelease;
       'plugin::content-releases.release-action': PluginContentReleasesReleaseAction;

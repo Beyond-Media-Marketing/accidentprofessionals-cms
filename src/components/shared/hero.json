@@ -17,7 +17,7 @@
       "type": "string"
     },
     "subhead": {
-      "type": "text"
+      "type": "richtext"
     },
     "align": {
       "type": "enumeration",

@@ -1,0 +1,28 @@
+{
+  "collectionName": "components_shared_process_card",
+  "info": {
+    "displayName": "Process Card",
+    "icon": "layer",
+    "description": "Big numbered card — icon, title, body and CTA"
+  },
+  "options": {},
+  "attributes": {
+    "icon": {
+      "type": "string"
+    },
+    "number": {
+      "type": "string"
+    },
+    "title": {
+      "type": "string"
+    },
+    "body": {
+      "type": "richtext"
+    },
+    "cta": {
+      "type": "component",
+      "repeatable": false,
+      "component": "shared.cta"
+    }
+  }
+}

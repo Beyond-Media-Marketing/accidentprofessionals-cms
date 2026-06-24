@@ -1,0 +1,46 @@
+{
+  "collectionName": "components_shared_process_blocks",
+  "info": {
+    "displayName": "Process Block",
+    "icon": "apps",
+    "description": "Centered header + image with highlight card + numbered steps (e.g. How We Help)"
+  },
+  "options": {},
+  "attributes": {
+    "eyebrow": {
+      "type": "string"
+    },
+    "heading": {
+      "type": "string"
+    },
+    "intro": {
+      "type": "richtext"
+    },
+    "cta": {
+      "type": "component",
+      "repeatable": false,
+      "component": "shared.cta"
+    },
+    "image": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": ["images"]
+    },
+    "highlightTitle": {
+      "type": "string"
+    },
+    "highlightText": {
+      "type": "text"
+    },
+    "highlightIcon": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": ["images"]
+    },
+    "steps": {
+      "type": "component",
+      "repeatable": true,
+      "component": "shared.step"
+    }
+  }
+}

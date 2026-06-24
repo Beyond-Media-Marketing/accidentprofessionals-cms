@@ -1,5 +1,22 @@
 import type { Schema, Struct } from '@strapi/strapi';
 
+export interface SharedClosingCta extends Struct.ComponentSchema {
+  collectionName: 'components_shared_closing_ctas';
+  info: {
+    description: 'Final CTA banner \u2014 lead heading + dark call-to-action block';
+    displayName: 'Closing CTA';
+    icon: 'bell';
+  };
+  attributes: {
+    cta: Schema.Attribute.Component<'shared.cta', false>;
+    heading: Schema.Attribute.String;
+    headingAccent: Schema.Attribute.String;
+    leadHeading: Schema.Attribute.String;
+    note: Schema.Attribute.String;
+    subtext: Schema.Attribute.Text;
+  };
+}
+
 export interface SharedContactInfo extends Struct.ComponentSchema {
   collectionName: 'components_shared_contact_infos';
   info: {
@@ -33,6 +50,66 @@ export interface SharedCta extends Struct.ComponentSchema {
   };
 }
 
+export interface SharedFaq extends Struct.ComponentSchema {
+  collectionName: 'components_shared_faqs';
+  info: {
+    description: 'Heading + list of FAQ items (emits FAQPage schema)';
+    displayName: 'FAQ';
+    icon: 'question';
+  };
+  attributes: {
+    heading: Schema.Attribute.String;
+    intro: Schema.Attribute.Text;
+    items: Schema.Attribute.Component<'shared.faq-item', true>;
+  };
+}
+
+export interface SharedFaqItem extends Struct.ComponentSchema {
+  collectionName: 'components_shared_faq_items';
+  info: {
+    description: 'Question + answer pair';
+    displayName: 'FAQ Item';
+    icon: 'question';
+  };
+  attributes: {
+    answer: Schema.Attribute.Text;
+    question: Schema.Attribute.String;
+  };
+}
+
+export interface SharedFeature extends Struct.ComponentSchema {
+  collectionName: 'components_shared_features';
+  info: {
+    description: 'Icon + title + description card';
+    displayName: 'Feature';
+    icon: 'bulletList';
+  };
+  attributes: {
+    description: Schema.Attribute.Text;
+    icon: Schema.Attribute.String;
+    linkHref: Schema.Attribute.String;
+    linkLabel: Schema.Attribute.String;
+    title: Schema.Attribute.String;
+  };
+}
+
+export interface SharedFeatureGrid extends Struct.ComponentSchema {
+  collectionName: 'components_shared_feature_grids';
+  info: {
+    description: 'Centered header + grid of feature cards (e.g. Why Choose Us)';
+    displayName: 'Feature Grid';
+    icon: 'grid';
+  };
+  attributes: {
+    bgImage: Schema.Attribute.Media<'images'>;
+    cta: Schema.Attribute.Component<'shared.cta', false>;
+    eyebrow: Schema.Attribute.String;
+    features: Schema.Attribute.Component<'shared.feature', true>;
+    heading: Schema.Attribute.String;
+    intro: Schema.Attribute.RichText;
+  };
+}
+
 export interface SharedHero extends Struct.ComponentSchema {
   collectionName: 'components_shared_heroes';
   info: {
@@ -41,6 +118,8 @@ export interface SharedHero extends Struct.ComponentSchema {
     icon: 'picture';
   };
   attributes: {
+    align: Schema.Attribute.Enumeration<['left', 'center']> &
+      Schema.Attribute.DefaultTo<'left'>;
     bgImage: Schema.Attribute.Media<'images'>;
     eyebrow: Schema.Attribute.String;
     heading: Schema.Attribute.String;
@@ -48,7 +127,64 @@ export interface SharedHero extends Struct.ComponentSchema {
     image: Schema.Attribute.Media<'images'>;
     primaryCta: Schema.Attribute.Component<'shared.cta', false>;
     secondaryCta: Schema.Attribute.Component<'shared.cta', false>;
-    subhead: Schema.Attribute.Text;
+    subhead: Schema.Attribute.RichText;
+  };
+}
+
+export interface SharedLocation extends Struct.ComponentSchema {
+  collectionName: 'components_shared_location';
+  info: {
+    description: 'City / service-area name with optional link';
+    displayName: 'Location';
+    icon: 'pinMap';
+  };
+  attributes: {
+    href: Schema.Attribute.String;
+    name: Schema.Attribute.String;
+  };
+}
+
+export interface SharedLocations extends Struct.ComponentSchema {
+  collectionName: 'components_shared_locations';
+  info: {
+    description: "Where To Find Us \u2014 header + city grid + 'don't see your city' CTA card";
+    displayName: 'Locations';
+    icon: 'pinMap';
+  };
+  attributes: {
+    cities: Schema.Attribute.Component<'shared.location', true>;
+    cta: Schema.Attribute.Component<'shared.cta', false>;
+    ctaBody: Schema.Attribute.Text;
+    ctaHeading: Schema.Attribute.String;
+    eyebrow: Schema.Attribute.String;
+    heading: Schema.Attribute.String;
+    headingAccent: Schema.Attribute.String;
+    intro: Schema.Attribute.RichText;
+  };
+}
+
+export interface SharedMediaText extends Struct.ComponentSchema {
+  collectionName: 'components_shared_media_texts';
+  info: {
+    description: 'Image + content (side-by-side or stacked), with optional highlight card';
+    displayName: 'Media Text';
+    icon: 'picture';
+  };
+  attributes: {
+    body: Schema.Attribute.RichText;
+    cta: Schema.Attribute.Component<'shared.cta', false>;
+    eyebrow: Schema.Attribute.String;
+    heading: Schema.Attribute.String;
+    headingAccent: Schema.Attribute.String;
+    highlightText: Schema.Attribute.Text;
+    highlightTitle: Schema.Attribute.String;
+    image: Schema.Attribute.Media<'images'>;
+    layout: Schema.Attribute.Enumeration<
+      ['image-left', 'image-right', 'stacked']
+    > &
+      Schema.Attribute.DefaultTo<'image-left'>;
+    theme: Schema.Attribute.Enumeration<['light', 'dark']> &
+      Schema.Attribute.DefaultTo<'light'>;
   };
 }
 
@@ -93,6 +229,57 @@ export interface SharedNavLink extends Struct.ComponentSchema {
     hasMegaMenu: Schema.Attribute.Boolean & Schema.Attribute.DefaultTo<false>;
     href: Schema.Attribute.String;
     label: Schema.Attribute.String;
+  };
+}
+
+export interface SharedProcessBlock extends Struct.ComponentSchema {
+  collectionName: 'components_shared_process_blocks';
+  info: {
+    description: 'Centered header + image with highlight card + numbered steps (e.g. How We Help)';
+    displayName: 'Process Block';
+    icon: 'apps';
+  };
+  attributes: {
+    cta: Schema.Attribute.Component<'shared.cta', false>;
+    eyebrow: Schema.Attribute.String;
+    heading: Schema.Attribute.String;
+    highlightIcon: Schema.Attribute.Media<'images'>;
+    highlightText: Schema.Attribute.Text;
+    highlightTitle: Schema.Attribute.String;
+    image: Schema.Attribute.Media<'images'>;
+    intro: Schema.Attribute.RichText;
+    steps: Schema.Attribute.Component<'shared.step', true>;
+  };
+}
+
+export interface SharedProcessCard extends Struct.ComponentSchema {
+  collectionName: 'components_shared_process_card';
+  info: {
+    description: 'Big numbered card \u2014 icon, title, body and CTA';
+    displayName: 'Process Card';
+    icon: 'layer';
+  };
+  attributes: {
+    body: Schema.Attribute.RichText;
+    cta: Schema.Attribute.Component<'shared.cta', false>;
+    icon: Schema.Attribute.String;
+    number: Schema.Attribute.String;
+    title: Schema.Attribute.String;
+  };
+}
+
+export interface SharedProcessCards extends Struct.ComponentSchema {
+  collectionName: 'components_shared_process_cards';
+  info: {
+    description: 'Header + row of big numbered process cards (e.g. Our Process)';
+    displayName: 'Process Cards';
+    icon: 'layer';
+  };
+  attributes: {
+    cards: Schema.Attribute.Component<'shared.process-card', true>;
+    eyebrow: Schema.Attribute.String;
+    heading: Schema.Attribute.String;
+    intro: Schema.Attribute.RichText;
   };
 }
 
@@ -163,18 +350,76 @@ export interface SharedSocialLink extends Struct.ComponentSchema {
   };
 }
 
+export interface SharedStat extends Struct.ComponentSchema {
+  collectionName: 'components_shared_stats';
+  info: {
+    description: 'A single number + label (e.g. 15+ Years)';
+    displayName: 'Stat';
+    icon: 'chartBubble';
+  };
+  attributes: {
+    label: Schema.Attribute.String;
+    value: Schema.Attribute.String;
+  };
+}
+
+export interface SharedStep extends Struct.ComponentSchema {
+  collectionName: 'components_shared_steps';
+  info: {
+    description: 'Numbered process step';
+    displayName: 'Step';
+    icon: 'bulletList';
+  };
+  attributes: {
+    description: Schema.Attribute.Text;
+    icon: Schema.Attribute.String;
+    number: Schema.Attribute.String;
+    title: Schema.Attribute.String;
+  };
+}
+
+export interface SharedStepsRow extends Struct.ComponentSchema {
+  collectionName: 'components_shared_steps_rows';
+  info: {
+    description: 'Two-column header + a row of numbered step cards (first highlighted)';
+    displayName: 'Steps Row';
+    icon: 'bulletList';
+  };
+  attributes: {
+    body: Schema.Attribute.RichText;
+    cta: Schema.Attribute.Component<'shared.cta', false>;
+    eyebrow: Schema.Attribute.String;
+    heading: Schema.Attribute.String;
+    steps: Schema.Attribute.Component<'shared.step', true>;
+  };
+}
+
 declare module '@strapi/strapi' {
   export module Public {
     export interface ComponentSchemas {
+      'shared.closing-cta': SharedClosingCta;
       'shared.contact-info': SharedContactInfo;
       'shared.cta': SharedCta;
+      'shared.faq': SharedFaq;
+      'shared.faq-item': SharedFaqItem;
+      'shared.feature': SharedFeature;
+      'shared.feature-grid': SharedFeatureGrid;
       'shared.hero': SharedHero;
+      'shared.location': SharedLocation;
+      'shared.locations': SharedLocations;
+      'shared.media-text': SharedMediaText;
       'shared.menu-column': SharedMenuColumn;
       'shared.nav-item': SharedNavItem;
       'shared.nav-link': SharedNavLink;
+      'shared.process-block': SharedProcessBlock;
+      'shared.process-card': SharedProcessCard;
+      'shared.process-cards': SharedProcessCards;
       'shared.section-heading': SharedSectionHeading;
       'shared.seo': SharedSeo;
       'shared.social-link': SharedSocialLink;
+      'shared.stat': SharedStat;
+      'shared.step': SharedStep;
+      'shared.steps-row': SharedStepsRow;
     }
   }
 }

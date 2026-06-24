@@ -1,0 +1,31 @@
+{
+  "collectionName": "components_shared_closing_ctas",
+  "info": {
+    "displayName": "Closing CTA",
+    "icon": "bell",
+    "description": "Final CTA banner — lead heading + dark call-to-action block"
+  },
+  "options": {},
+  "attributes": {
+    "leadHeading": {
+      "type": "string"
+    },
+    "heading": {
+      "type": "string"
+    },
+    "headingAccent": {
+      "type": "string"
+    },
+    "subtext": {
+      "type": "text"
+    },
+    "cta": {
+      "type": "component",
+      "repeatable": false,
+      "component": "shared.cta"
+    },
+    "note": {
+      "type": "string"
+    }
+  }
+}

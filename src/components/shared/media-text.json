@@ -1,0 +1,49 @@
+{
+  "collectionName": "components_shared_media_texts",
+  "info": {
+    "displayName": "Media Text",
+    "icon": "picture",
+    "description": "Image + content (side-by-side or stacked), with optional highlight card"
+  },
+  "options": {},
+  "attributes": {
+    "eyebrow": {
+      "type": "string"
+    },
+    "heading": {
+      "type": "string"
+    },
+    "headingAccent": {
+      "type": "string"
+    },
+    "body": {
+      "type": "richtext"
+    },
+    "cta": {
+      "type": "component",
+      "repeatable": false,
+      "component": "shared.cta"
+    },
+    "image": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": ["images"]
+    },
+    "highlightTitle": {
+      "type": "string"
+    },
+    "highlightText": {
+      "type": "text"
+    },
+    "layout": {
+      "type": "enumeration",
+      "enum": ["image-left", "image-right", "stacked"],
+      "default": "image-left"
+    },
+    "theme": {
+      "type": "enumeration",
+      "enum": ["light", "dark"],
+      "default": "light"
+    }
+  }
+}

@@ -73,6 +73,128 @@
       "scrollTo": "contact-section"
     }
   },
+  "homePage": {
+    "hero": {
+      "headingAccent": "Injured in Georgia?",
+      "heading": "Get Connected With a Personal Injury Attorney",
+      "subhead": "Accident Professionals connects accident victims across Georgia with experienced, vetted **personal injury attorneys in Georgia** for car, truck, rideshare, slip and fall, motorcycle, and workplace injury cases—at no cost to you. No upfront fees. No gimmicks. Just real help from real people who've been doing this for over 15 years.",
+      "align": "left",
+      "primaryCta": { "label": "Get Connected With an Attorney", "href": "#contact-section", "variant": "primary", "external": false, "scrollTo": "contact-section" },
+      "secondaryCta": { "label": "Explore Services", "href": "/services", "variant": "ghost", "external": false }
+    },
+    "stats": [
+      { "value": "15+", "label": "Years of Personal Injury Experience in Our Network" },
+      { "value": "100+", "label": "Clients Connected With Legal Support" },
+      { "value": "$2.5M+", "label": "Recovered in 2025 for Clients Through Our Network" },
+      { "value": "24/7", "label": "We're Here When Accidents Happen" }
+    ],
+    "howWeHelp": {
+      "eyebrow": "How We Help",
+      "heading": "We Connect You With the Right Personal Injury Attorney in Georgia",
+      "intro": "When you contact **Accident Professionals**, you don't get handed off and forgotten. You get connected with a vetted **personal injury attorney in Georgia**, and you get us in your corner throughout the entire process. We handle communication, answer your questions, and make sure nothing falls through the cracks. From the day you call to the day your case settles, someone on our team knows your name, your case, and what's happening next.",
+      "cta": { "label": "Learn More", "href": "/how-we-help", "variant": "primary", "external": false },
+      "highlightTitle": "The goal is simple",
+      "highlightText": "From your first call we are here to bring you clarity, hear all the facts, and provide support wherever possible.",
+      "steps": [
+        { "number": "01", "title": "Call and tell us what happened.", "description": "You don't need to have all the details figured out or paperwork ready. Just explain your situation and we'll walk you through the next steps." },
+        { "number": "02", "title": "Finding the right attorney.", "description": "We look at your case type, where you're located, and the type of injuries involved, and match you with a vetted personal injury attorney in Georgia who has real experience handling cases like yours." },
+        { "number": "03", "title": "We don't disappear after the match.", "description": "After we connect you with your attorney, we stay in the background and answer any questions, so you're never left guessing." }
+      ]
+    },
+    "whyChooseUs": {
+      "eyebrow": "Why Choose Us",
+      "heading": "Why Injured Georgians Choose Accident Professionals",
+      "intro": "We're not going to promise you a check overnight. We're not going to tell you it's simple or fast—because sometimes it isn't. What we will promise is this: you'll know where your case stands, you'll have someone who answers the phone, and you'll never feel like just another number.",
+      "cta": { "label": "Read More", "href": "/why-choose-us", "variant": "primary", "external": false },
+      "features": [
+        { "icon": "/icons/why-choose-us/no-fees.svg", "title": "No upfront fees.", "description": "Every personal injury attorney in our network offers a free consultation, and you don't pay unless you win." },
+        { "icon": "/icons/why-choose-us/free-consultation.svg", "title": "Free consultations.", "description": "You can speak with a personal injury attorney at no cost before making any decisions." },
+        { "icon": "/icons/why-choose-us/local-expertise.svg", "title": "Local expertise.", "description": "Attorneys who understand Georgia courts, roads, and insurance tactics." },
+        { "icon": "/icons/why-choose-us/communication.svg", "title": "Consistent communication.", "description": "You'll always have someone to call—not a voicemail or a runaround." },
+        { "icon": "/icons/why-choose-us/multilingual-support.svg", "title": "Multilingual support.", "description": "English and Spanish support available so you fully understand your options." }
+      ]
+    },
+    "practiceAreas": {
+      "eyebrow": "Practice Areas",
+      "heading": "Types of Personal Injury Cases We Help With in Georgia",
+      "intro": "No two accidents are the same, and neither are the attorneys in our network. We connect you with a personal injury attorney in Georgia who has experience with your exact type of case.",
+      "cta": { "label": "Explore All Services", "href": "/services", "variant": "primary", "external": false },
+      "features": [
+        { "icon": "/icons/practice-areas/car-accidents.svg", "title": "Car Accidents", "description": "If you were injured in a crash, we can connect you with a car accident lawyer in Atlanta who understands how to deal with insurance companies and maximize your claim.", "linkLabel": "Car accident lawyer Georgia", "linkHref": "/car-accidents" },
+        { "icon": "/icons/practice-areas/truck-accidents.svg", "title": "Truck Accidents", "description": "Serious accidents require experienced legal support. We connect you with a truck accident attorney in Georgia who knows how to handle complex commercial cases.", "linkLabel": "Truck accident attorney in Georgia", "linkHref": "/truck-accidents" },
+        { "icon": "/icons/practice-areas/rideshare-accidents.svg", "title": "Rideshare Accidents", "description": "Uber and Lyft accidents involve layered insurance coverage. We match you with a rideshare accident lawyer in Atlanta who understands how these claims work.", "linkLabel": "Rideshare accident lawyer in Atlanta", "linkHref": "/rideshare-accidents" },
+        { "icon": "/icons/practice-areas/slip-fall.svg", "title": "Slip & Fall", "description": "If you were injured due to unsafe property conditions, you may have a claim. Learn more about your rights on our premises liability page or get connected with a slip and fall attorney in Georgia.", "linkLabel": "Slip and fall attorney in Georgia", "linkHref": "/premises-liability" },
+        { "icon": "/icons/practice-areas/workplace-injuries.svg", "title": "Workplace Injuries", "description": "If you were hurt on the job, we can connect you with a workers comp attorney in Georgia who understands how to protect your rights.", "linkLabel": "Workers comp attorney in Georgia", "linkHref": "/workplace-injuries" },
+        { "icon": "/icons/practice-areas/motorcycle-accidents.svg", "title": "Motorcycle Accidents", "description": "Motorcyclists face unique risks and biases. We connect you with a motorcycle accident lawyer in Georgia who knows how to handle these cases.", "linkLabel": "Motorcycle accident lawyer in Georgia", "linkHref": "/motorcycle-accidents" }
+      ]
+    },
+    "ourProcess": {
+      "eyebrow": "Our Process",
+      "heading": "We Work With Injured Clients and Personal Injury Attorneys",
+      "cards": [
+        {
+          "icon": "/icons/our-process/injured.png",
+          "number": "01",
+          "title": "Injured in an Accident?",
+          "body": "You ask questions. You show up to your appointments. You want to understand what's happening with your case without being brushed off. You deserve consistent communication and an attorney who actually fights for you. That's exactly who we're built for.\n\nWe don't just send you a name and disappear. We keep a close eye on every detail of your journey—so you always have a dedicated team ready to support you every step of the way.",
+          "cta": { "label": "Learn About Our Attorney Network", "href": "/why-choose-us", "variant": "primary", "external": false }
+        },
+        {
+          "icon": "/icons/our-process/call.png",
+          "number": "02",
+          "title": "Call Accident Professionals for a Free Consultation",
+          "body": "You want organized cases, supported clients, and a referral partner who handles communication so you can focus on the legal work.\n\nAccident Professionals manages the client relationship so you can focus on results.",
+          "cta": { "label": "Get in Contact With an Attorney Today", "href": "#contact-section", "variant": "primary", "external": false, "scrollTo": "contact-section" }
+        }
+      ]
+    },
+    "whereToFindUs": {
+      "eyebrow": "Where To Find Us",
+      "heading": "Find an Accident Attorney Near You in",
+      "headingAccent": "Georgia",
+      "intro": "Our network serves clients throughout metro Atlanta and across the state. No matter where your accident happened, we can connect you with an accident attorney near you in Georgia who understands your local courts and insurance landscape.",
+      "cities": [
+        { "name": "Atlanta" },
+        { "name": "Marietta" },
+        { "name": "Lawrenceville" },
+        { "name": "Smyrna" },
+        { "name": "Acworth" },
+        { "name": "Decatur" },
+        { "name": "Gainesville" },
+        { "name": "Roswell" }
+      ],
+      "ctaHeading": "Don't see your city?",
+      "ctaBody": "No two accidents are the same, and neither are the attorneys in our network. We connect you with a personal injury attorney in Georgia who has experience with your exact type of case.",
+      "cta": { "label": "Contact our team", "href": "#contact-section", "variant": "primary", "external": false, "scrollTo": "contact-section" }
+    },
+    "faq": {
+      "heading": "Frequently Asked Questions About Accident Professionals",
+      "items": [
+        { "question": "What do Accident Professionals do?", "answer": "Accident Professionals is a personal injury referral network in Georgia that connects injured individuals with experienced attorneys and provides ongoing support throughout the entire process." },
+        { "question": "How is this different from calling an attorney directly?", "answer": "When you contact us, you get more than a phone number. You get a real person in your corner who supports you throughout your case and is ready to help with guidance, or anything else you need." },
+        { "question": "How much does it cost?", "answer": "There is no cost to you. Every personal injury attorney in our network offers a free consultation, and you pay nothing unless you win." },
+        { "question": "What types of accidents does your network handle in Georgia?", "answer": "Our network handles car accidents, truck accidents, rideshare accidents (Uber and Lyft), slip and fall injuries, catastrophic cases, motorcycle accidents, and workplace injuries across Georgia. If you're not sure whether your situation qualifies, call us—we'll give you an honest answer." },
+        { "question": "What should I do right after a car accident in Georgia?", "answer": "If you're unsure what to do after a car accident in Georgia, start by calling 911, getting medical attention, documenting the scene, and avoid speaking with insurance agents before speaking with an attorney. Then, contact Accident Professionals to get connected with the right legal support for you." },
+        { "question": "Do you serve Spanish-speaking clients?", "answer": "Yes. We provide full support in both English and Spanish so you fully understand your options every step of the process. ¿Hablas español? Llámanos—estamos aquí para ayudarte." }
+      ]
+    },
+    "closingCta": {
+      "leadHeading": "**Real** Help. **Real** Results.",
+      "heading": "Had an Accident?",
+      "headingAccent": "Let's Talk.",
+      "subtext": "No pressure. No jargon. Just an honest conversation about your options.",
+      "cta": { "label": "Get Free Consultation", "href": "/contact-us", "variant": "primary", "external": false },
+      "note": "Available 24/7 · No upfront fees · Multilingual support"
+    },
+    "seo": {
+      "metaTitle": "Injured in Georgia? Connect With a Personal Injury Lawyer",
+      "metaDescription": "Accident Professionals connects accident victims across Georgia with experienced, vetted personal injury attorneys. No upfront fees. Available 24/7.",
+      "keywords": "Georgia personal injury attorney, accident lawyer Georgia, car accident attorney, no upfront fees",
+      "schemaType": "WebPage",
+      "noindex": false,
+      "nofollow": false
+    }
+  },
   "footer": {
     "tagline": "Connecting accident victims with vetted auto accident attorneys in Georgia. No upfront fees. Available 24/7.",
     "findUsHeading": "Where to Find Us",

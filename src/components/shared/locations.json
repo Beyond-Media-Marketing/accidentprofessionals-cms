@@ -1,0 +1,39 @@
+{
+  "collectionName": "components_shared_locations",
+  "info": {
+    "displayName": "Locations",
+    "icon": "pinMap",
+    "description": "Where To Find Us — header + city grid + 'don't see your city' CTA card"
+  },
+  "options": {},
+  "attributes": {
+    "eyebrow": {
+      "type": "string"
+    },
+    "heading": {
+      "type": "string"
+    },
+    "headingAccent": {
+      "type": "string"
+    },
+    "intro": {
+      "type": "richtext"
+    },
+    "cities": {
+      "type": "component",
+      "repeatable": true,
+      "component": "shared.location"
+    },
+    "ctaHeading": {
+      "type": "string"
+    },
+    "ctaBody": {
+      "type": "text"
+    },
+    "cta": {
+      "type": "component",
+      "repeatable": false,
+      "component": "shared.cta"
+    }
+  }
+}

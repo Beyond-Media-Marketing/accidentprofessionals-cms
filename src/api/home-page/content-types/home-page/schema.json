@@ -1,0 +1,66 @@
+{
+  "kind": "singleType",
+  "collectionName": "home_pages",
+  "info": {
+    "singularName": "home-page",
+    "pluralName": "home-pages",
+    "displayName": "Home Page",
+    "description": "Home page content"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "hero": {
+      "type": "component",
+      "repeatable": false,
+      "component": "shared.hero"
+    },
+    "stats": {
+      "type": "component",
+      "repeatable": true,
+      "component": "shared.stat"
+    },
+    "howWeHelp": {
+      "type": "component",
+      "repeatable": false,
+      "component": "shared.process-block"
+    },
+    "whyChooseUs": {
+      "type": "component",
+      "repeatable": false,
+      "component": "shared.feature-grid"
+    },
+    "practiceAreas": {
+      "type": "component",
+      "repeatable": false,
+      "component": "shared.feature-grid"
+    },
+    "ourProcess": {
+      "type": "component",
+      "repeatable": false,
+      "component": "shared.process-cards"
+    },
+    "whereToFindUs": {
+      "type": "component",
+      "repeatable": false,
+      "component": "shared.locations"
+    },
+    "faq": {
+      "type": "component",
+      "repeatable": false,
+      "component": "shared.faq"
+    },
+    "closingCta": {
+      "type": "component",
+      "repeatable": false,
+      "component": "shared.closing-cta"
+    },
+    "seo": {
+      "type": "component",
+      "repeatable": false,
+      "component": "shared.seo"
+    }
+  }
+}

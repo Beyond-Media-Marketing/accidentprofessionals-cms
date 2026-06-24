@@ -1,0 +1,23 @@
+{
+  "collectionName": "components_shared_steps",
+  "info": {
+    "displayName": "Step",
+    "icon": "bulletList",
+    "description": "Numbered process step"
+  },
+  "options": {},
+  "attributes": {
+    "icon": {
+      "type": "string"
+    },
+    "number": {
+      "type": "string"
+    },
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    }
+  }
+}
