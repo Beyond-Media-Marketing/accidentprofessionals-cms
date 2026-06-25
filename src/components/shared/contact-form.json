@@ -1,0 +1,55 @@
+{
+  "collectionName": "components_shared_contact_forms",
+  "info": {
+    "displayName": "Contact Form",
+    "icon": "envelop",
+    "description": "Contact form + reach-us info card + map"
+  },
+  "options": {},
+  "attributes": {
+    "eyebrow": {
+      "type": "string"
+    },
+    "heading": {
+      "type": "string"
+    },
+    "intro": {
+      "type": "text"
+    },
+    "submitLabel": {
+      "type": "string"
+    },
+    "formSubject": {
+      "type": "string"
+    },
+    "reachHeading": {
+      "type": "string"
+    },
+    "email": {
+      "type": "string"
+    },
+    "address": {
+      "type": "text"
+    },
+    "callHeading": {
+      "type": "string"
+    },
+    "phoneLabel": {
+      "type": "string"
+    },
+    "phone": {
+      "type": "string"
+    },
+    "phoneNote": {
+      "type": "string"
+    },
+    "mapImage": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": ["images"]
+    },
+    "mapEmbedUrl": {
+      "type": "string"
+    }
+  }
+}

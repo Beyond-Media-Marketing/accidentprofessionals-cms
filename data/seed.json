@@ -448,5 +448,56 @@
       "noindex": false,
       "nofollow": false
     }
+  },
+  "contactPage": {
+    "hero": {
+      "eyebrow": "Contact Us",
+      "heading": "Speak With an Accident Professional Today",
+      "subhead": "No matter where your accident happened in Georgia—Atlanta, Savannah, or anywhere in between—Accident Professionals connects you with a trusted local personal injury attorney near you in Georgia who knows your roads, your courts, and your rights.",
+      "align": "center"
+    },
+    "formSection": {
+      "eyebrow": "Free Consultation",
+      "heading": "Tell Us What Happened",
+      "intro": "Share a few details about your accident and someone from our team will contact you to discuss your options. The more information you provide, the better we can help direct you.",
+      "submitLabel": "Submit Consultation Request",
+      "formSubject": "New consultation request — Contact Page",
+      "reachHeading": "You can also reach us at:",
+      "email": "CasePro@gmail.com",
+      "address": "1 Glenlake Pkwy, Suite 764\nAtlanta, GA 30328",
+      "callHeading": "Prefer to call? We're ready.",
+      "phoneLabel": "Phone Number",
+      "phone": "(470) 407-2800",
+      "phoneNote": "Available Monday – Friday, 9 am - 5pm",
+      "mapEmbedUrl": "https://maps.google.com/maps?q=1%20Glenlake%20Pkwy%2C%20Suite%20764%2C%20Atlanta%2C%20GA%2030328&z=14&output=embed"
+    },
+    "reachUs": {
+      "eyebrow": "How To Reach Us",
+      "heading": "Get Help The Way That Works Best For You",
+      "intro": "Our process is simple—because it has to be. You just had an accident. The last thing you need is more confusion.",
+      "features": [
+        { "icon": "", "title": "Call Us", "subtitle": "Speak with someone now.", "description": "Our team is available to listen to your situation and help guide you toward the next step.", "value": "(470) 407-2800", "linkLabel": "Call Now", "linkHref": "tel:+14704072800" },
+        { "icon": "", "title": "Request a Consultation", "subtitle": "Send us your information", "description": "Fill out a short form and someone from our team will reach back out as soon as possible.", "linkLabel": "Start Consultation", "linkHref": "#contact-form" },
+        { "icon": "", "title": "Attorney Network", "subtitle": "Looking for legal guidance in Georgia?", "description": "We help connect injured individuals with attorneys who understand Georgia accident cases.", "linkLabel": "Learn More", "linkHref": "/why-choose-us" }
+      ]
+    },
+    "closingCta": {
+      "leadHeading": "**Real** Help. **Real** Results.",
+      "heading": "Had an Accident?",
+      "headingAccent": "Let's Talk.",
+      "subtext": "No pressure. No jargon. Just an honest conversation about your options.",
+      "cta": { "label": "Get Free Consultation", "href": "#contact-form", "variant": "primary", "external": false },
+      "note": "Available 24/7 · No upfront fees · Multilingual support"
+    },
+    "seo": {
+      "metaTitle": "Contact Us | Accident Professionals Georgia",
+      "metaDescription": "Speak with an Accident Professional today. Free consultation, no upfront fees. Call or message us to connect with a local Georgia personal injury attorney.",
+      "keywords": "contact personal injury attorney Georgia, accident help Georgia, free consultation Georgia attorney",
+      "focusKeyword": "contact personal injury attorney Georgia",
+      "canonicalUrl": "https://accidentprofessionals.com/contact-us/",
+      "schemaType": "ContactPage",
+      "noindex": false,
+      "nofollow": false
+    }
   }
 }

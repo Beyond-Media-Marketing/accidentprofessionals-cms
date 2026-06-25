@@ -45,6 +45,31 @@ export interface SharedClosingCta extends Struct.ComponentSchema {
   };
 }
 
+export interface SharedContactForm extends Struct.ComponentSchema {
+  collectionName: 'components_shared_contact_forms';
+  info: {
+    description: 'Contact form + reach-us info card + map';
+    displayName: 'Contact Form';
+    icon: 'envelop';
+  };
+  attributes: {
+    address: Schema.Attribute.Text;
+    callHeading: Schema.Attribute.String;
+    email: Schema.Attribute.String;
+    eyebrow: Schema.Attribute.String;
+    formSubject: Schema.Attribute.String;
+    heading: Schema.Attribute.String;
+    intro: Schema.Attribute.Text;
+    mapEmbedUrl: Schema.Attribute.String;
+    mapImage: Schema.Attribute.Media<'images'>;
+    phone: Schema.Attribute.String;
+    phoneLabel: Schema.Attribute.String;
+    phoneNote: Schema.Attribute.String;
+    reachHeading: Schema.Attribute.String;
+    submitLabel: Schema.Attribute.String;
+  };
+}
+
 export interface SharedContactInfo extends Struct.ComponentSchema {
   collectionName: 'components_shared_contact_infos';
   info: {
@@ -117,7 +142,9 @@ export interface SharedFeature extends Struct.ComponentSchema {
     icon: Schema.Attribute.String;
     linkHref: Schema.Attribute.String;
     linkLabel: Schema.Attribute.String;
+    subtitle: Schema.Attribute.String;
     title: Schema.Attribute.String;
+    value: Schema.Attribute.String;
   };
 }
 
@@ -459,6 +486,7 @@ declare module '@strapi/strapi' {
       'shared.city-areas': SharedCityAreas;
       'shared.city-region': SharedCityRegion;
       'shared.closing-cta': SharedClosingCta;
+      'shared.contact-form': SharedContactForm;
       'shared.contact-info': SharedContactInfo;
       'shared.cta': SharedCta;
       'shared.faq': SharedFaq;

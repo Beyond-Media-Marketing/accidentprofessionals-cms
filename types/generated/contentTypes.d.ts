@@ -468,6 +468,39 @@ export interface ApiAboutPageAboutPage extends Struct.SingleTypeSchema {
   };
 }
 
+export interface ApiContactPageContactPage extends Struct.SingleTypeSchema {
+  collectionName: 'contact_pages';
+  info: {
+    description: 'Contact Us page';
+    displayName: 'Contact Page';
+    pluralName: 'contact-pages';
+    singularName: 'contact-page';
+  };
+  options: {
+    draftAndPublish: false;
+  };
+  attributes: {
+    closingCta: Schema.Attribute.Component<'shared.closing-cta', false>;
+    createdAt: Schema.Attribute.DateTime;
+    createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    formSection: Schema.Attribute.Component<'shared.contact-form', false>;
+    hero: Schema.Attribute.Component<'shared.hero', false>;
+    locale: Schema.Attribute.String & Schema.Attribute.Private;
+    localizations: Schema.Attribute.Relation<
+      'oneToMany',
+      'api::contact-page.contact-page'
+    > &
+      Schema.Attribute.Private;
+    publishedAt: Schema.Attribute.DateTime;
+    reachUs: Schema.Attribute.Component<'shared.feature-grid', false>;
+    seo: Schema.Attribute.Component<'shared.seo', false>;
+    updatedAt: Schema.Attribute.DateTime;
+    updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+  };
+}
+
 export interface ApiFooterFooter extends Struct.SingleTypeSchema {
   collectionName: 'footers';
   info: {
@@ -1176,6 +1209,7 @@ declare module '@strapi/strapi' {
       'admin::transfer-token-permission': AdminTransferTokenPermission;
       'admin::user': AdminUser;
       'api::about-page.about-page': ApiAboutPageAboutPage;
+      'api::contact-page.contact-page': ApiContactPageContactPage;
       'api::footer.footer': ApiFooterFooter;
       'api::global-setting.global-setting': ApiGlobalSettingGlobalSetting;
       'api::home-page.home-page': ApiHomePageHomePage;

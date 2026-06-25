@@ -13,8 +13,14 @@
     "title": {
       "type": "string"
     },
+    "subtitle": {
+      "type": "string"
+    },
     "description": {
       "type": "text"
+    },
+    "value": {
+      "type": "string"
     },
     "linkLabel": {
       "type": "string"
