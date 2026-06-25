@@ -1,0 +1,61 @@
+{
+  "kind": "singleType",
+  "collectionName": "services_pages",
+  "info": {
+    "singularName": "services-page",
+    "pluralName": "services-pages",
+    "displayName": "Services Page",
+    "description": "Service Areas hub page"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "hero": {
+      "type": "component",
+      "repeatable": false,
+      "component": "shared.hero"
+    },
+    "whyLocal": {
+      "type": "component",
+      "repeatable": false,
+      "component": "shared.media-text"
+    },
+    "howConnect": {
+      "type": "component",
+      "repeatable": false,
+      "component": "shared.steps-row"
+    },
+    "cityAreas": {
+      "type": "component",
+      "repeatable": false,
+      "component": "shared.city-areas"
+    },
+    "caseTypes": {
+      "type": "component",
+      "repeatable": false,
+      "component": "shared.feature-grid"
+    },
+    "gaLaw": {
+      "type": "component",
+      "repeatable": false,
+      "component": "shared.info-cards"
+    },
+    "faq": {
+      "type": "component",
+      "repeatable": false,
+      "component": "shared.faq"
+    },
+    "closingCta": {
+      "type": "component",
+      "repeatable": false,
+      "component": "shared.closing-cta"
+    },
+    "seo": {
+      "type": "component",
+      "repeatable": false,
+      "component": "shared.seo"
+    }
+  }
+}

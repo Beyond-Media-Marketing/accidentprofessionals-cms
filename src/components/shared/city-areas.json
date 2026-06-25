@@ -1,0 +1,25 @@
+{
+  "collectionName": "components_shared_city_areas",
+  "info": {
+    "displayName": "City Areas",
+    "icon": "pinMap",
+    "description": "Header + region tabs with city cards"
+  },
+  "options": {},
+  "attributes": {
+    "eyebrow": {
+      "type": "string"
+    },
+    "heading": {
+      "type": "string"
+    },
+    "headingAccent": {
+      "type": "string"
+    },
+    "regions": {
+      "type": "component",
+      "repeatable": true,
+      "component": "shared.city-region"
+    }
+  }
+}

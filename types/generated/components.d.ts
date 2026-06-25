@@ -1,5 +1,33 @@
 import type { Schema, Struct } from '@strapi/strapi';
 
+export interface SharedCityAreas extends Struct.ComponentSchema {
+  collectionName: 'components_shared_city_areas';
+  info: {
+    description: 'Header + region tabs with city cards';
+    displayName: 'City Areas';
+    icon: 'pinMap';
+  };
+  attributes: {
+    eyebrow: Schema.Attribute.String;
+    heading: Schema.Attribute.String;
+    headingAccent: Schema.Attribute.String;
+    regions: Schema.Attribute.Component<'shared.city-region', true>;
+  };
+}
+
+export interface SharedCityRegion extends Struct.ComponentSchema {
+  collectionName: 'components_shared_city_regions';
+  info: {
+    description: 'A Georgia region tab + its city cards';
+    displayName: 'City Region';
+    icon: 'pinMap';
+  };
+  attributes: {
+    cities: Schema.Attribute.Component<'shared.location', true>;
+    region: Schema.Attribute.String;
+  };
+}
+
 export interface SharedClosingCta extends Struct.ComponentSchema {
   collectionName: 'components_shared_closing_ctas';
   info: {
@@ -128,6 +156,37 @@ export interface SharedHero extends Struct.ComponentSchema {
     primaryCta: Schema.Attribute.Component<'shared.cta', false>;
     secondaryCta: Schema.Attribute.Component<'shared.cta', false>;
     subhead: Schema.Attribute.RichText;
+  };
+}
+
+export interface SharedInfoCard extends Struct.ComponentSchema {
+  collectionName: 'components_shared_info_cards_item';
+  info: {
+    description: 'Icon + title + description text card';
+    displayName: 'Info Card';
+    icon: 'bulletList';
+  };
+  attributes: {
+    description: Schema.Attribute.Text;
+    icon: Schema.Attribute.String;
+    title: Schema.Attribute.String;
+  };
+}
+
+export interface SharedInfoCards extends Struct.ComponentSchema {
+  collectionName: 'components_shared_info_cards';
+  info: {
+    description: 'Header + row of image cards (e.g. Georgia PI law)';
+    displayName: 'Info Cards';
+    icon: 'bulletList';
+  };
+  attributes: {
+    cards: Schema.Attribute.Component<'shared.info-card', true>;
+    eyebrow: Schema.Attribute.String;
+    heading: Schema.Attribute.String;
+    headingAccent: Schema.Attribute.String;
+    images: Schema.Attribute.Media<'images', true>;
+    intro: Schema.Attribute.Text;
   };
 }
 
@@ -397,6 +456,8 @@ export interface SharedStepsRow extends Struct.ComponentSchema {
 declare module '@strapi/strapi' {
   export module Public {
     export interface ComponentSchemas {
+      'shared.city-areas': SharedCityAreas;
+      'shared.city-region': SharedCityRegion;
       'shared.closing-cta': SharedClosingCta;
       'shared.contact-info': SharedContactInfo;
       'shared.cta': SharedCta;
@@ -405,6 +466,8 @@ declare module '@strapi/strapi' {
       'shared.feature': SharedFeature;
       'shared.feature-grid': SharedFeatureGrid;
       'shared.hero': SharedHero;
+      'shared.info-card': SharedInfoCard;
+      'shared.info-cards': SharedInfoCards;
       'shared.location': SharedLocation;
       'shared.locations': SharedLocations;
       'shared.media-text': SharedMediaText;

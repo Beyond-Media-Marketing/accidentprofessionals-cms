@@ -11,6 +11,7 @@ const SINGLE_TYPES = [
   { uid: 'api::footer.footer', seedKey: 'footer' },
   { uid: 'api::home-page.home-page', seedKey: 'homePage' },
   { uid: 'api::about-page.about-page', seedKey: 'aboutPage' },
+  { uid: 'api::services-page.services-page', seedKey: 'servicesPage' },
 ] as const;
 
 /**

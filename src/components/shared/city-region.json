@@ -1,0 +1,19 @@
+{
+  "collectionName": "components_shared_city_regions",
+  "info": {
+    "displayName": "City Region",
+    "icon": "pinMap",
+    "description": "A Georgia region tab + its city cards"
+  },
+  "options": {},
+  "attributes": {
+    "region": {
+      "type": "string"
+    },
+    "cities": {
+      "type": "component",
+      "repeatable": true,
+      "component": "shared.location"
+    }
+  }
+}

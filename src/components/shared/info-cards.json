@@ -1,0 +1,33 @@
+{
+  "collectionName": "components_shared_info_cards",
+  "info": {
+    "displayName": "Info Cards",
+    "icon": "bulletList",
+    "description": "Header + row of image cards (e.g. Georgia PI law)"
+  },
+  "options": {},
+  "attributes": {
+    "eyebrow": {
+      "type": "string"
+    },
+    "heading": {
+      "type": "string"
+    },
+    "headingAccent": {
+      "type": "string"
+    },
+    "intro": {
+      "type": "text"
+    },
+    "cards": {
+      "type": "component",
+      "repeatable": true,
+      "component": "shared.info-card"
+    },
+    "images": {
+      "type": "media",
+      "multiple": true,
+      "allowedTypes": ["images"]
+    }
+  }
+}
