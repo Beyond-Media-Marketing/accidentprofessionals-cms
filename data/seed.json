@@ -43,7 +43,7 @@
   },
   "navigation": {
     "items": [
-      { "label": "How We Help", "href": "/how-we-help", "external": false, "hasMegaMenu": false, "columns": [] },
+      { "label": "About Us", "href": "/about-us", "external": false, "hasMegaMenu": false, "columns": [] },
       {
         "label": "Services",
         "href": "/services",
@@ -51,18 +51,40 @@
         "hasMegaMenu": true,
         "columns": [
           {
-            "heading": "Practice Areas",
+            "heading": "Auto Accidents",
+            "href": "/services/auto-accidents",
             "links": [
-              { "label": "Auto Accidents", "href": "/services/auto-accidents", "external": false },
-              { "label": "Premises Liability", "href": "/services/premises-liability", "external": false },
-              { "label": "Workplace Accidents", "href": "/services/workplace-accidents", "external": false }
+              { "label": "Car Accidents", "href": "/services/auto-accidents/car-accidents", "external": false },
+              { "label": "Truck Accidents", "href": "/services/auto-accidents/truck-accidents", "external": false },
+              { "label": "Motorcycle Accidents", "href": "/services/auto-accidents/motorcycle-accidents", "external": false },
+              { "label": "Rideshare Accidents", "href": "/services/auto-accidents/rideshare-accidents", "external": false }
+            ]
+          },
+          {
+            "heading": "Premises Liability",
+            "href": "/services/premises-liability",
+            "links": [
+              { "label": "Slip & Fall", "href": "/services/premises-liability/slip-and-fall", "external": false },
+              { "label": "Negligent Security", "href": "/services/premises-liability/negligent-security", "external": false },
+              { "label": "Dog Bites", "href": "/services/premises-liability/dog-bites", "external": false },
+              { "label": "Other Property Hazards", "href": "/services/premises-liability/property-hazards", "external": false }
+            ]
+          },
+          {
+            "heading": "Workplace Accidents",
+            "href": "/services/workplace-accidents",
+            "links": [
+              { "label": "Workers' Compensation", "href": "/services/workplace-accidents/workers-compensation", "external": false },
+              { "label": "Third-Party Injury Claims", "href": "/services/workplace-accidents/third-party-workplace-injury", "external": false },
+              { "label": "Construction & Job Site Injuries", "href": "/services/workplace-accidents/construction-accidents", "external": false },
+              { "label": "On-the-Road Work Injuries", "href": "/services/workplace-accidents/on-road-work-injuries", "external": false }
             ]
           }
         ]
       },
-      { "label": "Why Choose Us", "href": "/why-choose-us", "external": false, "hasMegaMenu": false, "columns": [] },
-      { "label": "Our Attorneys", "href": "/our-attorneys", "external": false, "hasMegaMenu": false, "columns": [] },
-      { "label": "What To Do", "href": "/what-to-do", "external": false, "hasMegaMenu": false, "columns": [] }
+      { "label": "Blog", "href": "/blog", "external": false, "hasMegaMenu": false, "columns": [] },
+      { "label": "Legal Network", "href": "/legal-network", "external": false, "hasMegaMenu": false, "columns": [] },
+      { "label": "Contact Us", "href": "/contact-us", "external": false, "hasMegaMenu": false, "columns": [] }
     ],
     "cta": {
       "label": "Get Free Consultation",

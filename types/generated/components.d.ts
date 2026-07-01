@@ -360,6 +360,7 @@ export interface SharedMenuColumn extends Struct.ComponentSchema {
   };
   attributes: {
     heading: Schema.Attribute.String;
+    href: Schema.Attribute.String;
     links: Schema.Attribute.Component<'shared.nav-item', true>;
   };
 }
