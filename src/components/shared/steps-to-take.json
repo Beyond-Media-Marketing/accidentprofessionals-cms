@@ -1,0 +1,22 @@
+{
+  "collectionName": "components_shared_steps_to_take",
+  "info": {
+    "displayName": "Steps To Take",
+    "icon": "bulletList",
+    "description": "Heading + list of icon steps (what to do after an accident)"
+  },
+  "options": {},
+  "attributes": {
+    "heading": {
+      "type": "string"
+    },
+    "subheading": {
+      "type": "text"
+    },
+    "steps": {
+      "type": "component",
+      "repeatable": true,
+      "component": "shared.icon-step"
+    }
+  }
+}

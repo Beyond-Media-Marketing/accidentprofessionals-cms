@@ -660,6 +660,123 @@ export interface ApiNavigationNavigation extends Struct.SingleTypeSchema {
   };
 }
 
+export interface ApiServiceCategoryServiceCategory
+  extends Struct.CollectionTypeSchema {
+  collectionName: 'service_categories';
+  info: {
+    description: 'A top-level service category page (e.g. Auto Accidents)';
+    displayName: 'Service Category';
+    pluralName: 'service-categories';
+    singularName: 'service-category';
+  };
+  options: {
+    draftAndPublish: false;
+  };
+  attributes: {
+    caseTypesHeading: Schema.Attribute.String;
+    caseTypesSubheading: Schema.Attribute.String;
+    createdAt: Schema.Attribute.DateTime;
+    createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    ctaBanner: Schema.Attribute.Component<'shared.cta-banner', false>;
+    faq: Schema.Attribute.Component<'shared.faq', false>;
+    hero: Schema.Attribute.Component<'shared.service-hero', false>;
+    howItWorks: Schema.Attribute.Component<'shared.how-it-works', false>;
+    locale: Schema.Attribute.String & Schema.Attribute.Private;
+    localizations: Schema.Attribute.Relation<
+      'oneToMany',
+      'api::service-category.service-category'
+    > &
+      Schema.Attribute.Private;
+    order: Schema.Attribute.Integer & Schema.Attribute.DefaultTo<0>;
+    publishedAt: Schema.Attribute.DateTime;
+    seo: Schema.Attribute.Component<'shared.seo', false>;
+    services: Schema.Attribute.Relation<'oneToMany', 'api::service.service'>;
+    slug: Schema.Attribute.UID<'title'> & Schema.Attribute.Required;
+    stepsToTake: Schema.Attribute.Component<'shared.steps-to-take', false>;
+    title: Schema.Attribute.String & Schema.Attribute.Required;
+    updatedAt: Schema.Attribute.DateTime;
+    updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    whyUs: Schema.Attribute.Component<'shared.why-us', false>;
+  };
+}
+
+export interface ApiServiceDefaultsServiceDefaults
+  extends Struct.SingleTypeSchema {
+  collectionName: 'service_defaults';
+  info: {
+    description: 'Brand-level content shared across every service category & sub-service page';
+    displayName: 'Service Defaults';
+    pluralName: 'service-defaults-plural';
+    singularName: 'service-defaults';
+  };
+  options: {
+    draftAndPublish: false;
+  };
+  attributes: {
+    createdAt: Schema.Attribute.DateTime;
+    createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    heroDefaults: Schema.Attribute.Component<
+      'shared.service-hero-defaults',
+      false
+    >;
+    locale: Schema.Attribute.String & Schema.Attribute.Private;
+    localizations: Schema.Attribute.Relation<
+      'oneToMany',
+      'api::service-defaults.service-defaults'
+    > &
+      Schema.Attribute.Private;
+    publishedAt: Schema.Attribute.DateTime;
+    team: Schema.Attribute.Component<'shared.team', false>;
+    updatedAt: Schema.Attribute.DateTime;
+    updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    whyUsFeatures: Schema.Attribute.Component<'shared.why-us-feature', true>;
+  };
+}
+
+export interface ApiServiceService extends Struct.CollectionTypeSchema {
+  collectionName: 'services';
+  info: {
+    description: "A sub-service under a category (e.g. Car Accidents). Drives the parent category's case grid.";
+    displayName: 'Service (Sub-service)';
+    pluralName: 'services';
+    singularName: 'service';
+  };
+  options: {
+    draftAndPublish: false;
+  };
+  attributes: {
+    cardDescription: Schema.Attribute.Text;
+    cardIcon: Schema.Attribute.String;
+    cardLinkAnchor: Schema.Attribute.String;
+    cardLinkText: Schema.Attribute.String;
+    category: Schema.Attribute.Relation<
+      'manyToOne',
+      'api::service-category.service-category'
+    >;
+    createdAt: Schema.Attribute.DateTime;
+    createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    locale: Schema.Attribute.String & Schema.Attribute.Private;
+    localizations: Schema.Attribute.Relation<
+      'oneToMany',
+      'api::service.service'
+    > &
+      Schema.Attribute.Private;
+    order: Schema.Attribute.Integer & Schema.Attribute.DefaultTo<0>;
+    publishedAt: Schema.Attribute.DateTime;
+    seo: Schema.Attribute.Component<'shared.seo', false>;
+    slug: Schema.Attribute.UID<'title'> & Schema.Attribute.Required;
+    title: Schema.Attribute.String & Schema.Attribute.Required;
+    updatedAt: Schema.Attribute.DateTime;
+    updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+  };
+}
+
 export interface ApiServicesPageServicesPage extends Struct.SingleTypeSchema {
   collectionName: 'services_pages';
   info: {
@@ -1214,6 +1331,9 @@ declare module '@strapi/strapi' {
       'api::global-setting.global-setting': ApiGlobalSettingGlobalSetting;
       'api::home-page.home-page': ApiHomePageHomePage;
       'api::navigation.navigation': ApiNavigationNavigation;
+      'api::service-category.service-category': ApiServiceCategoryServiceCategory;
+      'api::service-defaults.service-defaults': ApiServiceDefaultsServiceDefaults;
+      'api::service.service': ApiServiceService;
       'api::services-page.services-page': ApiServicesPageServicesPage;
       'plugin::content-releases.release': PluginContentReleasesRelease;
       'plugin::content-releases.release-action': PluginContentReleasesReleaseAction;

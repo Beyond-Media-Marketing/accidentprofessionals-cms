@@ -13,7 +13,20 @@ const SINGLE_TYPES = [
   { uid: 'api::about-page.about-page', seedKey: 'aboutPage' },
   { uid: 'api::services-page.services-page', seedKey: 'servicesPage' },
   { uid: 'api::contact-page.contact-page', seedKey: 'contactPage' },
+  { uid: 'api::service-defaults.service-defaults', seedKey: 'serviceDefaults' },
 ] as const;
+
+/**
+ * Public read actions to grant. Single-types only need `.find`; collection
+ * types need both `.find` (list) and `.findOne` (single entry by id/slug).
+ */
+const READ_ACTIONS = [
+  ...SINGLE_TYPES.map((t) => `${t.uid}.find`),
+  'api::service-category.service-category.find',
+  'api::service-category.service-category.findOne',
+  'api::service.service.find',
+  'api::service.service.findOne',
+];
 
 /**
  * Seed single-types from data/seed.json.
@@ -44,15 +57,76 @@ async function seedSingleTypes(strapi: Core.Strapi, force = false) {
   }
 }
 
-/** Grant the public role read (find) access to every seeded single-type. */
+/**
+ * Seed the service structure: categories first, then sub-services linked to
+ * their parent category by slug. Keyed on `slug` so re-runs are idempotent.
+ */
+async function seedServiceStructure(strapi: Core.Strapi, force = false) {
+  const CATEGORY_UID = 'api::service-category.service-category';
+  const SERVICE_UID = 'api::service.service';
+  const categories = (seedData as Record<string, any>).serviceCategories as any[] | undefined;
+  const services = (seedData as Record<string, any>).services as any[] | undefined;
+  const catIdBySlug: Record<string, string> = {};
+
+  if (Array.isArray(categories)) {
+    for (const cat of categories) {
+      try {
+        const existing = await strapi
+          .documents(CATEGORY_UID as any)
+          .findFirst({ filters: { slug: cat.slug } });
+        let doc: any;
+        if (existing && !force) {
+          doc = existing;
+        } else if (existing && force) {
+          doc = await strapi
+            .documents(CATEGORY_UID as any)
+            .update({ documentId: existing.documentId, data: cat });
+          strapi.log.info(`[seed] FORCE-updated service-category ${cat.slug}`);
+        } else {
+          doc = await strapi.documents(CATEGORY_UID as any).create({ data: cat });
+          strapi.log.info(`[seed] created service-category ${cat.slug}`);
+        }
+        catIdBySlug[cat.slug] = doc.documentId;
+      } catch (err) {
+        strapi.log.error(`[seed] failed for service-category ${cat.slug}: ${(err as Error).message}`);
+      }
+    }
+  }
+
+  if (Array.isArray(services)) {
+    for (const svc of services) {
+      const { categorySlug, ...data } = svc;
+      const categoryDocId = catIdBySlug[categorySlug];
+      const payload = { ...data, ...(categoryDocId ? { category: categoryDocId } : {}) };
+      try {
+        const existing = await strapi
+          .documents(SERVICE_UID as any)
+          .findFirst({ filters: { slug: svc.slug } });
+        if (existing && !force) continue;
+        if (existing && force) {
+          await strapi
+            .documents(SERVICE_UID as any)
+            .update({ documentId: existing.documentId, data: payload });
+          strapi.log.info(`[seed] FORCE-updated service ${svc.slug}`);
+        } else {
+          await strapi.documents(SERVICE_UID as any).create({ data: payload });
+          strapi.log.info(`[seed] created service ${svc.slug}`);
+        }
+      } catch (err) {
+        strapi.log.error(`[seed] failed for service ${svc.slug}: ${(err as Error).message}`);
+      }
+    }
+  }
+}
+
+/** Grant the public role read access to every seeded content type. */
 async function grantPublicRead(strapi: Core.Strapi) {
   const publicRole = await strapi.db
     .query('plugin::users-permissions.role')
     .findOne({ where: { type: 'public' } });
   if (!publicRole) return;
 
-  for (const { uid } of SINGLE_TYPES) {
-    const action = `${uid}.find`;
+  for (const action of READ_ACTIONS) {
     const existing = await strapi.db
       .query('plugin::users-permissions.permission')
       .findOne({ where: { action, role: publicRole.id } });
@@ -72,6 +146,7 @@ export default {
     const force = process.env.SEED_FORCE === 'true';
     if (force) strapi.log.warn('[seed] SEED_FORCE=true — overwriting single-types');
     await seedSingleTypes(strapi, force);
+    await seedServiceStructure(strapi, force);
     await grantPublicRead(strapi);
   },
 };

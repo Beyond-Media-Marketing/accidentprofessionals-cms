@@ -1,5 +1,36 @@
 import type { Schema, Struct } from '@strapi/strapi';
 
+export interface SharedAttorney extends Struct.ComponentSchema {
+  collectionName: 'components_shared_attorneys';
+  info: {
+    description: 'Team member: image (path) + name + role + bio + stats';
+    displayName: 'Attorney';
+    icon: 'user';
+  };
+  attributes: {
+    address: Schema.Attribute.String;
+    bio: Schema.Attribute.Text;
+    firm: Schema.Attribute.String;
+    image: Schema.Attribute.String;
+    location: Schema.Attribute.String;
+    name: Schema.Attribute.String;
+    title: Schema.Attribute.String;
+    yearsExperience: Schema.Attribute.Integer;
+  };
+}
+
+export interface SharedBullet extends Struct.ComponentSchema {
+  collectionName: 'components_shared_bullets';
+  info: {
+    description: 'A single bullet line of text';
+    displayName: 'Bullet';
+    icon: 'bulletList';
+  };
+  attributes: {
+    text: Schema.Attribute.String;
+  };
+}
+
 export interface SharedCityAreas extends Struct.ComponentSchema {
   collectionName: 'components_shared_city_areas';
   info: {
@@ -103,6 +134,22 @@ export interface SharedCta extends Struct.ComponentSchema {
   };
 }
 
+export interface SharedCtaBanner extends Struct.ComponentSchema {
+  collectionName: 'components_shared_cta_banners';
+  info: {
+    description: 'Closing CTA banner (also feeds the contact form). Phone/CTA come from Service Defaults.';
+    displayName: 'CTA Banner';
+    icon: 'bell';
+  };
+  attributes: {
+    caseOptions: Schema.Attribute.Component<'shared.select-option', true>;
+    formSubject: Schema.Attribute.String;
+    headingAccent: Schema.Attribute.String;
+    headingMain: Schema.Attribute.String;
+    subheading: Schema.Attribute.Text;
+  };
+}
+
 export interface SharedFaq extends Struct.ComponentSchema {
   collectionName: 'components_shared_faqs';
   info: {
@@ -183,6 +230,36 @@ export interface SharedHero extends Struct.ComponentSchema {
     primaryCta: Schema.Attribute.Component<'shared.cta', false>;
     secondaryCta: Schema.Attribute.Component<'shared.cta', false>;
     subhead: Schema.Attribute.RichText;
+  };
+}
+
+export interface SharedHowItWorks extends Struct.ComponentSchema {
+  collectionName: 'components_shared_how_it_works';
+  info: {
+    description: 'Heading + image + 3 numbered steps';
+    displayName: 'How It Works';
+    icon: 'bulletList';
+  };
+  attributes: {
+    heading: Schema.Attribute.String;
+    image: Schema.Attribute.String;
+    steps: Schema.Attribute.Component<'shared.numbered-step', true>;
+    subheading: Schema.Attribute.Text;
+  };
+}
+
+export interface SharedIconStep extends Struct.ComponentSchema {
+  collectionName: 'components_shared_icon_steps';
+  info: {
+    description: 'number + icon (path) + title + description';
+    displayName: 'Icon Step';
+    icon: 'bulletList';
+  };
+  attributes: {
+    description: Schema.Attribute.Text;
+    icon: Schema.Attribute.String;
+    number: Schema.Attribute.String;
+    title: Schema.Attribute.String;
   };
 }
 
@@ -318,6 +395,20 @@ export interface SharedNavLink extends Struct.ComponentSchema {
   };
 }
 
+export interface SharedNumberedStep extends Struct.ComponentSchema {
+  collectionName: 'components_shared_numbered_steps';
+  info: {
+    description: 'number + title + description (no icon)';
+    displayName: 'Numbered Step';
+    icon: 'bulletList';
+  };
+  attributes: {
+    description: Schema.Attribute.Text;
+    number: Schema.Attribute.String;
+    title: Schema.Attribute.String;
+  };
+}
+
 export interface SharedProcessBlock extends Struct.ComponentSchema {
   collectionName: 'components_shared_process_blocks';
   info: {
@@ -383,6 +474,19 @@ export interface SharedSectionHeading extends Struct.ComponentSchema {
   };
 }
 
+export interface SharedSelectOption extends Struct.ComponentSchema {
+  collectionName: 'components_shared_select_options';
+  info: {
+    description: 'value + label pair for a dropdown option';
+    displayName: 'Select Option';
+    icon: 'bulletList';
+  };
+  attributes: {
+    label: Schema.Attribute.String;
+    value: Schema.Attribute.String;
+  };
+}
+
 export interface SharedSeo extends Struct.ComponentSchema {
   collectionName: 'components_shared_seos';
   info: {
@@ -416,6 +520,43 @@ export interface SharedSeo extends Struct.ComponentSchema {
       ]
     > &
       Schema.Attribute.DefaultTo<'WebPage'>;
+  };
+}
+
+export interface SharedServiceHero extends Struct.ComponentSchema {
+  collectionName: 'components_shared_service_heroes';
+  info: {
+    description: 'Per-category hero (variable copy). Constants live in Service Defaults.';
+    displayName: 'Service Hero';
+    icon: 'picture';
+  };
+  attributes: {
+    bgImage: Schema.Attribute.String;
+    caseOptions: Schema.Attribute.Component<'shared.select-option', true>;
+    description: Schema.Attribute.Text;
+    formSubject: Schema.Attribute.String;
+    h1Accent: Schema.Attribute.String;
+    h1Part1: Schema.Attribute.String;
+    h1Subtitle: Schema.Attribute.String;
+    heroBody: Schema.Attribute.Text;
+    urgencyBullets: Schema.Attribute.Component<'shared.bullet', true>;
+  };
+}
+
+export interface SharedServiceHeroDefaults extends Struct.ComponentSchema {
+  collectionName: 'components_shared_service_hero_defaults';
+  info: {
+    description: 'Brand-level hero constants shared by every service page';
+    displayName: 'Service Hero Defaults';
+    icon: 'cog';
+  };
+  attributes: {
+    badge: Schema.Attribute.String;
+    clientCount: Schema.Attribute.String;
+    ctaLabel: Schema.Attribute.String;
+    phone: Schema.Attribute.String;
+    phoneHref: Schema.Attribute.String;
+    stats: Schema.Attribute.Component<'shared.stat', true>;
   };
 }
 
@@ -480,20 +621,84 @@ export interface SharedStepsRow extends Struct.ComponentSchema {
   };
 }
 
+export interface SharedStepsToTake extends Struct.ComponentSchema {
+  collectionName: 'components_shared_steps_to_take';
+  info: {
+    description: 'Heading + list of icon steps (what to do after an accident)';
+    displayName: 'Steps To Take';
+    icon: 'bulletList';
+  };
+  attributes: {
+    heading: Schema.Attribute.String;
+    steps: Schema.Attribute.Component<'shared.icon-step', true>;
+    subheading: Schema.Attribute.Text;
+  };
+}
+
+export interface SharedTeam extends Struct.ComponentSchema {
+  collectionName: 'components_shared_teams';
+  info: {
+    description: 'Our Attorneys heading + roster (shared across service pages)';
+    displayName: 'Team';
+    icon: 'user';
+  };
+  attributes: {
+    attorneys: Schema.Attribute.Component<'shared.attorney', true>;
+    heading: Schema.Attribute.String;
+    subheading: Schema.Attribute.Text;
+  };
+}
+
+export interface SharedWhyUs extends Struct.ComponentSchema {
+  collectionName: 'components_shared_why_us';
+  info: {
+    description: 'Heading + accent + 3 body paragraphs (features live in Service Defaults)';
+    displayName: 'Why Us';
+    icon: 'check';
+  };
+  attributes: {
+    body1: Schema.Attribute.Text;
+    body2: Schema.Attribute.Text;
+    body3: Schema.Attribute.Text;
+    heading: Schema.Attribute.String;
+    headingAccent: Schema.Attribute.String;
+  };
+}
+
+export interface SharedWhyUsFeature extends Struct.ComponentSchema {
+  collectionName: 'components_shared_why_us_features';
+  info: {
+    description: 'grey/yellow icon pair + title + description';
+    displayName: 'Why Us Feature';
+    icon: 'check';
+  };
+  attributes: {
+    description: Schema.Attribute.String;
+    iconGrey: Schema.Attribute.String;
+    iconYellow: Schema.Attribute.String;
+    title: Schema.Attribute.String;
+  };
+}
+
 declare module '@strapi/strapi' {
   export module Public {
     export interface ComponentSchemas {
+      'shared.attorney': SharedAttorney;
+      'shared.bullet': SharedBullet;
       'shared.city-areas': SharedCityAreas;
       'shared.city-region': SharedCityRegion;
       'shared.closing-cta': SharedClosingCta;
       'shared.contact-form': SharedContactForm;
       'shared.contact-info': SharedContactInfo;
       'shared.cta': SharedCta;
+      'shared.cta-banner': SharedCtaBanner;
       'shared.faq': SharedFaq;
       'shared.faq-item': SharedFaqItem;
       'shared.feature': SharedFeature;
       'shared.feature-grid': SharedFeatureGrid;
       'shared.hero': SharedHero;
+      'shared.how-it-works': SharedHowItWorks;
+      'shared.icon-step': SharedIconStep;
       'shared.info-card': SharedInfoCard;
       'shared.info-cards': SharedInfoCards;
       'shared.location': SharedLocation;
@@ -502,15 +707,23 @@ declare module '@strapi/strapi' {
       'shared.menu-column': SharedMenuColumn;
       'shared.nav-item': SharedNavItem;
       'shared.nav-link': SharedNavLink;
+      'shared.numbered-step': SharedNumberedStep;
       'shared.process-block': SharedProcessBlock;
       'shared.process-card': SharedProcessCard;
       'shared.process-cards': SharedProcessCards;
       'shared.section-heading': SharedSectionHeading;
+      'shared.select-option': SharedSelectOption;
       'shared.seo': SharedSeo;
+      'shared.service-hero': SharedServiceHero;
+      'shared.service-hero-defaults': SharedServiceHeroDefaults;
       'shared.social-link': SharedSocialLink;
       'shared.stat': SharedStat;
       'shared.step': SharedStep;
       'shared.steps-row': SharedStepsRow;
+      'shared.steps-to-take': SharedStepsToTake;
+      'shared.team': SharedTeam;
+      'shared.why-us': SharedWhyUs;
+      'shared.why-us-feature': SharedWhyUsFeature;
     }
   }
 }

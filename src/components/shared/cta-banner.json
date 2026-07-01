@@ -1,0 +1,28 @@
+{
+  "collectionName": "components_shared_cta_banners",
+  "info": {
+    "displayName": "CTA Banner",
+    "icon": "bell",
+    "description": "Closing CTA banner (also feeds the contact form). Phone/CTA come from Service Defaults."
+  },
+  "options": {},
+  "attributes": {
+    "headingMain": {
+      "type": "string"
+    },
+    "headingAccent": {
+      "type": "string"
+    },
+    "subheading": {
+      "type": "text"
+    },
+    "formSubject": {
+      "type": "string"
+    },
+    "caseOptions": {
+      "type": "component",
+      "repeatable": true,
+      "component": "shared.select-option"
+    }
+  }
+}

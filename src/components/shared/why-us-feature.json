@@ -1,0 +1,23 @@
+{
+  "collectionName": "components_shared_why_us_features",
+  "info": {
+    "displayName": "Why Us Feature",
+    "icon": "check",
+    "description": "grey/yellow icon pair + title + description"
+  },
+  "options": {},
+  "attributes": {
+    "iconGrey": {
+      "type": "string"
+    },
+    "iconYellow": {
+      "type": "string"
+    },
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "string"
+    }
+  }
+}

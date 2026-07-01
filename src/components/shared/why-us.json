@@ -1,0 +1,26 @@
+{
+  "collectionName": "components_shared_why_us",
+  "info": {
+    "displayName": "Why Us",
+    "icon": "check",
+    "description": "Heading + accent + 3 body paragraphs (features live in Service Defaults)"
+  },
+  "options": {},
+  "attributes": {
+    "heading": {
+      "type": "string"
+    },
+    "headingAccent": {
+      "type": "string"
+    },
+    "body1": {
+      "type": "text"
+    },
+    "body2": {
+      "type": "text"
+    },
+    "body3": {
+      "type": "text"
+    }
+  }
+}

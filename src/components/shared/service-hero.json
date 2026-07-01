@@ -1,0 +1,42 @@
+{
+  "collectionName": "components_shared_service_heroes",
+  "info": {
+    "displayName": "Service Hero",
+    "icon": "picture",
+    "description": "Per-category hero (variable copy). Constants live in Service Defaults."
+  },
+  "options": {},
+  "attributes": {
+    "bgImage": {
+      "type": "string"
+    },
+    "h1Part1": {
+      "type": "string"
+    },
+    "h1Accent": {
+      "type": "string"
+    },
+    "h1Subtitle": {
+      "type": "string"
+    },
+    "heroBody": {
+      "type": "text"
+    },
+    "description": {
+      "type": "text"
+    },
+    "urgencyBullets": {
+      "type": "component",
+      "repeatable": true,
+      "component": "shared.bullet"
+    },
+    "caseOptions": {
+      "type": "component",
+      "repeatable": true,
+      "component": "shared.select-option"
+    },
+    "formSubject": {
+      "type": "string"
+    }
+  }
+}

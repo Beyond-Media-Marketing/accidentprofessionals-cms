@@ -51,12 +51,11 @@
         "hasMegaMenu": true,
         "columns": [
           {
-            "heading": "Case Types",
+            "heading": "Practice Areas",
             "links": [
-              { "label": "Car Accidents", "href": "/car-accidents", "external": false },
-              { "label": "Truck Accidents", "href": "/truck-accidents", "external": false },
-              { "label": "Motorcycle Accidents", "href": "/motorcycle-accidents", "external": false },
-              { "label": "Rideshare Accidents", "href": "/rideshare-accidents", "external": false }
+              { "label": "Auto Accidents", "href": "/services/auto-accidents", "external": false },
+              { "label": "Premises Liability", "href": "/services/premises-liability", "external": false },
+              { "label": "Workplace Accidents", "href": "/services/workplace-accidents", "external": false }
             ]
           }
         ]
@@ -67,10 +66,9 @@
     ],
     "cta": {
       "label": "Get Free Consultation",
-      "href": "#contact-section",
+      "href": "/contact-us",
       "variant": "primary",
-      "external": false,
-      "scrollTo": "contact-section"
+      "external": false
     }
   },
   "homePage": {
@@ -499,5 +497,321 @@
       "noindex": false,
       "nofollow": false
     }
-  }
+  },
+  "serviceDefaults": {
+    "heroDefaults": {
+      "badge": "Available 24/7 · No Upfront Fees",
+      "phone": "(470) 407-2800",
+      "phoneHref": "tel:4704072800",
+      "ctaLabel": "Get Your Free Consultation",
+      "clientCount": "100+ Clients Helped",
+      "stats": [
+        { "value": "85", "label": "Closed Cases Assisted" },
+        { "value": "$2.39M+", "label": "in Total Recovery" },
+        { "value": "$28K+", "label": "Average Settlement" }
+      ]
+    },
+    "whyUsFeatures": [
+      { "iconGrey": "/services-page/why-us-icons/dollar-grey.svg", "iconYellow": "/services-page/why-us-icons/dollar-yellow.svg", "title": "No upfront fees — ever", "description": "Attorneys work on contingency." },
+      { "iconGrey": "/services-page/why-us-icons/clock-grey.svg", "iconYellow": "/services-page/why-us-icons/clock-yellow.svg", "title": "24/7 availability", "description": "Accidents don't happen on business hours." },
+      { "iconGrey": "/services-page/why-us-icons/globe-grey.svg", "iconYellow": "/services-page/why-us-icons/globe-yellow.svg", "title": "Multilingual support", "description": "English, Spanish." },
+      { "iconGrey": "/services-page/why-us-icons/pin-grey.svg", "iconYellow": "/services-page/why-us-icons/pin-yellow.svg", "title": "Local expertise", "description": "Attorneys who know Georgia courts and Georgia law." }
+    ],
+    "team": {
+      "heading": "Our Attorneys",
+      "subheading": "Meet our dedicated team of attorneys, committed to providing expert legal guidance and support tailored to your needs.",
+      "attorneys": [
+        { "name": "Brian Moore", "title": "Injury Attorney", "firm": "404 Lawyer", "yearsExperience": null, "location": "Atlanta, GA", "address": "1055 Howell Mill Rd Fl 8, Atlanta, GA 30318", "image": "/attorneys/brian-moore.webp", "bio": "Personal Injury Attorney Dedicated to Securing Justice and Fair Compensation." },
+        { "name": "Benjamin J. Rollins", "title": "Managing Attorney", "firm": "Rollins Law Group", "yearsExperience": null, "location": "Atlanta, GA", "address": "1201 West Peachtree Street, Suite 2300, Atlanta, GA 30309", "image": "/attorneys/benjamin-j-rollins.webp", "bio": "Benjamin J. Rollins, Managing Attorney at Rollins Law Group, is known for securing significant settlements for victims and holds law and business degrees from Atlanta's John Marshall Law School and the University of Central Florida." },
+        { "name": "Kurtis Badger, Esq.", "title": "Owner & Founding Attorney", "firm": "Badger Law Group", "yearsExperience": null, "location": "Atlanta, GA", "address": "6065 Roswell Road, Suite 450, Atlanta, GA 30328", "image": "/attorneys/kurtis-badger.webp", "bio": "Kurtis Badger, Esq., brings top-tier legal know-how and vast corporate litigation experience to passionately advocate for personal injury victims." },
+        { "name": "Desmond A. Humphrey", "title": "Personal Injury Attorney & Owner", "firm": "Humphrey & Ballard Law", "yearsExperience": null, "location": "Atlanta, GA", "address": "3355 Lenox Rd NE, Suite 750, Atlanta, GA 30326", "image": "/attorneys/desmond-humphrey.webp", "bio": "Desmond A. Humphrey is an award-winning attorney, known for his innovative legal methods and deep commitment to his faith. A licensed minister and trusted community leader, he provides compassionate and effective legal representation." },
+        { "name": "E. David Ballard III", "title": "Personal Injury Attorney", "firm": "Humphrey & Ballard Law", "yearsExperience": null, "location": "Atlanta, GA", "address": "3355 Lenox Rd NE, Suite 750, Atlanta, GA 30326", "image": "/attorneys/e-david-ballard.webp", "bio": "E. David Ballard III began his legal career as a prosecutor in the City of Atlanta Municipal Court, litigating hundreds of cases. His deep knowledge of Georgia traffic codes and formidable courtroom skills have allowed him to recover millions in settlements for personal injury clients, establishing him as a leading Personal Injury expert in the region." },
+        { "name": "John Winkenwerder", "title": "Attorney at Law", "firm": "Wink Law", "yearsExperience": null, "location": "Atlanta, GA", "address": "Atlanta, GA", "image": "/attorneys/john-winkenwerder.webp", "bio": "Wink Law is a personal injury and wrongful death firm representing individuals and families. We are tireless advocates for those who have been injured or lost their lives due to the negligence of others. Our mission is to maximize our clients’ recovery through expertise, creative solutions, and unwavering dedication, while also maximizing the client experience through clear guidance, consistent communication, and unparalleled efficiency." },
+        { "name": "Ivan Bracho Gonzalez", "title": "Attorney at Law", "firm": "BRAAM Partners", "yearsExperience": 13, "location": "TX, FL", "address": "TX, FL", "image": "/attorneys/ivan-brancho-gonzalez.webp", "bio": "BRAAM Partners is a law firm founded for the purpose of providing personalized and specialized legal assistance to our clients. While we operate under the American professional standards, we also give our clients the full access, attention and trust expected from lawyers in Latin America." }
+      ]
+    }
+  },
+  "serviceCategories": [
+    {
+      "title": "Auto Accidents",
+      "slug": "auto-accidents",
+      "order": 1,
+      "hero": {
+        "bgImage": "/services-page/auto-accidents/hero-bg.webp",
+        "h1Part1": "One Crash Changes",
+        "h1Accent": "Everything.",
+        "h1Subtitle": "Speak With an Auto Accident Attorney in Georgia Today.",
+        "heroBody": "Whether it was a car crash on I-285, a truck collision on I-75, a rideshare accident downtown, or a motorcycle hit-and-run, a serious accident can turn your life upside down in seconds. The insurance company will start building their case immediately—you deserve someone in your corner just as fast.",
+        "description": "Whether it was a car crash on I-285, a truck collision on I-75, a rideshare accident downtown, or a motorcycle hit-and-run, a serious accident can turn your life upside down in seconds. The insurance company will start building their case immediately—you deserve someone in your corner just as fast.\n\nAccident Professionals connects you with a vetted auto accident attorney in Georgia at no cost to you. No upfront fees. No gimmicks. Just real help when you need it most.",
+        "urgencyBullets": [
+          { "text": "Insurance companies build their case immediately" },
+          { "text": "Early statements can hurt your claim" },
+          { "text": "Evidence preservation is time-sensitive" }
+        ],
+        "caseOptions": [
+          { "value": "car", "label": "Car Accident" },
+          { "value": "truck", "label": "Truck Accident" },
+          { "value": "motorcycle", "label": "Motorcycle Accident" },
+          { "value": "rideshare", "label": "Rideshare Accident" },
+          { "value": "other", "label": "Other" }
+        ],
+        "formSubject": "New Consultation Request — Accident Professionals"
+      },
+      "howItWorks": {
+        "heading": "How We Help After a Vehicle Accident in Georgia",
+        "subheading": "We're not a law firm—we're the bridge between you and one. When you call Accident Professionals, you're not navigating the legal system alone. We connect you with a vetted local auto accident attorney in Georgia, and stay alongside you to answer all your questions and provide guidance.",
+        "image": "/services-page/auto-accidents/image1.webp",
+        "steps": [
+          { "number": "01", "title": "Tell us about your accident", "description": "Free call, no pressure, no jargon. Just tell us what happened." },
+          { "number": "02", "title": "We match you with a local Georgia attorney", "description": "Based on your accident type, location, and needs. Not a random assignment." },
+          { "number": "03", "title": "We stay in your corner", "description": "Communication support from consultation to settlement so you always know what's happening next." }
+        ]
+      },
+      "caseTypesHeading": "Our Personal Injury Services",
+      "caseTypesSubheading": "Types of Auto Accident Cases We Handle in Georgia",
+      "whyUs": {
+        "heading": "Why Accident Victims Choose Us Over Calling Insurance First",
+        "headingAccent": "Calling Insurance First",
+        "body1": "Here's something most people don't realize: calling your insurance company first can actually hurt your case. Insurance adjusters are trained to minimize payouts, and they begin building their defense immediately.",
+        "body2": "Accident Professionals connects you with an auto accident attorney in Georgia before you say anything that could be used against you. That changes everything.",
+        "body3": "And unlike most services, we don't disappear after the introduction—we stay connected, answer your questions, and make sure you're never left guessing."
+      },
+      "stepsToTake": {
+        "heading": "What to Do After a Car Accident in Georgia",
+        "subheading": "The minutes and hours after an accident matter more than most people realize. What you do—and what you avoid—can directly affect your health, your claim, and your ability to recover compensation.",
+        "steps": [
+          { "number": "01", "icon": "/services-page/auto-accidents/phone-icon.png", "title": "Call 911 and File a Police Report", "description": "Even if the accident seems minor, call 911. A police report creates an official record that insurance companies and attorneys rely on." },
+          { "number": "02", "icon": "/services-page/auto-accidents/attention-icon.png", "title": "Get Medical Attention Immediately", "description": "Some injuries don't show symptoms right away. Getting checked within 24 hours helps protect both your health and your case." },
+          { "number": "03", "icon": "/services-page/auto-accidents/camera-icon.png", "title": "Document Everything at the Scene", "description": "Take photos of vehicles, road conditions, and injuries. Collect driver and witness information. The more evidence you have, the stronger your claim." },
+          { "number": "04", "icon": "/services-page/auto-accidents/statement-icon.png", "title": "Don't Give a Recorded Statement", "description": "Insurance companies may ask for a recorded statement quickly—don't provide one before speaking with an attorney. It can be used to reduce your claim." },
+          { "number": "05", "icon": "/services-page/auto-accidents/arrow-next-icon.png", "title": "Call Accident Professionals for a Free Consultation", "description": "The sooner you act, the better. Call (470) 407-2800 or get your free consultation to be connected with a vetted Georgia attorney who can protect your rights from day one." }
+        ]
+      },
+      "faq": {
+        "heading": "Frequently Asked Questions About Auto Accidents in Georgia",
+        "intro": "Common questions about auto accidents in Georgia",
+        "items": [
+          { "question": "What should I do immediately after a car accident in Georgia?", "answer": "Call 911, seek medical attention, document the scene, and avoid giving statements to insurance companies before speaking with an attorney. Then contact Accident Professionals for a free consultation." },
+          { "question": "How long do I have to file an auto accident claim in Georgia?", "answer": "In most cases, you have two years from the date of the accident to file a personal injury claim." },
+          { "question": "What if the other driver doesn't have insurance?", "answer": "You may still recover compensation through uninsured/underinsured motorist coverage. An attorney can review your policy and identify your options." },
+          { "question": "Does Accident Professionals handle truck and rideshare accidents, not just car accidents?", "answer": "Yes. Our network handles all types of vehicle accidents, including commercial truck accidents, motorcycle accidents, and rideshare incidents involving Uber and Lyft." },
+          { "question": "How much does it cost to get legal help through Accident Professionals?", "answer": "Nothing upfront. The attorneys in our network work on contingency—meaning they only get paid if you win your case or reach a settlement." },
+          { "question": "Can I still get compensation if I was partially at fault for the accident?", "answer": "Yes. Under Georgia law, you can recover damages as long as you are less than 50% responsible for the accident." }
+        ]
+      },
+      "ctaBanner": {
+        "headingMain": "Had an Accident?",
+        "headingAccent": " Let's Talk.",
+        "subheading": "No pressure. No jargon. Just an honest conversation about your options.",
+        "formSubject": "New Auto Accident Consultation Request — Accident Professionals",
+        "caseOptions": [
+          { "value": "car", "label": "Car Accident" },
+          { "value": "truck", "label": "Truck Accident" },
+          { "value": "motorcycle", "label": "Motorcycle Accident" },
+          { "value": "rideshare", "label": "Rideshare Accident" },
+          { "value": "other", "label": "Other" }
+        ]
+      },
+      "seo": {
+        "metaTitle": "Auto Accident Attorney Georgia | Free Consult",
+        "metaDescription": "Injured in a car, truck, motorcycle, or rideshare accident in Georgia? Get connected with an attorney today. Free consultation. No upfront fees.",
+        "canonicalUrl": "https://accidentprofessionals.com/services/auto-accidents/",
+        "schemaType": "Service",
+        "noindex": false,
+        "nofollow": false
+      }
+    },
+    {
+      "title": "Premises Liability",
+      "slug": "premises-liability",
+      "order": 2,
+      "hero": {
+        "bgImage": "/services-page/premises-liability/premise-liability-hero.webp",
+        "h1Part1": "One Hazard Changes",
+        "h1Accent": "Everything.",
+        "h1Subtitle": "Speak With a Premises Liability Attorney in Georgia Today.",
+        "heroBody": "Whether you slipped on an unmarked wet floor at a grocery store, tripped on a broken staircase at an apartment complex, were assaulted in a parking lot with inadequate security, or bitten by a dog on someone else's property—a property owner's negligence can turn your life upside down in an instant. The property owner's insurance company will start building their case immediately—you deserve someone in your corner just as fast.",
+        "description": "Whether you slipped on an unmarked wet floor at a grocery store, tripped on a broken staircase at an apartment complex, were assaulted in a parking lot with inadequate security, or bitten by a dog on someone else's property—a property owner's negligence can turn your life upside down in an instant.\n\nAccident Professionals connects you with a vetted premises liability attorney in Georgia at no cost to you. No upfront fees. No gimmicks. Just real help when you need it most.",
+        "urgencyBullets": [
+          { "text": "Property owners build their case immediately" },
+          { "text": "Incident reports can waive your rights" },
+          { "text": "Evidence disappears quickly" }
+        ],
+        "caseOptions": [
+          { "value": "slip-fall", "label": "Slip & Fall" },
+          { "value": "negligent-security", "label": "Negligent Security" },
+          { "value": "dog-bite", "label": "Dog Bite" },
+          { "value": "property-hazard", "label": "Other Property Hazard" },
+          { "value": "other", "label": "Other" }
+        ],
+        "formSubject": "New Premises Liability Consultation Request — Accident Professionals"
+      },
+      "howItWorks": {
+        "heading": "How We Help After a Property Injury in Georgia",
+        "subheading": "We're not a law firm—we're the bridge between you and one. When you call Accident Professionals, you're not navigating premises liability law alone. We connect you with a vetted local premises liability attorney in Georgia, and stay alongside you to answer all your questions and provide guidance throughout your case.",
+        "image": "/services-page/premises-liability/premise-liability-image.webp",
+        "steps": [
+          { "number": "01", "title": "Tell us about your injury", "description": "Free call, no pressure, no jargon. Just tell us what happened, where it occurred, and what conditions caused your injury." },
+          { "number": "02", "title": "We match you with a local Georgia attorney", "description": "Based on your injury type, property type, and location—not a random assignment." },
+          { "number": "03", "title": "We stay in your corner", "description": "Communication support from consultation to settlement so you always know what's happening next." }
+        ]
+      },
+      "caseTypesHeading": "Types of Premises Liability Cases We Handle in Georgia",
+      "caseTypesSubheading": "Our Personal Injury Services",
+      "whyUs": {
+        "heading": "Why Injury Victims Choose Us Over Calling the Property Owner's Insurance First",
+        "headingAccent": "Calling the Property Owner's Insurance First",
+        "body1": "Here's something most people don't realize: the moment you're injured on someone else's property, their insurance carrier begins building a defense. Claims adjusters are trained to minimize payouts—and anything you say early can be used to reduce or deny your claim entirely.",
+        "body2": "Accident Professionals connects you with a premises liability attorney in Georgia before you give any recorded statements, sign any incident reports, or accept any settlement offers. That changes everything.",
+        "body3": "And unlike most services, we don't disappear after the introduction—we stay connected, answer your questions, and make sure you're never left guessing."
+      },
+      "stepsToTake": {
+        "heading": "What to Do After an Injury on Someone Else's Property in Georgia",
+        "subheading": "The steps you take—and avoid—in the hours and days after a property injury can directly affect your health, your claim, and your ability to recover full compensation. What you do matters more than most people realize.",
+        "steps": [
+          { "number": "01", "icon": "/services-page/auto-accidents/attention-icon.png", "title": "Get Medical Attention Right Away", "description": "Even if your injury seems minor, see a doctor as soon as possible. Some injuries—like concussions from a fall—don't show full symptoms immediately. A medical record created close to the date of the incident is one of the strongest pieces of evidence in a premises liability case." },
+          { "number": "02", "icon": "/services-page/auto-accidents/camera-icon.png", "title": "Document the Scene and the Hazard", "description": "Take photos of everything: the wet floor, the broken step, the cracked sidewalk, the poor lighting. Get the names and contact information of any witnesses. Evidence gathered at the scene is evidence that can't disappear later." },
+          { "number": "03", "icon": "/services-page/auto-accidents/statement-icon.png", "title": "Report the Incident to the Property Owner or Manager", "description": "Make sure the property owner or manager knows what happened and documents it in writing. If they offer you a form to sign, read it carefully—some incident reports include language that could limit your rights. Don't sign anything before speaking with an attorney." },
+          { "number": "04", "icon": "/services-page/auto-accidents/dollar-sign.svg", "title": "Don't Accept a Quick Settlement", "description": "Property owners and their insurance companies may offer a fast settlement before you've had time to understand the full extent of your injuries. Don't accept anything without speaking to an attorney first. A quick offer is almost always less than what you're actually owed." },
+          { "number": "05", "icon": "/services-page/auto-accidents/arrow-next-icon.png", "title": "Call Accident Professionals for a Free Consultation", "description": "The sooner you act, the better your chances of preserving evidence and protecting your claim. Call (470) 407-2800 or get your free consultation to be connected with a vetted Georgia premises liability attorney." }
+        ]
+      },
+      "faq": {
+        "heading": "Frequently Asked Questions About Premises Liability in Georgia",
+        "intro": "Common questions about premises liability in Georgia",
+        "items": [
+          { "question": "What should I do immediately after being injured on someone else's property in Georgia?", "answer": "Seek medical attention, document the scene and hazard with photos, report the incident to the property owner or manager, and avoid signing anything before speaking with an attorney. Then contact Accident Professionals for a free consultation." },
+          { "question": "How long do I have to file a premises liability claim in Georgia?", "answer": "In most cases, two years from the date of your injury. If the property is owned by a government entity—a public school, city building, or municipal facility—the deadline can be much shorter, sometimes as little as 12 months. Acting promptly protects your rights." },
+          { "question": "What if I was partially at fault for my injury?", "answer": "Under Georgia's modified comparative fault rule, you can still recover compensation as long as you are found less than 50% responsible for your injury." },
+          { "question": "Does Accident Professionals handle all types of premises liability cases, not just slip and falls?", "answer": "Yes. Our network handles the full range of premises liability cases in Georgia—including slip and fall accidents, negligent security claims, dog bites, and other property hazard injuries. If you were injured on someone else's property, we can help." },
+          { "question": "How much does it cost to get legal help through Accident Professionals?", "answer": "Nothing upfront. The attorneys in our network work on contingency—meaning they only get paid if you win your case or reach a settlement." },
+          { "question": "How do I know if I actually have a premises liability case?", "answer": "Generally, you may have a case if you were legally on someone else's property, a hazardous condition existed, the owner knew or should have known about it, and you were injured as a result. The best way to know for sure is to call us—our consultations are always free and come with no obligation." }
+        ]
+      },
+      "ctaBanner": {
+        "headingMain": "Injured on Someone Else's Property?",
+        "headingAccent": " Let's Talk.",
+        "subheading": "No pressure. No jargon. Just an honest conversation about whether you have a case.",
+        "formSubject": "New Premises Liability Consultation Request — Accident Professionals",
+        "caseOptions": [
+          { "value": "slip-fall", "label": "Slip & Fall" },
+          { "value": "negligent-security", "label": "Negligent Security" },
+          { "value": "dog-bite", "label": "Dog Bite" },
+          { "value": "property-hazard", "label": "Other Property Hazard" },
+          { "value": "other", "label": "Other" }
+        ]
+      },
+      "seo": {
+        "metaTitle": "Premises Liability Attorney Georgia | Free",
+        "metaDescription": "Injured on someone else's property in Georgia? Get connected with a premises liability attorney today. Free consultation. No upfront fees.",
+        "canonicalUrl": "https://accidentprofessionals.com/services/premises-liability/",
+        "schemaType": "Service",
+        "noindex": false,
+        "nofollow": false
+      }
+    },
+    {
+      "title": "Workplace Accidents",
+      "slug": "workplace-accidents",
+      "order": 3,
+      "hero": {
+        "bgImage": "/services-page/workplace-accidents/workplace-injury-hero.webp",
+        "h1Part1": "A Workplace Injury Changes",
+        "h1Accent": "Everything.",
+        "h1Subtitle": "Speak With a Workplace Accident Attorney in Georgia Today.",
+        "heroBody": "Whether it was a fall on a construction site, a warehouse forklift accident, an injury from defective equipment, or a vehicle accident while on the clock, a serious workplace injury can upend your finances, your health, and your future. Your employer's insurance company will start building their case immediately—you deserve someone in your corner just as fast.",
+        "description": "Whether it was a fall on a construction site, a warehouse forklift accident, an injury from defective equipment, or a vehicle accident while on the clock, a serious workplace injury can upend your finances, your health, and your future.\n\nAccident Professionals connects you with a vetted workplace accident attorney in Georgia at no cost to you. No upfront fees. No gimmicks. Just real help when you need it most.",
+        "urgencyBullets": [
+          { "text": "Employer's insurer builds their case immediately" },
+          { "text": "Early statements can limit your benefits" },
+          { "text": "Filing deadlines are strict in Georgia" }
+        ],
+        "caseOptions": [
+          { "value": "workers-comp", "label": "Workers' Compensation" },
+          { "value": "third-party", "label": "Third-Party Injury Claim" },
+          { "value": "construction", "label": "Construction / Job Site Injury" },
+          { "value": "on-road", "label": "On-the-Road Work Injury" },
+          { "value": "other", "label": "Other" }
+        ],
+        "formSubject": "New Workplace Accident Consultation Request — Accident Professionals"
+      },
+      "howItWorks": {
+        "heading": "How We Help After a Workplace Injury in Georgia",
+        "subheading": "We're not a law firm—we're the bridge between you and one. When you call Accident Professionals, you're not navigating the workers' compensation system or the legal process alone. We connect you with a vetted local workplace accident attorney in Georgia, and stay alongside you to answer all your questions and provide guidance.",
+        "image": "/services-page/workplace-accidents/workplace-injury-image.webp",
+        "steps": [
+          { "number": "01", "title": "Tell us about your injury", "description": "Free call, no pressure, no jargon. Just tell us what happened, where, and whether your employer has been notified." },
+          { "number": "02", "title": "We match you with a local Georgia attorney", "description": "Based on your injury type, industry, and location—whether you need a workers' comp specialist, a personal injury attorney, or both." },
+          { "number": "03", "title": "We stay in your corner", "description": "Communication support from consultation to resolution, so you always know what's happening next." }
+        ]
+      },
+      "caseTypesHeading": "Types of Workplace Injury Cases We Handle in Georgia",
+      "caseTypesSubheading": "Our Personal Injury Services",
+      "whyUs": {
+        "heading": "Why Injured Workers Choose Us Over Filing Alone",
+        "headingAccent": "Filing Alone",
+        "body1": "Here's something most injured workers don't realize: filing a workers' compensation claim without legal guidance can limit your recovery before it even begins. Insurance carriers and employers have claims adjusters whose job is to minimize payouts—and they move fast.",
+        "body2": "Accident Professionals connects you with a workplace accident attorney in Georgia before you sign anything, record any statements, or accept any offers. That changes everything.",
+        "body3": "And unlike most services, we don't disappear after the introduction—we stay connected, answer your questions, and make sure you're never left guessing where your case stands."
+      },
+      "stepsToTake": {
+        "heading": "What to Do After a Workplace Injury in Georgia",
+        "subheading": "The steps you take—and avoid—in the hours after a workplace injury can directly affect your health, your workers' compensation benefits, and your ability to recover full compensation. Here's what matters most.",
+        "steps": [
+          { "number": "01", "icon": "/services-page/auto-accidents/phone-icon.png", "title": "Report the Injury to Your Employer Immediately", "description": "Georgia law requires you to report a workplace injury within 30 days. Failing to do so can jeopardize your entire claim. Report it in writing and keep a copy." },
+          { "number": "02", "icon": "/services-page/auto-accidents/attention-icon.png", "title": "Seek Medical Attention Right Away", "description": "Some injuries don't show symptoms immediately. Getting evaluated promptly protects your health and creates a documented record—both of which are critical to your case." },
+          { "number": "03", "icon": "/services-page/auto-accidents/camera-icon.png", "title": "Document Everything", "description": "Take photos of the scene, your injuries, and any equipment involved. Collect the names of supervisors and coworkers who witnessed the incident. Evidence gathered early is evidence that can't disappear." },
+          { "number": "04", "icon": "/services-page/auto-accidents/statement-icon.png", "title": "Don't Sign Anything Without Speaking to an Attorney", "description": "Employers and insurance carriers may ask you to sign forms or recorded statements quickly. Don't—until you've spoken with an attorney. What you agree to early can limit what you're owed." },
+          { "number": "05", "icon": "/services-page/auto-accidents/arrow-next-icon.png", "title": "Call Accident Professionals for a Free Consultation", "description": "The sooner you act, the stronger your case. Call (470) 407-2800 or get your free consultation to be connected with a vetted Georgia workplace accident attorney who can protect your rights from day one." }
+        ]
+      },
+      "faq": {
+        "heading": "Frequently Asked Questions About Workplace Accidents in Georgia",
+        "intro": "Common questions about workplace injuries in Georgia",
+        "items": [
+          { "question": "What should I do immediately after a workplace injury in Georgia?", "answer": "Report the injury to your employer in writing, seek medical attention, document the scene, and avoid signing any forms before speaking with an attorney. Then contact Accident Professionals for a free consultation." },
+          { "question": "How long do I have to file a workers' compensation claim in Georgia?", "answer": "You must report your injury within 30 days and file a claim within one year from the date of injury or the last payment of benefits. Acting promptly protects your rights." },
+          { "question": "Can I sue my employer after a workplace accident in Georgia?", "answer": "In most cases, workers' compensation is your exclusive remedy against your employer. However, if a third party—such as a contractor, equipment manufacturer, or property owner—contributed to your injury, you may have a separate personal injury claim." },
+          { "question": "Does Accident Professionals handle all types of workplace injuries, not just one industry?", "answer": "Yes. Our network handles workplace injuries across all industries—construction, warehouse, healthcare, delivery, office, retail, and more. If you were injured on the job in Georgia, we can help." },
+          { "question": "How much does it cost to get legal help through Accident Professionals?", "answer": "Nothing upfront. The attorneys in our network work on contingency—meaning they only get paid if you win your case or reach a settlement." },
+          { "question": "What if my workers' compensation claim is denied?", "answer": "You can appeal. An attorney in our network can review your case, identify the reason for denial, and represent you through the Georgia State Board of Workers' Compensation appeals process." }
+        ]
+      },
+      "ctaBanner": {
+        "headingMain": "Injured at Work?",
+        "headingAccent": " Let's Talk.",
+        "subheading": "No pressure. No jargon. And no—your employer doesn't have to know you called.",
+        "formSubject": "New Workplace Accident Consultation Request — Accident Professionals",
+        "caseOptions": [
+          { "value": "workers-comp", "label": "Workers' Compensation" },
+          { "value": "third-party", "label": "Third-Party Injury Claim" },
+          { "value": "construction", "label": "Construction / Job Site Injury" },
+          { "value": "on-road", "label": "On-the-Road Work Injury" },
+          { "value": "other", "label": "Other" }
+        ]
+      },
+      "seo": {
+        "metaTitle": "Workplace Accident Attorney Georgia | Free",
+        "metaDescription": "Injured at work in Georgia? Get connected with a workplace accident attorney today. Workers' comp, third-party claims, and more. Free consultation.",
+        "canonicalUrl": "https://accidentprofessionals.com/services/workplace-accidents/",
+        "schemaType": "Service",
+        "noindex": false,
+        "nofollow": false
+      }
+    }
+  ],
+  "services": [
+    { "title": "Car Accidents", "slug": "car-accidents", "order": 1, "categorySlug": "auto-accidents", "cardIcon": "/services-page/auto-accidents/car-accidents.png", "cardDescription": "Rear-end collisions, T-bones, and hit-and-runs happen every day on Georgia roads. We connect you with a car accident lawyer in Georgia who knows how to build your case and deal with insurance companies.", "cardLinkText": "Car Accidents Help", "cardLinkAnchor": "car accident attorney Georgia" },
+    { "title": "Truck Accidents", "slug": "truck-accidents", "order": 2, "categorySlug": "auto-accidents", "cardIcon": "/services-page/auto-accidents/truck-accidents.png", "cardDescription": "18-wheelers and commercial vehicles involve complex liability and higher stakes. We connect you with a truck accident attorney in Georgia who understands how to handle these cases.", "cardLinkText": "Truck Accidents Help", "cardLinkAnchor": "truck accident attorney Georgia" },
+    { "title": "Motorcycle Accidents", "slug": "motorcycle-accidents", "order": 3, "categorySlug": "auto-accidents", "cardIcon": "/services-page/auto-accidents/motorcycle-accidents.png", "cardDescription": "Motorcyclists face serious risks and unfair bias after accidents. We connect you with a motorcycle accident lawyer in Georgia who knows how to fight for riders' rights.", "cardLinkText": "Motorcycle Accidents Help", "cardLinkAnchor": "motorcycle accident lawyer Georgia" },
+    { "title": "Rideshare Accidents", "slug": "rideshare-accidents", "order": 4, "categorySlug": "auto-accidents", "cardIcon": "/services-page/auto-accidents/rideshare-accidents.svg", "cardDescription": "Uber and Lyft accidents involve layered insurance policies and multiple parties. We match you with a rideshare accident attorney in Georgia who understands how these claims work.", "cardLinkText": "Rideshare Accidents Help", "cardLinkAnchor": "rideshare accident attorney Georgia" },
+    { "title": "Slip & Fall", "slug": "slip-and-fall", "order": 1, "categorySlug": "premises-liability", "cardIcon": "/services-page/premises-liability/slip-and-fall.png", "cardDescription": "Wet floors, uneven surfaces, broken stairs, and poor lighting are among the most common causes of serious injuries in Georgia. We connect you with a slip and fall attorney in Georgia who knows how to prove negligence and fight insurance carriers.", "cardLinkText": "Slip & Fall Help", "cardLinkAnchor": "slip and fall attorney Georgia" },
+    { "title": "Negligent Security", "slug": "negligent-security", "order": 2, "categorySlug": "premises-liability", "cardIcon": "/services-page/premises-liability/negligent-security.png", "cardDescription": "Assaults, robberies, and crimes in parking lots, hotels, apartment buildings, or retail settings can give rise to a premises liability claim when a property owner failed to provide adequate security. We connect you with a negligent security attorney in Georgia who handles these cases.", "cardLinkText": "Negligent Security Help", "cardLinkAnchor": "negligent security attorney Georgia" },
+    { "title": "Dog Bites", "slug": "dog-bites", "order": 3, "categorySlug": "premises-liability", "cardIcon": "/services-page/premises-liability/dog-bites.png", "cardDescription": "Property owners in Georgia may be liable for injuries caused by dogs on their premises. If you were bitten or attacked, you may have a claim. We connect you with a dog bite attorney in Georgia who understands Georgia's liability rules for animal attacks.", "cardLinkText": "Dog Bite Help", "cardLinkAnchor": "dog bite attorney Georgia" },
+    { "title": "Other Property Hazards", "slug": "property-hazards", "order": 4, "categorySlug": "premises-liability", "cardIcon": "/services-page/premises-liability/other-property-hazards.png", "cardDescription": "Swimming pool accidents, falling merchandise, broken railings, unmarked construction zones, and more. We match you with a premises liability attorney in Georgia who handles the full range of property injury cases.", "cardLinkText": "Property Injury Help", "cardLinkAnchor": "premises liability attorney Georgia" },
+    { "title": "Workers' Compensation Claims", "slug": "workers-compensation", "order": 1, "categorySlug": "workplace-accidents", "cardIcon": "/services-page/workplace-accidents/workers-compensation-claims.png", "cardDescription": "Georgia requires most employers to carry workers' comp insurance. If you're injured on the job, you're generally entitled to benefits regardless of fault. We connect you with a workers' compensation attorney in Georgia who knows how to protect your claim.", "cardLinkText": "Workers' Comp Help", "cardLinkAnchor": "workers compensation attorney Georgia" },
+    { "title": "Third-Party Personal Injury Claims", "slug": "third-party-workplace-injury", "order": 2, "categorySlug": "workplace-accidents", "cardIcon": "/services-page/workplace-accidents/third-party-personal-injury-claims.png", "cardDescription": "If a contractor, equipment manufacturer, or property owner contributed to your injury, you may have a claim beyond workers' comp. We connect you with an on-the-job injury lawyer in Georgia who can pursue full damages—including pain and suffering.", "cardLinkText": "Personal Injury Help", "cardLinkAnchor": "third party workplace injury claim Georgia" },
+    { "title": "Construction & Job Site Injuries", "slug": "construction-accidents", "order": 3, "categorySlug": "workplace-accidents", "cardIcon": "/services-page/workplace-accidents/construction-and-job-site-injuries.png", "cardDescription": "Falls, scaffolding collapses, heavy machinery injuries, and electrical incidents are among the most serious workplace injuries in Georgia. We connect you with a construction accident attorney in Georgia who understands site liability and contractor responsibility.", "cardLinkText": "Construction Injuries Help", "cardLinkAnchor": "construction accident attorney Georgia" },
+    { "title": "On-the-Road Work Injuries", "slug": "on-road-work-injuries", "order": 4, "categorySlug": "workplace-accidents", "cardIcon": "/services-page/workplace-accidents/on-the-road-injuries.png", "cardDescription": "Delivery drivers, field workers, and anyone injured in a vehicle accident while on the clock may qualify for both workers' compensation and a personal injury claim. We match you with a workplace accident attorney in Georgia who handles dual-claim cases.", "cardLinkText": "On-the-Road Injuries Help", "cardLinkAnchor": "on the job injury lawyer Georgia" }
+  ]
 }

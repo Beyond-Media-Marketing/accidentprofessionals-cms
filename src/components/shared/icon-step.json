@@ -1,0 +1,23 @@
+{
+  "collectionName": "components_shared_icon_steps",
+  "info": {
+    "displayName": "Icon Step",
+    "icon": "bulletList",
+    "description": "number + icon (path) + title + description"
+  },
+  "options": {},
+  "attributes": {
+    "number": {
+      "type": "string"
+    },
+    "icon": {
+      "type": "string"
+    },
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    }
+  }
+}

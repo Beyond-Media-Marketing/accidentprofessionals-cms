@@ -1,0 +1,31 @@
+{
+  "collectionName": "components_shared_service_hero_defaults",
+  "info": {
+    "displayName": "Service Hero Defaults",
+    "icon": "cog",
+    "description": "Brand-level hero constants shared by every service page"
+  },
+  "options": {},
+  "attributes": {
+    "badge": {
+      "type": "string"
+    },
+    "phone": {
+      "type": "string"
+    },
+    "phoneHref": {
+      "type": "string"
+    },
+    "ctaLabel": {
+      "type": "string"
+    },
+    "clientCount": {
+      "type": "string"
+    },
+    "stats": {
+      "type": "component",
+      "repeatable": true,
+      "component": "shared.stat"
+    }
+  }
+}

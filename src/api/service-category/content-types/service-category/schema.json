@@ -1,0 +1,76 @@
+{
+  "kind": "collectionType",
+  "collectionName": "service_categories",
+  "info": {
+    "singularName": "service-category",
+    "pluralName": "service-categories",
+    "displayName": "Service Category",
+    "description": "A top-level service category page (e.g. Auto Accidents)"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "slug": {
+      "type": "uid",
+      "targetField": "title",
+      "required": true
+    },
+    "order": {
+      "type": "integer",
+      "default": 0
+    },
+    "hero": {
+      "type": "component",
+      "repeatable": false,
+      "component": "shared.service-hero"
+    },
+    "howItWorks": {
+      "type": "component",
+      "repeatable": false,
+      "component": "shared.how-it-works"
+    },
+    "caseTypesHeading": {
+      "type": "string"
+    },
+    "caseTypesSubheading": {
+      "type": "string"
+    },
+    "whyUs": {
+      "type": "component",
+      "repeatable": false,
+      "component": "shared.why-us"
+    },
+    "stepsToTake": {
+      "type": "component",
+      "repeatable": false,
+      "component": "shared.steps-to-take"
+    },
+    "faq": {
+      "type": "component",
+      "repeatable": false,
+      "component": "shared.faq"
+    },
+    "ctaBanner": {
+      "type": "component",
+      "repeatable": false,
+      "component": "shared.cta-banner"
+    },
+    "services": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::service.service",
+      "mappedBy": "category"
+    },
+    "seo": {
+      "type": "component",
+      "repeatable": false,
+      "component": "shared.seo"
+    }
+  }
+}

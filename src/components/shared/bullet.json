@@ -1,0 +1,14 @@
+{
+  "collectionName": "components_shared_bullets",
+  "info": {
+    "displayName": "Bullet",
+    "icon": "bulletList",
+    "description": "A single bullet line of text"
+  },
+  "options": {},
+  "attributes": {
+    "text": {
+      "type": "string"
+    }
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "collectionName": "components_shared_select_options",
+  "info": {
+    "displayName": "Select Option",
+    "icon": "bulletList",
+    "description": "value + label pair for a dropdown option"
+  },
+  "options": {},
+  "attributes": {
+    "value": {
+      "type": "string"
+    },
+    "label": {
+      "type": "string"
+    }
+  }
+}

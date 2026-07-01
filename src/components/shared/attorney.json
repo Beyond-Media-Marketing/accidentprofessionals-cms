@@ -1,0 +1,35 @@
+{
+  "collectionName": "components_shared_attorneys",
+  "info": {
+    "displayName": "Attorney",
+    "icon": "user",
+    "description": "Team member: image (path) + name + role + bio + stats"
+  },
+  "options": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "title": {
+      "type": "string"
+    },
+    "firm": {
+      "type": "string"
+    },
+    "yearsExperience": {
+      "type": "integer"
+    },
+    "location": {
+      "type": "string"
+    },
+    "address": {
+      "type": "string"
+    },
+    "image": {
+      "type": "string"
+    },
+    "bio": {
+      "type": "text"
+    }
+  }
+}

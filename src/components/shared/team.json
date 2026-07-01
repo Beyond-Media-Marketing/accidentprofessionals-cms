@@ -1,0 +1,22 @@
+{
+  "collectionName": "components_shared_teams",
+  "info": {
+    "displayName": "Team",
+    "icon": "user",
+    "description": "Our Attorneys heading + roster (shared across service pages)"
+  },
+  "options": {},
+  "attributes": {
+    "heading": {
+      "type": "string"
+    },
+    "subheading": {
+      "type": "text"
+    },
+    "attorneys": {
+      "type": "component",
+      "repeatable": true,
+      "component": "shared.attorney"
+    }
+  }
+}

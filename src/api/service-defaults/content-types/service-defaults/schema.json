@@ -1,0 +1,31 @@
+{
+  "kind": "singleType",
+  "collectionName": "service_defaults",
+  "info": {
+    "singularName": "service-defaults",
+    "pluralName": "service-defaults-plural",
+    "displayName": "Service Defaults",
+    "description": "Brand-level content shared across every service category & sub-service page"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "heroDefaults": {
+      "type": "component",
+      "repeatable": false,
+      "component": "shared.service-hero-defaults"
+    },
+    "whyUsFeatures": {
+      "type": "component",
+      "repeatable": true,
+      "component": "shared.why-us-feature"
+    },
+    "team": {
+      "type": "component",
+      "repeatable": false,
+      "component": "shared.team"
+    }
+  }
+}
