@@ -3,7 +3,7 @@
   "info": {
     "displayName": "Team",
     "icon": "user",
-    "description": "Our Attorneys heading + roster (shared across service pages)"
+    "description": "Our Attorneys heading + subheading. The roster is chosen via the Service Defaults 'Selected attorneys' picker (relations can't live inside a component)."
   },
   "options": {},
   "attributes": {
@@ -12,11 +12,6 @@
     },
     "subheading": {
       "type": "text"
-    },
-    "attorneys": {
-      "type": "component",
-      "repeatable": true,
-      "component": "shared.attorney"
     }
   }
 }

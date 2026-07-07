@@ -907,12 +907,11 @@ export interface SharedStepsToTake extends Struct.ComponentSchema {
 export interface SharedTeam extends Struct.ComponentSchema {
   collectionName: 'components_shared_teams';
   info: {
-    description: 'Our Attorneys heading + roster (shared across service pages)';
+    description: "Our Attorneys heading + subheading. The roster is chosen via the Service Defaults 'Selected attorneys' picker (relations can't live inside a component).";
     displayName: 'Team';
     icon: 'user';
   };
   attributes: {
-    attorneys: Schema.Attribute.Component<'shared.attorney', true>;
     heading: Schema.Attribute.String;
     subheading: Schema.Attribute.Text;
   };

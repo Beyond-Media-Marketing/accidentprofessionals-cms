@@ -1166,72 +1166,7 @@
     ],
     "team": {
       "heading": "Our Attorneys",
-      "subheading": "Meet our dedicated team of attorneys, committed to providing expert legal guidance and support tailored to your needs.",
-      "attorneys": [
-        {
-          "name": "Brian Moore",
-          "title": "Injury Attorney",
-          "firm": "404 Lawyer",
-          "yearsExperience": null,
-          "location": "Atlanta, GA",
-          "address": "1055 Howell Mill Rd Fl 8, Atlanta, GA 30318",
-          "bio": "Personal Injury Attorney Dedicated to Securing Justice and Fair Compensation."
-        },
-        {
-          "name": "Benjamin J. Rollins",
-          "title": "Managing Attorney",
-          "firm": "Rollins Law Group",
-          "yearsExperience": null,
-          "location": "Atlanta, GA",
-          "address": "1201 West Peachtree Street, Suite 2300, Atlanta, GA 30309",
-          "bio": "Benjamin J. Rollins, Managing Attorney at Rollins Law Group, is known for securing significant settlements for victims and holds law and business degrees from Atlanta's John Marshall Law School and the University of Central Florida."
-        },
-        {
-          "name": "Kurtis Badger, Esq.",
-          "title": "Owner & Founding Attorney",
-          "firm": "Badger Law Group",
-          "yearsExperience": null,
-          "location": "Atlanta, GA",
-          "address": "6065 Roswell Road, Suite 450, Atlanta, GA 30328",
-          "bio": "Kurtis Badger, Esq., brings top-tier legal know-how and vast corporate litigation experience to passionately advocate for personal injury victims."
-        },
-        {
-          "name": "Desmond A. Humphrey",
-          "title": "Personal Injury Attorney & Owner",
-          "firm": "Humphrey & Ballard Law",
-          "yearsExperience": null,
-          "location": "Atlanta, GA",
-          "address": "3355 Lenox Rd NE, Suite 750, Atlanta, GA 30326",
-          "bio": "Desmond A. Humphrey is an award-winning attorney, known for his innovative legal methods and deep commitment to his faith. A licensed minister and trusted community leader, he provides compassionate and effective legal representation."
-        },
-        {
-          "name": "E. David Ballard III",
-          "title": "Personal Injury Attorney",
-          "firm": "Humphrey & Ballard Law",
-          "yearsExperience": null,
-          "location": "Atlanta, GA",
-          "address": "3355 Lenox Rd NE, Suite 750, Atlanta, GA 30326",
-          "bio": "E. David Ballard III began his legal career as a prosecutor in the City of Atlanta Municipal Court, litigating hundreds of cases. His deep knowledge of Georgia traffic codes and formidable courtroom skills have allowed him to recover millions in settlements for personal injury clients, establishing him as a leading Personal Injury expert in the region."
-        },
-        {
-          "name": "John Winkenwerder",
-          "title": "Attorney at Law",
-          "firm": "Wink Law",
-          "yearsExperience": null,
-          "location": "Atlanta, GA",
-          "address": "Atlanta, GA",
-          "bio": "Wink Law is a personal injury and wrongful death firm representing individuals and families. We are tireless advocates for those who have been injured or lost their lives due to the negligence of others. Our mission is to maximize our clients’ recovery through expertise, creative solutions, and unwavering dedication, while also maximizing the client experience through clear guidance, consistent communication, and unparalleled efficiency."
-        },
-        {
-          "name": "Ivan Bracho Gonzalez",
-          "title": "Attorney at Law",
-          "firm": "BRAAM Partners",
-          "yearsExperience": 13,
-          "location": "TX, FL",
-          "address": "TX, FL",
-          "bio": "BRAAM Partners is a law firm founded for the purpose of providing personalized and specialized legal assistance to our clients. While we operate under the American professional standards, we also give our clients the full access, attention and trust expected from lawyers in Latin America."
-        }
-      ]
+      "subheading": "Meet our dedicated team of attorneys, committed to providing expert legal guidance and support tailored to your needs."
     },
     "cities": {
       "eyebrow": "Where To Find Us",
@@ -4398,7 +4333,92 @@
       }
     }
   ],
-  "attorneys": [],
+  "attorneys": [
+    {
+      "name": "Brian Moore",
+      "slug": "brian-moore",
+      "order": 0,
+      "featured": true,
+      "firm": "404 Lawyer",
+      "title": "Injury Attorney",
+      "location": "Atlanta, GA",
+      "yearsExperience": null,
+      "shortBio": "Personal Injury Attorney Dedicated to Securing Justice and Fair Compensation.",
+      "about": "Personal Injury Attorney Dedicated to Securing Justice and Fair Compensation."
+    },
+    {
+      "name": "Benjamin J. Rollins",
+      "slug": "benjamin-j-rollins",
+      "order": 1,
+      "featured": true,
+      "firm": "Rollins Law Group",
+      "title": "Managing Attorney",
+      "location": "Atlanta, GA",
+      "yearsExperience": null,
+      "shortBio": "Benjamin J. Rollins, Managing Attorney at Rollins Law Group, is known for securing significant settlements for victims and holds law and business degrees from Atlanta's John Marshall Law School and the University of Central Florida.",
+      "about": "Benjamin J. Rollins, Managing Attorney at Rollins Law Group, is known for securing significant settlements for victims and holds law and business degrees from Atlanta's John Marshall Law School and the University of Central Florida."
+    },
+    {
+      "name": "Kurtis Badger, Esq.",
+      "slug": "kurtis-badger-esq",
+      "order": 2,
+      "featured": true,
+      "firm": "Badger Law Group",
+      "title": "Owner & Founding Attorney",
+      "location": "Atlanta, GA",
+      "yearsExperience": null,
+      "shortBio": "Kurtis Badger, Esq., brings top-tier legal know-how and vast corporate litigation experience to passionately advocate for personal injury victims.",
+      "about": "Kurtis Badger, Esq., brings top-tier legal know-how and vast corporate litigation experience to passionately advocate for personal injury victims."
+    },
+    {
+      "name": "Desmond A. Humphrey",
+      "slug": "desmond-a-humphrey",
+      "order": 3,
+      "featured": true,
+      "firm": "Humphrey & Ballard Law",
+      "title": "Personal Injury Attorney & Owner",
+      "location": "Atlanta, GA",
+      "yearsExperience": null,
+      "shortBio": "Desmond A. Humphrey is an award-winning attorney, known for his innovative legal methods and deep commitment to his faith. A licensed minister and trusted community leader, he provides compassionate and effective legal representation.",
+      "about": "Desmond A. Humphrey is an award-winning attorney, known for his innovative legal methods and deep commitment to his faith. A licensed minister and trusted community leader, he provides compassionate and effective legal representation."
+    },
+    {
+      "name": "E. David Ballard III",
+      "slug": "e-david-ballard-iii",
+      "order": 4,
+      "featured": true,
+      "firm": "Humphrey & Ballard Law",
+      "title": "Personal Injury Attorney",
+      "location": "Atlanta, GA",
+      "yearsExperience": null,
+      "shortBio": "E. David Ballard III began his legal career as a prosecutor in the City of Atlanta Municipal Court, litigating hundreds of cases. His deep knowledge of Georgia traffic codes and formidable courtroom skills have allowed him to recover millions in settlements for personal injury clients, establishing him as a leading Personal Injury expert in the region.",
+      "about": "E. David Ballard III began his legal career as a prosecutor in the City of Atlanta Municipal Court, litigating hundreds of cases. His deep knowledge of Georgia traffic codes and formidable courtroom skills have allowed him to recover millions in settlements for personal injury clients, establishing him as a leading Personal Injury expert in the region."
+    },
+    {
+      "name": "John Winkenwerder",
+      "slug": "john-winkenwerder",
+      "order": 5,
+      "featured": true,
+      "firm": "Wink Law",
+      "title": "Attorney at Law",
+      "location": "Atlanta, GA",
+      "yearsExperience": null,
+      "shortBio": "Wink Law is a personal injury and wrongful death firm representing individuals and families. We are tireless advocates for those who have been injured or lost their lives due to the negligence of others. Our mission is to maximize our clients’ recovery through expertise, creative solutions, and unwavering dedication, while also maximizing the client experience through clear guidance, consistent communication, and unparalleled efficiency.",
+      "about": "Wink Law is a personal injury and wrongful death firm representing individuals and families. We are tireless advocates for those who have been injured or lost their lives due to the negligence of others. Our mission is to maximize our clients’ recovery through expertise, creative solutions, and unwavering dedication, while also maximizing the client experience through clear guidance, consistent communication, and unparalleled efficiency."
+    },
+    {
+      "name": "Ivan Bracho Gonzalez",
+      "slug": "ivan-bracho-gonzalez",
+      "order": 6,
+      "featured": true,
+      "firm": "BRAAM Partners",
+      "title": "Attorney at Law",
+      "location": "TX, FL",
+      "yearsExperience": 13,
+      "shortBio": "BRAAM Partners is a law firm founded for the purpose of providing personalized and specialized legal assistance to our clients. While we operate under the American professional standards, we also give our clients the full access, attention and trust expected from lawyers in Latin America.",
+      "about": "BRAAM Partners is a law firm founded for the purpose of providing personalized and specialized legal assistance to our clients. While we operate under the American professional standards, we also give our clients the full access, attention and trust expected from lawyers in Latin America."
+    }
+  ],
   "legalNetworkPage": {
     "hero": {
       "badge": "LEGAL NETWORK",
