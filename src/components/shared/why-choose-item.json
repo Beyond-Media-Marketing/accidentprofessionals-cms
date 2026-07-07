@@ -1,0 +1,17 @@
+{
+  "collectionName": "components_shared_why_choose_items",
+  "info": {
+    "displayName": "Why Choose Item",
+    "icon": "check",
+    "description": "Title + description card for the Why Choose Us grid"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    }
+  }
+}

@@ -1675,7 +1675,7 @@
     { "title": "Construction & Job Site Injuries", "slug": "construction-accidents", "order": 3, "categorySlug": "workplace-accidents", "cardIcon": "/services-page/workplace-accidents/construction-and-job-site-injuries.png", "cardDescription": "Falls, scaffolding collapses, heavy machinery injuries, and electrical incidents are among the most serious workplace injuries in Georgia. We connect you with a construction accident attorney in Georgia who understands site liability and contractor responsibility.", "cardLinkText": "Construction Injuries Help", "cardLinkAnchor": "construction accident attorney Georgia" },
     { "title": "On-the-Road Work Injuries", "slug": "on-road-work-injuries", "order": 4, "categorySlug": "workplace-accidents", "cardIcon": "/services-page/workplace-accidents/on-the-road-injuries.png", "cardDescription": "Delivery drivers, field workers, and anyone injured in a vehicle accident while on the clock may qualify for both workers' compensation and a personal injury claim. We match you with a workplace accident attorney in Georgia who handles dual-claim cases.", "cardLinkText": "On-the-Road Injuries Help", "cardLinkAnchor": "on the job injury lawyer Georgia" }
   ],
-  "locationPages": [
+  "statePages": [
     {
       "title": "Georgia",
       "slug": "georgia",
@@ -1793,6 +1793,169 @@
         "keywords": "personal injury lawyer Georgia, Georgia accident attorney, personal injury attorney near me Georgia",
         "focusKeyword": "personal injury lawyer Georgia",
         "canonicalUrl": "https://accidentprofessionals.com/georgia/",
+        "schemaType": "WebPage",
+        "noindex": false,
+        "nofollow": false
+      }
+    }
+  ],
+  "cityPages": [
+    {
+      "title": "Atlanta",
+      "slug": "atlanta",
+      "heroBadge": "Atlanta Personal Injury",
+      "hero": {
+        "bgImage": "/about/hero-bg.png",
+        "h1Part1": "Get the Legal Help You Deserve",
+        "h1Accent": "Injured in Atlanta?",
+        "h1Subtitle": "",
+        "heroBody": "Atlanta is one of the most congested cities in the country — and with that congestion comes an accident rate to match. If you've been injured in a car crash, slip and fall, truck accident, or any other incident in Atlanta, the Accident Professionals attorney network connects you with a vetted personal injury lawyer who knows Fulton County, knows the courts, and knows how to fight for what your case is worth. Free consultation. No fees unless we win.",
+        "urgencyBullets": [],
+        "caseOptions": [
+          { "value": "car", "label": "Car Accident" },
+          { "value": "truck", "label": "Truck Accident" },
+          { "value": "motorcycle", "label": "Motorcycle Accident" },
+          { "value": "rideshare", "label": "Rideshare Accident" },
+          { "value": "slip-fall", "label": "Slip & Fall" },
+          { "value": "workers-comp", "label": "Workers' Compensation" },
+          { "value": "other", "label": "Other" }
+        ],
+        "formSubject": "New Atlanta Consultation Request — Accident Professionals"
+      },
+      "heroAccentFirst": true,
+      "heroStats": [],
+      "whyTrust": {
+        "eyebrow": "Why Atlanta Residents Trust AP",
+        "heading": "**Personal Injury Attorney Network** in Atlanta, Georgia",
+        "body": "Atlanta doesn't have a traffic problem — it has a traffic crisis. Fulton County recorded 51,572 crashes in 2024 alone, making it the most crash-prone county in Georgia. The Atlanta Police Department documented 28,278 accidents within city limits in 2023 — more than three every single hour. I-285, the Downtown Connector (I-75/I-85), I-20, and SR-400 are among the most dangerous corridors in the Southeast. Peachtree Street, Memorial Drive, and the roads around Hartsfield-Jackson Airport add to the city's daily toll of collisions, pedestrian strikes, and commercial vehicle crashes.\n\nWhen you're injured in Atlanta, you're up against more than just the other driver. You're up against their insurance company's adjusters, their lawyers, and a claims process designed to settle your case for as little as possible. Accident Professionals exists to close that gap. We're a personal injury attorney network in Atlanta that connects injured people with vetted Georgia attorneys who practice in Fulton County, know the Fulton County State Court and Superior Court, and have a track record of fighting for real results — not just fast settlements.",
+        "cta": { "label": "Meet Our Network", "href": "/about-us", "variant": "primary", "external": false },
+        "layout": "image-left",
+        "theme": "light"
+      },
+      "practiceAreas": {
+        "eyebrow": "Practice Areas",
+        "heading": "Types of **Accident Cases** We Handle in Atlanta",
+        "intro": "Our Atlanta attorney network handles the full range of personal injury cases across Fulton County and the surrounding metro area. Each card below links to the full practice area page for detailed information on your specific case type.",
+        "cta": { "label": "Our Services", "href": "/services", "variant": "primary", "external": false },
+        "features": [
+          { "icon": "/icons/practice-areas/car-accidents.svg", "title": "Car Accidents", "description": "Rear-ends, T-bones, hit-and-runs, uninsured drivers on I-285 and the Downtown Connector.", "linkLabel": "Learn More", "linkHref": "/services/auto-accidents/car-accidents" },
+          { "icon": "/icons/practice-areas/truck-accidents.svg", "title": "Truck & Commercial Vehicle Accidents", "description": "18-wheelers on I-75, I-85, and I-20 — FMCSA violations, cargo shifts, driver fatigue.", "linkLabel": "Learn More", "linkHref": "/services/auto-accidents/truck-accidents" },
+          { "icon": "/icons/practice-areas/rideshare-accidents.svg", "title": "Rideshare Accidents", "description": "Uber and Lyft accidents across Atlanta. Navigating multi-tier insurance is complex — we know how.", "linkLabel": "Learn More", "linkHref": "/services/auto-accidents/rideshare-accidents" },
+          { "icon": "/icons/practice-areas/slip-fall.svg", "title": "Slip & Fall", "description": "Premises liability cases across Atlanta's commercial properties, parking lots, and construction zones.", "linkLabel": "Learn More", "linkHref": "/services/premises-liability/slip-and-fall" },
+          { "icon": "/icons/practice-areas/workplace-injuries.svg", "title": "Workers' Compensation", "description": "Injured on the job in Atlanta? GA workers' comp and third-party claims, handled together.", "linkLabel": "Learn More", "linkHref": "/services/workplace-accidents/workers-compensation" },
+          { "icon": "/icons/practice-areas/motorcycle-accidents.svg", "title": "Motorcycle Accidents", "description": "Atlanta riders face real bias in PI claims. Our network attorneys fight it directly.", "linkLabel": "Learn More", "linkHref": "/services/auto-accidents/motorcycle-accidents" }
+        ]
+      },
+      "whyChoose": {
+        "eyebrow": "Why Choose Us",
+        "heading": "Why **Atlanta Injury Victims** Choose Accident Professionals",
+        "intro": "There is no shortage of law firms and referral services advertising to Atlanta accident victims. Here's what separates Accident Professionals from the rest.",
+        "image": "/services-page/auto-accidents/image1.webp",
+        "items": [
+          { "title": "Every attorney in our network is vetted before they see a single case.", "description": "We run a five-stage review covering bar standing, disciplinary record, case results, and communication standards. You don't get a random match — you get a tested attorney." },
+          { "title": "We don't disappear after the introduction.", "description": "AP case managers stay involved throughout your case so you always have someone to call, someone who knows your situation, and someone who holds the attorney accountable." },
+          { "title": "Atlanta is our home.", "description": "Our network attorneys practice in Fulton County courts, know local insurance adjusters, and understand the specific dynamics of Atlanta accident claims — from I-285 pileups to downtown pedestrian strikes." },
+          { "title": "No fees unless your attorney wins your case.", "description": "Contingency fee representation means you pay nothing out of pocket to get started. Your attorney only gets paid when you do." }
+        ]
+      },
+      "stepsToTake": {
+        "heading": "What to Do After a Car Accident in Atlanta, Georgia",
+        "subheading": "The decisions you make in the hours after an Atlanta accident directly affect your ability to recover compensation. Georgia's modified comparative fault rule means your settlement can be reduced if you are found partially at fault — and insurance adjusters will look for anything that shifts responsibility your way. These five steps protect you.",
+        "steps": [
+          { "number": "01", "icon": "/services-page/auto-accidents/phone-icon.png", "title": "Call 911 and File a Police Report", "description": "Leaving the scene of an accident in Georgia is a criminal offense. Report the collision to law enforcement and get a police report number — you'll need it for your claim." },
+          { "number": "02", "icon": "/services-page/auto-accidents/attention-icon.png", "title": "Get Medical Attention Immediately", "description": "Some injuries don't show symptoms right away. Getting checked within 24 hours helps protect both your health and your case." },
+          { "number": "03", "icon": "/services-page/auto-accidents/camera-icon.png", "title": "Document Everything at the Scene", "description": "Take photos of vehicles, road conditions, and injuries. Collect driver and witness information. The more evidence you have, the stronger your claim." },
+          { "number": "04", "icon": "/services-page/auto-accidents/statement-icon.png", "title": "Don't Give a Recorded Statement", "description": "Insurance companies may ask for a recorded statement quickly — don't provide one before speaking with an attorney. It can be used to reduce your claim." },
+          { "number": "05", "icon": "/services-page/auto-accidents/arrow-next-icon.png", "title": "Call Accident Professionals for a Free Consultation", "description": "The sooner you act, the better. Call (470) 407-2800 or get your free consultation to be connected with a vetted Georgia attorney who can protect your rights from day one." }
+        ]
+      },
+      "damages": {
+        "eyebrow": "Damages You Can Recover",
+        "heading": "Compensation You May Be Entitled to After an **Atlanta Accident**",
+        "intro": "Atlanta accident victims often accept the first offer they receive because they don't know the full scope of what Georgia law allows them to recover. Here is what a properly handled claim can include.",
+        "tabs": [
+          {
+            "label": "Compensable damages",
+            "items": [
+              { "icon": "medical", "title": "Medical expenses", "description": "All past and future medical costs related to the accident: emergency care, surgery, hospitalization, physical therapy, and ongoing treatment." },
+              { "icon": "wallet", "title": "Lost wages", "description": "Income you've already lost due to the accident, plus future earning capacity if your injuries affect your ability to work long-term." },
+              { "icon": "car", "title": "Property damage", "description": "The cost of repairing or replacing your vehicle, and any other personal property damaged in the collision." },
+              { "icon": "pulse", "title": "Pain and suffering", "description": "Compensation for the physical pain and emotional distress caused by your injuries. This is often the largest component of a serious injury settlement." }
+            ]
+          },
+          {
+            "label": "What's included",
+            "items": [
+              { "icon": "dollar", "title": "Out-of-pocket costs", "description": "Transportation to medical appointments, prescription costs, home care, and any other expenses your injury has created." },
+              { "icon": "scales", "title": "Emotional distress", "description": "Documented psychological impact including anxiety, depression, sleep disruption, and PTSD — all compensable in Georgia." },
+              { "icon": "home", "title": "Wrongful death damages", "description": "If the accident was fatal, surviving family members may be entitled to funeral costs, loss of income, and loss of companionship." },
+              { "icon": "shield", "title": "Punitive damages", "description": "In cases of gross negligence — such as drunk driving or road rage — a court may award punitive damages above and beyond compensatory amounts." }
+            ]
+          }
+        ],
+        "disclaimer": "* Prior results do not guarantee a similar outcome. Every case is unique and settlement amounts vary based on the specific facts and circumstances.",
+        "cta": { "label": "Contact Us", "href": "/contact-us", "variant": "primary", "external": false }
+      },
+      "testimonials": {
+        "heading": "What Atlanta Clients Say About Accident Professionals",
+        "items": [
+          { "quote": "After my accident, I had no idea where to start. Accident Professionals connected me with an attorney who explained everything clearly and made the process much less stressful.", "name": "Sarah M", "location": "Atlanta", "rating": 5 },
+          { "quote": "The team was responsive, professional, and genuinely helpful. They answered my questions quickly and helped me find legal support that fit my situation.", "name": "Janet T.", "location": "Orlando, FL", "rating": 5 },
+          { "quote": "I appreciated having someone guide me through the process. Instead of spending hours searching online, I was connected with an experienced attorney right away.", "name": "Melissa T.", "location": "Lawrenceville", "rating": 5 },
+          { "quote": "From the first phone call, someone was actually there. They made sure I understood my options and followed up throughout the process.", "name": "David P.", "location": "Decatur", "rating": 5 }
+        ]
+      },
+      "georgiaLaw": {
+        "eyebrow": "Georgia Law Snapshot",
+        "heading": "Georgia Personal Injury Laws That Affect Your **Atlanta Case**",
+        "intro": "Georgia law shapes every personal injury claim in Atlanta. Here are the three most important rules every injured person in Fulton County should understand before taking any action.",
+        "cards": [
+          { "icon": "clock", "title": "Statute of limitations: 2 years", "code": "O.C.G.A. § 9-3-33", "description": "Georgia gives you two years from the date of your accident to file a personal injury lawsuit. Miss this deadline and you permanently lose your right to compensation — regardless of how strong your case is. Don't wait." },
+          { "icon": "scales", "title": "Modified comparative fault", "code": "O.C.G.A. § 51-12-33", "description": "You can recover compensation in Georgia even if you were partially at fault — as long as you were less than 50% responsible. Your award is reduced by your percentage of fault. Insurance companies aggressively try to inflate your share of blame to pay you less." },
+          { "icon": "shield", "title": "Minimum auto insurance requirements", "code": "O.C.G.A. § 33-7-11", "description": "Georgia requires $25,000 per person / $50,000 per accident in bodily injury liability, plus $25,000 in property damage. Many at-fault drivers carry only the minimum — which is why uninsured/underinsured motorist coverage matters." }
+        ]
+      },
+      "nearbyCities": {
+        "eyebrow": "Where To Find Us",
+        "heading": "We Also Serve These Cities Near **Atlanta**",
+        "body": "Our network serves clients throughout metro Atlanta and across the state. No matter where your accident happened, we can connect you with an accident attorney near you in Georgia who understands your local courts and insurance landscape.",
+        "ctaLabel": "All Cities",
+        "ctaHref": "/georgia",
+        "cities": [
+          { "name": "Sandy Springs, GA", "href": "/georgia/sandy-springs/" },
+          { "name": "Decatur, GA", "href": "/georgia/decatur/" },
+          { "name": "Marietta, GA", "href": "/georgia/marietta/" },
+          { "name": "Norcross, GA", "href": "/georgia/norcross/" },
+          { "name": "Kennesaw, GA", "href": "/georgia/kennesaw/" },
+          { "name": "Lilburn, GA", "href": "/georgia/lilburn/" },
+          { "name": "Smyrna, GA", "href": "/georgia/smyrna/" },
+          { "name": "Douglasville, GA", "href": "/georgia/douglasville/" },
+          { "name": "College Park, GA", "href": "/georgia/college-park/" },
+          { "name": "East Point, GA", "href": "/georgia/east-point/" }
+        ],
+        "noticeHeading": "Don't see your city?",
+        "noticeText": "No two accidents are the same, and neither are the attorneys in our network. We connect you with a personal injury attorney in Atlanta who has experience with your exact type of case.",
+        "noticeCtaLabel": "Contact our team",
+        "noticeCtaHref": "/contact-us"
+      },
+      "faq": {
+        "heading": "Frequently Asked Questions About Personal Injury in Atlanta",
+        "intro": "Common questions about personal injury claims in Atlanta",
+        "items": [
+          { "question": "How long do I have to file a personal injury claim in Atlanta, Georgia?", "answer": "Georgia gives you two years from the date of the accident to file a personal injury lawsuit (O.C.G.A. § 9-3-33). This applies to car accidents, slip and falls, truck accidents, and most other personal injury claims in Atlanta and across Fulton County. Miss this deadline and you lose your legal right to recover compensation — permanently. If you're not sure where your case stands, contact us for a free consultation and we'll tell you exactly where you are on the clock." },
+          { "question": "Can I get compensation if I was partially at fault for my Atlanta accident?", "answer": "Yes. Georgia follows a modified comparative fault rule (O.C.G.A. § 51-12-33). As long as you were less than 50% responsible, you can still recover — though your compensation is reduced by your share of fault. Fulton County juries and insurers scrutinize fault closely, so having an attorney matters." },
+          { "question": "How much does a personal injury lawyer cost in Atlanta?", "answer": "Nothing upfront. The attorneys in our network work on contingency — you pay no fees unless they win your case. Your consultation through Accident Professionals is always free." },
+          { "question": "Do I need a lawyer for a minor accident in Atlanta?", "answer": "If you have any injury at all, it's worth a free consultation before you settle. Soft tissue injuries often worsen over days, and once you accept a settlement you can't reopen the claim. A quick call costs you nothing." },
+          { "question": "What if the other driver has no insurance in Georgia?", "answer": "You may still recover through your own uninsured/underinsured motorist (UM/UIM) coverage. Many Georgia drivers don't realize this option exists — the attorneys in our network handle these claims regularly." },
+          { "question": "Does Accident Professionals serve all Atlanta neighborhoods and Fulton County?", "answer": "Yes. Our network covers all of metro Atlanta and Fulton County — from Buckhead and Midtown to Downtown, the Westside, and the surrounding suburbs. No matter where in Atlanta your accident happened, we can connect you with a vetted attorney." }
+        ]
+      },
+      "seo": {
+        "metaTitle": "Personal Injury Lawyer Atlanta | Free Consult",
+        "metaDescription": "Injured in Atlanta? Accident Professionals connects you with a vetted Fulton County personal injury attorney. Free consultation, no fees unless we win.",
+        "keywords": "personal injury lawyer Atlanta, Atlanta accident attorney, Fulton County injury lawyer",
+        "focusKeyword": "personal injury lawyer Atlanta",
+        "canonicalUrl": "https://accidentprofessionals.com/georgia/atlanta/",
         "schemaType": "WebPage",
         "noindex": false,
         "nofollow": false

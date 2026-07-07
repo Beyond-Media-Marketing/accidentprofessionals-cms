@@ -1,11 +1,11 @@
 {
   "kind": "collectionType",
-  "collectionName": "location_pages",
+  "collectionName": "state_pages",
   "info": {
-    "singularName": "location-page",
-    "pluralName": "location-pages",
-    "displayName": "Location Page",
-    "description": "State/city location landing page (e.g. Georgia)"
+    "singularName": "state-page",
+    "pluralName": "state-pages",
+    "displayName": "State Page",
+    "description": "A state landing page (e.g. Georgia)"
   },
   "options": {
     "draftAndPublish": false

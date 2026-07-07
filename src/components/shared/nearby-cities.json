@@ -1,0 +1,46 @@
+{
+  "collectionName": "components_shared_nearby_cities",
+  "info": {
+    "displayName": "Nearby Cities",
+    "icon": "pinMap",
+    "description": "Dark section — header + flat list of nearby cities + 'Don't see your city?' band"
+  },
+  "options": {},
+  "attributes": {
+    "eyebrow": {
+      "type": "string"
+    },
+    "heading": {
+      "type": "string"
+    },
+    "headingAccent": {
+      "type": "string"
+    },
+    "body": {
+      "type": "text"
+    },
+    "ctaLabel": {
+      "type": "string"
+    },
+    "ctaHref": {
+      "type": "string"
+    },
+    "cities": {
+      "type": "component",
+      "repeatable": true,
+      "component": "shared.location"
+    },
+    "noticeHeading": {
+      "type": "string"
+    },
+    "noticeText": {
+      "type": "text"
+    },
+    "noticeCtaLabel": {
+      "type": "string"
+    },
+    "noticeCtaHref": {
+      "type": "string"
+    }
+  }
+}

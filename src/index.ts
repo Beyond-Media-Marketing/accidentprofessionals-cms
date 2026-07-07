@@ -26,8 +26,10 @@ const READ_ACTIONS = [
   'api::service-category.service-category.findOne',
   'api::service.service.find',
   'api::service.service.findOne',
-  'api::location-page.location-page.find',
-  'api::location-page.location-page.findOne',
+  'api::state-page.state-page.find',
+  'api::state-page.state-page.findOne',
+  'api::city-page.city-page.find',
+  'api::city-page.city-page.findOne',
 ];
 
 /**
@@ -121,24 +123,23 @@ async function seedServiceStructure(strapi: Core.Strapi, force = false) {
   }
 }
 
-/** Seed location pages (states/cities) from data/seed.json, keyed by slug. */
-async function seedLocationPages(strapi: Core.Strapi, force = false) {
-  const UID = 'api::location-page.location-page';
-  const pages = (seedData as Record<string, any>).locationPages as any[] | undefined;
+/** Seed a slug-keyed collection (state-page, city-page) from data/seed.json. */
+async function seedSlugCollection(strapi: Core.Strapi, uid: string, seedKey: string, force = false) {
+  const pages = (seedData as Record<string, any>)[seedKey] as any[] | undefined;
   if (!Array.isArray(pages)) return;
   for (const page of pages) {
     try {
-      const existing = await strapi.documents(UID as any).findFirst({ filters: { slug: page.slug } });
+      const existing = await strapi.documents(uid as any).findFirst({ filters: { slug: page.slug } });
       if (existing && !force) continue;
       if (existing && force) {
-        await strapi.documents(UID as any).update({ documentId: existing.documentId, data: page });
-        strapi.log.info(`[seed] FORCE-updated location-page ${page.slug}`);
+        await strapi.documents(uid as any).update({ documentId: existing.documentId, data: page });
+        strapi.log.info(`[seed] FORCE-updated ${uid} ${page.slug}`);
       } else {
-        await strapi.documents(UID as any).create({ data: page });
-        strapi.log.info(`[seed] created location-page ${page.slug}`);
+        await strapi.documents(uid as any).create({ data: page });
+        strapi.log.info(`[seed] created ${uid} ${page.slug}`);
       }
     } catch (err) {
-      strapi.log.error(`[seed] failed for location-page ${page.slug}: ${(err as Error).message}`);
+      strapi.log.error(`[seed] failed for ${uid} ${page.slug}: ${(err as Error).message}`);
     }
   }
 }
@@ -171,7 +172,8 @@ export default {
     if (force) strapi.log.warn('[seed] SEED_FORCE=true — overwriting single-types');
     await seedSingleTypes(strapi, force);
     await seedServiceStructure(strapi, force);
-    await seedLocationPages(strapi, force);
+    await seedSlugCollection(strapi, 'api::state-page.state-page', 'statePages', force);
+    await seedSlugCollection(strapi, 'api::city-page.city-page', 'cityPages', force);
     await grantPublicRead(strapi);
   },
 };

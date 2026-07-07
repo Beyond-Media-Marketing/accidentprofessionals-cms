@@ -468,6 +468,50 @@ export interface ApiAboutPageAboutPage extends Struct.SingleTypeSchema {
   };
 }
 
+export interface ApiCityPageCityPage extends Struct.CollectionTypeSchema {
+  collectionName: 'city_pages';
+  info: {
+    description: 'A city landing page under Georgia (e.g. Atlanta)';
+    displayName: 'City Page';
+    pluralName: 'city-pages';
+    singularName: 'city-page';
+  };
+  options: {
+    draftAndPublish: false;
+  };
+  attributes: {
+    createdAt: Schema.Attribute.DateTime;
+    createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    damages: Schema.Attribute.Component<'shared.damages', false>;
+    faq: Schema.Attribute.Component<'shared.faq', false>;
+    georgiaLaw: Schema.Attribute.Component<'shared.info-cards', false>;
+    hero: Schema.Attribute.Component<'shared.service-hero', false>;
+    heroAccentFirst: Schema.Attribute.Boolean &
+      Schema.Attribute.DefaultTo<false>;
+    heroBadge: Schema.Attribute.String;
+    locale: Schema.Attribute.String & Schema.Attribute.Private;
+    localizations: Schema.Attribute.Relation<
+      'oneToMany',
+      'api::city-page.city-page'
+    > &
+      Schema.Attribute.Private;
+    nearbyCities: Schema.Attribute.Component<'shared.nearby-cities', false>;
+    practiceAreas: Schema.Attribute.Component<'shared.feature-grid', false>;
+    publishedAt: Schema.Attribute.DateTime;
+    seo: Schema.Attribute.Component<'shared.seo', false>;
+    slug: Schema.Attribute.UID<'title'> & Schema.Attribute.Required;
+    stepsToTake: Schema.Attribute.Component<'shared.steps-to-take', false>;
+    testimonials: Schema.Attribute.Component<'shared.testimonials', false>;
+    title: Schema.Attribute.String & Schema.Attribute.Required;
+    updatedAt: Schema.Attribute.DateTime;
+    updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    whyChoose: Schema.Attribute.Component<'shared.why-choose', false>;
+    whyTrust: Schema.Attribute.Component<'shared.media-text', false>;
+  };
+}
+
 export interface ApiContactPageContactPage extends Struct.SingleTypeSchema {
   collectionName: 'contact_pages';
   info: {
@@ -627,48 +671,6 @@ export interface ApiHomePageHomePage extends Struct.SingleTypeSchema {
       Schema.Attribute.Private;
     whereToFindUs: Schema.Attribute.Component<'shared.locations', false>;
     whyChooseUs: Schema.Attribute.Component<'shared.feature-grid', false>;
-  };
-}
-
-export interface ApiLocationPageLocationPage
-  extends Struct.CollectionTypeSchema {
-  collectionName: 'location_pages';
-  info: {
-    description: 'State/city location landing page (e.g. Georgia)';
-    displayName: 'Location Page';
-    pluralName: 'location-pages';
-    singularName: 'location-page';
-  };
-  options: {
-    draftAndPublish: false;
-  };
-  attributes: {
-    cities: Schema.Attribute.Component<'shared.city-areas', false>;
-    createdAt: Schema.Attribute.DateTime;
-    createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
-      Schema.Attribute.Private;
-    facts: Schema.Attribute.Component<'shared.facts', false>;
-    faq: Schema.Attribute.Component<'shared.faq', false>;
-    hero: Schema.Attribute.Component<'shared.service-hero', false>;
-    heroAccentFirst: Schema.Attribute.Boolean &
-      Schema.Attribute.DefaultTo<false>;
-    heroBadge: Schema.Attribute.String;
-    heroStats: Schema.Attribute.Component<'shared.stat', true>;
-    locale: Schema.Attribute.String & Schema.Attribute.Private;
-    localizations: Schema.Attribute.Relation<
-      'oneToMany',
-      'api::location-page.location-page'
-    > &
-      Schema.Attribute.Private;
-    practiceAreas: Schema.Attribute.Component<'shared.feature-grid', false>;
-    publishedAt: Schema.Attribute.DateTime;
-    seo: Schema.Attribute.Component<'shared.seo', false>;
-    slug: Schema.Attribute.UID<'title'> & Schema.Attribute.Required;
-    testimonials: Schema.Attribute.Component<'shared.testimonials', false>;
-    title: Schema.Attribute.String & Schema.Attribute.Required;
-    updatedAt: Schema.Attribute.DateTime;
-    updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
-      Schema.Attribute.Private;
   };
 }
 
@@ -863,6 +865,47 @@ export interface ApiServicesPageServicesPage extends Struct.SingleTypeSchema {
     updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
     whyLocal: Schema.Attribute.Component<'shared.media-text', false>;
+  };
+}
+
+export interface ApiStatePageStatePage extends Struct.CollectionTypeSchema {
+  collectionName: 'state_pages';
+  info: {
+    description: 'A state landing page (e.g. Georgia)';
+    displayName: 'State Page';
+    pluralName: 'state-pages';
+    singularName: 'state-page';
+  };
+  options: {
+    draftAndPublish: false;
+  };
+  attributes: {
+    cities: Schema.Attribute.Component<'shared.city-areas', false>;
+    createdAt: Schema.Attribute.DateTime;
+    createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    facts: Schema.Attribute.Component<'shared.facts', false>;
+    faq: Schema.Attribute.Component<'shared.faq', false>;
+    hero: Schema.Attribute.Component<'shared.service-hero', false>;
+    heroAccentFirst: Schema.Attribute.Boolean &
+      Schema.Attribute.DefaultTo<false>;
+    heroBadge: Schema.Attribute.String;
+    heroStats: Schema.Attribute.Component<'shared.stat', true>;
+    locale: Schema.Attribute.String & Schema.Attribute.Private;
+    localizations: Schema.Attribute.Relation<
+      'oneToMany',
+      'api::state-page.state-page'
+    > &
+      Schema.Attribute.Private;
+    practiceAreas: Schema.Attribute.Component<'shared.feature-grid', false>;
+    publishedAt: Schema.Attribute.DateTime;
+    seo: Schema.Attribute.Component<'shared.seo', false>;
+    slug: Schema.Attribute.UID<'title'> & Schema.Attribute.Required;
+    testimonials: Schema.Attribute.Component<'shared.testimonials', false>;
+    title: Schema.Attribute.String & Schema.Attribute.Required;
+    updatedAt: Schema.Attribute.DateTime;
+    updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
   };
 }
 
@@ -1378,16 +1421,17 @@ declare module '@strapi/strapi' {
       'admin::transfer-token-permission': AdminTransferTokenPermission;
       'admin::user': AdminUser;
       'api::about-page.about-page': ApiAboutPageAboutPage;
+      'api::city-page.city-page': ApiCityPageCityPage;
       'api::contact-page.contact-page': ApiContactPageContactPage;
       'api::footer.footer': ApiFooterFooter;
       'api::global-setting.global-setting': ApiGlobalSettingGlobalSetting;
       'api::home-page.home-page': ApiHomePageHomePage;
-      'api::location-page.location-page': ApiLocationPageLocationPage;
       'api::navigation.navigation': ApiNavigationNavigation;
       'api::service-category.service-category': ApiServiceCategoryServiceCategory;
       'api::service-defaults.service-defaults': ApiServiceDefaultsServiceDefaults;
       'api::service.service': ApiServiceService;
       'api::services-page.services-page': ApiServicesPageServicesPage;
+      'api::state-page.state-page': ApiStatePageStatePage;
       'plugin::content-releases.release': PluginContentReleasesRelease;
       'plugin::content-releases.release-action': PluginContentReleasesReleaseAction;
       'plugin::i18n.locale': PluginI18NLocale;

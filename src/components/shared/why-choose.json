@@ -1,0 +1,31 @@
+{
+  "collectionName": "components_shared_why_chooses",
+  "info": {
+    "displayName": "Why Choose",
+    "icon": "check",
+    "description": "Dark 'Why … choose us' section — header + card grid + image"
+  },
+  "options": {},
+  "attributes": {
+    "eyebrow": {
+      "type": "string"
+    },
+    "heading": {
+      "type": "string"
+    },
+    "headingAccent": {
+      "type": "string"
+    },
+    "intro": {
+      "type": "text"
+    },
+    "image": {
+      "type": "string"
+    },
+    "items": {
+      "type": "component",
+      "repeatable": true,
+      "component": "shared.why-choose-item"
+    }
+  }
+}

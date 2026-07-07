@@ -334,6 +334,7 @@ export interface SharedInfoCard extends Struct.ComponentSchema {
     icon: 'bulletList';
   };
   attributes: {
+    code: Schema.Attribute.String;
     description: Schema.Attribute.Text;
     icon: Schema.Attribute.String;
     title: Schema.Attribute.String;
@@ -456,6 +457,28 @@ export interface SharedNavLink extends Struct.ComponentSchema {
     hasMegaMenu: Schema.Attribute.Boolean & Schema.Attribute.DefaultTo<false>;
     href: Schema.Attribute.String;
     label: Schema.Attribute.String;
+  };
+}
+
+export interface SharedNearbyCities extends Struct.ComponentSchema {
+  collectionName: 'components_shared_nearby_cities';
+  info: {
+    description: "Dark section \u2014 header + flat list of nearby cities + 'Don't see your city?' band";
+    displayName: 'Nearby Cities';
+    icon: 'pinMap';
+  };
+  attributes: {
+    body: Schema.Attribute.Text;
+    cities: Schema.Attribute.Component<'shared.location', true>;
+    ctaHref: Schema.Attribute.String;
+    ctaLabel: Schema.Attribute.String;
+    eyebrow: Schema.Attribute.String;
+    heading: Schema.Attribute.String;
+    headingAccent: Schema.Attribute.String;
+    noticeCtaHref: Schema.Attribute.String;
+    noticeCtaLabel: Schema.Attribute.String;
+    noticeHeading: Schema.Attribute.String;
+    noticeText: Schema.Attribute.Text;
   };
 }
 
@@ -742,6 +765,36 @@ export interface SharedTestimonials extends Struct.ComponentSchema {
   };
 }
 
+export interface SharedWhyChoose extends Struct.ComponentSchema {
+  collectionName: 'components_shared_why_chooses';
+  info: {
+    description: "Dark 'Why \u2026 choose us' section \u2014 header + card grid + image";
+    displayName: 'Why Choose';
+    icon: 'check';
+  };
+  attributes: {
+    eyebrow: Schema.Attribute.String;
+    heading: Schema.Attribute.String;
+    headingAccent: Schema.Attribute.String;
+    image: Schema.Attribute.String;
+    intro: Schema.Attribute.Text;
+    items: Schema.Attribute.Component<'shared.why-choose-item', true>;
+  };
+}
+
+export interface SharedWhyChooseItem extends Struct.ComponentSchema {
+  collectionName: 'components_shared_why_choose_items';
+  info: {
+    description: 'Title + description card for the Why Choose Us grid';
+    displayName: 'Why Choose Item';
+    icon: 'check';
+  };
+  attributes: {
+    description: Schema.Attribute.Text;
+    title: Schema.Attribute.String;
+  };
+}
+
 export interface SharedWhyUs extends Struct.ComponentSchema {
   collectionName: 'components_shared_why_us';
   info: {
@@ -804,6 +857,7 @@ declare module '@strapi/strapi' {
       'shared.menu-column': SharedMenuColumn;
       'shared.nav-item': SharedNavItem;
       'shared.nav-link': SharedNavLink;
+      'shared.nearby-cities': SharedNearbyCities;
       'shared.numbered-step': SharedNumberedStep;
       'shared.process-block': SharedProcessBlock;
       'shared.process-card': SharedProcessCard;
@@ -821,6 +875,8 @@ declare module '@strapi/strapi' {
       'shared.team': SharedTeam;
       'shared.testimonial': SharedTestimonial;
       'shared.testimonials': SharedTestimonials;
+      'shared.why-choose': SharedWhyChoose;
+      'shared.why-choose-item': SharedWhyChooseItem;
       'shared.why-us': SharedWhyUs;
       'shared.why-us-feature': SharedWhyUsFeature;
     }

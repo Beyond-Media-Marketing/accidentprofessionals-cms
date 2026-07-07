@@ -1,0 +1,87 @@
+{
+  "kind": "collectionType",
+  "collectionName": "city_pages",
+  "info": {
+    "singularName": "city-page",
+    "pluralName": "city-pages",
+    "displayName": "City Page",
+    "description": "A city landing page under Georgia (e.g. Atlanta)"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "slug": {
+      "type": "uid",
+      "targetField": "title",
+      "required": true
+    },
+    "heroBadge": {
+      "type": "string"
+    },
+    "hero": {
+      "type": "component",
+      "repeatable": false,
+      "component": "shared.service-hero"
+    },
+    "heroAccentFirst": {
+      "type": "boolean",
+      "default": false
+    },
+    "whyTrust": {
+      "type": "component",
+      "repeatable": false,
+      "component": "shared.media-text"
+    },
+    "practiceAreas": {
+      "type": "component",
+      "repeatable": false,
+      "component": "shared.feature-grid"
+    },
+    "whyChoose": {
+      "type": "component",
+      "repeatable": false,
+      "component": "shared.why-choose"
+    },
+    "stepsToTake": {
+      "type": "component",
+      "repeatable": false,
+      "component": "shared.steps-to-take"
+    },
+    "damages": {
+      "type": "component",
+      "repeatable": false,
+      "component": "shared.damages"
+    },
+    "testimonials": {
+      "type": "component",
+      "repeatable": false,
+      "component": "shared.testimonials"
+    },
+    "georgiaLaw": {
+      "type": "component",
+      "repeatable": false,
+      "component": "shared.info-cards"
+    },
+    "nearbyCities": {
+      "type": "component",
+      "repeatable": false,
+      "component": "shared.nearby-cities"
+    },
+    "faq": {
+      "type": "component",
+      "repeatable": false,
+      "component": "shared.faq"
+    },
+    "seo": {
+      "type": "component",
+      "repeatable": false,
+      "component": "shared.seo"
+    }
+  }
+}
