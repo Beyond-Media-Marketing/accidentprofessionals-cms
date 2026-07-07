@@ -8,7 +8,9 @@
   "options": {},
   "attributes": {
     "icon": {
-      "type": "string"
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": ["images"]
     },
     "title": {
       "type": "string"

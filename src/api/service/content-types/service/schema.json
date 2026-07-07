@@ -32,7 +32,9 @@
       "inversedBy": "services"
     },
     "cardIcon": {
-      "type": "string"
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": ["images"]
     },
     "cardDescription": {
       "type": "text"

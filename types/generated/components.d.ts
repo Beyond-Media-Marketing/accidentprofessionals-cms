@@ -11,7 +11,7 @@ export interface SharedAttorney extends Struct.ComponentSchema {
     address: Schema.Attribute.String;
     bio: Schema.Attribute.Text;
     firm: Schema.Attribute.String;
-    image: Schema.Attribute.String;
+    image: Schema.Attribute.Media<'images'>;
     location: Schema.Attribute.String;
     name: Schema.Attribute.String;
     title: Schema.Attribute.String;
@@ -207,7 +207,7 @@ export interface SharedFacts extends Struct.ComponentSchema {
     eyebrow: Schema.Attribute.String;
     heading: Schema.Attribute.String;
     headingAccent: Schema.Attribute.String;
-    image: Schema.Attribute.String;
+    image: Schema.Attribute.Media<'images'>;
     intro: Schema.Attribute.Text;
     stats: Schema.Attribute.Component<'shared.stat', true>;
   };
@@ -249,7 +249,7 @@ export interface SharedFeature extends Struct.ComponentSchema {
   };
   attributes: {
     description: Schema.Attribute.Text;
-    icon: Schema.Attribute.String;
+    icon: Schema.Attribute.Media<'images'>;
     linkHref: Schema.Attribute.String;
     linkLabel: Schema.Attribute.String;
     subtitle: Schema.Attribute.String;
@@ -305,7 +305,7 @@ export interface SharedHowItWorks extends Struct.ComponentSchema {
   };
   attributes: {
     heading: Schema.Attribute.String;
-    image: Schema.Attribute.String;
+    image: Schema.Attribute.Media<'images'>;
     steps: Schema.Attribute.Component<'shared.numbered-step', true>;
     subheading: Schema.Attribute.Text;
   };
@@ -618,7 +618,7 @@ export interface SharedServiceHero extends Struct.ComponentSchema {
     icon: 'picture';
   };
   attributes: {
-    bgImage: Schema.Attribute.String;
+    bgImage: Schema.Attribute.Media<'images'>;
     caseOptions: Schema.Attribute.Component<'shared.select-option', true>;
     description: Schema.Attribute.Text;
     formSubject: Schema.Attribute.String;
@@ -776,7 +776,7 @@ export interface SharedWhyChoose extends Struct.ComponentSchema {
     eyebrow: Schema.Attribute.String;
     heading: Schema.Attribute.String;
     headingAccent: Schema.Attribute.String;
-    image: Schema.Attribute.String;
+    image: Schema.Attribute.Media<'images'>;
     intro: Schema.Attribute.Text;
     items: Schema.Attribute.Component<'shared.why-choose-item', true>;
   };

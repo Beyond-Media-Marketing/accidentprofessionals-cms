@@ -796,7 +796,7 @@ export interface ApiServiceService extends Struct.CollectionTypeSchema {
   };
   attributes: {
     cardDescription: Schema.Attribute.Text;
-    cardIcon: Schema.Attribute.String;
+    cardIcon: Schema.Attribute.Media<'images'>;
     cardLinkAnchor: Schema.Attribute.String;
     cardLinkText: Schema.Attribute.String;
     category: Schema.Attribute.Relation<

@@ -20,7 +20,9 @@
       "type": "text"
     },
     "image": {
-      "type": "string"
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": ["images"]
     },
     "body": {
       "type": "richtext"
