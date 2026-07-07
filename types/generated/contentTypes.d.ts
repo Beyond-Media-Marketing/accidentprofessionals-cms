@@ -861,6 +861,10 @@ export interface ApiServiceDefaultsServiceDefaults
     > &
       Schema.Attribute.Private;
     publishedAt: Schema.Attribute.DateTime;
+    selectedAttorneys: Schema.Attribute.Relation<
+      'manyToMany',
+      'api::attorney.attorney'
+    >;
     team: Schema.Attribute.Component<'shared.team', false>;
     updatedAt: Schema.Attribute.DateTime;
     updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &

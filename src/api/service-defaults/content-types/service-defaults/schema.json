@@ -27,6 +27,11 @@
       "repeatable": false,
       "component": "shared.team"
     },
+    "selectedAttorneys": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::attorney.attorney"
+    },
     "cities": {
       "type": "component",
       "repeatable": false,

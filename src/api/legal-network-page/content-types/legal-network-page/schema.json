@@ -38,6 +38,11 @@
       "repeatable": false,
       "component": "shared.cta"
     },
+    "selectedAttorneys": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::attorney.attorney"
+    },
     "whyJoin": {
       "type": "component",
       "repeatable": false,
