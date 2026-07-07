@@ -1,0 +1,38 @@
+{
+  "collectionName": "components_shared_network_heroes",
+  "info": {
+    "displayName": "Network Hero",
+    "icon": "landscape",
+    "description": "Dark hero — badge, headline, stats row, and two role cards"
+  },
+  "options": {},
+  "attributes": {
+    "badge": {
+      "type": "string"
+    },
+    "heading": {
+      "type": "string"
+    },
+    "headingAccent": {
+      "type": "string"
+    },
+    "subhead": {
+      "type": "text"
+    },
+    "bgImage": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": ["images"]
+    },
+    "stats": {
+      "type": "component",
+      "repeatable": true,
+      "component": "shared.stat"
+    },
+    "roleCards": {
+      "type": "component",
+      "repeatable": true,
+      "component": "shared.role-card"
+    }
+  }
+}

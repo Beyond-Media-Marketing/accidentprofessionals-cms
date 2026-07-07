@@ -15,7 +15,7 @@
     },
     "variant": {
       "type": "enumeration",
-      "enum": ["primary", "dark", "ghost"],
+      "enum": ["primary", "dark", "ghost", "outline"],
       "default": "primary"
     },
     "external": {

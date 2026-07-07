@@ -1,0 +1,72 @@
+{
+  "kind": "singleType",
+  "collectionName": "legal_network_pages",
+  "info": {
+    "singularName": "legal-network-page",
+    "pluralName": "legal-network-pages",
+    "displayName": "Legal Network Page",
+    "description": "The /legal-network page — attorney network overview, join + match flows"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "hero": {
+      "type": "component",
+      "repeatable": false,
+      "component": "shared.network-hero"
+    },
+    "betterWay": {
+      "type": "component",
+      "repeatable": false,
+      "component": "shared.media-text"
+    },
+    "reviewSteps": {
+      "type": "component",
+      "repeatable": false,
+      "component": "shared.process-cards"
+    },
+    "attorneysHeading": {
+      "type": "string"
+    },
+    "attorneysSubheading": {
+      "type": "text"
+    },
+    "attorneysCta": {
+      "type": "component",
+      "repeatable": false,
+      "component": "shared.cta"
+    },
+    "whyJoin": {
+      "type": "component",
+      "repeatable": false,
+      "component": "shared.icon-card-grid"
+    },
+    "lookFor": {
+      "type": "component",
+      "repeatable": false,
+      "component": "shared.look-for"
+    },
+    "dualCta": {
+      "type": "component",
+      "repeatable": false,
+      "component": "shared.dual-cta"
+    },
+    "faq": {
+      "type": "component",
+      "repeatable": false,
+      "component": "shared.faq-tabs"
+    },
+    "applyForms": {
+      "type": "component",
+      "repeatable": false,
+      "component": "shared.apply-forms"
+    },
+    "seo": {
+      "type": "component",
+      "repeatable": false,
+      "component": "shared.seo"
+    }
+  }
+}

@@ -24,6 +24,11 @@
       "repeatable": false,
       "component": "shared.cta"
     },
+    "ctaSecondary": {
+      "type": "component",
+      "repeatable": false,
+      "component": "shared.cta"
+    },
     "image": {
       "type": "media",
       "multiple": false,

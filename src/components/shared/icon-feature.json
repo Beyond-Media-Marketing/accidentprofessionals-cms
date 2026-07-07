@@ -1,0 +1,20 @@
+{
+  "collectionName": "components_shared_icon_features",
+  "info": {
+    "displayName": "Icon Feature",
+    "icon": "bulletList",
+    "description": "Named-icon feature card (icon rendered in code, not uploaded)"
+  },
+  "options": {},
+  "attributes": {
+    "icon": {
+      "type": "string"
+    },
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    }
+  }
+}

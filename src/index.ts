@@ -13,6 +13,7 @@ const SINGLE_TYPES = [
   { uid: 'api::about-page.about-page', seedKey: 'aboutPage' },
   { uid: 'api::services-page.services-page', seedKey: 'servicesPage' },
   { uid: 'api::contact-page.contact-page', seedKey: 'contactPage' },
+  { uid: 'api::legal-network-page.legal-network-page', seedKey: 'legalNetworkPage' },
   { uid: 'api::service-defaults.service-defaults', seedKey: 'serviceDefaults' },
 ] as const;
 
@@ -30,6 +31,8 @@ const READ_ACTIONS = [
   'api::state-page.state-page.findOne',
   'api::city-page.city-page.find',
   'api::city-page.city-page.findOne',
+  'api::attorney.attorney.find',
+  'api::attorney.attorney.findOne',
 ];
 
 /**
@@ -174,6 +177,7 @@ export default {
     await seedServiceStructure(strapi, force);
     await seedSlugCollection(strapi, 'api::state-page.state-page', 'statePages', force);
     await seedSlugCollection(strapi, 'api::city-page.city-page', 'cityPages', force);
+    await seedSlugCollection(strapi, 'api::attorney.attorney', 'attorneys', force);
     await grantPublicRead(strapi);
   },
 };

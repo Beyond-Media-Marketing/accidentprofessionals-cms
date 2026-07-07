@@ -468,6 +468,51 @@ export interface ApiAboutPageAboutPage extends Struct.SingleTypeSchema {
   };
 }
 
+export interface ApiAttorneyAttorney extends Struct.CollectionTypeSchema {
+  collectionName: 'attorneys';
+  info: {
+    description: 'A vetted attorney in the AP network. Drives the Legal Network cards + profile pages.';
+    displayName: 'Attorney';
+    pluralName: 'attorneys';
+    singularName: 'attorney';
+  };
+  options: {
+    draftAndPublish: false;
+  };
+  attributes: {
+    about: Schema.Attribute.RichText;
+    createdAt: Schema.Attribute.DateTime;
+    createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    email: Schema.Attribute.String;
+    featured: Schema.Attribute.Boolean & Schema.Attribute.DefaultTo<true>;
+    firm: Schema.Attribute.String;
+    highlights: Schema.Attribute.JSON;
+    languages: Schema.Attribute.String;
+    locale: Schema.Attribute.String & Schema.Attribute.Private;
+    localizations: Schema.Attribute.Relation<
+      'oneToMany',
+      'api::attorney.attorney'
+    > &
+      Schema.Attribute.Private;
+    location: Schema.Attribute.String;
+    name: Schema.Attribute.String & Schema.Attribute.Required;
+    order: Schema.Attribute.Integer & Schema.Attribute.DefaultTo<0>;
+    phone: Schema.Attribute.String;
+    photo: Schema.Attribute.Media<'images'>;
+    practiceAreas: Schema.Attribute.JSON;
+    publishedAt: Schema.Attribute.DateTime;
+    seo: Schema.Attribute.Component<'shared.seo', false>;
+    shortBio: Schema.Attribute.Text;
+    slug: Schema.Attribute.UID<'name'> & Schema.Attribute.Required;
+    title: Schema.Attribute.String;
+    updatedAt: Schema.Attribute.DateTime;
+    updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    yearsExperience: Schema.Attribute.Integer;
+  };
+}
+
 export interface ApiCityPageCityPage extends Struct.CollectionTypeSchema {
   collectionName: 'city_pages';
   info: {
@@ -671,6 +716,47 @@ export interface ApiHomePageHomePage extends Struct.SingleTypeSchema {
       Schema.Attribute.Private;
     whereToFindUs: Schema.Attribute.Component<'shared.locations', false>;
     whyChooseUs: Schema.Attribute.Component<'shared.feature-grid', false>;
+  };
+}
+
+export interface ApiLegalNetworkPageLegalNetworkPage
+  extends Struct.SingleTypeSchema {
+  collectionName: 'legal_network_pages';
+  info: {
+    description: 'The /legal-network page \u2014 attorney network overview, join + match flows';
+    displayName: 'Legal Network Page';
+    pluralName: 'legal-network-pages';
+    singularName: 'legal-network-page';
+  };
+  options: {
+    draftAndPublish: false;
+  };
+  attributes: {
+    applyForms: Schema.Attribute.Component<'shared.apply-forms', false>;
+    attorneysCta: Schema.Attribute.Component<'shared.cta', false>;
+    attorneysHeading: Schema.Attribute.String;
+    attorneysSubheading: Schema.Attribute.Text;
+    betterWay: Schema.Attribute.Component<'shared.media-text', false>;
+    createdAt: Schema.Attribute.DateTime;
+    createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    dualCta: Schema.Attribute.Component<'shared.dual-cta', false>;
+    faq: Schema.Attribute.Component<'shared.faq-tabs', false>;
+    hero: Schema.Attribute.Component<'shared.network-hero', false>;
+    locale: Schema.Attribute.String & Schema.Attribute.Private;
+    localizations: Schema.Attribute.Relation<
+      'oneToMany',
+      'api::legal-network-page.legal-network-page'
+    > &
+      Schema.Attribute.Private;
+    lookFor: Schema.Attribute.Component<'shared.look-for', false>;
+    publishedAt: Schema.Attribute.DateTime;
+    reviewSteps: Schema.Attribute.Component<'shared.process-cards', false>;
+    seo: Schema.Attribute.Component<'shared.seo', false>;
+    updatedAt: Schema.Attribute.DateTime;
+    updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    whyJoin: Schema.Attribute.Component<'shared.icon-card-grid', false>;
   };
 }
 
@@ -1421,11 +1507,13 @@ declare module '@strapi/strapi' {
       'admin::transfer-token-permission': AdminTransferTokenPermission;
       'admin::user': AdminUser;
       'api::about-page.about-page': ApiAboutPageAboutPage;
+      'api::attorney.attorney': ApiAttorneyAttorney;
       'api::city-page.city-page': ApiCityPageCityPage;
       'api::contact-page.contact-page': ApiContactPageContactPage;
       'api::footer.footer': ApiFooterFooter;
       'api::global-setting.global-setting': ApiGlobalSettingGlobalSetting;
       'api::home-page.home-page': ApiHomePageHomePage;
+      'api::legal-network-page.legal-network-page': ApiLegalNetworkPageLegalNetworkPage;
       'api::navigation.navigation': ApiNavigationNavigation;
       'api::service-category.service-category': ApiServiceCategoryServiceCategory;
       'api::service-defaults.service-defaults': ApiServiceDefaultsServiceDefaults;

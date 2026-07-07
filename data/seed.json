@@ -4397,5 +4397,405 @@
         "nofollow": false
       }
     }
-  ]
+  ],
+  "attorneys": [
+    {
+      "name": "Marcus T. Williams",
+      "slug": "marcus-t-williams",
+      "order": 1,
+      "featured": true,
+      "firm": "Williams & Associates",
+      "title": "Managing Attorney",
+      "location": "Atlanta, GA",
+      "yearsExperience": 14,
+      "languages": "English, Spanish",
+      "practiceAreas": [
+        "Car Accidents",
+        "Wrongful Death",
+        "Trucking"
+      ],
+      "email": "intake@williams-law.example",
+      "phone": "(470) 407-2800",
+      "shortBio": "Marcus has spent 14 years representing injured drivers and families across metro Atlanta, with a focus on serious auto and trucking cases.",
+      "about": "Marcus T. Williams is the managing attorney at Williams & Associates in Atlanta. Over 14 years of practice he has represented injured drivers, passengers, and families in car accident, trucking, and wrongful death cases throughout Georgia.\n\nHe is known for clear communication and for keeping clients informed at every stage. Marcus is admitted to the State Bar of Georgia and carries professional liability insurance, and his practice is dedicated primarily to personal injury law.",
+      "highlights": [
+        "Active State Bar of Georgia admission",
+        "Focus on auto, trucking & wrongful death",
+        "Bilingual — English & Spanish",
+        "Contingency-fee representation"
+      ]
+    },
+    {
+      "name": "Priya Sengupta",
+      "slug": "priya-sengupta",
+      "order": 2,
+      "featured": true,
+      "firm": "Sengupta Law Group",
+      "title": "Partner",
+      "location": "Marietta, GA",
+      "yearsExperience": 9,
+      "languages": "English, Hindi",
+      "practiceAreas": [
+        "Slip & Fall",
+        "Car Accidents",
+        "Product Liability"
+      ],
+      "email": "hello@sengupta-law.example",
+      "phone": "(470) 407-2800",
+      "shortBio": "Priya focuses on premises liability and product cases, helping injured clients in Marietta and the north metro navigate complex claims.",
+      "about": "Priya Sengupta is a partner at Sengupta Law Group in Marietta. She concentrates on slip and fall, premises liability, product liability, and car accident claims, with nine years of experience guiding injured clients through the process.\n\nPriya is admitted to the State Bar of Georgia, maintains professional liability coverage, and centers her practice on personal injury law. She works with English- and Hindi-speaking clients.",
+      "highlights": [
+        "Active State Bar of Georgia admission",
+        "Premises & product liability focus",
+        "Bilingual — English & Hindi",
+        "Contingency-fee representation"
+      ]
+    },
+    {
+      "name": "James K. Holloway",
+      "slug": "james-k-holloway",
+      "order": 3,
+      "featured": true,
+      "firm": "Holloway Injury Law",
+      "title": "Founding Attorney",
+      "location": "Lawrenceville, GA",
+      "yearsExperience": 18,
+      "languages": "English",
+      "practiceAreas": [
+        "Motorcycle Accidents",
+        "Rideshare",
+        "Brain Injuries"
+      ],
+      "email": "cases@holloway-injury.example",
+      "phone": "(470) 407-2800",
+      "shortBio": "With 18 years of trial experience, James handles catastrophic motorcycle, rideshare, and brain-injury cases for clients across Gwinnett County.",
+      "about": "James K. Holloway is the founding attorney of Holloway Injury Law in Lawrenceville. He brings 18 years of experience to catastrophic injury matters, including motorcycle accidents, rideshare collisions, and traumatic brain injury claims.\n\nJames is admitted to the State Bar of Georgia, carries professional liability insurance, and dedicates his practice to personal injury law with an emphasis on responsive, hands-on client communication.",
+      "highlights": [
+        "Active State Bar of Georgia admission",
+        "Catastrophic & brain-injury experience",
+        "18 years of trial practice",
+        "Contingency-fee representation"
+      ]
+    }
+  ],
+  "legalNetworkPage": {
+    "hero": {
+      "badge": "LEGAL NETWORK",
+      "heading": "Nationwide Personal Injury",
+      "headingAccent": "Attorney Network",
+      "subhead": "Accident Professionals helps injured people connect with vetted personal injury attorneys across the country. We also partner with qualified personal injury attorneys who want to be part of a network built around communication, trust, and client care.",
+      "stats": [
+        {
+          "value": "25+",
+          "label": "Vetted GA Attorneys"
+        },
+        {
+          "value": "25+",
+          "label": "Cities Covered"
+        },
+        {
+          "value": "2,500+",
+          "label": "Clients Matched"
+        },
+        {
+          "value": "<1 Hour",
+          "label": "Average Match Time"
+        }
+      ],
+      "roleCards": [
+        {
+          "variant": "attorney",
+          "title": "I'm an Attorney",
+          "body": "Apply to join a selective attorney network built around quality referrals, organized intake, and strong communication standards.",
+          "cta": {
+            "label": "Apply to Join",
+            "href": "#apply-attorney",
+            "variant": "ghost"
+          }
+        },
+        {
+          "variant": "client",
+          "title": "I Need an Attorney",
+          "body": "If you were injured, we can help connect you with a personal injury attorney who fits your case type, location, and language needs.",
+          "cta": {
+            "label": "Get Matched",
+            "href": "#apply-client",
+            "variant": "primary"
+          }
+        }
+      ]
+    },
+    "betterWay": {
+      "heading": "A Better Way to Find the Right Personal",
+      "headingAccent": "Injury Attorney",
+      "body": "Accident Professionals is not a law firm. We are a nationwide network that helps injured people connect with vetted personal injury attorneys and receive support during the early stages of the process.\n\nFor injured clients, that means you are not left searching through random law firm ads or wondering who to call. We learn what happened, where your accident took place, what type of help you need, and whether language preference matters. Then we connect you with an attorney who fits your situation and serves your area.\n\nFor attorneys, AP helps organize the front end of the client experience. Our team handles initial intake, gathers key details, supports scheduling, and helps clients stay informed, so your firm receives better-prepared opportunities and can focus on the legal work.",
+      "highlightTitle": "Vetted Network",
+      "highlightText": "Every attorney reviewed",
+      "layout": "image-left",
+      "cta": {
+        "label": "Get Matched with an Attorney",
+        "href": "#apply-client",
+        "variant": "primary"
+      },
+      "ctaSecondary": {
+        "label": "Apply to Join the Network",
+        "href": "#apply-attorney",
+        "variant": "ghost"
+      }
+    },
+    "reviewSteps": {
+      "heading": "How **Attorneys** Are Reviewed Before Joining the **Network**",
+      "intro": "Not every attorney is the right fit for the AP network. Before an attorney is accepted, we review their qualifications, practice focus, communication standards, and ability to serve injured clients with professionalism and care.",
+      "cards": [
+        {
+          "icon": "phone",
+          "number": "01",
+          "title": "Application Review",
+          "body": "We review the attorney's active state bar admission, personal injury experience, practice areas, and service locations."
+        },
+        {
+          "icon": "alert",
+          "number": "02",
+          "title": "Professional Requirements",
+          "body": "We look for attorneys with active bar admission in the states they serve, professional liability insurance, and a primary focus on personal injury law."
+        },
+        {
+          "icon": "camera",
+          "number": "03",
+          "title": "Practice Fit",
+          "body": "We assess if the attorney's experience matches the cases AP clients require, such as car, truck, and motorcycle accidents, rideshare incidents, slip and fall injuries, workers' compensation, wrongful death, and other personal injury issues."
+        },
+        {
+          "icon": "chat",
+          "number": "04",
+          "title": "Communication",
+          "body": "We look for attorneys who keep clients informed with responsive communication, clear expectations, and timely case updates."
+        }
+      ]
+    },
+    "attorneysHeading": "Meet the Attorneys in Our Network",
+    "attorneysSubheading": "Every attorney in the AP network has been reviewed before being included.",
+    "attorneysCta": {
+      "label": "View All Attorneys",
+      "href": "/legal-network/attorneys",
+      "variant": "primary"
+    },
+    "whyJoin": {
+      "heading": "Why Attorneys Are Joining",
+      "headingAccent": "Accident Professionals",
+      "theme": "dark",
+      "cards": [
+        {
+          "icon": "clipboard",
+          "title": "Pre-Screened Client Opportunities",
+          "description": "Receive clients who have already been through our intake process. We verify the accident details and ensure communication is established before referral, so your firm receives better-prepared opportunities from day one."
+        },
+        {
+          "icon": "chat",
+          "title": "A Communication Layer That Supports the Client",
+          "description": "Our team handles initial intake, gathers key details, supports scheduling, and helps clients stay informed throughout the process — so you can focus on the legal work while clients feel supported."
+        },
+        {
+          "icon": "globe",
+          "title": "Access to Spanish-Speaking Clients",
+          "description": "AP actively supports Spanish-speaking injury clients across Georgia and beyond. Attorneys with bilingual capacity gain access to a meaningful and underserved segment of clients who need culturally competent legal help."
+        },
+        {
+          "icon": "shield",
+          "title": "A Network Built on Standards",
+          "description": "We carefully choose our clients and attorneys. Our network prioritizes fit, communication, and results over volume. We continuously review participation to ensure quality for all."
+        }
+      ]
+    },
+    "lookFor": {
+      "heading": "What We Look for in Network Attorneys",
+      "preferredTitle": "Preferred",
+      "preferred": [
+        {
+          "text": "5+ years experience"
+        },
+        {
+          "text": "Spanish-speaking capacity"
+        },
+        {
+          "text": "Contingency-fee model"
+        },
+        {
+          "text": "Georgia court relationships"
+        },
+        {
+          "text": "Empathy-first client care"
+        }
+      ],
+      "mustHavesTitle": "Must-Haves",
+      "mustHaves": [
+        {
+          "text": "Active bar admission"
+        },
+        {
+          "text": "Personal injury law as primary practice"
+        },
+        {
+          "text": "Professional liability insurance"
+        },
+        {
+          "text": "Clean disciplinary record"
+        },
+        {
+          "text": "Commitment to responsive communication"
+        }
+      ],
+      "cta": {
+        "label": "Start Attorney Application",
+        "href": "#apply-attorney",
+        "variant": "primary"
+      }
+    },
+    "dualCta": {
+      "heading": "Whether You Need Help or Want to Help Others,",
+      "headingAccent": "AP Was Built for You.",
+      "leftText": "If you were injured, we can help connect you with a personal injury attorney who fits your case, location, and language needs.",
+      "rightText": "If you are a personal injury attorney, we invite you to apply to join a network built around quality, communication, and trust.",
+      "primaryCta": {
+        "label": "Get Matched with an Attorney",
+        "href": "#apply-client",
+        "variant": "primary"
+      },
+      "secondaryCta": {
+        "label": "Apply to Join the Network",
+        "href": "#apply-attorney",
+        "variant": "ghost"
+      }
+    },
+    "faq": {
+      "heading": "Frequently Asked Questions",
+      "clientLabel": "For Injured Clients",
+      "attorneyLabel": "For Attorneys",
+      "clientFaqs": [
+        {
+          "question": "How do Accident Professionals match me with an attorney?",
+          "answer": "When you contact us, we gather basic information about your accident, including what happened, where it occurred, and what type of injury or case you may have. We use that information to help connect you with a vetted personal injury attorney who fits your case type, location, and service area."
+        },
+        {
+          "question": "Does it cost anything to use the Accident Professionals network?",
+          "answer": "No. It is free to contact Accident Professionals and be matched with an attorney. The attorneys in our network typically work on a contingency-fee basis, which means you generally do not pay attorney fees unless your case is resolved successfully."
+        },
+        {
+          "question": "Is Accident Professionals a law firm?",
+          "answer": "No. Accident Professionals is not a law firm and does not provide legal advice or representation. We are a network that helps injured people connect with vetted personal injury attorneys and provides support during the early stages of the process."
+        },
+        {
+          "question": "What if the attorney I'm matched with isn't the right fit?",
+          "answer": "If the match is not the right fit, let us know. We can look at your situation again and work to connect you with another attorney in the network who may better suit your case type, location, and preferences."
+        },
+        {
+          "question": "Can I request a specific attorney I've seen in the directory?",
+          "answer": "Yes. If you have seen an attorney in our directory that you would like to work with, you can tell us during intake and we will do our best to connect you, subject to the attorney's availability and case fit."
+        },
+        {
+          "question": "How is Accident Professionals different from finding a lawyer on my own?",
+          "answer": "Instead of searching through random ads and cold-calling firms, AP reviews attorneys before including them, handles your initial intake, gathers key details, and connects you with an attorney who fits your situation — so you spend less time guessing who to call."
+        }
+      ],
+      "attorneyFaqs": [
+        {
+          "question": "How do I apply to join the AP attorney network?",
+          "answer": "Complete the attorney application on this page. Once submitted, our team reviews your bar admission, practice focus, insurance, and service areas. Applications are typically reviewed within 2 business days, and if there is a fit we schedule a short introductory call."
+        },
+        {
+          "question": "What are the requirements to join?",
+          "answer": "At minimum, we look for active bar admission, personal injury law as your primary practice, professional liability insurance, a clean disciplinary record, and a commitment to responsive client communication."
+        },
+        {
+          "question": "How are clients referred to me?",
+          "answer": "Clients are pre-screened through our intake process. We verify accident details and establish communication before referral, then connect clients whose case type, location, and language needs match your practice."
+        },
+        {
+          "question": "Is there a fee to participate?",
+          "answer": "We will review participation details with you during the introductory call. Our focus is on fit and quality, and we will walk you through how the network operates before you join."
+        },
+        {
+          "question": "Do I have to be licensed in Georgia?",
+          "answer": "AP is expanding nationwide, but we currently focus heavily on Georgia. You should be licensed and in good standing in the states where you intend to accept referred clients."
+        }
+      ]
+    },
+    "applyForms": {
+      "attorneyTabLabel": "Join the AP Attorney Network",
+      "clientTabLabel": "Personal Injury Attorney",
+      "attorneyForm": {
+        "heading": "Apply to Join the",
+        "headingAccent": "AP Attorney Network",
+        "note": "Reviewed within 5 business days. No spam. No third-party data sharing. Your application is reviewed personally by the AP team.",
+        "practiceAreaOptions": [
+          "Car Accidents",
+          "Truck Accidents",
+          "Motorcycle Accidents",
+          "Rideshare Accidents",
+          "Slip & Fall",
+          "Premises Liability",
+          "Product Liability",
+          "Workers' Compensation",
+          "Wrongful Death",
+          "Brain Injuries",
+          "Other"
+        ],
+        "cityOptions": [
+          "Atlanta",
+          "Marietta",
+          "Lawrenceville",
+          "Sandy Springs",
+          "Decatur",
+          "Roswell",
+          "Alpharetta",
+          "Duluth",
+          "Other"
+        ],
+        "languageOptions": [
+          "English",
+          "Spanish",
+          "Hindi",
+          "Portuguese",
+          "French",
+          "Korean",
+          "Vietnamese",
+          "Other"
+        ],
+        "nextStepsTitle": "What Happens Next?",
+        "nextSteps": [
+          "We review your application within 2 business days",
+          "If there's a fit, we schedule a 20-minute call",
+          "We discuss your case capacity and communication protocols",
+          "Upon approval, you're onboarded into the network"
+        ],
+        "consentText": "I agree to maintain Accident Professionals' communication standards if accepted into the network.",
+        "submitLabel": "Submit My Application"
+      },
+      "clientForm": {
+        "heading": "Looking for a Personal",
+        "headingAccent": "Injury Attorney?",
+        "note": "Free case review. No obligation.",
+        "infoRows": [
+          {
+            "label": "Available 24/7",
+            "value": "(470) 407-2800"
+          },
+          {
+            "label": "Se Habla Español",
+            "value": "Spanish Support Available"
+          },
+          {
+            "label": "Fast Matching",
+            "value": "Under 1 hour"
+          }
+        ],
+        "submitLabel": "Submit — Match Me with a Georgia Attorney"
+      }
+    },
+    "seo": {
+      "metaTitle": "AP Legal Network — Vetted Personal Injury Attorneys",
+      "metaDescription": "Accident Professionals connects injured people with vetted personal injury attorneys, and invites qualified attorneys to join a trusted network.",
+      "canonicalUrl": "https://accidentprofessionals.com/legal-network/"
+    }
+  }
 }

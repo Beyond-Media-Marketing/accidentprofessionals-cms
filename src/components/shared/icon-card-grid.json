@@ -1,0 +1,30 @@
+{
+  "collectionName": "components_shared_icon_card_grids",
+  "info": {
+    "displayName": "Icon Card Grid",
+    "icon": "grid",
+    "description": "Centered header + grid of named-icon feature cards"
+  },
+  "options": {},
+  "attributes": {
+    "heading": {
+      "type": "string"
+    },
+    "headingAccent": {
+      "type": "string"
+    },
+    "intro": {
+      "type": "text"
+    },
+    "theme": {
+      "type": "enumeration",
+      "enum": ["light", "dark"],
+      "default": "dark"
+    },
+    "cards": {
+      "type": "component",
+      "repeatable": true,
+      "component": "shared.icon-feature"
+    }
+  }
+}

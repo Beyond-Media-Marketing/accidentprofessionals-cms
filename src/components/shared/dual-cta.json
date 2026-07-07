@@ -1,0 +1,33 @@
+{
+  "collectionName": "components_shared_dual_ctas",
+  "info": {
+    "displayName": "Dual CTA",
+    "icon": "cursor",
+    "description": "Dark band — headline + two text columns + two CTAs"
+  },
+  "options": {},
+  "attributes": {
+    "heading": {
+      "type": "string"
+    },
+    "headingAccent": {
+      "type": "string"
+    },
+    "leftText": {
+      "type": "text"
+    },
+    "rightText": {
+      "type": "text"
+    },
+    "primaryCta": {
+      "type": "component",
+      "repeatable": false,
+      "component": "shared.cta"
+    },
+    "secondaryCta": {
+      "type": "component",
+      "repeatable": false,
+      "component": "shared.cta"
+    }
+  }
+}

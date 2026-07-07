@@ -1,5 +1,22 @@
 import type { Schema, Struct } from '@strapi/strapi';
 
+export interface SharedApplyForms extends Struct.ComponentSchema {
+  collectionName: 'components_shared_apply_forms';
+  info: {
+    description: 'Toggle section swapping between the attorney-application and client-match forms';
+    displayName: 'Apply Forms';
+    icon: 'apps';
+  };
+  attributes: {
+    attorneyForm: Schema.Attribute.Component<'shared.attorney-form', false>;
+    attorneyTabLabel: Schema.Attribute.String &
+      Schema.Attribute.DefaultTo<'Join the AP Attorney Network'>;
+    clientForm: Schema.Attribute.Component<'shared.client-form', false>;
+    clientTabLabel: Schema.Attribute.String &
+      Schema.Attribute.DefaultTo<'Personal Injury Attorney'>;
+  };
+}
+
 export interface SharedAttorney extends Struct.ComponentSchema {
   collectionName: 'components_shared_attorneys';
   info: {
@@ -16,6 +33,30 @@ export interface SharedAttorney extends Struct.ComponentSchema {
     name: Schema.Attribute.String;
     title: Schema.Attribute.String;
     yearsExperience: Schema.Attribute.Integer;
+  };
+}
+
+export interface SharedAttorneyForm extends Struct.ComponentSchema {
+  collectionName: 'components_shared_attorney_forms';
+  info: {
+    description: 'Attorney application form config (heading, image, select options, next-steps)';
+    displayName: 'Attorney Form';
+    icon: 'briefcase';
+  };
+  attributes: {
+    cityOptions: Schema.Attribute.JSON;
+    consentText: Schema.Attribute.Text;
+    heading: Schema.Attribute.String;
+    headingAccent: Schema.Attribute.String;
+    image: Schema.Attribute.Media<'images'>;
+    languageOptions: Schema.Attribute.JSON;
+    nextSteps: Schema.Attribute.JSON;
+    nextStepsTitle: Schema.Attribute.String &
+      Schema.Attribute.DefaultTo<'What Happens Next?'>;
+    note: Schema.Attribute.Text;
+    practiceAreaOptions: Schema.Attribute.JSON;
+    submitLabel: Schema.Attribute.String &
+      Schema.Attribute.DefaultTo<'Submit My Application'>;
   };
 }
 
@@ -56,6 +97,24 @@ export interface SharedCityRegion extends Struct.ComponentSchema {
   attributes: {
     cities: Schema.Attribute.Component<'shared.location', true>;
     region: Schema.Attribute.String;
+  };
+}
+
+export interface SharedClientForm extends Struct.ComponentSchema {
+  collectionName: 'components_shared_client_forms';
+  info: {
+    description: 'Client match form config (heading, image, contact info rows)';
+    displayName: 'Client Form';
+    icon: 'user';
+  };
+  attributes: {
+    heading: Schema.Attribute.String;
+    headingAccent: Schema.Attribute.String;
+    image: Schema.Attribute.Media<'images'>;
+    infoRows: Schema.Attribute.JSON;
+    note: Schema.Attribute.Text;
+    submitLabel: Schema.Attribute.String &
+      Schema.Attribute.DefaultTo<'Submit \u2014 Match Me with a Georgia Attorney'>;
   };
 }
 
@@ -129,7 +188,9 @@ export interface SharedCta extends Struct.ComponentSchema {
     href: Schema.Attribute.String;
     label: Schema.Attribute.String;
     scrollTo: Schema.Attribute.String;
-    variant: Schema.Attribute.Enumeration<['primary', 'dark', 'ghost']> &
+    variant: Schema.Attribute.Enumeration<
+      ['primary', 'dark', 'ghost', 'outline']
+    > &
       Schema.Attribute.DefaultTo<'primary'>;
   };
 }
@@ -195,6 +256,23 @@ export interface SharedDamages extends Struct.ComponentSchema {
   };
 }
 
+export interface SharedDualCta extends Struct.ComponentSchema {
+  collectionName: 'components_shared_dual_ctas';
+  info: {
+    description: 'Dark band \u2014 headline + two text columns + two CTAs';
+    displayName: 'Dual CTA';
+    icon: 'cursor';
+  };
+  attributes: {
+    heading: Schema.Attribute.String;
+    headingAccent: Schema.Attribute.String;
+    leftText: Schema.Attribute.Text;
+    primaryCta: Schema.Attribute.Component<'shared.cta', false>;
+    rightText: Schema.Attribute.Text;
+    secondaryCta: Schema.Attribute.Component<'shared.cta', false>;
+  };
+}
+
 export interface SharedFacts extends Struct.ComponentSchema {
   collectionName: 'components_shared_facts';
   info: {
@@ -237,6 +315,24 @@ export interface SharedFaqItem extends Struct.ComponentSchema {
   attributes: {
     answer: Schema.Attribute.Text;
     question: Schema.Attribute.String;
+  };
+}
+
+export interface SharedFaqTabs extends Struct.ComponentSchema {
+  collectionName: 'components_shared_faq_tabs';
+  info: {
+    description: 'FAQ with two toggle groups (clients / attorneys)';
+    displayName: 'FAQ Tabs';
+    icon: 'question';
+  };
+  attributes: {
+    attorneyFaqs: Schema.Attribute.Component<'shared.faq-item', true>;
+    attorneyLabel: Schema.Attribute.String &
+      Schema.Attribute.DefaultTo<'For Attorneys'>;
+    clientFaqs: Schema.Attribute.Component<'shared.faq-item', true>;
+    clientLabel: Schema.Attribute.String &
+      Schema.Attribute.DefaultTo<'For Injured Clients'>;
+    heading: Schema.Attribute.String;
   };
 }
 
@@ -308,6 +404,37 @@ export interface SharedHowItWorks extends Struct.ComponentSchema {
     image: Schema.Attribute.Media<'images'>;
     steps: Schema.Attribute.Component<'shared.numbered-step', true>;
     subheading: Schema.Attribute.Text;
+  };
+}
+
+export interface SharedIconCardGrid extends Struct.ComponentSchema {
+  collectionName: 'components_shared_icon_card_grids';
+  info: {
+    description: 'Centered header + grid of named-icon feature cards';
+    displayName: 'Icon Card Grid';
+    icon: 'grid';
+  };
+  attributes: {
+    cards: Schema.Attribute.Component<'shared.icon-feature', true>;
+    heading: Schema.Attribute.String;
+    headingAccent: Schema.Attribute.String;
+    intro: Schema.Attribute.Text;
+    theme: Schema.Attribute.Enumeration<['light', 'dark']> &
+      Schema.Attribute.DefaultTo<'dark'>;
+  };
+}
+
+export interface SharedIconFeature extends Struct.ComponentSchema {
+  collectionName: 'components_shared_icon_features';
+  info: {
+    description: 'Named-icon feature card (icon rendered in code, not uploaded)';
+    displayName: 'Icon Feature';
+    icon: 'bulletList';
+  };
+  attributes: {
+    description: Schema.Attribute.Text;
+    icon: Schema.Attribute.String;
+    title: Schema.Attribute.String;
   };
 }
 
@@ -390,6 +517,26 @@ export interface SharedLocations extends Struct.ComponentSchema {
   };
 }
 
+export interface SharedLookFor extends Struct.ComponentSchema {
+  collectionName: 'components_shared_look_fors';
+  info: {
+    description: 'What we look for \u2014 image + Preferred / Must-Haves checklists + CTA';
+    displayName: 'Look For';
+    icon: 'filter';
+  };
+  attributes: {
+    cta: Schema.Attribute.Component<'shared.cta', false>;
+    heading: Schema.Attribute.String;
+    image: Schema.Attribute.Media<'images'>;
+    mustHaves: Schema.Attribute.Component<'shared.bullet', true>;
+    mustHavesTitle: Schema.Attribute.String &
+      Schema.Attribute.DefaultTo<'Must-Haves'>;
+    preferred: Schema.Attribute.Component<'shared.bullet', true>;
+    preferredTitle: Schema.Attribute.String &
+      Schema.Attribute.DefaultTo<'Preferred'>;
+  };
+}
+
 export interface SharedMediaText extends Struct.ComponentSchema {
   collectionName: 'components_shared_media_texts';
   info: {
@@ -400,6 +547,7 @@ export interface SharedMediaText extends Struct.ComponentSchema {
   attributes: {
     body: Schema.Attribute.RichText;
     cta: Schema.Attribute.Component<'shared.cta', false>;
+    ctaSecondary: Schema.Attribute.Component<'shared.cta', false>;
     eyebrow: Schema.Attribute.String;
     heading: Schema.Attribute.String;
     headingAccent: Schema.Attribute.String;
@@ -482,6 +630,24 @@ export interface SharedNearbyCities extends Struct.ComponentSchema {
   };
 }
 
+export interface SharedNetworkHero extends Struct.ComponentSchema {
+  collectionName: 'components_shared_network_heroes';
+  info: {
+    description: 'Dark hero \u2014 badge, headline, stats row, and two role cards';
+    displayName: 'Network Hero';
+    icon: 'landscape';
+  };
+  attributes: {
+    badge: Schema.Attribute.String;
+    bgImage: Schema.Attribute.Media<'images'>;
+    heading: Schema.Attribute.String;
+    headingAccent: Schema.Attribute.String;
+    roleCards: Schema.Attribute.Component<'shared.role-card', true>;
+    stats: Schema.Attribute.Component<'shared.stat', true>;
+    subhead: Schema.Attribute.Text;
+  };
+}
+
 export interface SharedNumberedStep extends Struct.ComponentSchema {
   collectionName: 'components_shared_numbered_steps';
   info: {
@@ -544,6 +710,22 @@ export interface SharedProcessCards extends Struct.ComponentSchema {
     eyebrow: Schema.Attribute.String;
     heading: Schema.Attribute.String;
     intro: Schema.Attribute.RichText;
+  };
+}
+
+export interface SharedRoleCard extends Struct.ComponentSchema {
+  collectionName: 'components_shared_role_cards';
+  info: {
+    description: "Hero role card \u2014 variant icon, title, body, CTA (I'm an Attorney / I Need an Attorney)";
+    displayName: 'Role Card';
+    icon: 'user';
+  };
+  attributes: {
+    body: Schema.Attribute.Text;
+    cta: Schema.Attribute.Component<'shared.cta', false>;
+    title: Schema.Attribute.String;
+    variant: Schema.Attribute.Enumeration<['attorney', 'client']> &
+      Schema.Attribute.DefaultTo<'attorney'>;
   };
 }
 
@@ -829,10 +1011,13 @@ export interface SharedWhyUsFeature extends Struct.ComponentSchema {
 declare module '@strapi/strapi' {
   export module Public {
     export interface ComponentSchemas {
+      'shared.apply-forms': SharedApplyForms;
       'shared.attorney': SharedAttorney;
+      'shared.attorney-form': SharedAttorneyForm;
       'shared.bullet': SharedBullet;
       'shared.city-areas': SharedCityAreas;
       'shared.city-region': SharedCityRegion;
+      'shared.client-form': SharedClientForm;
       'shared.closing-cta': SharedClosingCta;
       'shared.contact-form': SharedContactForm;
       'shared.contact-info': SharedContactInfo;
@@ -841,27 +1026,34 @@ declare module '@strapi/strapi' {
       'shared.damage-item': SharedDamageItem;
       'shared.damage-tab': SharedDamageTab;
       'shared.damages': SharedDamages;
+      'shared.dual-cta': SharedDualCta;
       'shared.facts': SharedFacts;
       'shared.faq': SharedFaq;
       'shared.faq-item': SharedFaqItem;
+      'shared.faq-tabs': SharedFaqTabs;
       'shared.feature': SharedFeature;
       'shared.feature-grid': SharedFeatureGrid;
       'shared.hero': SharedHero;
       'shared.how-it-works': SharedHowItWorks;
+      'shared.icon-card-grid': SharedIconCardGrid;
+      'shared.icon-feature': SharedIconFeature;
       'shared.icon-step': SharedIconStep;
       'shared.info-card': SharedInfoCard;
       'shared.info-cards': SharedInfoCards;
       'shared.location': SharedLocation;
       'shared.locations': SharedLocations;
+      'shared.look-for': SharedLookFor;
       'shared.media-text': SharedMediaText;
       'shared.menu-column': SharedMenuColumn;
       'shared.nav-item': SharedNavItem;
       'shared.nav-link': SharedNavLink;
       'shared.nearby-cities': SharedNearbyCities;
+      'shared.network-hero': SharedNetworkHero;
       'shared.numbered-step': SharedNumberedStep;
       'shared.process-block': SharedProcessBlock;
       'shared.process-card': SharedProcessCard;
       'shared.process-cards': SharedProcessCards;
+      'shared.role-card': SharedRoleCard;
       'shared.section-heading': SharedSectionHeading;
       'shared.select-option': SharedSelectOption;
       'shared.seo': SharedSeo;

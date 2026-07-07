@@ -1,0 +1,42 @@
+{
+  "collectionName": "components_shared_look_fors",
+  "info": {
+    "displayName": "Look For",
+    "icon": "filter",
+    "description": "What we look for — image + Preferred / Must-Haves checklists + CTA"
+  },
+  "options": {},
+  "attributes": {
+    "heading": {
+      "type": "string"
+    },
+    "image": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": ["images"]
+    },
+    "preferredTitle": {
+      "type": "string",
+      "default": "Preferred"
+    },
+    "preferred": {
+      "type": "component",
+      "repeatable": true,
+      "component": "shared.bullet"
+    },
+    "mustHavesTitle": {
+      "type": "string",
+      "default": "Must-Haves"
+    },
+    "mustHaves": {
+      "type": "component",
+      "repeatable": true,
+      "component": "shared.bullet"
+    },
+    "cta": {
+      "type": "component",
+      "repeatable": false,
+      "component": "shared.cta"
+    }
+  }
+}

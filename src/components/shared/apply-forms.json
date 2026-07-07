@@ -1,0 +1,29 @@
+{
+  "collectionName": "components_shared_apply_forms",
+  "info": {
+    "displayName": "Apply Forms",
+    "icon": "apps",
+    "description": "Toggle section swapping between the attorney-application and client-match forms"
+  },
+  "options": {},
+  "attributes": {
+    "attorneyTabLabel": {
+      "type": "string",
+      "default": "Join the AP Attorney Network"
+    },
+    "clientTabLabel": {
+      "type": "string",
+      "default": "Personal Injury Attorney"
+    },
+    "attorneyForm": {
+      "type": "component",
+      "repeatable": false,
+      "component": "shared.attorney-form"
+    },
+    "clientForm": {
+      "type": "component",
+      "repeatable": false,
+      "component": "shared.client-form"
+    }
+  }
+}

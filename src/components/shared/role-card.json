@@ -1,0 +1,27 @@
+{
+  "collectionName": "components_shared_role_cards",
+  "info": {
+    "displayName": "Role Card",
+    "icon": "user",
+    "description": "Hero role card — variant icon, title, body, CTA (I'm an Attorney / I Need an Attorney)"
+  },
+  "options": {},
+  "attributes": {
+    "variant": {
+      "type": "enumeration",
+      "enum": ["attorney", "client"],
+      "default": "attorney"
+    },
+    "title": {
+      "type": "string"
+    },
+    "body": {
+      "type": "text"
+    },
+    "cta": {
+      "type": "component",
+      "repeatable": false,
+      "component": "shared.cta"
+    }
+  }
+}

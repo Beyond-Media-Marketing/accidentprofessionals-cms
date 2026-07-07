@@ -1,0 +1,32 @@
+{
+  "collectionName": "components_shared_client_forms",
+  "info": {
+    "displayName": "Client Form",
+    "icon": "user",
+    "description": "Client match form config (heading, image, contact info rows)"
+  },
+  "options": {},
+  "attributes": {
+    "heading": {
+      "type": "string"
+    },
+    "headingAccent": {
+      "type": "string"
+    },
+    "note": {
+      "type": "text"
+    },
+    "image": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": ["images"]
+    },
+    "infoRows": {
+      "type": "json"
+    },
+    "submitLabel": {
+      "type": "string",
+      "default": "Submit — Match Me with a Georgia Attorney"
+    }
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "collectionName": "components_shared_faq_tabs",
+  "info": {
+    "displayName": "FAQ Tabs",
+    "icon": "question",
+    "description": "FAQ with two toggle groups (clients / attorneys)"
+  },
+  "options": {},
+  "attributes": {
+    "heading": {
+      "type": "string"
+    },
+    "clientLabel": {
+      "type": "string",
+      "default": "For Injured Clients"
+    },
+    "attorneyLabel": {
+      "type": "string",
+      "default": "For Attorneys"
+    },
+    "clientFaqs": {
+      "type": "component",
+      "repeatable": true,
+      "component": "shared.faq-item"
+    },
+    "attorneyFaqs": {
+      "type": "component",
+      "repeatable": true,
+      "component": "shared.faq-item"
+    }
+  }
+}

@@ -1,0 +1,48 @@
+{
+  "collectionName": "components_shared_attorney_forms",
+  "info": {
+    "displayName": "Attorney Form",
+    "icon": "briefcase",
+    "description": "Attorney application form config (heading, image, select options, next-steps)"
+  },
+  "options": {},
+  "attributes": {
+    "heading": {
+      "type": "string"
+    },
+    "headingAccent": {
+      "type": "string"
+    },
+    "note": {
+      "type": "text"
+    },
+    "image": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": ["images"]
+    },
+    "practiceAreaOptions": {
+      "type": "json"
+    },
+    "cityOptions": {
+      "type": "json"
+    },
+    "languageOptions": {
+      "type": "json"
+    },
+    "nextStepsTitle": {
+      "type": "string",
+      "default": "What Happens Next?"
+    },
+    "nextSteps": {
+      "type": "json"
+    },
+    "consentText": {
+      "type": "text"
+    },
+    "submitLabel": {
+      "type": "string",
+      "default": "Submit My Application"
+    }
+  }
+}

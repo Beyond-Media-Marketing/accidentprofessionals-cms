@@ -1,0 +1,76 @@
+{
+  "kind": "collectionType",
+  "collectionName": "attorneys",
+  "info": {
+    "singularName": "attorney",
+    "pluralName": "attorneys",
+    "displayName": "Attorney",
+    "description": "A vetted attorney in the AP network. Drives the Legal Network cards + profile pages."
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "slug": {
+      "type": "uid",
+      "targetField": "name",
+      "required": true
+    },
+    "order": {
+      "type": "integer",
+      "default": 0
+    },
+    "featured": {
+      "type": "boolean",
+      "default": true
+    },
+    "photo": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": ["images"]
+    },
+    "firm": {
+      "type": "string"
+    },
+    "title": {
+      "type": "string"
+    },
+    "location": {
+      "type": "string"
+    },
+    "yearsExperience": {
+      "type": "integer"
+    },
+    "languages": {
+      "type": "string"
+    },
+    "practiceAreas": {
+      "type": "json"
+    },
+    "email": {
+      "type": "string"
+    },
+    "phone": {
+      "type": "string"
+    },
+    "shortBio": {
+      "type": "text"
+    },
+    "about": {
+      "type": "richtext"
+    },
+    "highlights": {
+      "type": "json"
+    },
+    "seo": {
+      "type": "component",
+      "repeatable": false,
+      "component": "shared.seo"
+    }
+  }
+}
