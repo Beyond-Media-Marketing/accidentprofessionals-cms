@@ -167,6 +167,75 @@ async function grantPublicRead(strapi: Core.Strapi) {
   }
 }
 
+const ATTORNEY_UID = 'api::attorney.attorney';
+
+/** Placeholder attorneys created for the Legal Network design mockup — removed
+ *  now that the collection is generated from the real service-defaults roster. */
+const PLACEHOLDER_ATTORNEY_SLUGS = ['marcus-t-williams', 'priya-sengupta', 'james-k-holloway'];
+
+const slugifyName = (s: string) =>
+  s.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-+|-+$/g, '');
+
+/**
+ * Bridge the legacy inline roster into the attorney collection: read
+ * `service-defaults.team.attorneys` and generate a collection entry for each
+ * (keyed by a slug derived from the name). Idempotent — only creates attorneys
+ * that don't already exist, so manual edits in the collection are preserved.
+ * The collection is the source of truth going forward; this just seeds it from
+ * whatever roster already lives on Service Defaults.
+ */
+async function seedAttorneysFromTeam(strapi: Core.Strapi, force = false) {
+  const defs: any = await strapi
+    .documents('api::service-defaults.service-defaults' as any)
+    .findFirst({ populate: { team: { populate: { attorneys: true } } } as any });
+
+  const inline: any[] = defs?.team?.attorneys ?? [];
+  let order = 0;
+  for (const a of inline) {
+    if (!a?.name) continue;
+    const slug = slugifyName(a.name);
+    try {
+      const existing = await strapi.documents(ATTORNEY_UID as any).findFirst({ filters: { slug } });
+      if (existing && !force) {
+        order++;
+        continue;
+      }
+      const data: any = {
+        name: a.name,
+        slug,
+        order: order++,
+        featured: true,
+        firm: a.firm ?? null,
+        title: a.title ?? null,
+        location: a.location ?? null,
+        yearsExperience: a.yearsExperience ?? null,
+        shortBio: a.bio ?? null,
+        about: a.bio ?? null,
+      };
+      if (existing && force) {
+        await strapi.documents(ATTORNEY_UID as any).update({ documentId: existing.documentId, data });
+        strapi.log.info(`[seed] FORCE-updated attorney (from team) ${slug}`);
+      } else {
+        await strapi.documents(ATTORNEY_UID as any).create({ data });
+        strapi.log.info(`[seed] generated attorney (from team) ${slug}`);
+      }
+    } catch (err) {
+      strapi.log.error(`[seed] failed to generate attorney ${slug}: ${(err as Error).message}`);
+    }
+  }
+}
+
+/** Remove the design-mockup placeholder attorneys once (idempotent). */
+async function removePlaceholderAttorneys(strapi: Core.Strapi) {
+  for (const slug of PLACEHOLDER_ATTORNEY_SLUGS) {
+    const existing = await strapi.documents(ATTORNEY_UID as any).findFirst({ filters: { slug } });
+    if (existing) {
+      await strapi.documents(ATTORNEY_UID as any).delete({ documentId: existing.documentId });
+      strapi.log.info(`[seed] removed placeholder attorney ${slug}`);
+    }
+  }
+}
+
 export default {
   register() {},
 
@@ -178,6 +247,8 @@ export default {
     await seedSlugCollection(strapi, 'api::state-page.state-page', 'statePages', force);
     await seedSlugCollection(strapi, 'api::city-page.city-page', 'cityPages', force);
     await seedSlugCollection(strapi, 'api::attorney.attorney', 'attorneys', force);
+    await removePlaceholderAttorneys(strapi);
+    await seedAttorneysFromTeam(strapi, force);
     await grantPublicRead(strapi);
   },
 };

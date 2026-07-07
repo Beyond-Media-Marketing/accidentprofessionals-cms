@@ -752,6 +752,10 @@ export interface ApiLegalNetworkPageLegalNetworkPage
     lookFor: Schema.Attribute.Component<'shared.look-for', false>;
     publishedAt: Schema.Attribute.DateTime;
     reviewSteps: Schema.Attribute.Component<'shared.process-cards', false>;
+    selectedAttorneys: Schema.Attribute.Relation<
+      'manyToMany',
+      'api::attorney.attorney'
+    >;
     seo: Schema.Attribute.Component<'shared.seo', false>;
     updatedAt: Schema.Attribute.DateTime;
     updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
