@@ -1,0 +1,36 @@
+{
+  "collectionName": "components_shared_damages",
+  "info": {
+    "displayName": "Damages",
+    "icon": "shield",
+    "description": "Dark 'Compensation you can recover' section — segmented header + icon cards + disclaimer"
+  },
+  "options": {},
+  "attributes": {
+    "eyebrow": {
+      "type": "string"
+    },
+    "heading": {
+      "type": "string"
+    },
+    "headingAccent": {
+      "type": "string"
+    },
+    "intro": {
+      "type": "text"
+    },
+    "tabs": {
+      "type": "component",
+      "repeatable": true,
+      "component": "shared.damage-tab"
+    },
+    "disclaimer": {
+      "type": "text"
+    },
+    "cta": {
+      "type": "component",
+      "repeatable": false,
+      "component": "shared.cta"
+    }
+  }
+}

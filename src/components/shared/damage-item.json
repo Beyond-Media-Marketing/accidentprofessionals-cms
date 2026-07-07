@@ -1,0 +1,20 @@
+{
+  "collectionName": "components_shared_damage_items",
+  "info": {
+    "displayName": "Damage Item",
+    "icon": "shield",
+    "description": "Icon + title + description card for the Damages/Compensation grid"
+  },
+  "options": {},
+  "attributes": {
+    "icon": {
+      "type": "string"
+    },
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    }
+  }
+}

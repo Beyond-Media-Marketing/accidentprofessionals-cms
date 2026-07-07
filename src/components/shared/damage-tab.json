@@ -1,0 +1,19 @@
+{
+  "collectionName": "components_shared_damage_tabs",
+  "info": {
+    "displayName": "Damage Tab",
+    "icon": "shield",
+    "description": "A labeled tab with its own set of damage/benefit cards"
+  },
+  "options": {},
+  "attributes": {
+    "label": {
+      "type": "string"
+    },
+    "items": {
+      "type": "component",
+      "repeatable": true,
+      "component": "shared.damage-item"
+    }
+  }
+}

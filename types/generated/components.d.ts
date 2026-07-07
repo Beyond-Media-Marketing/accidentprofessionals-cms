@@ -150,6 +150,51 @@ export interface SharedCtaBanner extends Struct.ComponentSchema {
   };
 }
 
+export interface SharedDamageItem extends Struct.ComponentSchema {
+  collectionName: 'components_shared_damage_items';
+  info: {
+    description: 'Icon + title + description card for the Damages/Compensation grid';
+    displayName: 'Damage Item';
+    icon: 'shield';
+  };
+  attributes: {
+    description: Schema.Attribute.Text;
+    icon: Schema.Attribute.String;
+    title: Schema.Attribute.String;
+  };
+}
+
+export interface SharedDamageTab extends Struct.ComponentSchema {
+  collectionName: 'components_shared_damage_tabs';
+  info: {
+    description: 'A labeled tab with its own set of damage/benefit cards';
+    displayName: 'Damage Tab';
+    icon: 'shield';
+  };
+  attributes: {
+    items: Schema.Attribute.Component<'shared.damage-item', true>;
+    label: Schema.Attribute.String;
+  };
+}
+
+export interface SharedDamages extends Struct.ComponentSchema {
+  collectionName: 'components_shared_damages';
+  info: {
+    description: "Dark 'Compensation you can recover' section \u2014 segmented header + icon cards + disclaimer";
+    displayName: 'Damages';
+    icon: 'shield';
+  };
+  attributes: {
+    cta: Schema.Attribute.Component<'shared.cta', false>;
+    disclaimer: Schema.Attribute.Text;
+    eyebrow: Schema.Attribute.String;
+    heading: Schema.Attribute.String;
+    headingAccent: Schema.Attribute.String;
+    intro: Schema.Attribute.Text;
+    tabs: Schema.Attribute.Component<'shared.damage-tab', true>;
+  };
+}
+
 export interface SharedFaq extends Struct.ComponentSchema {
   collectionName: 'components_shared_faqs';
   info: {
@@ -650,6 +695,35 @@ export interface SharedTeam extends Struct.ComponentSchema {
   };
 }
 
+export interface SharedTestimonial extends Struct.ComponentSchema {
+  collectionName: 'components_shared_testimonials_item';
+  info: {
+    description: 'A single client quote + name + location + star rating';
+    displayName: 'Testimonial';
+    icon: 'quote';
+  };
+  attributes: {
+    location: Schema.Attribute.String;
+    name: Schema.Attribute.String;
+    quote: Schema.Attribute.Text;
+    rating: Schema.Attribute.Integer & Schema.Attribute.DefaultTo<5>;
+  };
+}
+
+export interface SharedTestimonials extends Struct.ComponentSchema {
+  collectionName: 'components_shared_testimonials';
+  info: {
+    description: 'Heading + carousel of client testimonials';
+    displayName: 'Testimonials';
+    icon: 'quote';
+  };
+  attributes: {
+    heading: Schema.Attribute.String;
+    headingAccent: Schema.Attribute.String;
+    items: Schema.Attribute.Component<'shared.testimonial', true>;
+  };
+}
+
 export interface SharedWhyUs extends Struct.ComponentSchema {
   collectionName: 'components_shared_why_us';
   info: {
@@ -693,6 +767,9 @@ declare module '@strapi/strapi' {
       'shared.contact-info': SharedContactInfo;
       'shared.cta': SharedCta;
       'shared.cta-banner': SharedCtaBanner;
+      'shared.damage-item': SharedDamageItem;
+      'shared.damage-tab': SharedDamageTab;
+      'shared.damages': SharedDamages;
       'shared.faq': SharedFaq;
       'shared.faq-item': SharedFaqItem;
       'shared.feature': SharedFeature;
@@ -723,6 +800,8 @@ declare module '@strapi/strapi' {
       'shared.steps-row': SharedStepsRow;
       'shared.steps-to-take': SharedStepsToTake;
       'shared.team': SharedTeam;
+      'shared.testimonial': SharedTestimonial;
+      'shared.testimonials': SharedTestimonials;
       'shared.why-us': SharedWhyUs;
       'shared.why-us-feature': SharedWhyUsFeature;
     }

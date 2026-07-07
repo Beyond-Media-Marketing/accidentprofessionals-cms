@@ -715,6 +715,8 @@ export interface ApiServiceDefaultsServiceDefaults
     draftAndPublish: false;
   };
   attributes: {
+    cities: Schema.Attribute.Component<'shared.city-areas', false>;
+    closingCta: Schema.Attribute.Component<'shared.closing-cta', false>;
     createdAt: Schema.Attribute.DateTime;
     createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
@@ -760,6 +762,10 @@ export interface ApiServiceService extends Struct.CollectionTypeSchema {
     createdAt: Schema.Attribute.DateTime;
     createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
+    damages: Schema.Attribute.Component<'shared.damages', false>;
+    faq: Schema.Attribute.Component<'shared.faq', false>;
+    hero: Schema.Attribute.Component<'shared.service-hero', false>;
+    howItWorks: Schema.Attribute.Component<'shared.how-it-works', false>;
     locale: Schema.Attribute.String & Schema.Attribute.Private;
     localizations: Schema.Attribute.Relation<
       'oneToMany',
@@ -770,10 +776,14 @@ export interface ApiServiceService extends Struct.CollectionTypeSchema {
     publishedAt: Schema.Attribute.DateTime;
     seo: Schema.Attribute.Component<'shared.seo', false>;
     slug: Schema.Attribute.UID<'title'> & Schema.Attribute.Required;
+    stepsToTake: Schema.Attribute.Component<'shared.steps-to-take', false>;
+    testimonials: Schema.Attribute.Component<'shared.testimonials', false>;
     title: Schema.Attribute.String & Schema.Attribute.Required;
+    typesOfCases: Schema.Attribute.Component<'shared.feature-grid', false>;
     updatedAt: Schema.Attribute.DateTime;
     updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
+    whatToKnow: Schema.Attribute.Component<'shared.media-text', false>;
   };
 }
 

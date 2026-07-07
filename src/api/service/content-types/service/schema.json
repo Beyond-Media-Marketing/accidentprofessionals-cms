@@ -43,6 +43,46 @@
     "cardLinkAnchor": {
       "type": "string"
     },
+    "hero": {
+      "type": "component",
+      "repeatable": false,
+      "component": "shared.service-hero"
+    },
+    "whatToKnow": {
+      "type": "component",
+      "repeatable": false,
+      "component": "shared.media-text"
+    },
+    "howItWorks": {
+      "type": "component",
+      "repeatable": false,
+      "component": "shared.how-it-works"
+    },
+    "typesOfCases": {
+      "type": "component",
+      "repeatable": false,
+      "component": "shared.feature-grid"
+    },
+    "stepsToTake": {
+      "type": "component",
+      "repeatable": false,
+      "component": "shared.steps-to-take"
+    },
+    "damages": {
+      "type": "component",
+      "repeatable": false,
+      "component": "shared.damages"
+    },
+    "testimonials": {
+      "type": "component",
+      "repeatable": false,
+      "component": "shared.testimonials"
+    },
+    "faq": {
+      "type": "component",
+      "repeatable": false,
+      "component": "shared.faq"
+    },
     "seo": {
       "type": "component",
       "repeatable": false,

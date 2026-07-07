@@ -551,6 +551,35 @@
         { "name": "John Winkenwerder", "title": "Attorney at Law", "firm": "Wink Law", "yearsExperience": null, "location": "Atlanta, GA", "address": "Atlanta, GA", "image": "/attorneys/john-winkenwerder.webp", "bio": "Wink Law is a personal injury and wrongful death firm representing individuals and families. We are tireless advocates for those who have been injured or lost their lives due to the negligence of others. Our mission is to maximize our clients’ recovery through expertise, creative solutions, and unwavering dedication, while also maximizing the client experience through clear guidance, consistent communication, and unparalleled efficiency." },
         { "name": "Ivan Bracho Gonzalez", "title": "Attorney at Law", "firm": "BRAAM Partners", "yearsExperience": 13, "location": "TX, FL", "address": "TX, FL", "image": "/attorneys/ivan-brancho-gonzalez.webp", "bio": "BRAAM Partners is a law firm founded for the purpose of providing personalized and specialized legal assistance to our clients. While we operate under the American professional standards, we also give our clients the full access, attention and trust expected from lawyers in Latin America." }
       ]
+    },
+    "cities": {
+      "eyebrow": "Where To Find Us",
+      "heading": "Find an Accident Attorney Near You in",
+      "headingAccent": "Georgia",
+      "regions": [
+        { "region": "Georgia", "cities": [
+          { "name": "Atlanta, GA", "href": "/georgia/atlanta/" },
+          { "name": "Marietta, GA", "href": "/georgia/marietta/" },
+          { "name": "Lawrenceville, GA", "href": "/georgia/lawrenceville/" },
+          { "name": "Smyrna, GA", "href": "/georgia/smyrna/" },
+          { "name": "Acworth, GA", "href": "/georgia/acworth/" },
+          { "name": "Decatur, GA", "href": "/georgia/decatur/" },
+          { "name": "Gainesville, GA", "href": "/georgia/gainesville/" },
+          { "name": "Roswell, GA", "href": "/georgia/roswell/" },
+          { "name": "Alpharetta, GA", "href": "/georgia/alpharetta/" },
+          { "name": "Sandy Springs, GA", "href": "/georgia/sandy-springs/" },
+          { "name": "Augusta, GA", "href": "/georgia/augusta/" },
+          { "name": "Savannah, GA", "href": "/georgia/savannah/" }
+        ]}
+      ]
+    },
+    "closingCta": {
+      "leadHeading": "**Real** Help. **Real** Results.",
+      "heading": "Had an Accident?",
+      "headingAccent": "Let's Talk.",
+      "subtext": "No pressure. No jargon. Just an honest conversation about your options.",
+      "cta": { "label": "Get Free Consultation", "href": "/contact-us", "variant": "primary", "external": false },
+      "note": "Available 24/7 · No upfront fees · Multilingual support"
     }
   },
   "serviceCategories": [
@@ -823,15 +852,825 @@
     }
   ],
   "services": [
-    { "title": "Car Accidents", "slug": "car-accidents", "order": 1, "categorySlug": "auto-accidents", "cardIcon": "/services-page/auto-accidents/car-accidents.png", "cardDescription": "Rear-end collisions, T-bones, and hit-and-runs happen every day on Georgia roads. We connect you with a car accident lawyer in Georgia who knows how to build your case and deal with insurance companies.", "cardLinkText": "Car Accidents Help", "cardLinkAnchor": "car accident attorney Georgia" },
-    { "title": "Truck Accidents", "slug": "truck-accidents", "order": 2, "categorySlug": "auto-accidents", "cardIcon": "/services-page/auto-accidents/truck-accidents.png", "cardDescription": "18-wheelers and commercial vehicles involve complex liability and higher stakes. We connect you with a truck accident attorney in Georgia who understands how to handle these cases.", "cardLinkText": "Truck Accidents Help", "cardLinkAnchor": "truck accident attorney Georgia" },
-    { "title": "Motorcycle Accidents", "slug": "motorcycle-accidents", "order": 3, "categorySlug": "auto-accidents", "cardIcon": "/services-page/auto-accidents/motorcycle-accidents.png", "cardDescription": "Motorcyclists face serious risks and unfair bias after accidents. We connect you with a motorcycle accident lawyer in Georgia who knows how to fight for riders' rights.", "cardLinkText": "Motorcycle Accidents Help", "cardLinkAnchor": "motorcycle accident lawyer Georgia" },
-    { "title": "Rideshare Accidents", "slug": "rideshare-accidents", "order": 4, "categorySlug": "auto-accidents", "cardIcon": "/services-page/auto-accidents/rideshare-accidents.svg", "cardDescription": "Uber and Lyft accidents involve layered insurance policies and multiple parties. We match you with a rideshare accident attorney in Georgia who understands how these claims work.", "cardLinkText": "Rideshare Accidents Help", "cardLinkAnchor": "rideshare accident attorney Georgia" },
-    { "title": "Slip & Fall", "slug": "slip-and-fall", "order": 1, "categorySlug": "premises-liability", "cardIcon": "/services-page/premises-liability/slip-and-fall.png", "cardDescription": "Wet floors, uneven surfaces, broken stairs, and poor lighting are among the most common causes of serious injuries in Georgia. We connect you with a slip and fall attorney in Georgia who knows how to prove negligence and fight insurance carriers.", "cardLinkText": "Slip & Fall Help", "cardLinkAnchor": "slip and fall attorney Georgia" },
+    {
+      "title": "Car Accidents",
+      "slug": "car-accidents",
+      "order": 1,
+      "categorySlug": "auto-accidents",
+      "cardIcon": "/services-page/auto-accidents/car-accidents.png",
+      "cardDescription": "Rear-end collisions, T-bones, and hit-and-runs happen every day on Georgia roads. We connect you with a car accident lawyer in Georgia who knows how to build your case and deal with insurance companies.",
+      "cardLinkText": "Car Accidents Help",
+      "cardLinkAnchor": "car accident attorney Georgia",
+      "hero": {
+        "bgImage": "/services-page/auto-accidents/hero-bg.webp",
+        "h1Part1": "Car Accident Lawyer Network | Fight for the Compensation You Deserve",
+        "h1Accent": "",
+        "h1Subtitle": "",
+        "heroBody": "Insurance companies have lawyers working for them the moment your accident happens. You should too. The Accident Professionals network connects injured Georgians with vetted car accident attorneys who fight for what your case is actually worth — not what the insurer wants to pay. Free consultation, no fees unless we win.",
+        "urgencyBullets": [
+          { "text": "Car accident specialists" },
+          { "text": "No fee unless we win" },
+          { "text": "24/7 available" },
+          { "text": "Se habla español" }
+        ],
+        "caseOptions": [
+          { "value": "car", "label": "Car Accident" },
+          { "value": "truck", "label": "Truck Accident" },
+          { "value": "motorcycle", "label": "Motorcycle Accident" },
+          { "value": "rideshare", "label": "Rideshare Accident" },
+          { "value": "other", "label": "Other" }
+        ],
+        "formSubject": "New Car Accident Consultation Request — Accident Professionals"
+      },
+      "whatToKnow": {
+        "eyebrow": "What Is A Car Accident Case?",
+        "heading": "What to Know About **Car Accident Claims** in Georgia",
+        "body": "A car accident claim in Georgia is not just about covering your car repair. It's about recovering every cost the crash created — medical bills, lost income, pain and suffering, and the long-term impact on your life. But insurance companies aren't in the business of paying you what you're owed. They're in the business of closing claims quickly and cheaply.\n\nThat's where Accident Professionals comes in. We're not a law firm — we're a curated network of vetted Georgia personal injury attorneys who specialize in car accident cases. We match you with the right attorney, handle the intake, and stay involved throughout so you always have someone to call.\n\nActing fast matters. Georgia's statute of limitations gives you two years from the date of the accident to file a personal injury claim. The sooner you have an attorney in your corner, the stronger your case.",
+        "cta": { "label": "About Us", "href": "/about-us", "variant": "primary", "external": false },
+        "layout": "image-left",
+        "theme": "light",
+        "highlightTitle": "Trusted Local Network",
+        "highlightText": "We connect injured Georgians with experienced local attorneys who understand your case, your courts, and your community."
+      },
+      "howItWorks": {
+        "heading": "How Accident Professionals Works",
+        "subheading": "You just had an accident. The last thing you need is more confusion. Our process is simple.",
+        "image": "/services-page/auto-accidents/image1.webp",
+        "steps": [
+          { "number": "01", "title": "Tell us about your accident", "description": "Free call, no pressure, no jargon. Just tell us what happened." },
+          { "number": "02", "title": "We match you with the right attorney", "description": "Based on your accident type, location, and needs — a vetted local car accident attorney, not a random assignment." },
+          { "number": "03", "title": "We stay in your corner", "description": "Communication support from consultation to settlement so you always know what's happening next." }
+        ]
+      },
+      "typesOfCases": {
+        "eyebrow": "What We Handle",
+        "heading": "Types of Car Accident Cases We Handle",
+        "intro": "Not all car accident cases are the same. The type of collision, the number of vehicles involved, and the insurance coverage in play all affect how your claim is built and what you can recover.",
+        "cta": { "label": "Our Services", "href": "/services", "variant": "primary", "external": false },
+        "features": [
+          { "icon": "/icons/shield.svg", "title": "Rear-end collisions", "description": "The most common crash in Georgia. Often causes whiplash, herniated discs, and soft tissue injuries that insurers try to minimize. Don't let them." },
+          { "icon": "/icons/shield.svg", "title": "T-bone & side-impact crashes", "description": "Intersection collisions with high injury severity — particularly dangerous for passengers on the struck side. Liability can be disputed even when it seems clear." },
+          { "icon": "/icons/shield.svg", "title": "Head-on collisions", "description": "High-speed, often catastrophic. These cases frequently involve multiple liability parties, significant medical damages, and complex insurance negotiations." },
+          { "icon": "/icons/shield.svg", "title": "Hit-and-run accidents", "description": "Georgia law allows you to pursue a claim through your own uninsured motorist (UM) coverage even when the at-fault driver cannot be found. You have options." },
+          { "icon": "/icons/shield.svg", "title": "Multi-vehicle pile-ups", "description": "When more than two vehicles are involved, liability can be split across multiple parties and multiple insurance policies. An experienced attorney is essential." },
+          { "icon": "/icons/shield.svg", "title": "Uninsured & underinsured motorist crashes", "description": "If the driver who hit you doesn't carry enough insurance, your own UM/UIM coverage may cover the gap. We'll help you use it." }
+        ]
+      },
+      "stepsToTake": {
+        "heading": "Steps to Take After a Car Accident in Georgia",
+        "subheading": "What you do in the hours after a car accident directly affects the strength of your claim. Georgia's modified comparative fault rule means your compensation can be reduced — or eliminated — if you're found to be 50% or more at fault. Insurance adjusters know this, and they're listening for anything you say that could shift blame onto you. Follow these steps.",
+        "steps": [
+          { "number": "01", "icon": "/services-page/auto-accidents/phone-icon.png", "title": "Call 911 and File a Police Report", "description": "Leaving the scene of an accident in Georgia is a criminal offense. Report the collision to law enforcement and get a police report number — you'll need it for your claim." },
+          { "number": "02", "icon": "/services-page/auto-accidents/attention-icon.png", "title": "Get Medical Attention Immediately", "description": "Some injuries don't show symptoms right away. Getting checked within 24 hours helps protect both your health and your case." },
+          { "number": "03", "icon": "/services-page/auto-accidents/camera-icon.png", "title": "Document Everything at the Scene", "description": "Take photos of vehicles, road conditions, and injuries. Collect driver and witness information. The more evidence you have, the stronger your claim." },
+          { "number": "04", "icon": "/services-page/auto-accidents/statement-icon.png", "title": "Don't Give a Recorded Statement", "description": "Insurance companies may ask for a recorded statement quickly — don't provide one before speaking with an attorney. It can be used to reduce your claim." },
+          { "number": "05", "icon": "/services-page/auto-accidents/arrow-next-icon.png", "title": "Call Accident Professionals for a Free Consultation", "description": "The sooner you act, the better. Call (470) 407-2800 or get your free consultation to be connected with a vetted Georgia attorney who can protect your rights from day one." }
+        ]
+      },
+      "damages": {
+        "eyebrow": "Damages You Can Recover",
+        "heading": "Compensation You May Be Entitled to **After a Car Accident** in Georgia",
+        "intro": "Many car accident victims accept the first offer they receive because they don't know the full scope of what they can claim. Here is what a properly handled claim can recover.",
+        "tabs": [
+          {
+            "label": "Compensable damages",
+            "items": [
+              { "icon": "medical", "title": "Medical expenses", "description": "All past and future medical costs related to the accident: emergency care, surgery, hospitalization, physical therapy, and ongoing treatment." },
+              { "icon": "wallet", "title": "Lost wages", "description": "Income you've already lost due to the accident, plus future earning capacity if your injuries affect your ability to work long-term." },
+              { "icon": "car", "title": "Property damage", "description": "The cost of repairing or replacing your vehicle, and any other personal property damaged in the collision." },
+              { "icon": "pulse", "title": "Pain and suffering", "description": "Compensation for the physical pain and emotional distress caused by your injuries. This is often the largest component of a serious injury settlement." }
+            ]
+          },
+          {
+            "label": "What's included",
+            "items": [
+              { "icon": "dollar", "title": "Out-of-pocket costs", "description": "Transportation to medical appointments, prescription costs, home care, and any other expenses your injury has created." },
+              { "icon": "scales", "title": "Emotional distress", "description": "Documented psychological impact including anxiety, depression, sleep disruption, and PTSD — all compensable in Georgia." },
+              { "icon": "home", "title": "Wrongful death damages", "description": "If the accident was fatal, surviving family members may be entitled to funeral costs, loss of income, and loss of companionship." },
+              { "icon": "shield", "title": "Punitive damages", "description": "In cases of gross negligence — such as drunk driving or road rage — a court may award punitive damages above and beyond compensatory amounts." }
+            ]
+          }
+        ],
+        "disclaimer": "* Prior results do not guarantee a similar outcome. Every case is unique and settlement amounts vary based on the specific facts and circumstances.",
+        "cta": { "label": "Contact Us", "href": "/contact-us", "variant": "primary", "external": false }
+      },
+      "testimonials": {
+        "heading": "What Clients Say After Their Car Accident Case",
+        "items": [
+          { "quote": "After my accident, I had no idea where to start. Accident Professionals connected me with an attorney who explained everything clearly and made the process much less stressful.", "name": "Sarah M", "location": "Atlanta", "rating": 5 },
+          { "quote": "The team was responsive, professional, and genuinely helpful. They answered my questions quickly and helped me find legal support that fit my situation.", "name": "Janet T.", "location": "Orlando, FL", "rating": 5 },
+          { "quote": "I appreciated having someone guide me through the process. Instead of spending hours searching online, I was connected with an experienced attorney right away.", "name": "Melissa T.", "location": "Lawrenceville", "rating": 5 },
+          { "quote": "From the first phone call, someone was actually there. They made sure I understood my options and followed up throughout the process.", "name": "David P.", "location": "Decatur", "rating": 5 }
+        ]
+      },
+      "faq": {
+        "heading": "Frequently Asked Questions About Car Accident Claims in Georgia",
+        "intro": "Common questions about car accident claims in Georgia",
+        "items": [
+          { "question": "How much is my car accident case worth in Georgia?", "answer": "There is no fixed answer — case value depends on the severity of your injuries, your medical expenses, your lost income, and the strength of the evidence. Minor fender benders with soft tissue injuries typically settle in the range of $10,000 to $30,000. Cases involving serious injuries, TBI, spinal damage, or permanent disability can result in six-figure and seven-figure recoveries. The most important thing you can do is speak with a Georgia car accident attorney before accepting any offer, because once you sign, you cannot ask for more." },
+          { "question": "How long do I have to file a car accident claim in Georgia?", "answer": "Georgia gives you two years from the date of the accident to file a personal injury lawsuit (O.C.G.A. § 9-3-33). If you miss this deadline, you permanently lose your right to recover compensation through the courts. Insurance companies often try to pressure you into settling well before that deadline. Get an attorney involved early, even if you're not sure you want to file a lawsuit." },
+          { "question": "What if the other driver doesn't have insurance?", "answer": "If the driver who hit you is uninsured or underinsured, you can pursue a claim through your own UM/UIM (uninsured/underinsured motorist) coverage, if you have it. Many Georgia drivers don't realize this option exists. The attorneys in the AP network handle uninsured motorist claims regularly and can help you recover even when the at-fault driver can't pay." },
+          { "question": "Can I still recover compensation if I was partially at fault?", "answer": "Yes — as long as you were less than 50% responsible for the accident. Georgia follows a modified comparative fault rule (O.C.G.A. § 51-12-33), which means your compensation is reduced by your percentage of fault, but not eliminated unless you are equally or more at fault than the other party. Insurance companies often try to inflate your share of fault to reduce what they owe." },
+          { "question": "Do I need a lawyer for a minor car accident?", "answer": "Not always — but if you have any injury at all, even one that seems minor, it's worth a free consultation before you settle. Soft tissue injuries like whiplash often don't fully manifest for days, and once you accept a settlement, you cannot reopen the claim if your condition worsens. A quick call to Accident Professionals costs you nothing." },
+          { "question": "How long does a car accident case take to settle in Georgia?", "answer": "Most straightforward car accident claims settle within three to six months. Cases involving serious injuries, disputed liability, or multiple parties can take one to two years, particularly if they go to trial. The attorneys in our network will give you a realistic timeline based on your specific case." },
+          { "question": "What should I not say to the insurance company after a car accident?", "answer": "Do not say you're \"fine\" or \"okay\" — even casually. Do not apologize or accept any share of blame. Do not agree to a recorded statement before speaking with an attorney. Anything you say to an insurance adjuster is captured and can be used to reduce your settlement. The safest response to any insurer is: \"My attorney will be in touch.\"" },
+          { "question": "What does Accident Professionals actually do?", "answer": "Accident Professionals is a vetted personal injury attorney network, not a law firm. When you contact us, we match you with a licensed Georgia personal injury attorney from our network who specializes in car accident cases and serves your area. We handle the intake, stay in communication throughout the process, and make sure you always have someone to call. Our attorneys work on a contingency fee basis — no fees unless they win your case." }
+        ]
+      },
+      "seo": {
+        "metaTitle": "Car Accident Lawyer Georgia | Free Consult",
+        "metaDescription": "Injured in a Georgia car accident? Our vetted attorney network fights for maximum compensation. Free consultation, no fees unless we win. Available 24/7.",
+        "keywords": "car accident lawyer Georgia, car accident attorney Atlanta, Georgia car accident claim",
+        "focusKeyword": "car accident lawyer Georgia",
+        "canonicalUrl": "https://accidentprofessionals.com/services/auto-accidents/car-accidents/",
+        "schemaType": "Service",
+        "noindex": false,
+        "nofollow": false
+      }
+    },
+    {
+      "title": "Truck Accidents",
+      "slug": "truck-accidents",
+      "order": 2,
+      "categorySlug": "auto-accidents",
+      "cardIcon": "/services-page/auto-accidents/truck-accidents.png",
+      "cardDescription": "18-wheelers and commercial vehicles involve complex liability and higher stakes. We connect you with a truck accident attorney in Georgia who understands how to handle these cases.",
+      "cardLinkText": "Truck Accidents Help",
+      "cardLinkAnchor": "truck accident attorney Georgia",
+      "hero": {
+        "bgImage": "/services-page/auto-accidents/hero-bg.webp",
+        "h1Part1": "Truck Accident Lawyer Network | Take On the Trucking Companies and Win",
+        "h1Accent": "",
+        "h1Subtitle": "",
+        "heroBody": "A truck accident isn't just a bigger car accident — it's a case against a company with a legal team already protecting their interests. The Accident Professionals network connects injured Georgians with vetted truck accident attorneys who know how to preserve critical evidence and fight for what your case is worth. Free consultation, no fees unless we win.",
+        "urgencyBullets": [
+          { "text": "Truck accident specialists" },
+          { "text": "No fee unless we win" },
+          { "text": "24/7 available" },
+          { "text": "Se habla español" }
+        ],
+        "caseOptions": [
+          { "value": "car", "label": "Car Accident" },
+          { "value": "truck", "label": "Truck Accident" },
+          { "value": "motorcycle", "label": "Motorcycle Accident" },
+          { "value": "rideshare", "label": "Rideshare Accident" },
+          { "value": "other", "label": "Other" }
+        ],
+        "formSubject": "New Truck Accident Consultation Request — Accident Professionals"
+      },
+      "whatToKnow": {
+        "eyebrow": "What Is A Truck Accident Case?",
+        "heading": "What to Know About **Truck Accident Claims** in Georgia",
+        "body": "A truck accident claim in Georgia is more complex than a standard car accident claim. When a commercial vehicle causes a crash, the injuries are typically more severe — and the parties responsible more numerous. The driver, the trucking company, the cargo loader, and the maintenance provider can all share liability, each with their own insurer and their own lawyers.\n\nAccident Professionals isn't a law firm. We're a curated network of vetted Georgia personal injury attorneys who handle commercial trucking cases. We match you with the right attorney, manage the intake, and stay involved throughout.\n\nOne critical difference from car cases: key evidence in a truck accident can disappear within days. ELD data, black-box records, and driver logs can be legally discarded unless an attorney sends a preservation notice fast. Georgia's statute of limitations gives you two years to file — but don't wait on the evidence.",
+        "cta": { "label": "About Us", "href": "/about-us", "variant": "primary", "external": false },
+        "layout": "image-left",
+        "theme": "light",
+        "highlightTitle": "Trusted Local Network",
+        "highlightText": "We connect injured Georgians with experienced local attorneys who understand your case, your courts, and your community."
+      },
+      "howItWorks": {
+        "heading": "How Accident Professionals Works",
+        "subheading": "You just had an accident. The last thing you need is more confusion. Our process is simple.",
+        "image": "/services-page/auto-accidents/image1.webp",
+        "steps": [
+          { "number": "01", "title": "Tell us about your accident", "description": "Free call, no pressure, no jargon. Just tell us what happened." },
+          { "number": "02", "title": "We match you with the right attorney", "description": "A vetted local truck accident attorney based on your crash, location, and needs — not a random assignment." },
+          { "number": "03", "title": "We stay in your corner", "description": "Communication support from consultation to settlement so you always know what's happening next." }
+        ]
+      },
+      "typesOfCases": {
+        "eyebrow": "What We Handle",
+        "heading": "Types of Truck Accident Cases We Handle",
+        "intro": "Not all truck accident cases are the same. The type of crash, the cause, and the parties at fault all affect how your claim is built and what you can recover.",
+        "cta": { "label": "Our Services", "href": "/services", "variant": "primary", "external": false },
+        "features": [
+          { "icon": "/icons/shield.svg", "title": "Jackknife accidents", "description": "When a trailer swings out from the cab, it can sweep multiple lanes. Often caused by driver error, improper braking, or inadequate training." },
+          { "icon": "/icons/shield.svg", "title": "Rear-end & underride accidents", "description": "Loaded trucks need far more stopping distance. Underride crashes — where a car slides beneath the trailer — are among the most catastrophic on Georgia roads." },
+          { "icon": "/icons/shield.svg", "title": "Blind-spot (no-zone) accidents", "description": "Trucks have large blind spots on all four sides. These crashes often come down to whether the driver checked properly before changing lanes." },
+          { "icon": "/icons/shield.svg", "title": "Tire blowout & equipment failure", "description": "Blowouts and brake failures point to maintenance negligence. Liability may rest with the carrier, the maintenance provider, or a parts manufacturer." },
+          { "icon": "/icons/shield.svg", "title": "Improperly loaded cargo", "description": "Shifting or unsecured cargo can cause a driver to lose control. The loading company may share liability alongside the carrier." },
+          { "icon": "/icons/shield.svg", "title": "Driver fatigue & hours-of-service violations", "description": "Federal rules cap how long a trucker can drive. When carriers push drivers past those limits, ELD and logbook records can prove the violation." }
+        ]
+      },
+      "stepsToTake": {
+        "heading": "Steps to Take After a Truck Accident in Georgia",
+        "subheading": "Georgia's modified comparative fault rule means your compensation can be reduced if you're found partially at fault. The trucking company's team often arrives at the scene quickly. Follow these steps to protect yourself.",
+        "steps": [
+          { "number": "01", "icon": "/services-page/auto-accidents/phone-icon.png", "title": "Call 911 and Stay at the Scene", "description": "Get a police report number — it's essential for a commercial vehicle claim." },
+          { "number": "02", "icon": "/services-page/auto-accidents/attention-icon.png", "title": "Get Medical Attention Immediately", "description": "Truck crash injuries are frequently severe and delayed. A same-day medical record is one of the most valuable documents in your case." },
+          { "number": "03", "icon": "/services-page/auto-accidents/camera-icon.png", "title": "Document Everything and Identify the Truck", "description": "Photograph the scene and record the trucking company name, USDOT number, and license plates. Get witness contact information before they leave." },
+          { "number": "04", "icon": "/services-page/auto-accidents/statement-icon.png", "title": "Don't Give a Recorded Statement", "description": "Not to your insurer, not to the trucking company's. Politely decline and say your attorney will be in touch." },
+          { "number": "05", "icon": "/services-page/auto-accidents/arrow-next-icon.png", "title": "Contact Accident Professionals Before Evidence Disappears", "description": "Black-box data and driver logs can be discarded within days. A Georgia truck accident attorney from our network can send a preservation notice before that happens." }
+        ]
+      },
+      "damages": {
+        "eyebrow": "Damages You Can Recover",
+        "heading": "Compensation You May Be Entitled to **After a Truck Accident** in Georgia",
+        "intro": "Trucking insurers carry significantly higher policy limits than regular drivers — and they count on victims not knowing the full scope of what they can claim.",
+        "tabs": [
+          {
+            "label": "Compensable damages",
+            "items": [
+              { "icon": "medical", "title": "Medical expenses", "description": "Past and future costs: emergency care, surgery, hospitalization, and rehabilitation." },
+              { "icon": "wallet", "title": "Lost wages", "description": "Income already lost, plus future earning capacity if your injuries affect your ability to work." },
+              { "icon": "car", "title": "Property damage", "description": "Vehicle repair or replacement and any personal property damaged in the collision." },
+              { "icon": "pulse", "title": "Pain and suffering", "description": "Often the largest component of a serious truck injury settlement." }
+            ]
+          },
+          {
+            "label": "What's included",
+            "items": [
+              { "icon": "dollar", "title": "Out-of-pocket costs", "description": "Prescriptions, transportation, home modifications, and assistive devices." },
+              { "icon": "scales", "title": "Emotional distress", "description": "Anxiety, depression, sleep disruption, and PTSD — all compensable in Georgia." },
+              { "icon": "home", "title": "Wrongful death", "description": "If the crash was fatal, surviving family may recover funeral costs, lost income, and loss of companionship." },
+              { "icon": "shield", "title": "Punitive damages", "description": "Available in Georgia for gross negligence — such as hours-of-service violations." }
+            ]
+          }
+        ],
+        "disclaimer": "* Prior results do not guarantee a similar outcome. Settlement amounts vary based on the specific facts and circumstances of each case.",
+        "cta": { "label": "Contact Us", "href": "/contact-us", "variant": "primary", "external": false }
+      },
+      "testimonials": {
+        "heading": "What Clients Say After Their Truck Accident Case",
+        "items": [
+          { "quote": "After my accident, I had no idea where to start. Accident Professionals connected me with an attorney who explained everything clearly and made the process much less stressful.", "name": "Sarah M", "location": "Atlanta", "rating": 5 },
+          { "quote": "The team was responsive, professional, and genuinely helpful. They answered my questions quickly and helped me find legal support that fit my situation.", "name": "Janet T.", "location": "Orlando, FL", "rating": 5 },
+          { "quote": "I appreciated having someone guide me through the process. Instead of spending hours searching online, I was connected with an experienced attorney right away.", "name": "Melissa T.", "location": "Lawrenceville", "rating": 5 },
+          { "quote": "From the first phone call, someone was actually there. They made sure I understood my options and followed up throughout the process.", "name": "David P.", "location": "Decatur", "rating": 5 }
+        ]
+      },
+      "faq": {
+        "heading": "Frequently Asked Questions About Truck Accident Claims in Georgia",
+        "intro": "Common questions about truck accident claims in Georgia",
+        "items": [
+          { "question": "Why are truck accident cases more complex than car accident cases?", "answer": "Liability can extend to the driver, trucking company, cargo loader, maintenance provider, and vehicle manufacturer — each with their own insurer. Federal FMCSA regulations also apply. A Georgia truck accident attorney knows how to identify every responsible party." },
+          { "question": "Who can be held liable in a Georgia truck accident?", "answer": "Beyond the driver: the trucking company, the cargo loading company, the maintenance provider, and potentially a parts manufacturer. Each carries their own insurance — which is why truck settlements tend to be larger than car accident settlements." },
+          { "question": "How much is my truck accident case worth?", "answer": "It depends on injury severity, medical costs, lost income, and the evidence available. Because commercial carriers hold higher insurance policies and truck injuries are often catastrophic, these cases frequently result in six-figure and seven-figure recoveries. Speak with a truck accident attorney before accepting any offer." },
+          { "question": "How long do I have to file a truck accident claim in Georgia?", "answer": "Two years from the date of the accident (O.C.G.A. § 9-3-33). But truck cases have a hidden deadline — ELD data and driver logs can be legally discarded much sooner. Get an attorney involved early to preserve the evidence." },
+          { "question": "What is an ELD or \"black box\" and why does it matter?", "answer": "Electronic logging devices and event data recorders capture driving hours, speed, and braking data. They can prove a driver was fatigued or speeding — but can be overwritten or discarded without a legal preservation notice. Early action is critical." },
+          { "question": "Can I recover compensation if I was partially at fault?", "answer": "Yes — as long as you were less than 50% responsible. Georgia's modified comparative fault rule (O.C.G.A. § 51-12-33) reduces your recovery proportionally but doesn't eliminate it below that threshold." },
+          { "question": "What should I not say to the trucking company's adjuster?", "answer": "Don't say you're \"fine.\" Don't apologize or accept any blame. Don't agree to a recorded statement before speaking with an attorney. The safest response to any insurer is: \"My attorney will be in touch.\"" },
+          { "question": "What does Accident Professionals actually do?", "answer": "We're a vetted personal injury attorney network, not a law firm. We match you with a licensed Georgia attorney who handles commercial truck cases, manage the intake, and stay involved throughout. No fees unless your attorney wins your case." }
+        ]
+      },
+      "seo": {
+        "metaTitle": "Truck Accident Lawyer Georgia | Free Consult",
+        "metaDescription": "Injured in a Georgia truck accident? Our vetted attorney network fights trucking companies for maximum compensation. Free consultation, no fee unless we win.",
+        "keywords": "truck accident lawyer Georgia, truck accident attorney Atlanta, 18-wheeler accident lawyer Georgia",
+        "focusKeyword": "truck accident lawyer Georgia",
+        "canonicalUrl": "https://accidentprofessionals.com/services/auto-accidents/truck-accidents/",
+        "schemaType": "Service",
+        "noindex": false,
+        "nofollow": false
+      }
+    },
+    {
+      "title": "Motorcycle Accidents",
+      "slug": "motorcycle-accidents",
+      "order": 3,
+      "categorySlug": "auto-accidents",
+      "cardIcon": "/services-page/auto-accidents/motorcycle-accidents.png",
+      "cardDescription": "Motorcyclists face serious risks and unfair bias after accidents. We connect you with a motorcycle accident lawyer in Georgia who knows how to fight for riders' rights.",
+      "cardLinkText": "Motorcycle Accidents Help",
+      "cardLinkAnchor": "motorcycle accident lawyer Georgia",
+      "hero": {
+        "bgImage": "/services-page/auto-accidents/hero-bg.webp",
+        "h1Part1": "Motorcycle Accident Lawyer Network | Georgia Riders Deserve Real Justice",
+        "h1Accent": "",
+        "h1Subtitle": "",
+        "heroBody": "Motorcyclists are blamed first and compensated last — even when another driver caused the crash. The Accident Professionals network connects injured Georgia riders with vetted motorcycle accident attorneys who understand the bias against riders, know how to fight it, and have the results to prove it. Free consultation, no fees unless we win.",
+        "urgencyBullets": [
+          { "text": "Motorcycle accident specialists" },
+          { "text": "No fee unless we win" },
+          { "text": "24/7 available" },
+          { "text": "Se habla español" }
+        ],
+        "caseOptions": [
+          { "value": "car", "label": "Car Accident" },
+          { "value": "truck", "label": "Truck Accident" },
+          { "value": "motorcycle", "label": "Motorcycle Accident" },
+          { "value": "rideshare", "label": "Rideshare Accident" },
+          { "value": "other", "label": "Other" }
+        ],
+        "formSubject": "New Motorcycle Accident Consultation Request — Accident Professionals"
+      },
+      "whatToKnow": {
+        "eyebrow": "What Is A Motorcycle Accident Case?",
+        "heading": "What to Know About **Motorcycle Accident Claims** in Georgia",
+        "body": "A motorcycle accident claim in Georgia carries a challenge that car accident claims don't — rider bias. Insurance adjusters, juries, and even witnesses often assume a motorcyclist was speeding or riding recklessly before a single fact is examined. That assumption costs injured riders real money, and it's something the right attorney can fight directly.\n\nAccident Professionals isn't a law firm. We're a curated network of vetted Georgia personal injury attorneys who specifically handle motorcycle cases and understand the bias that comes with them. We match you with the right attorney, manage the intake, and stay involved throughout so you always have someone to call.\n\nActing fast matters. Georgia's statute of limitations gives you two years from the date of the accident to file a personal injury claim. Crash scene evidence disappears quickly, and witnesses' memories fade. The sooner an attorney is working your case, the better.",
+        "cta": { "label": "About Us", "href": "/about-us", "variant": "primary", "external": false },
+        "layout": "image-left",
+        "theme": "light",
+        "highlightTitle": "Trusted Local Network",
+        "highlightText": "We connect injured Georgians with experienced local attorneys who understand your case, your courts, and your community."
+      },
+      "howItWorks": {
+        "heading": "How Accident Professionals Works",
+        "subheading": "You just had an accident. The last thing you need is more confusion. Our process is simple.",
+        "image": "/services-page/auto-accidents/image1.webp",
+        "steps": [
+          { "number": "01", "title": "Tell us about your accident", "description": "Free call, no pressure, no jargon. Just tell us what happened." },
+          { "number": "02", "title": "We match you with the right attorney", "description": "A vetted local motorcycle accident attorney who understands rider bias — based on your crash, location, and needs." },
+          { "number": "03", "title": "We stay in your corner", "description": "Communication support from consultation to settlement so you always know what's happening next." }
+        ]
+      },
+      "typesOfCases": {
+        "eyebrow": "What We Handle",
+        "heading": "Types of Motorcycle Accident Cases We Handle",
+        "intro": "Motorcycle crashes happen in predictable ways — and each type requires a different legal approach to build a winning case.",
+        "cta": { "label": "Our Services", "href": "/services", "variant": "primary", "external": false },
+        "features": [
+          { "icon": "/icons/shield.svg", "title": "Left-turn collisions", "description": "The most common cause of motorcycle fatalities. A driver turning left cuts off an oncoming rider. Often the most straightforward liability case — but insurers still fight it." },
+          { "icon": "/icons/shield.svg", "title": "Lane change accidents", "description": "A driver changes lanes without checking blind spots and strikes a rider. Dashcam footage, witness accounts, and police reports are critical to proving fault." },
+          { "icon": "/icons/shield.svg", "title": "Rear-end crashes", "description": "When a distracted driver hits a motorcycle from behind, the rider almost always bears the worst of it. These cases often involve severe spinal and head injuries." },
+          { "icon": "/icons/shield.svg", "title": "Road hazard accidents", "description": "Potholes, debris, missing signage, or poor road maintenance can all cause crashes. Liability may rest with GDOT, a municipality, or a private property owner." },
+          { "icon": "/icons/shield.svg", "title": "Dooring accidents", "description": "A driver or passenger opens a car door into a rider's path. Common in Atlanta's urban areas. Liability is usually clear — the fight is over damages." },
+          { "icon": "/icons/shield.svg", "title": "Hit-and-run accidents", "description": "Georgia's UM coverage allows you to pursue a claim even when the at-fault driver flees. You have options — even without an ID." }
+        ]
+      },
+      "stepsToTake": {
+        "heading": "Steps to Take After a Motorcycle Accident in Georgia",
+        "subheading": "Georgia's modified comparative fault rule means your compensation can be reduced if you're found partially at fault. In motorcycle cases, insurers actively look for ways to assign blame to the rider. These five steps protect you.",
+        "steps": [
+          { "number": "01", "icon": "/services-page/auto-accidents/phone-icon.png", "title": "Call 911 and Stay at the Scene", "description": "Get a police report number. If the officer makes any notes about rider behavior, request a copy — inaccuracies can be challenged." },
+          { "number": "02", "icon": "/services-page/auto-accidents/attention-icon.png", "title": "Get Medical Attention the Same Day", "description": "Even minor-seeming injuries can be serious. Adrenaline masks pain. A same-day medical record is one of the most valuable documents in your case." },
+          { "number": "03", "icon": "/services-page/auto-accidents/camera-icon.png", "title": "Document Everything Before You Leave", "description": "Photograph the scene, road conditions, skid marks, vehicle positions, your injuries, and any damage to your bike and gear. Preserve your helmet and clothing as they are." },
+          { "number": "04", "icon": "/services-page/auto-accidents/statement-icon.png", "title": "Don't Give a Recorded Statement", "description": "Insurers in motorcycle cases look for statements suggesting you were speeding or riding recklessly. Politely decline and say your attorney will be in touch." },
+          { "number": "05", "icon": "/services-page/auto-accidents/arrow-next-icon.png", "title": "Contact Accident Professionals Before You Accept Any Offer", "description": "First offers in motorcycle cases are almost always low. Speak with a Georgia motorcycle accident attorney from our network before you sign anything." }
+        ]
+      },
+      "damages": {
+        "eyebrow": "Damages You Can Recover",
+        "heading": "Compensation You May Be Entitled to **After a Motorcycle Accident** in Georgia",
+        "intro": "Motorcycle accident victims are often offered far less than their case is worth because insurers factor in rider bias from the start. Here is the full scope of what a properly handled claim can recover.",
+        "tabs": [
+          {
+            "label": "Compensable damages",
+            "items": [
+              { "icon": "medical", "title": "Medical expenses", "description": "Past and future costs: emergency care, surgery, skin grafts, hospitalization, and rehabilitation." },
+              { "icon": "wallet", "title": "Lost wages", "description": "Income already lost, plus future earning capacity if your injuries affect your ability to work." },
+              { "icon": "car", "title": "Motorcycle & gear damage", "description": "Repair or replacement of your bike, helmet, jacket, gloves, and any other gear damaged in the crash." },
+              { "icon": "pulse", "title": "Pain and suffering", "description": "Often the largest component of a serious motorcycle injury settlement." }
+            ]
+          },
+          {
+            "label": "What's included",
+            "items": [
+              { "icon": "dollar", "title": "Out-of-pocket costs", "description": "Prescriptions, transportation to appointments, home care, and assistive equipment." },
+              { "icon": "scales", "title": "Emotional distress", "description": "Anxiety, depression, PTSD, and the psychological impact of the crash — all compensable in Georgia." },
+              { "icon": "home", "title": "Wrongful death", "description": "If the crash was fatal, surviving family may recover funeral costs, lost income, and loss of companionship." },
+              { "icon": "shield", "title": "Loss of enjoyment of life", "description": "If your injuries prevent you from riding or other activities you valued before the crash." }
+            ]
+          }
+        ],
+        "disclaimer": "* Prior results do not guarantee a similar outcome. Settlement amounts vary based on the specific facts and circumstances of each case.",
+        "cta": { "label": "Contact Us", "href": "/contact-us", "variant": "primary", "external": false }
+      },
+      "testimonials": {
+        "heading": "What Clients Say After Their Motorcycle Accident Case",
+        "items": [
+          { "quote": "After my accident, I had no idea where to start. Accident Professionals connected me with an attorney who explained everything clearly and made the process much less stressful.", "name": "Sarah M", "location": "Atlanta", "rating": 5 },
+          { "quote": "The team was responsive, professional, and genuinely helpful. They answered my questions quickly and helped me find legal support that fit my situation.", "name": "Janet T.", "location": "Orlando, FL", "rating": 5 },
+          { "quote": "I appreciated having someone guide me through the process. Instead of spending hours searching online, I was connected with an experienced attorney right away.", "name": "Melissa T.", "location": "Lawrenceville", "rating": 5 },
+          { "quote": "From the first phone call, someone was actually there. They made sure I understood my options and followed up throughout the process.", "name": "David P.", "location": "Decatur", "rating": 5 }
+        ]
+      },
+      "faq": {
+        "heading": "Frequently Asked Questions About Motorcycle Accident Claims in Georgia",
+        "intro": "Common questions about motorcycle accident claims in Georgia",
+        "items": [
+          { "question": "Does Georgia require motorcyclists to wear helmets?", "answer": "Yes. Georgia law (O.C.G.A. § 40-6-315) requires all motorcycle riders and passengers to wear a helmet meeting federal safety standards. Not wearing a helmet doesn't eliminate your right to compensation — but it can be used to argue some of your injuries were made worse. A Georgia motorcycle accident attorney from our network will help you navigate this." },
+          { "question": "Is rider bias a real legal problem in Georgia?", "answer": "Yes — and it's documented. Studies consistently show that drivers underreport fault in motorcycle crashes, and insurance adjusters and juries often begin with negative assumptions about rider behavior. The right attorney knows how to anticipate this, gather objective evidence early, and counter the bias directly." },
+          { "question": "How much is my motorcycle accident case worth in Georgia?", "answer": "Case value depends on injury severity, your medical costs, your lost income, and the strength of the evidence. Because motorcycle injuries are typically more severe than car injuries, settlements in serious cases regularly reach six figures. The rider bias problem makes it especially important to have an attorney evaluate your case before you accept any offer." },
+          { "question": "Can I recover compensation if I wasn't wearing a helmet?", "answer": "Yes. Georgia follows a modified comparative fault rule (O.C.G.A. § 51-12-33). Not wearing a helmet may increase your assigned percentage of fault for injuries a helmet might have prevented — but it doesn't eliminate your right to recover. The at-fault driver is still responsible for the crash itself." },
+          { "question": "What if the other driver says I was speeding or riding recklessly?", "answer": "That claim needs to be challenged with evidence — and fast, before footage is overwritten. An attorney from our network will immediately work to gather dashcam footage, traffic camera recordings, witness statements, and accident reconstruction data to establish what actually happened." },
+          { "question": "How long do I have to file a motorcycle accident claim in Georgia?", "answer": "Two years from the date of the accident (O.C.G.A. § 9-3-33). Evidence disappears quickly in motorcycle cases, and the sooner an attorney is working your case, the stronger your position." },
+          { "question": "What if the road conditions caused my accident?", "answer": "Road defects — potholes, missing signage, broken pavement — can form the basis of a claim against GDOT, a municipality, or a private property owner. These cases have shorter notice requirements than standard personal injury claims, so contact an attorney quickly." },
+          { "question": "What does Accident Professionals actually do?", "answer": "We're a vetted personal injury attorney network, not a law firm. We match you with a licensed Georgia attorney who handles motorcycle cases, manage the intake, and stay involved throughout. No fees unless your attorney wins your case." }
+        ]
+      },
+      "seo": {
+        "metaTitle": "Motorcycle Accident Lawyer Georgia | Free",
+        "metaDescription": "Injured in a Georgia motorcycle accident? Our vetted attorney network fights for the compensation you deserve. Free consultation, no fees unless we win.",
+        "keywords": "motorcycle accident lawyer Georgia, motorcycle accident attorney Atlanta, rider bias attorney Georgia",
+        "focusKeyword": "motorcycle accident lawyer Georgia",
+        "canonicalUrl": "https://accidentprofessionals.com/services/auto-accidents/motorcycle-accidents/",
+        "schemaType": "Service",
+        "noindex": false,
+        "nofollow": false
+      }
+    },
+    {
+      "title": "Rideshare Accidents",
+      "slug": "rideshare-accidents",
+      "order": 4,
+      "categorySlug": "auto-accidents",
+      "cardIcon": "/services-page/auto-accidents/rideshare-accidents.svg",
+      "cardDescription": "Uber and Lyft accidents involve layered insurance policies and multiple parties. We match you with a rideshare accident attorney in Georgia who understands how these claims work.",
+      "cardLinkText": "Rideshare Accidents Help",
+      "cardLinkAnchor": "rideshare accident attorney Georgia",
+      "hero": {
+        "bgImage": "/services-page/auto-accidents/hero-bg.webp",
+        "h1Part1": "Rideshare Accident Lawyer Network | Uber and Lyft Accidents in Georgia",
+        "h1Accent": "",
+        "h1Subtitle": "",
+        "heroBody": "Rideshare accidents are more complicated than regular car accidents — not because the injuries are different, but because the insurance is. Whether you were a passenger, a pedestrian, or another driver, who pays depends on what the Uber or Lyft driver was doing at the exact moment of impact. The Accident Professionals network connects injured Georgians with vetted rideshare accident attorneys who know how to navigate multi-tier insurance and fight for what your case is worth. Free consultation, no fees unless we win.",
+        "urgencyBullets": [
+          { "text": "Rideshare accident specialists" },
+          { "text": "No fee unless we win" },
+          { "text": "24/7 available" },
+          { "text": "Se habla español" }
+        ],
+        "caseOptions": [
+          { "value": "car", "label": "Car Accident" },
+          { "value": "truck", "label": "Truck Accident" },
+          { "value": "motorcycle", "label": "Motorcycle Accident" },
+          { "value": "rideshare", "label": "Rideshare Accident" },
+          { "value": "other", "label": "Other" }
+        ],
+        "formSubject": "New Rideshare Accident Consultation Request — Accident Professionals"
+      },
+      "whatToKnow": {
+        "eyebrow": "What Is A Rideshare Accident Case?",
+        "heading": "What to Know About **Rideshare Accident Claims** in Georgia",
+        "body": "A rideshare accident claim in Georgia is not a standard car accident claim with an app involved. It's a claim against a layered insurance system that Uber and Lyft have specifically designed to limit their exposure — and that most injured people don't understand until they've already made costly mistakes.\n\nUber and Lyft classify their drivers as independent contractors, not employees. That means the company's liability depends entirely on the driver's app status at the moment of the crash: app off, personal insurance applies; waiting for a request, limited contingency coverage; en route or transporting a passenger, full commercial coverage applies.\n\nAccident Professionals isn't a law firm. We're a curated network of vetted Georgia personal injury attorneys who understand how rideshare insurance works, which tier applies, and how to build a claim that accounts for every party involved. Georgia's statute of limitations gives you two years to file — but preserving the driver's app data and trip log early is critical.",
+        "cta": { "label": "About Us", "href": "/about-us", "variant": "primary", "external": false },
+        "layout": "image-left",
+        "theme": "light",
+        "highlightTitle": "Trusted Local Network",
+        "highlightText": "We connect injured Georgians with experienced local attorneys who understand your case, your courts, and your community."
+      },
+      "howItWorks": {
+        "heading": "How Accident Professionals Works",
+        "subheading": "You just had an accident. The last thing you need is more confusion. Our process is simple.",
+        "image": "/services-page/auto-accidents/image1.webp",
+        "steps": [
+          { "number": "01", "title": "Tell us about your accident", "description": "Free call, no pressure, no jargon. Just tell us what happened." },
+          { "number": "02", "title": "We match you with the right attorney", "description": "A vetted local rideshare accident attorney who understands the insurance tiers — based on your role in the crash, location, and needs." },
+          { "number": "03", "title": "We stay in your corner", "description": "Communication support from consultation to settlement so you always know what's happening next." }
+        ]
+      },
+      "typesOfCases": {
+        "eyebrow": "What We Handle",
+        "heading": "Types of Rideshare Accident Cases We Handle",
+        "intro": "Your role in the accident and the driver's app status at the time both affect how your claim is built. Here's what we handle.",
+        "cta": { "label": "Our Services", "href": "/services", "variant": "primary", "external": false },
+        "features": [
+          { "icon": "/icons/shield.svg", "title": "Passenger injured in an Uber or Lyft", "description": "As a passenger, you're typically covered by the rideshare company's full commercial policy. But getting that policy to pay what it should still requires an attorney." },
+          { "icon": "/icons/shield.svg", "title": "Hit by an active Uber or Lyft driver", "description": "If the rideshare driver who hit you was on an active trip or en route to a pickup, their commercial coverage applies. Establishing the driver's app status is the first legal priority." },
+          { "icon": "/icons/shield.svg", "title": "Hit by a rideshare driver between trips", "description": "When the driver had the app on but no active ride, only limited contingency coverage applies — often $50,000 per person. Knowing this matters before you negotiate." },
+          { "icon": "/icons/shield.svg", "title": "Hit by an off-duty rideshare driver", "description": "If the app was off, only the driver's personal insurance applies — and some personal policies exclude commercial driving. Coverage gaps are common." },
+          { "icon": "/icons/shield.svg", "title": "Pedestrian or cyclist struck by a rideshare vehicle", "description": "Rideshare vehicles in heavy Georgia urban traffic — particularly Atlanta — are involved in a significant number of pedestrian and cyclist accidents." },
+          { "icon": "/icons/shield.svg", "title": "Multi-vehicle rideshare accidents", "description": "When a rideshare driver's negligence causes a chain collision, liability can extend across multiple insurance policies and multiple parties simultaneously." }
+        ]
+      },
+      "stepsToTake": {
+        "heading": "Steps to Take After a Rideshare Accident in Georgia",
+        "subheading": "Georgia's modified comparative fault rule means your compensation can be reduced if you're found partially at fault. In rideshare cases, multiple insurers are each looking for reasons to push liability onto each other rather than pay your claim. These steps protect you.",
+        "steps": [
+          { "number": "01", "icon": "/services-page/auto-accidents/phone-icon.png", "title": "Call 911 and Stay at the Scene", "description": "Get a police report that captures the rideshare vehicle's make, model, and license plate — information critical for identifying which insurance tier applies." },
+          { "number": "02", "icon": "/services-page/auto-accidents/camera-icon.png", "title": "Screenshot Your Uber or Lyft App Immediately", "description": "If you were a passenger, screenshot the trip details, driver information, and ride status before closing the app. This is some of the most important evidence in a rideshare case and it disappears quickly." },
+          { "number": "03", "icon": "/services-page/auto-accidents/attention-icon.png", "title": "Get Medical Attention the Same Day", "description": "A same-day medical record establishes both the injury and the timeline. Many rideshare injuries — particularly soft tissue and spinal — are not fully apparent until days later." },
+          { "number": "04", "icon": "/services-page/auto-accidents/statement-icon.png", "title": "Don't Give a Recorded Statement", "description": "Not to Uber's insurer, not Lyft's, not the driver's, and not your own. Say only that you were involved in an accident and that your attorney will be in touch." },
+          { "number": "05", "icon": "/services-page/auto-accidents/arrow-next-icon.png", "title": "Contact Accident Professionals Before You Negotiate", "description": "A Georgia rideshare accident attorney from our network will identify the correct insurance tier, preserve the digital evidence, and build your case before you make any decisions." }
+        ]
+      },
+      "damages": {
+        "eyebrow": "Damages You Can Recover",
+        "heading": "Compensation You May Be Entitled to **After a Rideshare Accident** in Georgia",
+        "intro": "The right damages in a rideshare case depend on which insurance tier applies and how many parties share liability. Uber and Lyft carry $1,000,000 in commercial coverage on an active trip — a much higher ceiling than most personal policies.",
+        "tabs": [
+          {
+            "label": "Compensable damages",
+            "items": [
+              { "icon": "medical", "title": "Medical expenses", "description": "Past and future costs: emergency care, surgery, hospitalization, physical therapy, and ongoing treatment." },
+              { "icon": "wallet", "title": "Lost wages", "description": "Income you've already lost, plus future earning capacity if your injuries affect your ability to work long-term." },
+              { "icon": "car", "title": "Property damage", "description": "Vehicle repair or replacement and any personal property damaged in the collision." },
+              { "icon": "pulse", "title": "Pain and suffering", "description": "Often the largest component of a serious injury settlement." }
+            ]
+          },
+          {
+            "label": "What's included",
+            "items": [
+              { "icon": "dollar", "title": "Out-of-pocket costs", "description": "Transportation, prescriptions, home care, and any other expenses directly caused by your injury." },
+              { "icon": "scales", "title": "Emotional distress", "description": "Anxiety, depression, PTSD, and the documented psychological impact of the crash — all compensable in Georgia." },
+              { "icon": "home", "title": "Wrongful death", "description": "If the crash was fatal, surviving family may recover funeral costs, lost income, and loss of companionship." },
+              { "icon": "shield", "title": "Punitive damages", "description": "Available in Georgia for gross negligence — such as a driver who was demonstrably impaired or reckless." }
+            ]
+          }
+        ],
+        "disclaimer": "* Prior results do not guarantee a similar outcome. Settlement amounts vary based on the specific facts and circumstances of each case.",
+        "cta": { "label": "Contact Us", "href": "/contact-us", "variant": "primary", "external": false }
+      },
+      "testimonials": {
+        "heading": "What Clients Say After Their Rideshare Accident Case",
+        "items": [
+          { "quote": "After my accident, I had no idea where to start. Accident Professionals connected me with an attorney who explained everything clearly and made the process much less stressful.", "name": "Sarah M", "location": "Atlanta", "rating": 5 },
+          { "quote": "The team was responsive, professional, and genuinely helpful. They answered my questions quickly and helped me find legal support that fit my situation.", "name": "Janet T.", "location": "Orlando, FL", "rating": 5 },
+          { "quote": "I appreciated having someone guide me through the process. Instead of spending hours searching online, I was connected with an experienced attorney right away.", "name": "Melissa T.", "location": "Lawrenceville", "rating": 5 },
+          { "quote": "From the first phone call, someone was actually there. They made sure I understood my options and followed up throughout the process.", "name": "David P.", "location": "Decatur", "rating": 5 }
+        ]
+      },
+      "faq": {
+        "heading": "Frequently Asked Questions About Rideshare Accident Claims in Georgia",
+        "intro": "Common questions about rideshare accident claims in Georgia",
+        "items": [
+          { "question": "Who pays if I'm injured as an Uber or Lyft passenger in Georgia?", "answer": "When you're a passenger and the driver causes an accident, Uber and Lyft's full commercial liability policy applies — up to $1,000,000 per incident. If another driver causes the crash, their insurance is primary and the rideshare policy may provide additional coverage. A Georgia rideshare accident attorney will identify every applicable policy and pursue all of them." },
+          { "question": "What if the Uber or Lyft driver's app was off at the time of the crash?", "answer": "If the driver's app was completely off, they were not operating as a rideshare driver in any legal sense. Only their personal auto insurance applies — and some personal policies specifically exclude commercial driving, which can create a coverage gap. This is one of the most important reasons to have an attorney identify the driver's app status before you negotiate." },
+          { "question": "What is the difference between the rideshare insurance tiers?", "answer": "Rideshare companies use a three-tier coverage system. Period 0: app off — driver's personal insurance only. Period 1: app on, no ride accepted — limited contingency coverage ($50K/$100K bodily injury). Periods 2 and 3: en route to pickup or actively transporting — full $1,000,000 commercial policy. Which tier applies depends on the exact app status at the moment of impact." },
+          { "question": "Can I sue Uber or Lyft directly?", "answer": "Generally not easily. Uber and Lyft classify drivers as independent contractors, which legally insulates the company from most direct liability. However, the company's insurance still applies in Periods 2 and 3, and there are circumstances — such as negligent driver vetting — where direct company liability may be argued. An attorney will assess whether that applies to your case." },
+          { "question": "How much is a rideshare accident case worth in Georgia?", "answer": "Case value depends on your injuries, medical costs, lost income, and which insurance tier applies. Passenger cases where the full $1,000,000 commercial policy applies have a significantly higher ceiling than cases involving off-duty drivers. Speak with a rideshare accident attorney before accepting any offer — the first offer is almost never the right one." },
+          { "question": "How long do I have to file a rideshare accident claim in Georgia?", "answer": "Two years from the date of the accident (O.C.G.A. § 9-3-33). But in rideshare cases, digital evidence — app data, GPS records, trip logs — can be lost or overwritten much sooner. Contact an attorney as quickly as possible to preserve that evidence." },
+          { "question": "What if I was partly at fault for the rideshare accident?", "answer": "Georgia's modified comparative fault rule (O.C.G.A. § 51-12-33) means you can still recover as long as you were less than 50% responsible. Your compensation is reduced by your share of fault but not eliminated. Multiple insurers in a rideshare case will each try to assign you more fault than you deserve — having an attorney levels that dynamic." },
+          { "question": "What does Accident Professionals actually do?", "answer": "We're a vetted personal injury attorney network, not a law firm. We match you with a licensed Georgia attorney who handles rideshare accident cases, manage the intake, and stay involved throughout. No fees unless your attorney wins your case." }
+        ]
+      },
+      "seo": {
+        "metaTitle": "Rideshare Accident Lawyer Georgia | Free",
+        "metaDescription": "Injured in a GA Uber or Lyft accident? Our vetted attorney network fights for your maximum compensation. Free consultation, no fee unless we win.",
+        "keywords": "rideshare accident lawyer Georgia, Uber accident attorney Georgia, Lyft accident lawyer Atlanta",
+        "focusKeyword": "rideshare accident lawyer Georgia",
+        "canonicalUrl": "https://accidentprofessionals.com/services/auto-accidents/rideshare-accidents/",
+        "schemaType": "Service",
+        "noindex": false,
+        "nofollow": false
+      }
+    },
+    {
+      "title": "Slip & Fall",
+      "slug": "slip-and-fall",
+      "order": 1,
+      "categorySlug": "premises-liability",
+      "cardIcon": "/services-page/premises-liability/slip-and-fall.png",
+      "cardDescription": "Wet floors, uneven surfaces, broken stairs, and poor lighting are among the most common causes of serious injuries in Georgia. We connect you with a slip and fall attorney in Georgia who knows how to prove negligence and fight insurance carriers.",
+      "cardLinkText": "Slip & Fall Help",
+      "cardLinkAnchor": "slip and fall attorney Georgia",
+      "hero": {
+        "bgImage": "/services-page/premises-liability/premise-liability-hero.webp",
+        "h1Part1": "Slip and Fall Lawyer Network | Hold Negligent Property Owners Accountable",
+        "h1Accent": "",
+        "h1Subtitle": "",
+        "heroBody": "Property owners in Georgia have a legal duty to keep their premises safe. When they don't — and someone gets hurt because of it — they're liable. But proving that liability requires moving fast, gathering the right evidence, and knowing exactly how Georgia premises liability law works. The Accident Professionals network connects injured Georgians with vetted slip and fall attorneys who know how to build these cases. Free consultation, no fees unless we win.",
+        "urgencyBullets": [
+          { "text": "Slip and fall specialists" },
+          { "text": "No fee unless we win" },
+          { "text": "24/7 available" },
+          { "text": "Se habla español" }
+        ],
+        "caseOptions": [
+          { "value": "slip-fall", "label": "Slip & Fall" },
+          { "value": "negligent-security", "label": "Negligent Security" },
+          { "value": "dog-bite", "label": "Dog Bite" },
+          { "value": "property-hazard", "label": "Other Property Hazard" },
+          { "value": "other", "label": "Other" }
+        ],
+        "formSubject": "New Slip & Fall Consultation Request — Accident Professionals"
+      },
+      "whatToKnow": {
+        "eyebrow": "What Is A Slip and Fall Case?",
+        "heading": "What to Know About **Slip and Fall Claims** in Georgia",
+        "body": "A slip and fall claim in Georgia is a type of premises liability case — a legal claim against a property owner or occupier who failed to maintain a reasonably safe environment. Grocery stores, parking lots, apartment complexes, restaurants, hotels, and government properties are all common locations. If you were injured on someone else's property because of a hazard they knew about — or should have known about — and failed to fix, Georgia law may entitle you to compensation.\n\nThe catch is that premises liability cases are harder to win than many people expect. Georgia law requires you to prove not just that a hazard existed, but that the property owner had actual or constructive knowledge of it. Evidence of that knowledge disappears fast: surveillance footage gets overwritten, incident reports get buried, and witnesses forget details. Acting quickly is not optional.\n\nAccident Professionals isn't a law firm. We're a curated network of vetted Georgia personal injury attorneys who handle premises liability cases and know what it takes to prove them. We match you with the right attorney, manage the intake, and stay involved throughout.",
+        "cta": { "label": "About Us", "href": "/about-us", "variant": "primary", "external": false },
+        "layout": "image-left",
+        "theme": "light",
+        "highlightTitle": "Trusted Local Network",
+        "highlightText": "We connect injured Georgians with experienced local attorneys who understand your case, your courts, and your community."
+      },
+      "howItWorks": {
+        "heading": "How Accident Professionals Works",
+        "subheading": "You just got hurt. The last thing you need is more confusion. Our process is simple.",
+        "image": "/services-page/premises-liability/premise-liability-image.webp",
+        "steps": [
+          { "number": "01", "title": "Tell us about your injury", "description": "Free call, no pressure, no jargon. Just tell us what happened, where it occurred, and what caused it." },
+          { "number": "02", "title": "We match you with the right attorney", "description": "A vetted local premises liability attorney based on your injury, the property type, and your needs." },
+          { "number": "03", "title": "We stay in your corner", "description": "Communication support from consultation to settlement so you always know what's happening next." }
+        ]
+      },
+      "typesOfCases": {
+        "eyebrow": "What We Handle",
+        "heading": "Types of Slip and Fall Cases We Handle",
+        "intro": "Premises liability cases arise in every kind of property across Georgia. The common thread is always the same — a hazard that existed, that the owner knew or should have known about, and that caused your injury.",
+        "cta": { "label": "Our Services", "href": "/services", "variant": "primary", "external": false },
+        "features": [
+          { "icon": "/icons/shield.svg", "title": "Wet or slippery floors", "description": "Spills, recently mopped floors, and leaks create liability when adequate warning isn't given or the hazard isn't addressed promptly." },
+          { "icon": "/icons/shield.svg", "title": "Uneven surfaces & tripping hazards", "description": "Broken pavement, cracked sidewalks, raised flooring, and poorly maintained walkways. Common in commercial properties, apartments, and government land." },
+          { "icon": "/icons/shield.svg", "title": "Inadequate lighting", "description": "Dark stairwells, parking lots, and hallways increase the risk of falls significantly. Owners have a duty to maintain adequate lighting in all accessible areas." },
+          { "icon": "/icons/shield.svg", "title": "Defective stairs & handrails", "description": "Broken steps, missing handrails, or unstable banisters are maintenance failures that property owners are responsible for identifying and fixing." },
+          { "icon": "/icons/shield.svg", "title": "Parking lot & outdoor hazards", "description": "Potholes, ice, standing water, and uneven asphalt in commercial parking areas. Especially common in Georgia during seasonal weather changes." },
+          { "icon": "/icons/shield.svg", "title": "Construction site accidents", "description": "Active construction zones create heightened hazard duties. Both property owners and contractors may share liability for injuries to workers or the public." }
+        ]
+      },
+      "stepsToTake": {
+        "heading": "Steps to Take After a Slip and Fall in Georgia",
+        "subheading": "Georgia's modified comparative fault rule means your compensation can be reduced if you're found partially at fault — and property owners' insurers will look for any evidence that you were distracted or ignored a visible warning. These steps protect you.",
+        "steps": [
+          { "number": "01", "icon": "/services-page/auto-accidents/attention-icon.png", "title": "Seek Medical Attention Immediately", "description": "Even if you can walk it off, go the same day. Falls can cause internal injuries, hairline fractures, and spinal damage that don't fully manifest for hours. A same-day record ties your injury to the incident." },
+          { "number": "02", "icon": "/services-page/auto-accidents/phone-icon.png", "title": "Report the Incident to the Property Owner", "description": "Do this in writing if possible — a text, an email, or a written incident report. A formal report creates a record that the owner was put on notice of the hazard." },
+          { "number": "03", "icon": "/services-page/auto-accidents/camera-icon.png", "title": "Photograph Everything at the Scene", "description": "Capture the exact hazard — the wet floor, the broken step, the unlit area — along with any warning signs and your injuries, before anyone cleans it up or makes repairs." },
+          { "number": "04", "icon": "/services-page/auto-accidents/statement-icon.png", "title": "Ask For and Preserve the Incident Report", "description": "Many businesses complete an internal incident report. Request a copy on the spot. If they refuse, note the refusal in writing. This document is critical evidence." },
+          { "number": "05", "icon": "/services-page/auto-accidents/arrow-next-icon.png", "title": "Contact Accident Professionals Before You Speak With the Insurer", "description": "A Georgia slip and fall attorney from our network will gather surveillance footage, maintenance records, and inspection logs before that evidence disappears." }
+        ]
+      },
+      "damages": {
+        "eyebrow": "Damages You Can Recover",
+        "heading": "Compensation You May Be Entitled to **After a Slip and Fall** in Georgia",
+        "intro": "Property owners and their insurers often try to characterize slip and fall injuries as minor. Here is what a properly handled premises liability claim can actually recover.",
+        "tabs": [
+          {
+            "label": "Compensable damages",
+            "items": [
+              { "icon": "medical", "title": "Medical expenses", "description": "Past and future costs: emergency care, surgery, hospitalization, physical therapy, and all ongoing treatment related to your fall." },
+              { "icon": "wallet", "title": "Lost wages", "description": "Income you've already lost, plus future earning capacity if your injuries affect your ability to work long-term." },
+              { "icon": "scales", "title": "Emotional distress", "description": "Anxiety, PTSD, fear of falling again, and the documented psychological impact of your injuries." },
+              { "icon": "pulse", "title": "Pain and suffering", "description": "Compensation for physical pain and the diminished quality of life caused by your injuries." }
+            ]
+          },
+          {
+            "label": "What's included",
+            "items": [
+              { "icon": "dollar", "title": "Out-of-pocket costs", "description": "Transportation to medical appointments, prescriptions, home modifications, and assistive equipment." },
+              { "icon": "car", "title": "Property damage", "description": "Personal items damaged in the fall, such as glasses, a phone, or clothing." },
+              { "icon": "home", "title": "Wrongful death", "description": "If the fall was fatal, surviving family may recover funeral costs, lost income, and loss of companionship." },
+              { "icon": "shield", "title": "Punitive damages", "description": "Available in Georgia for egregious negligence — such as a property owner who knowingly ignored a reported hazard." }
+            ]
+          }
+        ],
+        "disclaimer": "* Prior results do not guarantee a similar outcome. Settlement amounts vary based on the specific facts and circumstances of each case.",
+        "cta": { "label": "Contact Us", "href": "/contact-us", "variant": "primary", "external": false }
+      },
+      "testimonials": {
+        "heading": "What Clients Say After Their Slip and Fall Case",
+        "items": [
+          { "quote": "After my accident, I had no idea where to start. Accident Professionals connected me with an attorney who explained everything clearly and made the process much less stressful.", "name": "Sarah M", "location": "Atlanta", "rating": 5 },
+          { "quote": "The team was responsive, professional, and genuinely helpful. They answered my questions quickly and helped me find legal support that fit my situation.", "name": "Janet T.", "location": "Orlando, FL", "rating": 5 },
+          { "quote": "I appreciated having someone guide me through the process. Instead of spending hours searching online, I was connected with an experienced attorney right away.", "name": "Melissa T.", "location": "Lawrenceville", "rating": 5 },
+          { "quote": "From the first phone call, someone was actually there. They made sure I understood my options and followed up throughout the process.", "name": "David P.", "location": "Decatur", "rating": 5 }
+        ]
+      },
+      "faq": {
+        "heading": "Frequently Asked Questions About Slip and Fall Claims in Georgia",
+        "intro": "Common questions about slip and fall claims in Georgia",
+        "items": [
+          { "question": "How long do I have to file a slip and fall claim in Georgia?", "answer": "Georgia gives you two years from the date of your injury to file a personal injury lawsuit (O.C.G.A. § 9-3-33). However, if your fall happened on government-owned property — a city sidewalk, a county building, a state facility — you may be required to file an ante litem notice within as little as six months. Don't assume your deadline is two years. Contact a Georgia slip and fall attorney as soon as possible to confirm the correct timeline." },
+          { "question": "Does Georgia have a law that limits what a slip and fall victim can recover?", "answer": "Yes. Georgia's modified comparative fault rule (O.C.G.A. § 51-12-33) reduces your compensation by your percentage of fault. If you're found 30% at fault, you recover 70% of your damages. If you're found 50% or more at fault, you recover nothing. Property owners' insurers aggressively try to pin blame on victims. An attorney counters that strategy directly." },
+          { "question": "What does \"actual or constructive knowledge\" mean in a Georgia slip and fall case?", "answer": "This is the legal standard you have to meet to win a premises liability case in Georgia. \"Actual knowledge\" means the owner was directly told about the hazard. \"Constructive knowledge\" means the hazard had existed long enough that a reasonable owner conducting regular inspections would have found it. Proving either requires evidence — surveillance footage, maintenance logs, incident reports — gathered quickly before it disappears." },
+          { "question": "What if there was a \"wet floor\" sign — does that end my case?", "answer": "Not necessarily. A warning sign reduces a property owner's liability but doesn't eliminate it. If the sign wasn't clearly visible, was placed after the hazard rather than before, or if a warning alone wasn't sufficient, your claim may still be valid. An attorney will assess whether the warning given was legally adequate." },
+          { "question": "How much is my slip and fall case worth in Georgia?", "answer": "Case value depends on the severity of your injuries, your medical costs, your lost income, and the strength of the evidence connecting the hazard to the owner's negligence. Minor soft tissue injuries typically settle in the range of $10,000 to $30,000. Cases involving hip fractures, spinal damage, TBI, or elderly victims requiring long-term care regularly result in six-figure recoveries." },
+          { "question": "What if I was partly not watching where I was going — can I still recover?", "answer": "Yes. Georgia's modified comparative fault rule means you can recover as long as you were less than 50% responsible. The key question is not whether you were paying attention, but whether the property owner fulfilled their legal duty to maintain a safe environment. A hazard that couldn't reasonably be seen or avoided shifts fault to the owner." },
+          { "question": "What if the fall happened at someone's private home?", "answer": "Georgia's premises liability law applies to private homeowners as well as commercial owners, though the standard of care differs based on whether you were an invited guest, a licensee, or a trespasser. If you were invited onto the property and injured by a hazard the owner knew or should have known about, you may have a valid claim. Their homeowner's insurance is typically the source of compensation." },
+          { "question": "What does Accident Professionals actually do?", "answer": "We're a vetted personal injury attorney network, not a law firm. We match you with a licensed Georgia attorney who handles premises liability cases, manage the intake, and stay involved throughout. No fees unless your attorney wins your case." }
+        ]
+      },
+      "seo": {
+        "metaTitle": "Slip & Fall Lawyer Georgia | Free Consult",
+        "metaDescription": "Injured in a Georgia slip and fall? Our vetted attorneys hold negligent property owners accountable. Free consultation, no fees unless we win. Available 24/7.",
+        "keywords": "slip and fall lawyer Georgia, premises liability attorney Georgia, slip and fall attorney Atlanta",
+        "focusKeyword": "slip and fall lawyer Georgia",
+        "canonicalUrl": "https://accidentprofessionals.com/services/premises-liability/slip-and-fall/",
+        "schemaType": "Service",
+        "noindex": false,
+        "nofollow": false
+      }
+    },
     { "title": "Negligent Security", "slug": "negligent-security", "order": 2, "categorySlug": "premises-liability", "cardIcon": "/services-page/premises-liability/negligent-security.png", "cardDescription": "Assaults, robberies, and crimes in parking lots, hotels, apartment buildings, or retail settings can give rise to a premises liability claim when a property owner failed to provide adequate security. We connect you with a negligent security attorney in Georgia who handles these cases.", "cardLinkText": "Negligent Security Help", "cardLinkAnchor": "negligent security attorney Georgia" },
     { "title": "Dog Bites", "slug": "dog-bites", "order": 3, "categorySlug": "premises-liability", "cardIcon": "/services-page/premises-liability/dog-bites.png", "cardDescription": "Property owners in Georgia may be liable for injuries caused by dogs on their premises. If you were bitten or attacked, you may have a claim. We connect you with a dog bite attorney in Georgia who understands Georgia's liability rules for animal attacks.", "cardLinkText": "Dog Bite Help", "cardLinkAnchor": "dog bite attorney Georgia" },
     { "title": "Other Property Hazards", "slug": "property-hazards", "order": 4, "categorySlug": "premises-liability", "cardIcon": "/services-page/premises-liability/other-property-hazards.png", "cardDescription": "Swimming pool accidents, falling merchandise, broken railings, unmarked construction zones, and more. We match you with a premises liability attorney in Georgia who handles the full range of property injury cases.", "cardLinkText": "Property Injury Help", "cardLinkAnchor": "premises liability attorney Georgia" },
-    { "title": "Workers' Compensation Claims", "slug": "workers-compensation", "order": 1, "categorySlug": "workplace-accidents", "cardIcon": "/services-page/workplace-accidents/workers-compensation-claims.png", "cardDescription": "Georgia requires most employers to carry workers' comp insurance. If you're injured on the job, you're generally entitled to benefits regardless of fault. We connect you with a workers' compensation attorney in Georgia who knows how to protect your claim.", "cardLinkText": "Workers' Comp Help", "cardLinkAnchor": "workers compensation attorney Georgia" },
+    {
+      "title": "Workers' Compensation Claims",
+      "slug": "workers-compensation",
+      "order": 1,
+      "categorySlug": "workplace-accidents",
+      "cardIcon": "/services-page/workplace-accidents/workers-compensation-claims.png",
+      "cardDescription": "Georgia requires most employers to carry workers' comp insurance. If you're injured on the job, you're generally entitled to benefits regardless of fault. We connect you with a workers' compensation attorney in Georgia who knows how to protect your claim.",
+      "cardLinkText": "Workers' Comp Help",
+      "cardLinkAnchor": "workers compensation attorney Georgia",
+      "hero": {
+        "bgImage": "/services-page/workplace-accidents/workplace-injury-hero.webp",
+        "h1Part1": "Workers' Compensation Lawyer Network | Injured on the Job in Georgia",
+        "h1Accent": "",
+        "h1Subtitle": "",
+        "heroBody": "When you're injured at work in Georgia, you're entitled to medical coverage and income benefits — regardless of who caused the accident. The Accident Professionals network connects injured Georgia workers with vetted workers' compensation attorneys who know how to fight the system and make sure you get every benefit you're entitled to. Free consultation, no fees unless we win.",
+        "urgencyBullets": [
+          { "text": "Workers' comp specialists" },
+          { "text": "No fee unless we win" },
+          { "text": "24/7 available" },
+          { "text": "Se habla español" }
+        ],
+        "caseOptions": [
+          { "value": "workers-comp", "label": "Workers' Compensation" },
+          { "value": "third-party", "label": "Third-Party Injury Claim" },
+          { "value": "construction", "label": "Construction / Job Site Injury" },
+          { "value": "on-road", "label": "On-the-Road Work Injury" },
+          { "value": "other", "label": "Other" }
+        ],
+        "formSubject": "New Workers' Compensation Consultation Request — Accident Professionals"
+      },
+      "whatToKnow": {
+        "eyebrow": "What Is A Workers' Compensation Case?",
+        "heading": "What to Know About **Workers' Compensation Claims** in Georgia",
+        "body": "A workers' compensation claim in Georgia operates differently from every other personal injury claim. It's a no-fault system — meaning you don't have to prove your employer was negligent to receive benefits. If you were injured while performing your job duties, you are generally entitled to medical treatment and income replacement, regardless of fault.\n\nGeorgia requires most employers with three or more employees to carry workers' compensation insurance (O.C.G.A. § 34-9-2). That coverage pays for medical care and provides weekly income benefits if your injury prevents you from working. But employers and their insurers have significant financial incentives to minimize your claim, dispute your injury, or push you back to work before you're ready.\n\nAccident Professionals isn't a law firm. We're a curated network of vetted Georgia workers' compensation attorneys who handle these claims from first filing through appeals. We also identify cases where a third party may share liability, opening the door to a separate personal injury claim on top of your comp benefits.",
+        "cta": { "label": "About Us", "href": "/about-us", "variant": "primary", "external": false },
+        "layout": "image-left",
+        "theme": "light",
+        "highlightTitle": "Trusted Local Network",
+        "highlightText": "We connect injured Georgians with experienced local attorneys who understand your case, your courts, and your community."
+      },
+      "howItWorks": {
+        "heading": "How Accident Professionals Works",
+        "subheading": "You just got hurt on the job. The last thing you need is more confusion. Our process is simple.",
+        "image": "/services-page/workplace-accidents/workplace-injury-image.webp",
+        "steps": [
+          { "number": "01", "title": "Tell us about your injury", "description": "Free call, no pressure, no jargon. Just tell us what happened, where, and whether your employer has been notified." },
+          { "number": "02", "title": "We match you with the right attorney", "description": "A vetted local workers' comp attorney — and, where it applies, a personal injury attorney for a third-party claim." },
+          { "number": "03", "title": "We stay in your corner", "description": "Communication support from first filing through appeals so you always know what's happening next." }
+        ]
+      },
+      "typesOfCases": {
+        "eyebrow": "What We Handle",
+        "heading": "Types of Workers' Compensation Cases We Handle",
+        "intro": "Work injuries take many forms — and each type requires a specific legal approach to maximize what you recover under Georgia law.",
+        "cta": { "label": "Our Services", "href": "/services", "variant": "primary", "external": false },
+        "features": [
+          { "icon": "/icons/shield.svg", "title": "Denied workers' comp claims", "description": "Georgia insurers deny valid claims regularly. A denial is not the end — it's the beginning of a dispute process an attorney can navigate on your behalf." },
+          { "icon": "/icons/shield.svg", "title": "Inadequate medical coverage", "description": "Your employer's insurer controls which doctors you see — but that doesn't mean they can limit or deny necessary treatment. An attorney can challenge coverage decisions." },
+          { "icon": "/icons/shield.svg", "title": "Permanent partial or total disability", "description": "If your work injury results in lasting impairment, you may be entitled to permanent disability benefits. These cases require careful documentation and legal advocacy to value correctly." },
+          { "icon": "/icons/shield.svg", "title": "Third-party personal injury claims", "description": "If a third party contributed to your injury — a contractor, a driver, a defective equipment manufacturer — you may have a personal injury claim in addition to your comp benefits. Often significantly more valuable." },
+          { "icon": "/icons/shield.svg", "title": "Employer retaliation", "description": "Georgia law prohibits employers from firing, demoting, or retaliating against employees for filing workers' comp claims. If this has happened, you have additional legal options." },
+          { "icon": "/icons/shield.svg", "title": "Occupational illness", "description": "Workplace exposure to toxic substances, chemicals, or repetitive stress can qualify as compensable injuries under Georgia law even without a single identifiable accident." }
+        ]
+      },
+      "stepsToTake": {
+        "heading": "Steps to Take After a Workplace Injury in Georgia",
+        "subheading": "Georgia's workers' compensation system has specific procedural requirements — and missing any of them can jeopardize your benefits. Follow these steps carefully.",
+        "steps": [
+          { "number": "01", "icon": "/services-page/auto-accidents/attention-icon.png", "title": "Seek Medical Treatment Immediately", "description": "In a non-emergency, you must generally see a doctor from your employer's approved panel. In an emergency, go to the nearest ER first. Unauthorized treatment can be denied for reimbursement." },
+          { "number": "02", "icon": "/services-page/auto-accidents/phone-icon.png", "title": "Report Your Injury Within 30 Days", "description": "Georgia law requires you to report a work injury to your employer within 30 days (O.C.G.A. § 34-9-80). Missing this deadline can result in a complete forfeiture of your benefits. Report in writing and keep a copy." },
+          { "number": "03", "icon": "/services-page/auto-accidents/camera-icon.png", "title": "Document Your Injury and the Conditions", "description": "Photograph your injury, the worksite, and any equipment involved. Write down exactly what happened — time, location, what you were doing, what failed. Collect witness names." },
+          { "number": "04", "icon": "/services-page/auto-accidents/statement-icon.png", "title": "Don't Sign Anything Without Legal Advice", "description": "Settlement agreements, medical authorizations, and return-to-work forms can all limit your rights in ways that aren't obvious. Don't sign until an attorney has reviewed the document." },
+          { "number": "05", "icon": "/services-page/auto-accidents/arrow-next-icon.png", "title": "Contact Accident Professionals Before You Accept Any Settlement", "description": "Workers' comp settlements are final — once you accept, you typically waive future medical benefits for that injury. A Georgia workers' comp attorney will evaluate whether the offer reflects the full value of your claim." }
+        ]
+      },
+      "damages": {
+        "eyebrow": "Benefits You Can Recover",
+        "heading": "**Workers' Compensation Benefits** You May Be Entitled to in Georgia",
+        "intro": "Georgia workers' comp provides a defined set of benefits — but securing all of them, at the right amounts, for the right duration, requires knowing the system. If a third party contributed to your injury, you may also have a personal injury claim on top of your benefits.",
+        "tabs": [
+          {
+            "label": "Comp benefits",
+            "items": [
+              { "icon": "medical", "title": "Medical treatment", "description": "All reasonable and necessary medical care for your work injury, including emergency care, surgery, hospitalization, physical therapy, and prescriptions." },
+              { "icon": "wallet", "title": "Income benefits (TTD / TPD)", "description": "Weekly income benefits equal to two-thirds of your average weekly wage while you're unable to work, or the difference if you return to modified duty at reduced pay." },
+              { "icon": "scales", "title": "Permanent disability (PPD / PTD)", "description": "If your injury results in permanent impairment, you're entitled to scheduled benefits based on the body part affected — or extended benefits if you can never return to work." },
+              { "icon": "home", "title": "Vocational rehabilitation", "description": "If your injury prevents you from returning to your previous job, you may be entitled to vocational retraining to prepare for new employment." }
+            ]
+          },
+          {
+            "label": "Third-party recovery",
+            "items": [
+              { "icon": "wallet", "title": "Full lost wages", "description": "A third-party personal injury claim can recover your full lost income — beyond the two-thirds rate workers' comp pays." },
+              { "icon": "pulse", "title": "Pain and suffering", "description": "Recoverable through a third-party claim against a negligent contractor, driver, or manufacturer — something comp benefits do not cover." },
+              { "icon": "scales", "title": "Emotional distress", "description": "Anxiety, depression, and PTSD arising from the injury are compensable through a third-party claim." },
+              { "icon": "shield", "title": "Punitive damages", "description": "Available against a grossly negligent third party in cases of egregious conduct." }
+            ]
+          }
+        ],
+        "disclaimer": "* Prior results do not guarantee a similar outcome. Benefit amounts vary based on the specific facts and circumstances of each case.",
+        "cta": { "label": "Contact Us", "href": "/contact-us", "variant": "primary", "external": false }
+      },
+      "testimonials": {
+        "heading": "What Clients Say After Their Workers' Compensation Case",
+        "items": [
+          { "quote": "After my accident, I had no idea where to start. Accident Professionals connected me with an attorney who explained everything clearly and made the process much less stressful.", "name": "Sarah M", "location": "Atlanta", "rating": 5 },
+          { "quote": "The team was responsive, professional, and genuinely helpful. They answered my questions quickly and helped me find legal support that fit my situation.", "name": "Janet T.", "location": "Orlando, FL", "rating": 5 },
+          { "quote": "I appreciated having someone guide me through the process. Instead of spending hours searching online, I was connected with an experienced attorney right away.", "name": "Melissa T.", "location": "Lawrenceville", "rating": 5 },
+          { "quote": "From the first phone call, someone was actually there. They made sure I understood my options and followed up throughout the process.", "name": "David P.", "location": "Decatur", "rating": 5 }
+        ]
+      },
+      "faq": {
+        "heading": "Frequently Asked Questions About Workers' Compensation in Georgia",
+        "intro": "Common questions about workers' compensation claims in Georgia",
+        "items": [
+          { "question": "What should I do if my workers' comp claim is denied in Georgia?", "answer": "A denial is not final. In Georgia, you can file a claim with the State Board of Workers' Compensation to dispute a denial (O.C.G.A. § 34-9-100). You have the right to a hearing before an administrative law judge, and the right to appeal further if needed. The process is procedurally complex — which is why having a Georgia workers' compensation attorney from the start significantly improves your chances." },
+          { "question": "Can my employer fire me for filing a workers' comp claim in Georgia?", "answer": "No. Georgia law prohibits employers from retaliating against employees for filing a workers' comp claim (O.C.G.A. § 34-9-11.1). Termination, demotion, reduced hours, or other adverse actions taken in response to a comp claim are illegal. If you believe you've been retaliated against, contact an attorney immediately — retaliation claims have their own separate legal remedies." },
+          { "question": "Do I have to use my employer's doctor?", "answer": "In a non-emergency, yes — initially. Georgia employers can maintain a panel of authorized physicians, and you're generally required to seek treatment from that panel. However, you have the right to request a one-time change of physician within the panel. If the panel doctor is not adequately treating your injury, an attorney can challenge the insurer's medical decisions and request an independent medical examination." },
+          { "question": "How long do I have to file a workers' comp claim in Georgia?", "answer": "You must report your injury to your employer within 30 days of the accident (O.C.G.A. § 34-9-80). After that, you have one year from the date of injury to file a formal claim with the State Board of Workers' Compensation (O.C.G.A. § 34-9-82). Both deadlines matter — missing the 30-day reporting requirement alone can forfeit your benefits entirely." },
+          { "question": "Can I also file a personal injury lawsuit if I was hurt at work?", "answer": "In most cases, you cannot sue your employer directly — workers' comp is the exclusive remedy against your employer. However, if a third party contributed to your injury, you can file a personal injury lawsuit against them in addition to your workers' comp claim. Common third parties include contractors, vehicle drivers, equipment manufacturers, and property owners. A third-party claim can recover damages that workers' comp doesn't cover — including pain and suffering and full lost wages." },
+          { "question": "What is the difference between temporary and permanent disability benefits in Georgia?", "answer": "Temporary total disability (TTD) pays two-thirds of your average weekly wage while you're completely unable to work, up to the state maximum. Temporary partial disability (TPD) applies when you return to modified duty at lower pay. Permanent partial disability (PPD) provides a scheduled number of weeks of benefits based on the body part affected and your impairment rating. Permanent total disability (PTD) provides extended benefits for workers who can never return to any form of work." },
+          { "question": "What happens if my work injury gets worse over time?", "answer": "If your condition worsens after a settlement or award, Georgia allows you to request additional benefits in certain circumstances — particularly for medical treatment. However, if you accepted a full and final settlement that closed out your medical benefits, your options may be limited. This is exactly why you should never accept a final settlement without an attorney reviewing it first." },
+          { "question": "What does Accident Professionals actually do?", "answer": "We're a vetted personal injury attorney network, not a law firm. We match you with a licensed Georgia attorney who handles workers' compensation cases, manage the intake, and stay involved throughout. We also identify third-party personal injury claims that can significantly increase your total recovery. No fees unless your attorney wins your case." }
+        ]
+      },
+      "seo": {
+        "metaTitle": "Workers' Comp Lawyer Georgia | Free Consult",
+        "metaDescription": "Injured on the job in Georgia? Our vetted attorneys fight denied claims, low settlements, and employer retaliation. Free consultation, no fees unless we win.",
+        "keywords": "workers compensation lawyer Georgia, workers comp attorney Georgia, workplace injury lawyer Atlanta",
+        "focusKeyword": "workers compensation lawyer Georgia",
+        "canonicalUrl": "https://accidentprofessionals.com/services/workplace-accidents/workers-compensation/",
+        "schemaType": "Service",
+        "noindex": false,
+        "nofollow": false
+      }
+    },
     { "title": "Third-Party Personal Injury Claims", "slug": "third-party-workplace-injury", "order": 2, "categorySlug": "workplace-accidents", "cardIcon": "/services-page/workplace-accidents/third-party-personal-injury-claims.png", "cardDescription": "If a contractor, equipment manufacturer, or property owner contributed to your injury, you may have a claim beyond workers' comp. We connect you with an on-the-job injury lawyer in Georgia who can pursue full damages—including pain and suffering.", "cardLinkText": "Personal Injury Help", "cardLinkAnchor": "third party workplace injury claim Georgia" },
     { "title": "Construction & Job Site Injuries", "slug": "construction-accidents", "order": 3, "categorySlug": "workplace-accidents", "cardIcon": "/services-page/workplace-accidents/construction-and-job-site-injuries.png", "cardDescription": "Falls, scaffolding collapses, heavy machinery injuries, and electrical incidents are among the most serious workplace injuries in Georgia. We connect you with a construction accident attorney in Georgia who understands site liability and contractor responsibility.", "cardLinkText": "Construction Injuries Help", "cardLinkAnchor": "construction accident attorney Georgia" },
     { "title": "On-the-Road Work Injuries", "slug": "on-road-work-injuries", "order": 4, "categorySlug": "workplace-accidents", "cardIcon": "/services-page/workplace-accidents/on-the-road-injuries.png", "cardDescription": "Delivery drivers, field workers, and anyone injured in a vehicle accident while on the clock may qualify for both workers' compensation and a personal injury claim. We match you with a workplace accident attorney in Georgia who handles dual-claim cases.", "cardLinkText": "On-the-Road Injuries Help", "cardLinkAnchor": "on the job injury lawyer Georgia" }

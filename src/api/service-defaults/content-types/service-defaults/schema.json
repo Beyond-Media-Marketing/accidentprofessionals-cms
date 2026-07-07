@@ -26,6 +26,16 @@
       "type": "component",
       "repeatable": false,
       "component": "shared.team"
+    },
+    "cities": {
+      "type": "component",
+      "repeatable": false,
+      "component": "shared.city-areas"
+    },
+    "closingCta": {
+      "type": "component",
+      "repeatable": false,
+      "component": "shared.closing-cta"
     }
   }
 }
