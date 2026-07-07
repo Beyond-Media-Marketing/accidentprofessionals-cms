@@ -630,6 +630,48 @@ export interface ApiHomePageHomePage extends Struct.SingleTypeSchema {
   };
 }
 
+export interface ApiLocationPageLocationPage
+  extends Struct.CollectionTypeSchema {
+  collectionName: 'location_pages';
+  info: {
+    description: 'State/city location landing page (e.g. Georgia)';
+    displayName: 'Location Page';
+    pluralName: 'location-pages';
+    singularName: 'location-page';
+  };
+  options: {
+    draftAndPublish: false;
+  };
+  attributes: {
+    cities: Schema.Attribute.Component<'shared.city-areas', false>;
+    createdAt: Schema.Attribute.DateTime;
+    createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    facts: Schema.Attribute.Component<'shared.facts', false>;
+    faq: Schema.Attribute.Component<'shared.faq', false>;
+    hero: Schema.Attribute.Component<'shared.service-hero', false>;
+    heroAccentFirst: Schema.Attribute.Boolean &
+      Schema.Attribute.DefaultTo<false>;
+    heroBadge: Schema.Attribute.String;
+    heroStats: Schema.Attribute.Component<'shared.stat', true>;
+    locale: Schema.Attribute.String & Schema.Attribute.Private;
+    localizations: Schema.Attribute.Relation<
+      'oneToMany',
+      'api::location-page.location-page'
+    > &
+      Schema.Attribute.Private;
+    practiceAreas: Schema.Attribute.Component<'shared.feature-grid', false>;
+    publishedAt: Schema.Attribute.DateTime;
+    seo: Schema.Attribute.Component<'shared.seo', false>;
+    slug: Schema.Attribute.UID<'title'> & Schema.Attribute.Required;
+    testimonials: Schema.Attribute.Component<'shared.testimonials', false>;
+    title: Schema.Attribute.String & Schema.Attribute.Required;
+    updatedAt: Schema.Attribute.DateTime;
+    updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+  };
+}
+
 export interface ApiNavigationNavigation extends Struct.SingleTypeSchema {
   collectionName: 'navigations';
   info: {
@@ -1340,6 +1382,7 @@ declare module '@strapi/strapi' {
       'api::footer.footer': ApiFooterFooter;
       'api::global-setting.global-setting': ApiGlobalSettingGlobalSetting;
       'api::home-page.home-page': ApiHomePageHomePage;
+      'api::location-page.location-page': ApiLocationPageLocationPage;
       'api::navigation.navigation': ApiNavigationNavigation;
       'api::service-category.service-category': ApiServiceCategoryServiceCategory;
       'api::service-defaults.service-defaults': ApiServiceDefaultsServiceDefaults;

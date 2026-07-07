@@ -26,6 +26,8 @@ const READ_ACTIONS = [
   'api::service-category.service-category.findOne',
   'api::service.service.find',
   'api::service.service.findOne',
+  'api::location-page.location-page.find',
+  'api::location-page.location-page.findOne',
 ];
 
 /**
@@ -119,6 +121,28 @@ async function seedServiceStructure(strapi: Core.Strapi, force = false) {
   }
 }
 
+/** Seed location pages (states/cities) from data/seed.json, keyed by slug. */
+async function seedLocationPages(strapi: Core.Strapi, force = false) {
+  const UID = 'api::location-page.location-page';
+  const pages = (seedData as Record<string, any>).locationPages as any[] | undefined;
+  if (!Array.isArray(pages)) return;
+  for (const page of pages) {
+    try {
+      const existing = await strapi.documents(UID as any).findFirst({ filters: { slug: page.slug } });
+      if (existing && !force) continue;
+      if (existing && force) {
+        await strapi.documents(UID as any).update({ documentId: existing.documentId, data: page });
+        strapi.log.info(`[seed] FORCE-updated location-page ${page.slug}`);
+      } else {
+        await strapi.documents(UID as any).create({ data: page });
+        strapi.log.info(`[seed] created location-page ${page.slug}`);
+      }
+    } catch (err) {
+      strapi.log.error(`[seed] failed for location-page ${page.slug}: ${(err as Error).message}`);
+    }
+  }
+}
+
 /** Grant the public role read access to every seeded content type. */
 async function grantPublicRead(strapi: Core.Strapi) {
   const publicRole = await strapi.db
@@ -147,6 +171,7 @@ export default {
     if (force) strapi.log.warn('[seed] SEED_FORCE=true — overwriting single-types');
     await seedSingleTypes(strapi, force);
     await seedServiceStructure(strapi, force);
+    await seedLocationPages(strapi, force);
     await grantPublicRead(strapi);
   },
 };

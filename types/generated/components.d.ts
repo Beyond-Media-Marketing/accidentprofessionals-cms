@@ -195,6 +195,24 @@ export interface SharedDamages extends Struct.ComponentSchema {
   };
 }
 
+export interface SharedFacts extends Struct.ComponentSchema {
+  collectionName: 'components_shared_facts';
+  info: {
+    description: 'Accident facts / road safety \u2014 eyebrow + heading + intro + image + body + stat cards';
+    displayName: 'Facts';
+    icon: 'chartBubble';
+  };
+  attributes: {
+    body: Schema.Attribute.RichText;
+    eyebrow: Schema.Attribute.String;
+    heading: Schema.Attribute.String;
+    headingAccent: Schema.Attribute.String;
+    image: Schema.Attribute.String;
+    intro: Schema.Attribute.Text;
+    stats: Schema.Attribute.Component<'shared.stat', true>;
+  };
+}
+
 export interface SharedFaq extends Struct.ComponentSchema {
   collectionName: 'components_shared_faqs';
   info: {
@@ -770,6 +788,7 @@ declare module '@strapi/strapi' {
       'shared.damage-item': SharedDamageItem;
       'shared.damage-tab': SharedDamageTab;
       'shared.damages': SharedDamages;
+      'shared.facts': SharedFacts;
       'shared.faq': SharedFaq;
       'shared.faq-item': SharedFaqItem;
       'shared.feature': SharedFeature;

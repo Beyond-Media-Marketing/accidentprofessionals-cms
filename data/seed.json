@@ -1674,5 +1674,129 @@
     { "title": "Third-Party Personal Injury Claims", "slug": "third-party-workplace-injury", "order": 2, "categorySlug": "workplace-accidents", "cardIcon": "/services-page/workplace-accidents/third-party-personal-injury-claims.png", "cardDescription": "If a contractor, equipment manufacturer, or property owner contributed to your injury, you may have a claim beyond workers' comp. We connect you with an on-the-job injury lawyer in Georgia who can pursue full damages—including pain and suffering.", "cardLinkText": "Personal Injury Help", "cardLinkAnchor": "third party workplace injury claim Georgia" },
     { "title": "Construction & Job Site Injuries", "slug": "construction-accidents", "order": 3, "categorySlug": "workplace-accidents", "cardIcon": "/services-page/workplace-accidents/construction-and-job-site-injuries.png", "cardDescription": "Falls, scaffolding collapses, heavy machinery injuries, and electrical incidents are among the most serious workplace injuries in Georgia. We connect you with a construction accident attorney in Georgia who understands site liability and contractor responsibility.", "cardLinkText": "Construction Injuries Help", "cardLinkAnchor": "construction accident attorney Georgia" },
     { "title": "On-the-Road Work Injuries", "slug": "on-road-work-injuries", "order": 4, "categorySlug": "workplace-accidents", "cardIcon": "/services-page/workplace-accidents/on-the-road-injuries.png", "cardDescription": "Delivery drivers, field workers, and anyone injured in a vehicle accident while on the clock may qualify for both workers' compensation and a personal injury claim. We match you with a workplace accident attorney in Georgia who handles dual-claim cases.", "cardLinkText": "On-the-Road Injuries Help", "cardLinkAnchor": "on the job injury lawyer Georgia" }
+  ],
+  "locationPages": [
+    {
+      "title": "Georgia",
+      "slug": "georgia",
+      "heroBadge": "Georgia Personal Injury",
+      "hero": {
+        "bgImage": "/about/hero-bg.png",
+        "h1Part1": "Our Trusted Personal Injury Attorney Network Is Ready to Help",
+        "h1Accent": "Injured in Georgia?",
+        "h1Subtitle": "",
+        "heroBody": "Georgia has one of the highest crash rates in the nation, and the state's roads — from the interstate tangles of Metro Atlanta to the rural highways of South Georgia — claim thousands of lives and create hundreds of thousands of injuries every year.\n\nIf you've been hurt in an accident anywhere in the Peach State, the Accident Professionals personal injury attorney network is here to connect you with a vetted Georgia attorney who knows your area, knows your case type, and fights for what you're owed. Free consultation. No fees unless we win.",
+        "urgencyBullets": [],
+        "caseOptions": [
+          { "value": "car", "label": "Car Accident" },
+          { "value": "truck", "label": "Truck Accident" },
+          { "value": "motorcycle", "label": "Motorcycle Accident" },
+          { "value": "rideshare", "label": "Rideshare Accident" },
+          { "value": "slip-fall", "label": "Slip & Fall" },
+          { "value": "workers-comp", "label": "Workers' Compensation" },
+          { "value": "other", "label": "Other" }
+        ],
+        "formSubject": "New Georgia Consultation Request — Accident Professionals"
+      },
+      "heroAccentFirst": true,
+      "heroStats": [
+        { "value": "1,200+", "label": "Clients helped" },
+        { "value": "24/7", "label": "Availability" },
+        { "value": "$2.5M+", "label": "Recovered in 2025 for clients through our network" }
+      ],
+      "cities": {
+        "eyebrow": "Georgia Cities We Currently Serve",
+        "heading": "Personal Injury Attorneys Serving Cities Across",
+        "headingAccent": "Georgia",
+        "regions": [
+          { "region": "Metro Atlanta Region", "cities": [
+            { "name": "Atlanta, GA", "href": "/georgia/atlanta/" },
+            { "name": "Marietta, GA", "href": "/georgia/marietta/" },
+            { "name": "Kennesaw, GA", "href": "/georgia/kennesaw/" },
+            { "name": "Austell, GA", "href": "/georgia/austell/" },
+            { "name": "Mableton, GA", "href": "/georgia/mableton/" },
+            { "name": "Acworth, GA", "href": "/georgia/acworth/" },
+            { "name": "Alpharetta, GA", "href": "/georgia/alpharetta/" },
+            { "name": "Sandy Springs, GA", "href": "/georgia/sandy-springs/" },
+            { "name": "Douglasville, GA", "href": "/georgia/douglasville/" },
+            { "name": "Norcross, GA", "href": "/georgia/norcross/" },
+            { "name": "Lilburn, GA", "href": "/georgia/lilburn/" },
+            { "name": "Lawrenceville, GA", "href": "/georgia/lawrenceville/" },
+            { "name": "Loganville, GA", "href": "/georgia/loganville/" }
+          ]},
+          { "region": "North Georgia Region", "cities": [
+            { "name": "Gainesville, GA", "href": "/georgia/gainesville/" },
+            { "name": "Flowery Branch, GA", "href": "/georgia/flowery-branch/" },
+            { "name": "Winder, GA", "href": "/georgia/winder/" },
+            { "name": "Athens, GA", "href": "/georgia/athens/" }
+          ]},
+          { "region": "Central Georgia", "cities": [
+            { "name": "Augusta, GA", "href": "/georgia/augusta/" }
+          ]},
+          { "region": "South & Coastal Georgia", "cities": [
+            { "name": "Savannah, GA", "href": "/georgia/savannah/" },
+            { "name": "Valdosta, GA", "href": "/georgia/valdosta/" }
+          ]}
+        ]
+      },
+      "practiceAreas": {
+        "eyebrow": "Practice Areas",
+        "heading": "Types of **Accident Cases** We Handle in Georgia",
+        "intro": "Our Georgia attorney network handles the full spectrum of personal injury cases — from Metro Atlanta freeways to rural county roads. Each practice area below links to its full Georgia service page.",
+        "cta": { "label": "Our Services", "href": "/services", "variant": "primary", "external": false },
+        "features": [
+          { "icon": "/icons/practice-areas/car-accidents.svg", "title": "Car Accidents", "description": "Rear-ends, T-bones, hit-and-runs, uninsured drivers on I-285 and the Downtown Connector.", "linkLabel": "Learn More", "linkHref": "/services/auto-accidents/car-accidents" },
+          { "icon": "/icons/practice-areas/truck-accidents.svg", "title": "Truck & Commercial Vehicle Accidents", "description": "18-wheelers on I-75, I-85, and I-20 — FMCSA violations, cargo shifts, driver fatigue.", "linkLabel": "Learn More", "linkHref": "/services/auto-accidents/truck-accidents" },
+          { "icon": "/icons/practice-areas/rideshare-accidents.svg", "title": "Rideshare Accidents", "description": "Uber and Lyft accidents across Atlanta. Navigating multi-tier insurance is complex — we know how.", "linkLabel": "Learn More", "linkHref": "/services/auto-accidents/rideshare-accidents" },
+          { "icon": "/icons/practice-areas/slip-fall.svg", "title": "Slip & Fall", "description": "Premises liability cases across Atlanta's commercial properties, parking lots, and construction zones.", "linkLabel": "Learn More", "linkHref": "/services/premises-liability/slip-and-fall" },
+          { "icon": "/icons/practice-areas/workplace-injuries.svg", "title": "Workers' Compensation", "description": "Injured on the job in Atlanta? GA workers' comp and third-party claims, handled together.", "linkLabel": "Learn More", "linkHref": "/services/workplace-accidents/workers-compensation" },
+          { "icon": "/icons/practice-areas/motorcycle-accidents.svg", "title": "Motorcycle Accidents", "description": "Atlanta riders face real bias in PI claims. Our network attorneys fight it directly.", "linkLabel": "Learn More", "linkHref": "/services/auto-accidents/motorcycle-accidents" }
+        ]
+      },
+      "facts": {
+        "eyebrow": "Georgia Accident Landscape",
+        "heading": "**Georgia** Accident Facts and Road Safety",
+        "intro": "Georgia's road safety record is one of the most urgent public health issues in the state. Understanding the scale of the problem — and knowing your rights when you become part of it — is the first step toward protecting yourself.",
+        "image": "/services-page/auto-accidents/image1.webp",
+        "body": "The most dangerous roads in Georgia are well-documented. I-285 — nicknamed the \"Circle of Death\" — is consistently identified as one of the deadliest interstate highways in the United States. The Downtown Connector (I-75/I-85 through Atlanta), I-20, and SR-400 account for a disproportionate share of serious injuries and fatalities in the metro area. Outside Atlanta, I-75 through Macon and Valdosta, I-16 between Macon and Savannah, and US-19 through rural South Georgia are among the deadliest rural corridors in the state.\n\nGeorgia's top crash counties by total collisions in 2024 were Fulton (51,572 crashes · 93 fatalities), DeKalb (35,860 crashes · 112 fatalities), and Cobb (27,604 crashes · 57 fatalities). Rural counties like Troup, Bartow, and Hall show elevated crash rates per mile driven despite lower total numbers — a reflection of high-speed rural travel combined with limited emergency response resources.\n\nDriver error accounts for approximately 94% of all Georgia crashes, according to NHTSA. The leading contributing factors are speeding, distracted driving, and impaired driving. When another driver's error injures you, **Georgia personal injury law** gives you the right to pursue compensation — but only within the state's two-year statute of limitations. Every day you wait is a day the evidence gets harder to preserve.",
+        "stats": [
+          { "value": "401,543", "label": "Total crashes (2023)" },
+          { "value": "~1,800", "label": "Traffic fatalities" },
+          { "value": "Top 10", "label": "National rank" },
+          { "value": "Fulton County", "label": "Most crashes (2024)" }
+        ]
+      },
+      "testimonials": {
+        "heading": "What Georgia Clients Say About Accident Professionals",
+        "items": [
+          { "quote": "After my accident, I had no idea where to start. Accident Professionals connected me with an attorney who explained everything clearly and made the process much less stressful.", "name": "Sarah M", "location": "Atlanta", "rating": 5 },
+          { "quote": "The team was responsive, professional, and genuinely helpful. They answered my questions quickly and helped me find legal support that fit my situation.", "name": "Janet T.", "location": "Orlando, FL", "rating": 5 },
+          { "quote": "I appreciated having someone guide me through the process. Instead of spending hours searching online, I was connected with an experienced attorney right away.", "name": "Melissa T.", "location": "Lawrenceville", "rating": 5 },
+          { "quote": "From the first phone call, someone was actually there. They made sure I understood my options and followed up throughout the process.", "name": "David P.", "location": "Decatur", "rating": 5 }
+        ]
+      },
+      "faq": {
+        "heading": "Frequently Asked Questions About Personal Injury in Georgia",
+        "intro": "Common questions about personal injury claims in Georgia",
+        "items": [
+          { "question": "How long do I have to file a personal injury claim in Georgia?", "answer": "Georgia gives you two years from the date of the accident to file a personal injury lawsuit (O.C.G.A. § 9-3-33). This applies to car accidents, slip and falls, truck accidents, and most other personal injury claims across Georgia. Miss this deadline and you lose your legal right to recover compensation — permanently. If you're not sure where your case stands, contact us for a free consultation and we'll tell you exactly where you are on the clock." },
+          { "question": "Can I get compensation if I was partially at fault for my accident?", "answer": "Yes. Georgia follows a modified comparative fault rule (O.C.G.A. § 51-12-33). As long as you were less than 50% responsible, you can still recover — though your compensation is reduced by your percentage of fault. Insurance companies try to inflate your share of blame; an attorney counters that." },
+          { "question": "How much does a personal injury lawyer cost in Georgia?", "answer": "Nothing upfront. The attorneys in our network work on contingency — you pay no fees unless they win your case. Your initial consultation through Accident Professionals is always free." },
+          { "question": "Do I need a lawyer for a minor accident in Georgia?", "answer": "If you have any injury at all, even a minor one, it's worth a free consultation before you settle. Soft tissue injuries often worsen over days, and once you accept a settlement you can't reopen the claim. A quick call costs you nothing." },
+          { "question": "What if the other driver has no insurance in Georgia?", "answer": "You may still recover through your own uninsured/underinsured motorist (UM/UIM) coverage. Many Georgia drivers don't realize this option exists or how to use it — the attorneys in our network handle these claims regularly." },
+          { "question": "Does Accident Professionals serve all of Georgia?", "answer": "Yes. We connect injured people with vetted attorneys across metro Atlanta and the entire state — from Savannah to Columbus to rural counties. No matter where your accident happened, we can help." }
+        ]
+      },
+      "seo": {
+        "metaTitle": "Personal Injury Lawyer Georgia | Free Consult",
+        "metaDescription": "Injured in Georgia? The Accident Professionals network connects you with a vetted personal injury attorney near you. Free consultation, no fees unless we win.",
+        "keywords": "personal injury lawyer Georgia, Georgia accident attorney, personal injury attorney near me Georgia",
+        "focusKeyword": "personal injury lawyer Georgia",
+        "canonicalUrl": "https://accidentprofessionals.com/georgia/",
+        "schemaType": "WebPage",
+        "noindex": false,
+        "nofollow": false
+      }
+    }
   ]
 }

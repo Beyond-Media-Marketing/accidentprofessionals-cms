@@ -1,0 +1,34 @@
+{
+  "collectionName": "components_shared_facts",
+  "info": {
+    "displayName": "Facts",
+    "icon": "chartBubble",
+    "description": "Accident facts / road safety — eyebrow + heading + intro + image + body + stat cards"
+  },
+  "options": {},
+  "attributes": {
+    "eyebrow": {
+      "type": "string"
+    },
+    "heading": {
+      "type": "string"
+    },
+    "headingAccent": {
+      "type": "string"
+    },
+    "intro": {
+      "type": "text"
+    },
+    "image": {
+      "type": "string"
+    },
+    "body": {
+      "type": "richtext"
+    },
+    "stats": {
+      "type": "component",
+      "repeatable": true,
+      "component": "shared.stat"
+    }
+  }
+}
