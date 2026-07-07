@@ -434,6 +434,7 @@ export interface SharedIconFeature extends Struct.ComponentSchema {
   attributes: {
     description: Schema.Attribute.Text;
     icon: Schema.Attribute.String;
+    iconImage: Schema.Attribute.Media<'images'>;
     title: Schema.Attribute.String;
   };
 }
@@ -693,6 +694,7 @@ export interface SharedProcessCard extends Struct.ComponentSchema {
     body: Schema.Attribute.RichText;
     cta: Schema.Attribute.Component<'shared.cta', false>;
     icon: Schema.Attribute.String;
+    iconImage: Schema.Attribute.Media<'images'>;
     number: Schema.Attribute.String;
     title: Schema.Attribute.String;
   };

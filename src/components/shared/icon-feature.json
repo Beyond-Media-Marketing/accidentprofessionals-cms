@@ -10,6 +10,11 @@
     "icon": {
       "type": "string"
     },
+    "iconImage": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": ["images"]
+    },
     "title": {
       "type": "string"
     },
