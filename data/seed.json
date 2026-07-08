@@ -4744,6 +4744,16 @@
       "headingAccent": "Our Network",
       "subhead": "Every attorney in the AP network has been reviewed before being included — a growing roster of vetted personal injury attorneys across Georgia.",
       "align": "center"
+    },
+    "attorneyProfile": {
+      "requestCta": {
+        "label": "Request This Attorney",
+        "href": "/legal-network#apply-client",
+        "variant": "primary"
+      },
+      "backLabel": "Back to Network",
+      "aboutHeading": "About",
+      "credentialsHeading": "Credentials"
     }
   }
 }

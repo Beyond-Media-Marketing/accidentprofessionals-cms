@@ -73,6 +73,11 @@
       "repeatable": false,
       "component": "shared.hero"
     },
+    "attorneyProfile": {
+      "type": "component",
+      "repeatable": false,
+      "component": "shared.attorney-profile"
+    },
     "seo": {
       "type": "component",
       "repeatable": false,

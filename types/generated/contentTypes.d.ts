@@ -735,6 +735,10 @@ export interface ApiLegalNetworkPageLegalNetworkPage
   };
   attributes: {
     applyForms: Schema.Attribute.Component<'shared.apply-forms', false>;
+    attorneyProfile: Schema.Attribute.Component<
+      'shared.attorney-profile',
+      false
+    >;
     attorneysCta: Schema.Attribute.Component<'shared.cta', false>;
     attorneysHeading: Schema.Attribute.String;
     attorneysSubheading: Schema.Attribute.Text;

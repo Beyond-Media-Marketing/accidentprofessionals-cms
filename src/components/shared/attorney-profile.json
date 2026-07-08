@@ -1,0 +1,28 @@
+{
+  "collectionName": "components_shared_attorney_profiles",
+  "info": {
+    "displayName": "Attorney Profile",
+    "icon": "user",
+    "description": "Shared labels + CTA for the attorney profile pages"
+  },
+  "options": {},
+  "attributes": {
+    "requestCta": {
+      "type": "component",
+      "repeatable": false,
+      "component": "shared.cta"
+    },
+    "backLabel": {
+      "type": "string",
+      "default": "Back to Network"
+    },
+    "aboutHeading": {
+      "type": "string",
+      "default": "About"
+    },
+    "credentialsHeading": {
+      "type": "string",
+      "default": "Credentials"
+    }
+  }
+}

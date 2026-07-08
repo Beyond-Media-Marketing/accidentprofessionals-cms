@@ -60,6 +60,23 @@ export interface SharedAttorneyForm extends Struct.ComponentSchema {
   };
 }
 
+export interface SharedAttorneyProfile extends Struct.ComponentSchema {
+  collectionName: 'components_shared_attorney_profiles';
+  info: {
+    description: 'Shared labels + CTA for the attorney profile pages';
+    displayName: 'Attorney Profile';
+    icon: 'user';
+  };
+  attributes: {
+    aboutHeading: Schema.Attribute.String & Schema.Attribute.DefaultTo<'About'>;
+    backLabel: Schema.Attribute.String &
+      Schema.Attribute.DefaultTo<'Back to Network'>;
+    credentialsHeading: Schema.Attribute.String &
+      Schema.Attribute.DefaultTo<'Credentials'>;
+    requestCta: Schema.Attribute.Component<'shared.cta', false>;
+  };
+}
+
 export interface SharedBullet extends Struct.ComponentSchema {
   collectionName: 'components_shared_bullets';
   info: {
@@ -1015,6 +1032,7 @@ declare module '@strapi/strapi' {
       'shared.apply-forms': SharedApplyForms;
       'shared.attorney': SharedAttorney;
       'shared.attorney-form': SharedAttorneyForm;
+      'shared.attorney-profile': SharedAttorneyProfile;
       'shared.bullet': SharedBullet;
       'shared.city-areas': SharedCityAreas;
       'shared.city-region': SharedCityRegion;
