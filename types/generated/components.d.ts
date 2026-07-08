@@ -87,7 +87,13 @@ export interface SharedBlogCta extends Struct.ComponentSchema {
   attributes: {
     cta: Schema.Attribute.Component<'shared.cta', false>;
     heading: Schema.Attribute.String;
-    text: Schema.Attribute.Text;
+    text: Schema.Attribute.RichText &
+      Schema.Attribute.CustomField<
+        'plugin::ckeditor5.CKEditor',
+        {
+          preset: 'defaultHtml';
+        }
+      >;
   };
 }
 
