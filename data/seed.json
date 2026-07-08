@@ -76,7 +76,7 @@
     "items": [
       {
         "label": "About Us",
-        "href": "/about-us",
+        "href": "/about",
         "external": false,
         "hasMegaMenu": false,
         "columns": []
@@ -515,7 +515,7 @@
         "links": [
           {
             "label": "About Us",
-            "href": "/about-us",
+            "href": "/about",
             "external": false
           },
           {
@@ -1836,7 +1836,7 @@
         "body": "A car accident claim in Georgia is not just about covering your car repair. It's about recovering every cost the crash created — medical bills, lost income, pain and suffering, and the long-term impact on your life. But insurance companies aren't in the business of paying you what you're owed. They're in the business of closing claims quickly and cheaply.\n\nThat's where Accident Professionals comes in. We're not a law firm — we're a curated network of vetted Georgia personal injury attorneys who specialize in car accident cases. We match you with the right attorney, handle the intake, and stay involved throughout so you always have someone to call.\n\nActing fast matters. Georgia's statute of limitations gives you two years from the date of the accident to file a personal injury claim. The sooner you have an attorney in your corner, the stronger your case.",
         "cta": {
           "label": "About Us",
-          "href": "/about-us",
+          "href": "/about",
           "variant": "primary",
           "external": false
         },
@@ -2138,7 +2138,7 @@
         "body": "A truck accident claim in Georgia is more complex than a standard car accident claim. When a commercial vehicle causes a crash, the injuries are typically more severe — and the parties responsible more numerous. The driver, the trucking company, the cargo loader, and the maintenance provider can all share liability, each with their own insurer and their own lawyers.\n\nAccident Professionals isn't a law firm. We're a curated network of vetted Georgia personal injury attorneys who handle commercial trucking cases. We match you with the right attorney, manage the intake, and stay involved throughout.\n\nOne critical difference from car cases: key evidence in a truck accident can disappear within days. ELD data, black-box records, and driver logs can be legally discarded unless an attorney sends a preservation notice fast. Georgia's statute of limitations gives you two years to file — but don't wait on the evidence.",
         "cta": {
           "label": "About Us",
-          "href": "/about-us",
+          "href": "/about",
           "variant": "primary",
           "external": false
         },
@@ -2440,7 +2440,7 @@
         "body": "A motorcycle accident claim in Georgia carries a challenge that car accident claims don't — rider bias. Insurance adjusters, juries, and even witnesses often assume a motorcyclist was speeding or riding recklessly before a single fact is examined. That assumption costs injured riders real money, and it's something the right attorney can fight directly.\n\nAccident Professionals isn't a law firm. We're a curated network of vetted Georgia personal injury attorneys who specifically handle motorcycle cases and understand the bias that comes with them. We match you with the right attorney, manage the intake, and stay involved throughout so you always have someone to call.\n\nActing fast matters. Georgia's statute of limitations gives you two years from the date of the accident to file a personal injury claim. Crash scene evidence disappears quickly, and witnesses' memories fade. The sooner an attorney is working your case, the better.",
         "cta": {
           "label": "About Us",
-          "href": "/about-us",
+          "href": "/about",
           "variant": "primary",
           "external": false
         },
@@ -2742,7 +2742,7 @@
         "body": "A rideshare accident claim in Georgia is not a standard car accident claim with an app involved. It's a claim against a layered insurance system that Uber and Lyft have specifically designed to limit their exposure — and that most injured people don't understand until they've already made costly mistakes.\n\nUber and Lyft classify their drivers as independent contractors, not employees. That means the company's liability depends entirely on the driver's app status at the moment of the crash: app off, personal insurance applies; waiting for a request, limited contingency coverage; en route or transporting a passenger, full commercial coverage applies.\n\nAccident Professionals isn't a law firm. We're a curated network of vetted Georgia personal injury attorneys who understand how rideshare insurance works, which tier applies, and how to build a claim that accounts for every party involved. Georgia's statute of limitations gives you two years to file — but preserving the driver's app data and trip log early is critical.",
         "cta": {
           "label": "About Us",
-          "href": "/about-us",
+          "href": "/about",
           "variant": "primary",
           "external": false
         },
@@ -3044,7 +3044,7 @@
         "body": "A slip and fall claim in Georgia is a type of premises liability case — a legal claim against a property owner or occupier who failed to maintain a reasonably safe environment. Grocery stores, parking lots, apartment complexes, restaurants, hotels, and government properties are all common locations. If you were injured on someone else's property because of a hazard they knew about — or should have known about — and failed to fix, Georgia law may entitle you to compensation.\n\nThe catch is that premises liability cases are harder to win than many people expect. Georgia law requires you to prove not just that a hazard existed, but that the property owner had actual or constructive knowledge of it. Evidence of that knowledge disappears fast: surveillance footage gets overwritten, incident reports get buried, and witnesses forget details. Acting quickly is not optional.\n\nAccident Professionals isn't a law firm. We're a curated network of vetted Georgia personal injury attorneys who handle premises liability cases and know what it takes to prove them. We match you with the right attorney, manage the intake, and stay involved throughout.",
         "cta": {
           "label": "About Us",
-          "href": "/about-us",
+          "href": "/about",
           "variant": "primary",
           "external": false
         },
@@ -3373,7 +3373,7 @@
         "body": "A workers' compensation claim in Georgia operates differently from every other personal injury claim. It's a no-fault system — meaning you don't have to prove your employer was negligent to receive benefits. If you were injured while performing your job duties, you are generally entitled to medical treatment and income replacement, regardless of fault.\n\nGeorgia requires most employers with three or more employees to carry workers' compensation insurance (O.C.G.A. § 34-9-2). That coverage pays for medical care and provides weekly income benefits if your injury prevents you from working. But employers and their insurers have significant financial incentives to minimize your claim, dispute your injury, or push you back to work before you're ready.\n\nAccident Professionals isn't a law firm. We're a curated network of vetted Georgia workers' compensation attorneys who handle these claims from first filing through appeals. We also identify cases where a third party may share liability, opening the door to a separate personal injury claim on top of your comp benefits.",
         "cta": {
           "label": "About Us",
-          "href": "/about-us",
+          "href": "/about",
           "variant": "primary",
           "external": false
         },
@@ -4005,7 +4005,7 @@
         "body": "Atlanta doesn't have a traffic problem — it has a traffic crisis. Fulton County recorded 51,572 crashes in 2024 alone, making it the most crash-prone county in Georgia. The Atlanta Police Department documented 28,278 accidents within city limits in 2023 — more than three every single hour. I-285, the Downtown Connector (I-75/I-85), I-20, and SR-400 are among the most dangerous corridors in the Southeast. Peachtree Street, Memorial Drive, and the roads around Hartsfield-Jackson Airport add to the city's daily toll of collisions, pedestrian strikes, and commercial vehicle crashes.\n\nWhen you're injured in Atlanta, you're up against more than just the other driver. You're up against their insurance company's adjusters, their lawyers, and a claims process designed to settle your case for as little as possible. Accident Professionals exists to close that gap. We're a personal injury attorney network in Atlanta that connects injured people with vetted Georgia attorneys who practice in Fulton County, know the Fulton County State Court and Superior Court, and have a track record of fighting for real results — not just fast settlements.",
         "cta": {
           "label": "Meet Our Network",
-          "href": "/about-us",
+          "href": "/about",
           "variant": "primary",
           "external": false
         },
