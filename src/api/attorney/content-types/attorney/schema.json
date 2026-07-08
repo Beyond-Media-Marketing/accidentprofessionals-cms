@@ -43,6 +43,12 @@
     "location": {
       "type": "string"
     },
+    "locationDetail": {
+      "type": "text"
+    },
+    "locationLink": {
+      "type": "string"
+    },
     "yearsExperience": {
       "type": "integer"
     },

@@ -496,6 +496,8 @@ export interface ApiAttorneyAttorney extends Struct.CollectionTypeSchema {
     > &
       Schema.Attribute.Private;
     location: Schema.Attribute.String;
+    locationDetail: Schema.Attribute.Text;
+    locationLink: Schema.Attribute.String;
     name: Schema.Attribute.String & Schema.Attribute.Required;
     order: Schema.Attribute.Integer & Schema.Attribute.DefaultTo<0>;
     phone: Schema.Attribute.String;

@@ -200,6 +200,8 @@ const ATTORNEY_BACKFILL_FIELDS = [
   'languages',
   'email',
   'yearsExperience',
+  'locationDetail',
+  'locationLink',
 ] as const;
 
 const isBlank = (v: any) => v == null || v === '' || (Array.isArray(v) && v.length === 0);
