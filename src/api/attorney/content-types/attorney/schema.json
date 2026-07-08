@@ -58,14 +58,24 @@
     "phone": {
       "type": "string"
     },
+    "tagline": {
+      "type": "text"
+    },
     "shortBio": {
       "type": "text"
     },
     "about": {
       "type": "richtext"
     },
-    "highlights": {
-      "type": "json"
+    "credentials": {
+      "type": "component",
+      "repeatable": true,
+      "component": "shared.credential"
+    },
+    "socials": {
+      "type": "component",
+      "repeatable": true,
+      "component": "shared.social-link"
     },
     "seo": {
       "type": "component",

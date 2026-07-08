@@ -207,6 +207,21 @@ export interface SharedContactInfo extends Struct.ComponentSchema {
   };
 }
 
+export interface SharedCredential extends Struct.ComponentSchema {
+  collectionName: 'components_shared_credentials';
+  info: {
+    description: 'An attorney credential \u2014 degree, bar admission, award, etc.';
+    displayName: 'Credential';
+    icon: 'graduation-cap';
+  };
+  attributes: {
+    field: Schema.Attribute.String;
+    institution: Schema.Attribute.String;
+    period: Schema.Attribute.String;
+    title: Schema.Attribute.String & Schema.Attribute.Required;
+  };
+}
+
 export interface SharedCta extends Struct.ComponentSchema {
   collectionName: 'components_shared_ctas';
   info: {
@@ -1055,6 +1070,7 @@ declare module '@strapi/strapi' {
       'shared.closing-cta': SharedClosingCta;
       'shared.contact-form': SharedContactForm;
       'shared.contact-info': SharedContactInfo;
+      'shared.credential': SharedCredential;
       'shared.cta': SharedCta;
       'shared.cta-banner': SharedCtaBanner;
       'shared.damage-item': SharedDamageItem;

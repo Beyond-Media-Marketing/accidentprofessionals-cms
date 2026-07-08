@@ -484,10 +484,10 @@ export interface ApiAttorneyAttorney extends Struct.CollectionTypeSchema {
     createdAt: Schema.Attribute.DateTime;
     createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
+    credentials: Schema.Attribute.Component<'shared.credential', true>;
     email: Schema.Attribute.String;
     featured: Schema.Attribute.Boolean & Schema.Attribute.DefaultTo<true>;
     firm: Schema.Attribute.String;
-    highlights: Schema.Attribute.JSON;
     languages: Schema.Attribute.String;
     locale: Schema.Attribute.String & Schema.Attribute.Private;
     localizations: Schema.Attribute.Relation<
@@ -505,6 +505,8 @@ export interface ApiAttorneyAttorney extends Struct.CollectionTypeSchema {
     seo: Schema.Attribute.Component<'shared.seo', false>;
     shortBio: Schema.Attribute.Text;
     slug: Schema.Attribute.UID<'name'> & Schema.Attribute.Required;
+    socials: Schema.Attribute.Component<'shared.social-link', true>;
+    tagline: Schema.Attribute.Text;
     title: Schema.Attribute.String;
     updatedAt: Schema.Attribute.DateTime;
     updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &

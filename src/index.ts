@@ -188,6 +188,49 @@ async function removePlaceholderAttorneys(strapi: Core.Strapi) {
   }
 }
 
+/** Fields added to the Attorney profile after the first seed. Existing rows are
+ *  only *created* once (seedSlugCollection skips existing), so backfill any of
+ *  these that are still empty on an already-seeded attorney. Never clobbers
+ *  values an editor has set — only fills blanks. */
+const ATTORNEY_BACKFILL_FIELDS = [
+  'tagline',
+  'socials',
+  'practiceAreas',
+  'credentials',
+  'languages',
+  'email',
+  'yearsExperience',
+] as const;
+
+const isBlank = (v: any) => v == null || v === '' || (Array.isArray(v) && v.length === 0);
+
+async function backfillAttorneys(strapi: Core.Strapi) {
+  const list = (seedData as Record<string, any>).attorneys as any[] | undefined;
+  if (!Array.isArray(list)) return;
+  for (const seed of list) {
+    const existing = await strapi
+      .documents(ATTORNEY_UID as any)
+      .findFirst({ filters: { slug: seed.slug }, populate: { socials: true, credentials: true } });
+    if (!existing) continue;
+
+    const patch: Record<string, any> = {};
+    for (const f of ATTORNEY_BACKFILL_FIELDS) {
+      if (isBlank((existing as any)[f]) && !isBlank(seed[f])) patch[f] = seed[f];
+    }
+    // `about` was seeded as a one-line placeholder (a copy of shortBio); replace
+    // it with the richer seed bio when the editor hasn't customised it yet.
+    const curAbout = ((existing as any).about || '').trim();
+    if (seed.about && (curAbout === '' || curAbout === ((existing as any).shortBio || '').trim()) && seed.about.length > curAbout.length) {
+      patch.about = seed.about;
+    }
+
+    if (Object.keys(patch).length) {
+      await strapi.documents(ATTORNEY_UID as any).update({ documentId: existing.documentId, data: patch });
+      strapi.log.info(`[seed] backfilled attorney ${seed.slug}: ${Object.keys(patch).join(', ')}`);
+    }
+  }
+}
+
 /**
  * Seed the blog: categories first (keyed on slug), then posts linked to their
  * category by `categorySlug`. Idempotent — re-runs skip existing entries.
@@ -269,6 +312,7 @@ export default {
     await seedSlugCollection(strapi, 'api::city-page.city-page', 'cityPages', force);
     await seedSlugCollection(strapi, 'api::attorney.attorney', 'attorneys', force);
     await removePlaceholderAttorneys(strapi);
+    await backfillAttorneys(strapi);
     await seedBlog(strapi, force);
     await grantPublicRead(strapi);
   },
