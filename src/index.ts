@@ -33,6 +33,10 @@ const READ_ACTIONS = [
   'api::city-page.city-page.findOne',
   'api::attorney.attorney.find',
   'api::attorney.attorney.findOne',
+  'api::blog-category.blog-category.find',
+  'api::blog-category.blog-category.findOne',
+  'api::blog-post.blog-post.find',
+  'api::blog-post.blog-post.findOne',
 ];
 
 /**
@@ -184,6 +188,75 @@ async function removePlaceholderAttorneys(strapi: Core.Strapi) {
   }
 }
 
+/**
+ * Seed the blog: categories first (keyed on slug), then posts linked to their
+ * category by `categorySlug`. Idempotent — re-runs skip existing entries.
+ */
+async function seedBlog(strapi: Core.Strapi, force = false) {
+  const CATEGORY_UID = 'api::blog-category.blog-category';
+  const POST_UID = 'api::blog-post.blog-post';
+  const categories = (seedData as Record<string, any>).blogCategories as any[] | undefined;
+  const posts = (seedData as Record<string, any>).blogPosts as any[] | undefined;
+  const catIdBySlug: Record<string, string> = {};
+
+  if (Array.isArray(categories)) {
+    // Pass 1 — create/update every category (without the parent link).
+    for (const cat of categories) {
+      const { parentSlug, ...data } = cat;
+      try {
+        const existing = await strapi.documents(CATEGORY_UID as any).findFirst({ filters: { slug: cat.slug } });
+        let doc: any;
+        if (existing && !force) doc = existing;
+        else if (existing && force) doc = await strapi.documents(CATEGORY_UID as any).update({ documentId: existing.documentId, data });
+        else doc = await strapi.documents(CATEGORY_UID as any).create({ data });
+        catIdBySlug[cat.slug] = doc.documentId;
+      } catch (err) {
+        strapi.log.error(`[seed] failed for blog-category ${cat.slug}: ${(err as Error).message}`);
+      }
+    }
+    // Pass 2 — wire up parent relations now that all ids exist.
+    for (const cat of categories) {
+      if (!cat.parentSlug) continue;
+      const childId = catIdBySlug[cat.slug];
+      const parentId = catIdBySlug[cat.parentSlug];
+      if (childId && parentId) {
+        try {
+          await strapi.documents(CATEGORY_UID as any).update({ documentId: childId, data: { parent: parentId } as any });
+        } catch (err) {
+          strapi.log.error(`[seed] failed to link parent for ${cat.slug}: ${(err as Error).message}`);
+        }
+      }
+    }
+  }
+
+  if (Array.isArray(posts)) {
+    for (const post of posts) {
+      const { categorySlug, ...data } = post;
+      const categoryDocId = catIdBySlug[categorySlug];
+      const payload = { ...data, ...(categoryDocId ? { category: categoryDocId } : {}) };
+      try {
+        const existing = await strapi.documents(POST_UID as any).findFirst({ filters: { slug: post.slug } });
+        if (existing && !force) {
+          // Self-heal: restore content lost during the blocks→HTML field migration.
+          if (!existing.content && payload.content) {
+            await strapi.documents(POST_UID as any).update({
+              documentId: existing.documentId,
+              data: { content: payload.content, contentTwo: payload.contentTwo ?? null } as any,
+            });
+            strapi.log.info(`[seed] backfilled content for blog-post ${post.slug}`);
+          }
+          continue;
+        }
+        if (existing && force) await strapi.documents(POST_UID as any).update({ documentId: existing.documentId, data: payload });
+        else await strapi.documents(POST_UID as any).create({ data: payload });
+        strapi.log.info(`[seed] ${existing ? 'updated' : 'created'} blog-post ${post.slug}`);
+      } catch (err) {
+        strapi.log.error(`[seed] failed for blog-post ${post.slug}: ${(err as Error).message}`);
+      }
+    }
+  }
+}
+
 export default {
   register() {},
 
@@ -196,6 +269,7 @@ export default {
     await seedSlugCollection(strapi, 'api::city-page.city-page', 'cityPages', force);
     await seedSlugCollection(strapi, 'api::attorney.attorney', 'attorneys', force);
     await removePlaceholderAttorneys(strapi);
+    await seedBlog(strapi, force);
     await grantPublicRead(strapi);
   },
 };

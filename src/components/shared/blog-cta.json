@@ -1,0 +1,22 @@
+{
+  "collectionName": "components_shared_blog_ctas",
+  "info": {
+    "displayName": "Blog CTA",
+    "icon": "cursor",
+    "description": "In-article call-to-action — heading + text + button"
+  },
+  "options": {},
+  "attributes": {
+    "heading": {
+      "type": "string"
+    },
+    "text": {
+      "type": "text"
+    },
+    "cta": {
+      "type": "component",
+      "repeatable": false,
+      "component": "shared.cta"
+    }
+  }
+}

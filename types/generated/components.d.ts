@@ -77,6 +77,20 @@ export interface SharedAttorneyProfile extends Struct.ComponentSchema {
   };
 }
 
+export interface SharedBlogCta extends Struct.ComponentSchema {
+  collectionName: 'components_shared_blog_ctas';
+  info: {
+    description: 'In-article call-to-action \u2014 heading + text + button';
+    displayName: 'Blog CTA';
+    icon: 'cursor';
+  };
+  attributes: {
+    cta: Schema.Attribute.Component<'shared.cta', false>;
+    heading: Schema.Attribute.String;
+    text: Schema.Attribute.Text;
+  };
+}
+
 export interface SharedBullet extends Struct.ComponentSchema {
   collectionName: 'components_shared_bullets';
   info: {
@@ -1033,6 +1047,7 @@ declare module '@strapi/strapi' {
       'shared.attorney': SharedAttorney;
       'shared.attorney-form': SharedAttorneyForm;
       'shared.attorney-profile': SharedAttorneyProfile;
+      'shared.blog-cta': SharedBlogCta;
       'shared.bullet': SharedBullet;
       'shared.city-areas': SharedCityAreas;
       'shared.city-region': SharedCityRegion;
