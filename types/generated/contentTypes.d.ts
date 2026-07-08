@@ -525,6 +525,8 @@ export interface ApiCityPageCityPage extends Struct.CollectionTypeSchema {
     draftAndPublish: false;
   };
   attributes: {
+    autoNearbyCities: Schema.Attribute.Boolean &
+      Schema.Attribute.DefaultTo<true>;
     createdAt: Schema.Attribute.DateTime;
     createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
@@ -740,6 +742,7 @@ export interface ApiLegalNetworkPageLegalNetworkPage
     createdAt: Schema.Attribute.DateTime;
     createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
+    directoryHero: Schema.Attribute.Component<'shared.hero', false>;
     dualCta: Schema.Attribute.Component<'shared.dual-cta', false>;
     faq: Schema.Attribute.Component<'shared.faq-tabs', false>;
     hero: Schema.Attribute.Component<'shared.network-hero', false>;

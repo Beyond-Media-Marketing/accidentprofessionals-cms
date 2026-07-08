@@ -68,6 +68,10 @@
       "repeatable": false,
       "component": "shared.info-cards"
     },
+    "autoNearbyCities": {
+      "type": "boolean",
+      "default": true
+    },
     "nearbyCities": {
       "type": "component",
       "repeatable": false,

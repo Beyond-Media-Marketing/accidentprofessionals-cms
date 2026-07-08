@@ -4737,6 +4737,13 @@
       "metaTitle": "AP Legal Network — Vetted Personal Injury Attorneys",
       "metaDescription": "Accident Professionals connects injured people with vetted personal injury attorneys, and invites qualified attorneys to join a trusted network.",
       "canonicalUrl": "https://accidentprofessionals.com/legal-network/"
+    },
+    "directoryHero": {
+      "eyebrow": "LEGAL NETWORK",
+      "heading": "Meet the Attorneys in",
+      "headingAccent": "Our Network",
+      "subhead": "Every attorney in the AP network has been reviewed before being included — a growing roster of vetted personal injury attorneys across Georgia.",
+      "align": "center"
     }
   }
 }

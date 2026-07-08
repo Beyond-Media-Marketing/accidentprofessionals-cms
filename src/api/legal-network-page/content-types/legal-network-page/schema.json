@@ -68,6 +68,11 @@
       "repeatable": false,
       "component": "shared.apply-forms"
     },
+    "directoryHero": {
+      "type": "component",
+      "repeatable": false,
+      "component": "shared.hero"
+    },
     "seo": {
       "type": "component",
       "repeatable": false,
