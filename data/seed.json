@@ -926,7 +926,14 @@
             }
           ]
         }
-      ]
+      ],
+      "ctaTitle": "Don't See Your City?",
+      "cta": {
+        "label": "See all cities",
+        "href": "/georgia",
+        "variant": "primary",
+        "external": false
+      }
     },
     "caseTypes": {
       "eyebrow": "Practice Areas",
@@ -1235,7 +1242,14 @@
             }
           ]
         }
-      ]
+      ],
+      "ctaTitle": "Don't See Your City?",
+      "cta": {
+        "label": "See all cities",
+        "href": "/georgia",
+        "variant": "primary",
+        "external": false
+      }
     },
     "closingCta": {
       "leadHeading": "**Real** Help. **Real** Results.",
@@ -4356,17 +4370,46 @@
       "yearsExperience": 14,
       "languages": "English, Spanish",
       "email": "info@404lawyer.com",
-      "practiceAreas": ["Motor Vehicle Accidents", "Slip & Fall", "Rideshare Accidents"],
+      "practiceAreas": [
+        "Motor Vehicle Accidents",
+        "Slip & Fall",
+        "Rideshare Accidents"
+      ],
       "tagline": "Personal injury attorney dedicated to justice and fair compensation.",
       "credentials": [
-        { "title": "Bachelor of Science (B.S)", "period": "2013 – 2016", "field": "Business Administration", "institution": "University of Central Florida" },
-        { "title": "Juris Doctor (J.D), Law", "period": "2016 – 2019", "field": "Legal Studies", "institution": "Atlanta's John Marshall Law School" },
-        { "title": "State Bar of Georgia", "field": "Active Member in Good Standing" }
+        {
+          "title": "Bachelor of Science (B.S)",
+          "period": "2013 – 2016",
+          "field": "Business Administration",
+          "institution": "University of Central Florida"
+        },
+        {
+          "title": "Juris Doctor (J.D), Law",
+          "period": "2016 – 2019",
+          "field": "Legal Studies",
+          "institution": "Atlanta's John Marshall Law School"
+        },
+        {
+          "title": "State Bar of Georgia",
+          "field": "Active Member in Good Standing"
+        }
       ],
       "socials": [
-        { "platform": "instagram", "url": "https://www.instagram.com/404lawyer", "label": "404Lawyer" },
-        { "platform": "linkedin", "url": "https://www.linkedin.com/", "label": "Brian Moore" },
-        { "platform": "tiktok", "url": "https://www.tiktok.com/@404lawyer", "label": "@404lawyer" }
+        {
+          "platform": "instagram",
+          "url": "https://www.instagram.com/404lawyer",
+          "label": "404Lawyer"
+        },
+        {
+          "platform": "linkedin",
+          "url": "https://www.linkedin.com/",
+          "label": "Brian Moore"
+        },
+        {
+          "platform": "tiktok",
+          "url": "https://www.tiktok.com/@404lawyer",
+          "label": "@404lawyer"
+        }
       ],
       "shortBio": "Personal Injury Attorney Dedicated to Securing Justice and Fair Compensation.",
       "about": "Brian Moore, founder of 404 Lawyer, is a seasoned Personal Injury attorney who specializes in Motor Vehicle Accidents, Slip & Fall cases, Trucking Accidents, Rideshare Accidents, and Pedestrian & Motor Vehicle Crashes. Brian believes that Personal Injury law offers one of the most level playing fields in the legal system, giving everyone, regardless of their financial background or connections, a real shot at justice.\n\nBrian's approach is rooted in the belief that big insurance companies are willing to pay significant amounts when you have the right lawyer by your side. He is honored to help his clients navigate these challenging times, ensuring they receive the compensation they deserve. For Brian, it's not just about winning cases — it's about restoring the health and wealth of those who have been wronged, and making a meaningful impact on their lives."
