@@ -117,6 +117,8 @@ export interface SharedCityAreas extends Struct.ComponentSchema {
     icon: 'pinMap';
   };
   attributes: {
+    cta: Schema.Attribute.Component<'shared.cta', false>;
+    ctaTitle: Schema.Attribute.String;
     eyebrow: Schema.Attribute.String;
     heading: Schema.Attribute.String;
     headingAccent: Schema.Attribute.String;

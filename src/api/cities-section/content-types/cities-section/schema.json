@@ -1,0 +1,38 @@
+{
+  "kind": "singleType",
+  "collectionName": "cities_sections",
+  "info": {
+    "singularName": "cities-section",
+    "pluralName": "cities-sections",
+    "displayName": "Cities We Serve",
+    "description": "SINGLE SOURCE for the cities section. Edit the regions/cities here once — the homepage, services pages, service sub-pages and location pages all read from this."
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "eyebrow": {
+      "type": "string"
+    },
+    "heading": {
+      "type": "string"
+    },
+    "headingAccent": {
+      "type": "string"
+    },
+    "regions": {
+      "type": "component",
+      "repeatable": true,
+      "component": "shared.city-region"
+    },
+    "ctaTitle": {
+      "type": "string"
+    },
+    "cta": {
+      "type": "component",
+      "repeatable": false,
+      "component": "shared.cta"
+    }
+  }
+}

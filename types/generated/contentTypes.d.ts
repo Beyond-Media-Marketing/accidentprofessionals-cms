@@ -615,6 +615,40 @@ export interface ApiBlogPostBlogPost extends Struct.CollectionTypeSchema {
   };
 }
 
+export interface ApiCitiesSectionCitiesSection extends Struct.SingleTypeSchema {
+  collectionName: 'cities_sections';
+  info: {
+    description: 'SINGLE SOURCE for the cities section. Edit the regions/cities here once \u2014 the homepage, services pages, service sub-pages and location pages all read from this.';
+    displayName: 'Cities We Serve';
+    pluralName: 'cities-sections';
+    singularName: 'cities-section';
+  };
+  options: {
+    draftAndPublish: false;
+  };
+  attributes: {
+    createdAt: Schema.Attribute.DateTime;
+    createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    cta: Schema.Attribute.Component<'shared.cta', false>;
+    ctaTitle: Schema.Attribute.String;
+    eyebrow: Schema.Attribute.String;
+    heading: Schema.Attribute.String;
+    headingAccent: Schema.Attribute.String;
+    locale: Schema.Attribute.String & Schema.Attribute.Private;
+    localizations: Schema.Attribute.Relation<
+      'oneToMany',
+      'api::cities-section.cities-section'
+    > &
+      Schema.Attribute.Private;
+    publishedAt: Schema.Attribute.DateTime;
+    regions: Schema.Attribute.Component<'shared.city-region', true>;
+    updatedAt: Schema.Attribute.DateTime;
+    updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+  };
+}
+
 export interface ApiCityPageCityPage extends Struct.CollectionTypeSchema {
   collectionName: 'city_pages';
   info: {
@@ -1665,6 +1699,7 @@ declare module '@strapi/strapi' {
       'api::attorney.attorney': ApiAttorneyAttorney;
       'api::blog-category.blog-category': ApiBlogCategoryBlogCategory;
       'api::blog-post.blog-post': ApiBlogPostBlogPost;
+      'api::cities-section.cities-section': ApiCitiesSectionCitiesSection;
       'api::city-page.city-page': ApiCityPageCityPage;
       'api::contact-page.contact-page': ApiContactPageContactPage;
       'api::footer.footer': ApiFooterFooter;
