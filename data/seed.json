@@ -5391,5 +5391,23 @@
       "variant": "primary",
       "external": false
     }
+  },
+  "leadPopup": {
+    "enabled": true,
+    "delaySeconds": 3,
+    "mobileDelaySeconds": 3,
+    "showOnMobile": true,
+    "frequency": "session",
+    "excludePaths": [
+      "/contact-us",
+      "/privacy-policy"
+    ],
+    "eyebrow": "Free Case Review",
+    "heading": "Injured in an Accident?",
+    "headingAccent": "Talk to an Attorney Free",
+    "subheading": "Tell us what happened and a vetted Georgia personal injury attorney will review your case at no cost. No fees unless you win.",
+    "submitLabel": "Get My Free Case Review",
+    "successMessage": "Thank you — your request is in. An attorney from our network will reach out shortly.",
+    "disclaimer": "Submitting this form does not create an attorney-client relationship."
   }
 }

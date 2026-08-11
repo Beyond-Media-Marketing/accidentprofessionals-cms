@@ -857,6 +857,67 @@ export interface ApiHomePageHomePage extends Struct.SingleTypeSchema {
   };
 }
 
+export interface ApiLeadPopupLeadPopup extends Struct.SingleTypeSchema {
+  collectionName: 'lead_popups';
+  info: {
+    description: 'Timed popup contact form shown site-wide. `enabled` is a kill switch \u2014 turn it off here to remove the popup with no deploy. Delays are in seconds. `excludePaths` is a JSON array of paths to suppress it on, e.g. ["/contact-us"]. `frequency`: session = once per browser session, once = once ever, always = every page load. Turn `showOnMobile` off (or raise `mobileDelaySeconds`) if Search Console reports an intrusive interstitial.';
+    displayName: 'Lead Popup';
+    pluralName: 'lead-popups';
+    singularName: 'lead-popup';
+  };
+  options: {
+    draftAndPublish: false;
+  };
+  attributes: {
+    createdAt: Schema.Attribute.DateTime;
+    createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    delaySeconds: Schema.Attribute.Integer &
+      Schema.Attribute.SetMinMax<
+        {
+          max: 120;
+          min: 0;
+        },
+        number
+      > &
+      Schema.Attribute.DefaultTo<3>;
+    disclaimer: Schema.Attribute.Text;
+    enabled: Schema.Attribute.Boolean &
+      Schema.Attribute.Required &
+      Schema.Attribute.DefaultTo<true>;
+    excludePaths: Schema.Attribute.JSON;
+    eyebrow: Schema.Attribute.String;
+    frequency: Schema.Attribute.Enumeration<['session', 'once', 'always']> &
+      Schema.Attribute.Required &
+      Schema.Attribute.DefaultTo<'session'>;
+    heading: Schema.Attribute.String;
+    headingAccent: Schema.Attribute.String;
+    locale: Schema.Attribute.String & Schema.Attribute.Private;
+    localizations: Schema.Attribute.Relation<
+      'oneToMany',
+      'api::lead-popup.lead-popup'
+    > &
+      Schema.Attribute.Private;
+    mobileDelaySeconds: Schema.Attribute.Integer &
+      Schema.Attribute.SetMinMax<
+        {
+          max: 120;
+          min: 0;
+        },
+        number
+      > &
+      Schema.Attribute.DefaultTo<3>;
+    publishedAt: Schema.Attribute.DateTime;
+    showOnMobile: Schema.Attribute.Boolean & Schema.Attribute.DefaultTo<true>;
+    subheading: Schema.Attribute.Text;
+    submitLabel: Schema.Attribute.String;
+    successMessage: Schema.Attribute.Text;
+    updatedAt: Schema.Attribute.DateTime;
+    updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+  };
+}
+
 export interface ApiLegalNetworkPageLegalNetworkPage
   extends Struct.SingleTypeSchema {
   collectionName: 'legal_network_pages';
@@ -1705,6 +1766,7 @@ declare module '@strapi/strapi' {
       'api::footer.footer': ApiFooterFooter;
       'api::global-setting.global-setting': ApiGlobalSettingGlobalSetting;
       'api::home-page.home-page': ApiHomePageHomePage;
+      'api::lead-popup.lead-popup': ApiLeadPopupLeadPopup;
       'api::legal-network-page.legal-network-page': ApiLegalNetworkPageLegalNetworkPage;
       'api::navigation.navigation': ApiNavigationNavigation;
       'api::privacy-policy.privacy-policy': ApiPrivacyPolicyPrivacyPolicy;

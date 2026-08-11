@@ -17,6 +17,7 @@ const SINGLE_TYPES = [
   { uid: 'api::service-defaults.service-defaults', seedKey: 'serviceDefaults' },
   { uid: 'api::privacy-policy.privacy-policy', seedKey: 'privacyPolicy' },
   { uid: 'api::cities-section.cities-section', seedKey: 'citiesSection' },
+  { uid: 'api::lead-popup.lead-popup', seedKey: 'leadPopup' },
 ] as const;
 
 /**

@@ -1,0 +1,67 @@
+{
+  "kind": "singleType",
+  "collectionName": "lead_popups",
+  "info": {
+    "singularName": "lead-popup",
+    "pluralName": "lead-popups",
+    "displayName": "Lead Popup",
+    "description": "Timed popup contact form shown site-wide. `enabled` is a kill switch — turn it off here to remove the popup with no deploy. Delays are in seconds. `excludePaths` is a JSON array of paths to suppress it on, e.g. [\"/contact-us\"]. `frequency`: session = once per browser session, once = once ever, always = every page load. Turn `showOnMobile` off (or raise `mobileDelaySeconds`) if Search Console reports an intrusive interstitial."
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "enabled": {
+      "type": "boolean",
+      "default": true,
+      "required": true
+    },
+    "delaySeconds": {
+      "type": "integer",
+      "default": 3,
+      "min": 0,
+      "max": 120
+    },
+    "mobileDelaySeconds": {
+      "type": "integer",
+      "default": 3,
+      "min": 0,
+      "max": 120
+    },
+    "showOnMobile": {
+      "type": "boolean",
+      "default": true
+    },
+    "frequency": {
+      "type": "enumeration",
+      "enum": ["session", "once", "always"],
+      "default": "session",
+      "required": true
+    },
+    "excludePaths": {
+      "type": "json"
+    },
+    "eyebrow": {
+      "type": "string"
+    },
+    "heading": {
+      "type": "string"
+    },
+    "headingAccent": {
+      "type": "string"
+    },
+    "subheading": {
+      "type": "text"
+    },
+    "submitLabel": {
+      "type": "string"
+    },
+    "successMessage": {
+      "type": "text"
+    },
+    "disclaimer": {
+      "type": "text"
+    }
+  }
+}
