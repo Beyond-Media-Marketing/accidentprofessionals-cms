@@ -1036,6 +1036,39 @@ export interface ApiPrivacyPolicyPrivacyPolicy extends Struct.SingleTypeSchema {
   };
 }
 
+export interface ApiRepRep extends Struct.CollectionTypeSchema {
+  collectionName: 'reps';
+  info: {
+    description: "Reps, affiliates, ambassadors and merchandise stores who hand out the call-back form. The slug is BOTH the link (accidentprofessionals.com/forms/callback/<slug>) and the ClickUp tag \u2014 so it must be lowercase with dashes and no spaces. Adding someone here is optional: their link works either way, but listing them puts their real name on the ClickUp task and stops it being flagged 'unknown-rep'.";
+    displayName: 'Form Holder';
+    pluralName: 'reps';
+    singularName: 'rep';
+  };
+  options: {
+    draftAndPublish: false;
+  };
+  attributes: {
+    active: Schema.Attribute.Boolean & Schema.Attribute.DefaultTo<true>;
+    createdAt: Schema.Attribute.DateTime;
+    createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    locale: Schema.Attribute.String & Schema.Attribute.Private;
+    localizations: Schema.Attribute.Relation<'oneToMany', 'api::rep.rep'> &
+      Schema.Attribute.Private;
+    name: Schema.Attribute.String & Schema.Attribute.Required;
+    notes: Schema.Attribute.Text;
+    publishedAt: Schema.Attribute.DateTime;
+    slug: Schema.Attribute.UID<'name'> & Schema.Attribute.Required;
+    type: Schema.Attribute.Enumeration<
+      ['rep', 'affiliate', 'ambassador', 'store']
+    > &
+      Schema.Attribute.DefaultTo<'rep'>;
+    updatedAt: Schema.Attribute.DateTime;
+    updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+  };
+}
+
 export interface ApiServiceCategoryServiceCategory
   extends Struct.CollectionTypeSchema {
   collectionName: 'service_categories';
@@ -1770,6 +1803,7 @@ declare module '@strapi/strapi' {
       'api::legal-network-page.legal-network-page': ApiLegalNetworkPageLegalNetworkPage;
       'api::navigation.navigation': ApiNavigationNavigation;
       'api::privacy-policy.privacy-policy': ApiPrivacyPolicyPrivacyPolicy;
+      'api::rep.rep': ApiRepRep;
       'api::service-category.service-category': ApiServiceCategoryServiceCategory;
       'api::service-defaults.service-defaults': ApiServiceDefaultsServiceDefaults;
       'api::service.service': ApiServiceService;
