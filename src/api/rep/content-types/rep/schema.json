@@ -1,0 +1,37 @@
+{
+  "kind": "collectionType",
+  "collectionName": "reps",
+  "info": {
+    "singularName": "rep",
+    "pluralName": "reps",
+    "displayName": "Form Holder",
+    "description": "Reps, affiliates, ambassadors and merchandise stores who hand out the call-back form. The slug is BOTH the link (accidentprofessionals.com/forms/callback/<slug>) and the ClickUp tag — so it must be lowercase with dashes and no spaces. Adding someone here is optional: their link works either way, but listing them puts their real name on the ClickUp task and stops it being flagged 'unknown-rep'."
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "slug": {
+      "type": "uid",
+      "targetField": "name",
+      "required": true
+    },
+    "type": {
+      "type": "enumeration",
+      "enum": ["rep", "affiliate", "ambassador", "store"],
+      "default": "rep"
+    },
+    "active": {
+      "type": "boolean",
+      "default": true
+    },
+    "notes": {
+      "type": "text"
+    }
+  }
+}

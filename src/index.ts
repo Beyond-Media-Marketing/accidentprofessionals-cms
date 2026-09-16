@@ -40,6 +40,8 @@ const READ_ACTIONS = [
   'api::blog-category.blog-category.findOne',
   'api::blog-post.blog-post.find',
   'api::blog-post.blog-post.findOne',
+  'api::rep.rep.find',
+  'api::rep.rep.findOne',
 ];
 
 /**
@@ -316,6 +318,7 @@ export default {
     await seedSlugCollection(strapi, 'api::state-page.state-page', 'statePages', force);
     await seedSlugCollection(strapi, 'api::city-page.city-page', 'cityPages', force);
     await seedSlugCollection(strapi, 'api::attorney.attorney', 'attorneys', force);
+    await seedSlugCollection(strapi, 'api::rep.rep', 'reps', force);
     await removePlaceholderAttorneys(strapi);
     await backfillAttorneys(strapi);
     await seedBlog(strapi, force);

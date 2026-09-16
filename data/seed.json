@@ -5409,5 +5409,121 @@
     "submitLabel": "Get My Free Case Review",
     "successMessage": "Thank you — your request is in. An attorney from our network will reach out shortly.",
     "disclaimer": "Submitting this form does not create an attorney-client relationship."
-  }
+  },
+  "reps": [
+    {
+      "name": "Anabel Pire",
+      "slug": "anabel-pire",
+      "type": "rep",
+      "active": true
+    },
+    {
+      "name": "Carina Aspiazu",
+      "slug": "carina-aspiazu",
+      "type": "rep",
+      "active": true
+    },
+    {
+      "name": "Chris Orellana",
+      "slug": "chris-orellana",
+      "type": "rep",
+      "active": true
+    },
+    {
+      "name": "Dainery Rivero",
+      "slug": "dainery-rivero",
+      "type": "rep",
+      "active": true
+    },
+    {
+      "name": "Daniela De Jongh",
+      "slug": "daniela-de-jongh",
+      "type": "rep",
+      "active": true
+    },
+    {
+      "name": "Eliana Azuaje",
+      "slug": "eliana-azuaje",
+      "type": "rep",
+      "active": true
+    },
+    {
+      "name": "Elaine Diaz",
+      "slug": "elaine-diaz",
+      "type": "rep",
+      "active": true
+    },
+    {
+      "name": "Emil Escuela",
+      "slug": "emil-escuela",
+      "type": "rep",
+      "active": true
+    },
+    {
+      "name": "Evelin Vargas",
+      "slug": "evelin-vargas",
+      "type": "rep",
+      "active": true
+    },
+    {
+      "name": "Ingris Ariza",
+      "slug": "ingris-ariza",
+      "type": "rep",
+      "active": true
+    },
+    {
+      "name": "Kevin Morales",
+      "slug": "kevin-morales",
+      "type": "rep",
+      "active": true
+    },
+    {
+      "name": "Lorena Cabrera",
+      "slug": "lorena-cabrera",
+      "type": "rep",
+      "active": true
+    },
+    {
+      "name": "Maloa Morales",
+      "slug": "maloa-morales",
+      "type": "rep",
+      "active": true
+    },
+    {
+      "name": "Martha Cordoba",
+      "slug": "martha-cordoba",
+      "type": "rep",
+      "active": true
+    },
+    {
+      "name": "Michelle Escuela",
+      "slug": "michelle-escuela",
+      "type": "rep",
+      "active": true
+    },
+    {
+      "name": "Rita Finol",
+      "slug": "rita-finol",
+      "type": "rep",
+      "active": true
+    },
+    {
+      "name": "Yessika Paez",
+      "slug": "yessika-paez",
+      "type": "rep",
+      "active": true
+    },
+    {
+      "name": "Valeria Medina",
+      "slug": "valeria-medina",
+      "type": "rep",
+      "active": true
+    },
+    {
+      "name": "Jenny De Faria",
+      "slug": "jenny-de-faria",
+      "type": "rep",
+      "active": true
+    }
+  ]
 }
