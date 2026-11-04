@@ -10,33 +10,67 @@
   "options": {
     "draftAndPublish": false
   },
-  "pluginOptions": {},
+  "pluginOptions": {
+    "i18n": {
+      "localized": true
+    }
+  },
   "attributes": {
     "hero": {
       "type": "component",
       "repeatable": false,
-      "component": "shared.network-hero"
+      "component": "shared.network-hero",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
     },
     "betterWay": {
       "type": "component",
       "repeatable": false,
-      "component": "shared.media-text"
+      "component": "shared.media-text",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
     },
     "reviewSteps": {
       "type": "component",
       "repeatable": false,
-      "component": "shared.process-cards"
+      "component": "shared.process-cards",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
     },
     "attorneysHeading": {
-      "type": "string"
+      "type": "string",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
     },
     "attorneysSubheading": {
-      "type": "text"
+      "type": "text",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
     },
     "attorneysCta": {
       "type": "component",
       "repeatable": false,
-      "component": "shared.cta"
+      "component": "shared.cta",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
     },
     "selectedAttorneys": {
       "type": "relation",
@@ -46,42 +80,82 @@
     "whyJoin": {
       "type": "component",
       "repeatable": false,
-      "component": "shared.icon-card-grid"
+      "component": "shared.icon-card-grid",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
     },
     "lookFor": {
       "type": "component",
       "repeatable": false,
-      "component": "shared.look-for"
+      "component": "shared.look-for",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
     },
     "dualCta": {
       "type": "component",
       "repeatable": false,
-      "component": "shared.dual-cta"
+      "component": "shared.dual-cta",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
     },
     "faq": {
       "type": "component",
       "repeatable": false,
-      "component": "shared.faq-tabs"
+      "component": "shared.faq-tabs",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
     },
     "applyForms": {
       "type": "component",
       "repeatable": false,
-      "component": "shared.apply-forms"
+      "component": "shared.apply-forms",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
     },
     "directoryHero": {
       "type": "component",
       "repeatable": false,
-      "component": "shared.hero"
+      "component": "shared.hero",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
     },
     "attorneyProfile": {
       "type": "component",
       "repeatable": false,
-      "component": "shared.attorney-profile"
+      "component": "shared.attorney-profile",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
     },
     "seo": {
       "type": "component",
       "repeatable": false,
-      "component": "shared.seo"
+      "component": "shared.seo",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
     }
   }
 }

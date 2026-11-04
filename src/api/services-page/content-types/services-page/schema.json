@@ -10,52 +10,101 @@
   "options": {
     "draftAndPublish": false
   },
-  "pluginOptions": {},
+  "pluginOptions": {
+    "i18n": {
+      "localized": true
+    }
+  },
   "attributes": {
     "hero": {
       "type": "component",
       "repeatable": false,
-      "component": "shared.hero"
+      "component": "shared.hero",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
     },
     "whyLocal": {
       "type": "component",
       "repeatable": false,
-      "component": "shared.media-text"
+      "component": "shared.media-text",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
     },
     "howConnect": {
       "type": "component",
       "repeatable": false,
-      "component": "shared.steps-row"
+      "component": "shared.steps-row",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
     },
     "cityAreas": {
       "type": "component",
       "repeatable": false,
-      "component": "shared.city-areas"
+      "component": "shared.city-areas",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
     },
     "caseTypes": {
       "type": "component",
       "repeatable": false,
-      "component": "shared.feature-grid"
+      "component": "shared.feature-grid",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
     },
     "gaLaw": {
       "type": "component",
       "repeatable": false,
-      "component": "shared.info-cards"
+      "component": "shared.info-cards",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
     },
     "faq": {
       "type": "component",
       "repeatable": false,
-      "component": "shared.faq"
+      "component": "shared.faq",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
     },
     "closingCta": {
       "type": "component",
       "repeatable": false,
-      "component": "shared.closing-cta"
+      "component": "shared.closing-cta",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
     },
     "seo": {
       "type": "component",
       "repeatable": false,
-      "component": "shared.seo"
+      "component": "shared.seo",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
     }
   }
 }

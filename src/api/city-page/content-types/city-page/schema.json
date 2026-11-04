@@ -10,11 +10,20 @@
   "options": {
     "draftAndPublish": false
   },
-  "pluginOptions": {},
+  "pluginOptions": {
+    "i18n": {
+      "localized": true
+    }
+  },
   "attributes": {
     "title": {
       "type": "string",
-      "required": true
+      "required": true,
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
     },
     "slug": {
       "type": "uid",
@@ -22,70 +31,140 @@
       "required": true
     },
     "heroBadge": {
-      "type": "string"
+      "type": "string",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
     },
     "hero": {
       "type": "component",
       "repeatable": false,
-      "component": "shared.service-hero"
+      "component": "shared.service-hero",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
     },
     "heroAccentFirst": {
       "type": "boolean",
-      "default": false
+      "default": false,
+      "pluginOptions": {
+        "i18n": {
+          "localized": false
+        }
+      }
     },
     "whyTrust": {
       "type": "component",
       "repeatable": false,
-      "component": "shared.media-text"
+      "component": "shared.media-text",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
     },
     "practiceAreas": {
       "type": "component",
       "repeatable": false,
-      "component": "shared.feature-grid"
+      "component": "shared.feature-grid",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
     },
     "whyChoose": {
       "type": "component",
       "repeatable": false,
-      "component": "shared.why-choose"
+      "component": "shared.why-choose",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
     },
     "stepsToTake": {
       "type": "component",
       "repeatable": false,
-      "component": "shared.steps-to-take"
+      "component": "shared.steps-to-take",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
     },
     "damages": {
       "type": "component",
       "repeatable": false,
-      "component": "shared.damages"
+      "component": "shared.damages",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
     },
     "testimonials": {
       "type": "component",
       "repeatable": false,
-      "component": "shared.testimonials"
+      "component": "shared.testimonials",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
     },
     "georgiaLaw": {
       "type": "component",
       "repeatable": false,
-      "component": "shared.info-cards"
+      "component": "shared.info-cards",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
     },
     "autoNearbyCities": {
       "type": "boolean",
-      "default": true
+      "default": true,
+      "pluginOptions": {
+        "i18n": {
+          "localized": false
+        }
+      }
     },
     "nearbyCities": {
       "type": "component",
       "repeatable": false,
-      "component": "shared.nearby-cities"
+      "component": "shared.nearby-cities",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
     },
     "faq": {
       "type": "component",
       "repeatable": false,
-      "component": "shared.faq"
+      "component": "shared.faq",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
     },
     "seo": {
       "type": "component",
       "repeatable": false,
-      "component": "shared.seo"
+      "component": "shared.seo",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
     }
   }
 }

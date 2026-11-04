@@ -10,22 +10,41 @@
   "options": {
     "draftAndPublish": false
   },
-  "pluginOptions": {},
+  "pluginOptions": {
+    "i18n": {
+      "localized": true
+    }
+  },
   "attributes": {
     "heroDefaults": {
       "type": "component",
       "repeatable": false,
-      "component": "shared.service-hero-defaults"
+      "component": "shared.service-hero-defaults",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
     },
     "whyUsFeatures": {
       "type": "component",
       "repeatable": true,
-      "component": "shared.why-us-feature"
+      "component": "shared.why-us-feature",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
     },
     "team": {
       "type": "component",
       "repeatable": false,
-      "component": "shared.team"
+      "component": "shared.team",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
     },
     "selectedAttorneys": {
       "type": "relation",
@@ -35,12 +54,22 @@
     "cities": {
       "type": "component",
       "repeatable": false,
-      "component": "shared.city-areas"
+      "component": "shared.city-areas",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
     },
     "closingCta": {
       "type": "component",
       "repeatable": false,
-      "component": "shared.closing-cta"
+      "component": "shared.closing-cta",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
     }
   }
 }

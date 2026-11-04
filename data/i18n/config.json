@@ -1,0 +1,41 @@
+{
+  "$comment": "Shared by scripts/i18n/*.mjs (export, enable) and src/i18n/import-translations.ts. `types` is in import order — relation targets must get their Spanish version before the entries pointing at them.",
+  "locale": "es",
+  "localeName": "Spanish (es)",
+  "types": [
+    { "uid": "api::attorney.attorney", "key": "attorneys" },
+    { "uid": "api::blog-category.blog-category", "key": "blogCategories" },
+    { "uid": "api::blog-post.blog-post", "key": "blogPosts" },
+    { "uid": "api::service-category.service-category", "key": "serviceCategories" },
+    { "uid": "api::service.service", "key": "services" },
+    { "uid": "api::state-page.state-page", "key": "statePages" },
+    { "uid": "api::city-page.city-page", "key": "cityPages" },
+    { "uid": "api::global-setting.global-setting", "key": "globalSetting" },
+    { "uid": "api::navigation.navigation", "key": "navigation" },
+    { "uid": "api::footer.footer", "key": "footer" },
+    { "uid": "api::home-page.home-page", "key": "homePage" },
+    { "uid": "api::about-page.about-page", "key": "aboutPage" },
+    { "uid": "api::services-page.services-page", "key": "servicesPage" },
+    { "uid": "api::contact-page.contact-page", "key": "contactPage" },
+    { "uid": "api::legal-network-page.legal-network-page", "key": "legalNetworkPage" },
+    { "uid": "api::service-defaults.service-defaults", "key": "serviceDefaults" },
+    { "uid": "api::privacy-policy.privacy-policy", "key": "privacyPolicy" },
+    { "uid": "api::cities-section.cities-section", "key": "citiesSection" },
+    { "uid": "api::lead-popup.lead-popup", "key": "leadPopup" }
+  ],
+  "$skipFields": "Text fields that are never translated: URLs, ids, contact details, people/firm/city names, form values the sales team reads. At the top level of a content type these are also shared across languages (one value for EN + ES).",
+  "skipFields": [
+    "slug", "href", "url", "linkHref", "ctaHref", "noticeCtaHref", "builtByHref", "canonicalUrl",
+    "email", "phone", "phoneHref", "icon", "iconGrey", "iconYellow", "scrollTo",
+    "mapEmbedUrl", "mapLinkUrl", "websiteUrl", "googleTagManagerId", "themeColor", "twitterHandle",
+    "coverUrl", "locationLink", "formSubject", "cardLinkAnchor", "number", "code",
+    "name", "firm", "author", "siteName", "builtByName", "platform", "address", "location",
+    "excludePaths", "openingHoursSpec"
+  ],
+  "$translateAnyway": "Exceptions to skipFields, as <uid>.<field>.",
+  "translateAnyway": ["api::blog-category.blog-category.name"],
+  "$skipComponentFields": "Fields skipped only inside one component, as <component>.<field>.",
+  "skipComponentFields": ["shared.select-option.value"],
+  "$sharedComponents": "Component fields with nothing to translate — shared across languages instead of copied per language.",
+  "sharedComponents": ["shared.social-link"]
+}

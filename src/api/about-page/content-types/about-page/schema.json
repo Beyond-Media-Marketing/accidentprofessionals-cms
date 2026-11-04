@@ -10,57 +10,111 @@
   "options": {
     "draftAndPublish": false
   },
-  "pluginOptions": {},
+  "pluginOptions": {
+    "i18n": {
+      "localized": true
+    }
+  },
   "attributes": {
     "hero": {
       "type": "component",
       "repeatable": false,
-      "component": "shared.hero"
+      "component": "shared.hero",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
     },
     "heroStats": {
       "type": "component",
       "repeatable": true,
-      "component": "shared.stat"
+      "component": "shared.stat",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
     },
     "problem": {
       "type": "component",
       "repeatable": false,
-      "component": "shared.media-text"
+      "component": "shared.media-text",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
     },
     "whatWeDo": {
       "type": "component",
       "repeatable": false,
-      "component": "shared.steps-row"
+      "component": "shared.steps-row",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
     },
     "whyMatters": {
       "type": "component",
       "repeatable": false,
-      "component": "shared.media-text"
+      "component": "shared.media-text",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
     },
     "whoWeWork": {
       "type": "component",
       "repeatable": false,
-      "component": "shared.process-cards"
+      "component": "shared.process-cards",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
     },
     "areasServe": {
       "type": "component",
       "repeatable": false,
-      "component": "shared.locations"
+      "component": "shared.locations",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
     },
     "faq": {
       "type": "component",
       "repeatable": false,
-      "component": "shared.faq"
+      "component": "shared.faq",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
     },
     "closingCta": {
       "type": "component",
       "repeatable": false,
-      "component": "shared.closing-cta"
+      "component": "shared.closing-cta",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
     },
     "seo": {
       "type": "component",
       "repeatable": false,
-      "component": "shared.seo"
+      "component": "shared.seo",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
     }
   }
 }

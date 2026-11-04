@@ -1,5 +1,6 @@
 import type { Core } from '@strapi/strapi';
 import seedData from '../data/seed.json';
+import { importTranslations } from './i18n/import-translations';
 
 /**
  * Every single-type that should be auto-seeded on boot and exposed to the
@@ -322,6 +323,8 @@ export default {
     await removePlaceholderAttorneys(strapi);
     await backfillAttorneys(strapi);
     await seedBlog(strapi, force);
+    // Spanish versions from data/i18n/es — create-only, after all English content exists.
+    await importTranslations(strapi);
     await grantPublicRead(strapi);
   },
 };

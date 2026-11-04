@@ -10,11 +10,20 @@
   "options": {
     "draftAndPublish": false
   },
-  "pluginOptions": {},
+  "pluginOptions": {
+    "i18n": {
+      "localized": true
+    }
+  },
   "attributes": {
     "title": {
       "type": "string",
-      "required": true
+      "required": true,
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
     },
     "slug": {
       "type": "uid",
@@ -23,43 +32,88 @@
     },
     "order": {
       "type": "integer",
-      "default": 0
+      "default": 0,
+      "pluginOptions": {
+        "i18n": {
+          "localized": false
+        }
+      }
     },
     "hero": {
       "type": "component",
       "repeatable": false,
-      "component": "shared.service-hero"
+      "component": "shared.service-hero",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
     },
     "howItWorks": {
       "type": "component",
       "repeatable": false,
-      "component": "shared.how-it-works"
+      "component": "shared.how-it-works",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
     },
     "caseTypesHeading": {
-      "type": "string"
+      "type": "string",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
     },
     "caseTypesSubheading": {
-      "type": "string"
+      "type": "string",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
     },
     "whyUs": {
       "type": "component",
       "repeatable": false,
-      "component": "shared.why-us"
+      "component": "shared.why-us",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
     },
     "stepsToTake": {
       "type": "component",
       "repeatable": false,
-      "component": "shared.steps-to-take"
+      "component": "shared.steps-to-take",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
     },
     "faq": {
       "type": "component",
       "repeatable": false,
-      "component": "shared.faq"
+      "component": "shared.faq",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
     },
     "ctaBanner": {
       "type": "component",
       "repeatable": false,
-      "component": "shared.cta-banner"
+      "component": "shared.cta-banner",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
     },
     "services": {
       "type": "relation",
@@ -70,7 +124,12 @@
     "seo": {
       "type": "component",
       "repeatable": false,
-      "component": "shared.seo"
+      "component": "shared.seo",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
     }
   }
 }

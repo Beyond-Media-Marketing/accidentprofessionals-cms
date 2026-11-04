@@ -10,11 +10,20 @@
   "options": {
     "draftAndPublish": false
   },
-  "pluginOptions": {},
+  "pluginOptions": {
+    "i18n": {
+      "localized": true
+    }
+  },
   "attributes": {
     "title": {
       "type": "string",
-      "required": true
+      "required": true,
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
     },
     "slug": {
       "type": "uid",
@@ -23,7 +32,12 @@
     },
     "order": {
       "type": "integer",
-      "default": 0
+      "default": 0,
+      "pluginOptions": {
+        "i18n": {
+          "localized": false
+        }
+      }
     },
     "category": {
       "type": "relation",
@@ -34,61 +48,128 @@
     "cardIcon": {
       "type": "media",
       "multiple": false,
-      "allowedTypes": ["images"]
+      "allowedTypes": [
+        "images"
+      ],
+      "pluginOptions": {
+        "i18n": {
+          "localized": false
+        }
+      }
     },
     "cardDescription": {
-      "type": "text"
+      "type": "text",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
     },
     "cardLinkText": {
-      "type": "string"
+      "type": "string",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
     },
     "cardLinkAnchor": {
-      "type": "string"
+      "type": "string",
+      "pluginOptions": {
+        "i18n": {
+          "localized": false
+        }
+      }
     },
     "hero": {
       "type": "component",
       "repeatable": false,
-      "component": "shared.service-hero"
+      "component": "shared.service-hero",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
     },
     "whatToKnow": {
       "type": "component",
       "repeatable": false,
-      "component": "shared.media-text"
+      "component": "shared.media-text",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
     },
     "howItWorks": {
       "type": "component",
       "repeatable": false,
-      "component": "shared.how-it-works"
+      "component": "shared.how-it-works",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
     },
     "typesOfCases": {
       "type": "component",
       "repeatable": false,
-      "component": "shared.feature-grid"
+      "component": "shared.feature-grid",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
     },
     "stepsToTake": {
       "type": "component",
       "repeatable": false,
-      "component": "shared.steps-to-take"
+      "component": "shared.steps-to-take",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
     },
     "damages": {
       "type": "component",
       "repeatable": false,
-      "component": "shared.damages"
+      "component": "shared.damages",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
     },
     "testimonials": {
       "type": "component",
       "repeatable": false,
-      "component": "shared.testimonials"
+      "component": "shared.testimonials",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
     },
     "faq": {
       "type": "component",
       "repeatable": false,
-      "component": "shared.faq"
+      "component": "shared.faq",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
     },
     "seo": {
       "type": "component",
       "repeatable": false,
-      "component": "shared.seo"
+      "component": "shared.seo",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
     }
   }
 }
