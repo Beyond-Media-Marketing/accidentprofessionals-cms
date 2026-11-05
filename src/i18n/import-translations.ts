@@ -206,9 +206,26 @@ export async function importTranslations(strapi: Core.Strapi) {
           data[field] = next;
         }
 
+        // Shared (non-localized) images and components, taken from the English entry.
+        // Strapi fills a new locale's shared fields with a plain query that loads no
+        // media or components, then syncs that locale's shared fields back onto every
+        // other language — so without these, writing the Spanish entry wipes the
+        // English photos, covers, logos and social links. Sending the English values
+        // explicitly makes that sync write them back unchanged.
+        const shared: Record<string, any> = {};
+        for (const [field, attr] of Object.entries<any>(model.attributes)) {
+          if (isCopied(attr) || entry[field] === undefined) continue;
+          const v = entry[field];
+          if (attr.type === 'media') {
+            shared[field] = v == null ? null : Array.isArray(v) ? v.map((m: any) => m.id) : v.id;
+          } else if (attr.type === 'component') {
+            shared[field] = copyField(attr, v, identity);
+          }
+        }
+
         if (existing) {
           if (!Object.keys(data).length) continue;
-          await docs.update({ documentId: entry.documentId, locale, data } as any);
+          await docs.update({ documentId: entry.documentId, locale, data: { ...shared, ...data } } as any);
           strapi.log.info(`[i18n] filled ${locale} ${label} (${hits} chars translated)`);
           continue;
         }
@@ -218,7 +235,7 @@ export async function importTranslations(strapi: Core.Strapi) {
           if (hits) strapi.log.warn(`[i18n] ${label}: only ${Math.round(coverage * 100)}% translated — Spanish version not created yet`);
           continue;
         }
-        await docs.update({ documentId: entry.documentId, locale, data } as any);
+        await docs.update({ documentId: entry.documentId, locale, data: { ...shared, ...data } } as any);
         strapi.log.info(`[i18n] created ${locale} ${label} (${Math.round(coverage * 100)}% translated)`);
       } catch (err) {
         strapi.log.error(`[i18n] failed for ${label}: ${(err as Error).message}`);
